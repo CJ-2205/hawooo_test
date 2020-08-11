@@ -1,6 +1,0 @@
-*----------------------------------------------------------
-Time:2017-08-31 11:44:09
-Request:{"object":"page","entry":[{"id":"464335860593655","time":1504151040911,"messaging":[{"sender":{"id":"1652122711527490"},"recipient":{"id":"464335860593655"},"timestamp":1504151040909,"read":{"watermark":1504151040003,"seq":0}}]}]}
-Message:System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
-   於 fb_fbWebhook.Page_Load(Object sender, EventArgs e) 於 d:\hawooo\web\user\fbWebhook.aspx.cs: 行 96
-----------------------------------------------------------*
