@@ -1,0 +1,185 @@
+@charset "UTF-8";
+/*大片背景*/
+/*分隔線*/
+/*draktext*/
+/*首頁主要粉紅色*/
+/*首頁上方nav被hover顏色*/
+/*header語言＆購物車text顏色*/
+/*header語言＆購物車hover顏色*/
+/*內文說明文字*/
+/*側邊箭頭顏色*/
+/*側邊導覽列*/
+/*台灣代購 商品細項 標題顏色*/
+/*猜你喜歡按鈕*/
+/*猜你喜歡按鈕 hover*/
+/*名人推薦標籤*/
+/*名人推薦標籤*/
+/*首頁猜你喜歡綠色新品tag*/
+/*＝＝＝商品＝＝＝*/
+/*新品tag*/
+/*免運tag*/
+/*強調文字的粉色*/
+/*解說文字藍*/
+/*賣光拉*/
+/*售價橘*/
+/*售價背景*/
+/*喜歡按鈕*/
+/*加入購物車按鈕*/
+/*立刻買*/
+/*＝＝＝購物車＝＝＝*/
+/*購物車步驟灰*/
+/*login*/
+/*qa下方大外層*/
+.qa-wrapper {
+  display: table;
+  padding: 10px 0 10px 0;
+  background: white;
+  min-height: 550px;
+}
+
+.qa-nav {
+  display: table-cell;
+  padding: 0 30px 0 10px;
+  width: 22%;
+  min-height: 530px;
+}
+
+.q-navtitle {
+  font-size: 20px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.qa-content {
+  display: table-cell;
+  padding: 0 20px 30px 50px;
+  width: 78%;
+  border-left: 1px solid #d9dad9;
+}
+
+.qa-height {
+  margin: 0;
+  height: 40px;
+}
+
+.qa-maintitle {
+  font-size: 25px;
+  line-height: 55px;
+  color: #595959;
+  font-weight: bold;
+}
+
+/*qa首頁 index*/
+.qa-index ul {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.qa-index li {
+  padding: 10px 0;
+  font-size: 18px;
+}
+.qa-index a {
+  color: #595959;
+}
+.qa-index a:hover {
+  color: #FB5450;
+}
+.qa-index i {
+  margin: 0 5px 0 0;
+}
+
+/*qa panel style 側邊折疊選單樣式*/
+.qa-nav-panel {
+  /*padding-left:30px;*/
+  margin-top: 30px;
+}
+.qa-nav-panel .am-panel-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+.qa-nav-panel .am-panel-bd {
+  border: none !important;
+}
+.qa-nav-panel .am-panel {
+  margin: 20px 0;
+}
+
+.qa-list ul {
+  padding: 0 0 0 20px;
+  margin: 15px 0 0 0;
+}
+.qa-list li {
+  font-size: 14px;
+  padding: 7px 0;
+}
+.qa-list li.active a {
+  color: #FB5450;
+}
+.qa-list li a {
+  color: #595959;
+}
+.qa-list li a:hover {
+  color: #FB5450;
+}
+
+.qa-main {
+  margin: 20px 0;
+}
+.qa-main img {
+  width: 100%;
+}
+
+.qa-step {
+  margin: 10px 0 15px 0;
+  color: #FB5450;
+  font-size: 15.5px;
+  font-weight: bold;
+}
+
+.qa-step-title {
+  margin: 0 0 0 5px;
+  display: inline;
+  color: #595959;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.qa-text {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #808080;
+}
+
+.qa-subtitle {
+  margin: 0;
+  font-size: 25px;
+  line-height: 55px;
+  color: #595959;
+  font-weight: bold;
+}
+
+.qa-term td {
+  vertical-align: top;
+  font-weight: normal;
+  font-size: .9em;
+  text-align: justify;
+  color: #595959;
+  padding: 5px;
+}
+
+.qa-contact {
+  border-top: 1px solid #d9dad9;
+}
+.qa-contact p {
+  margin: 10px 0;
+}
+
+.qa-contact-title {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #595959;
+}
+
+.qa-time {
+  color: #808080;
+}

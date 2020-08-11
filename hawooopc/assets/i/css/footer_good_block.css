@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/*大片背景*/
+/*分隔線*/
+/*draktext*/
+/*首頁主要粉紅色*/
+/*首頁上方nav被hover顏色*/
+/*header語言＆購物車text顏色*/
+/*header語言＆購物車hover顏色*/
+/*內文說明文字*/
+/*側邊箭頭顏色*/
+/*側邊導覽列*/
+/*台灣代購 商品細項 標題顏色*/
+/*猜你喜歡按鈕*/
+/*猜你喜歡按鈕 hover*/
+/*名人推薦標籤*/
+/*名人推薦標籤*/
+/*首頁猜你喜歡綠色新品tag*/
+/*＝＝＝商品＝＝＝*/
+/*新品tag*/
+/*免運tag*/
+/*強調文字的粉色*/
+/*解說文字藍*/
+/*賣光拉*/
+/*售價橘*/
+/*喜歡按鈕*/
+/*加入購物車按鈕*/
+/*立刻買*/
+/*footer-good-block 頁尾三大好處的icon*/
+/* line 6, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper {
+  height: 130px;
+  padding: 0;
+  background: white;
+}
+/* line 10, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* line 14, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+/* line 20, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons:nth-child(2):before {
+  content: '';
+  width: 1px;
+  height: 70%;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  border-right: 2px dotted #d9dad9;
+}
+/* line 30, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons:nth-child(2):after {
+  content: '';
+  width: 1px;
+  height: 70%;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 15%;
+  border-right: 2px dotted #d9dad9;
+}
+/* line 42, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon {
+  line-height: 130px;
+  display: inline-block;
+}
+/* line 45, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon img {
+  height: 70px;
+  width: 70px;
+}
+/* line 49, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon .icon-wrapper {
+  display: inline-block;
+  position: relative;
+}
+/* line 53, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon .footer-good-block-text {
+  line-height: 88px;
+  padding-left: 10px;
+  display: inline-block;
+  position: relative;
+}
+/* line 58, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon .footer-good-block-text h4 {
+  height: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #595959;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+/* line 67, ../../sass/footer_good_block.scss */
+.footer-good-block .footer-good-block-wrapper ul li.footer-good-block-icons .footer-good-block-icon .footer-good-block-text p {
+  margin: 0;
+  height: 25px;
+  font-size: 12px;
+  padding-top: 8px;
+  color: #808080;
+  text-align: left;
+}

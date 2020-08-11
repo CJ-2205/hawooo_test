@@ -1,0 +1,473 @@
+﻿@charset "UTF-8";
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/*=====折扣券上方大圖 coupon main-pic start=====*/
+.coupon-main-pic {
+    position: relative;
+}
+
+    .coupon-main-pic img {
+        display: block;
+        width: 100%;
+    }
+
+        .coupon-main-pic img:nth-child(2) {
+            cursor: pointer;
+        }
+
+/*=====折扣券上方大圖 coupon main-pic end=====*/
+/*=====折扣券按鈕 coupon main-btn start=====*/
+/*=====折扣券按鈕 coupon main-btn end=====*/
+.coupon-section {
+    width: 1180px;
+    margin: 5px auto;
+    padding: 0 0 10px 0;
+    background: white;
+}
+
+    .coupon-section li {
+        padding: 10px 0 5px 0;
+    }
+
+.coupon-catalog-title {
+    margin: 0;
+    height: 40px;
+    letter-spacing: .5em;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white;
+    background: #534A6C;
+}
+
+.coupon-wrapper {
+    position: relative;
+    margin: 10px 20px;
+    padding: 0 50px 0 0;
+    height: 165px;
+    width: calc(100% - 40px);
+    text-align: center;
+    background: white;
+}
+
+    .coupon-wrapper:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0px;
+        margin: auto;
+        width: 20px;
+        height: 100%;
+        background: -webkit-radial-gradient(white 15%, transparent 16%), -webkit-radial-gradient(white 15%, transparent 16%), #F9F3F7;
+        background: -moz-radial-gradient(white 15%, transparent 16%), -moz-radial-gradient(white 15%, transparent 16%), #F9F3F7;
+        background: radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), #F9F3F7;
+        background-repeat: repeat-y;
+        background-position: -30px -46px, -30px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .coupon-wrapper:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        margin: auto;
+        width: 20px;
+        height: 100%;
+        background: -webkit-radial-gradient(white 15%, transparent 16%), -webkit-radial-gradient(white 15%, transparent 16%), #F9F3F7;
+        background: -moz-radial-gradient(white 15%, transparent 16%), -moz-radial-gradient(white 15%, transparent 16%), #F9F3F7;
+        background: radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), #F9F3F7;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+.coupon-circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    z-index: 100;
+}
+
+.coupon-circle-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -15px;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    z-index: 100;
+}
+
+.coupon-title {
+    display: inline-block;
+    position: relative;
+    margin: 13px auto 4px auto;
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 25px;
+    color: #595959;
+}
+
+    .coupon-title:before {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: -3px;
+        width: 100%;
+        width: calc(100% + 20px);
+        height: 1px;
+        background: #d9dad9;
+    }
+
+    .coupon-title:after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        bottom: -3px;
+        width: 100%;
+        width: calc(100% + 20px);
+        height: 1px;
+        background: #d9dad9;
+    }
+
+.coupon-price {
+    margin: 0px 0;
+    font-size: 45px;
+    height: 50px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.coupon-bottom {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    padding: 5px 35px;
+    height: 65px;
+    width: calc(100% - 50px);
+    background: #f3f3f3;
+    text-align: left;
+    font-size: 13px;
+    color: #595959;
+    z-index: 99;
+    overflow: hidden;
+    /*&:before {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	bottom: -15px;
+  	left: 0px;
+  	margin: auto;
+  	width: 20px;
+  	height: 180px;
+  	background: -webkit-radial-gradient(white 15%, transparent 16%), -webkit-radial-gradient(white 15%, transparent 16%), #f3f3f3;
+  	background: -moz-radial-gradient(white 15%, transparent 16%), -moz-radial-gradient(white 15%, transparent 16%), #f3f3f3;
+  	background: radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+  	background-repeat: repeat-y;
+  	background-position: -30px -46px, -30px -14px;
+  	-webkit-background-origin: padding-box;
+  	background-origin: padding-box;
+  	-webkit-background-clip: border-box;
+  	background-clip: border-box;
+  	-webkit-background-size: 60px 60px;
+  	background-size: 60px 60px;
+  }*/
+    /*&:after {
+  	content: '';
+  	position: absolute;
+  	top: 0;
+  	bottom: -15px;
+  	right: 0px;
+  	margin: auto;
+  	width: 20px;
+  	height: 180px;
+  	background: -webkit-radial-gradient(white 15%, transparent 16%), -webkit-radial-gradient(white 15%, transparent 16%), #f3f3f3;
+  	background: -moz-radial-gradient(white 15%, transparent 16%), -moz-radial-gradient(white 15%, transparent 16%), #f3f3f3;
+  	background: radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#ffffff 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+  	background-repeat: repeat-y;
+  	background-position: -10px -46px, -10px -14px;
+  	-webkit-background-origin: padding-box;
+  	background-origin: padding-box;
+  	-webkit-background-clip: border-box;
+  	background-clip: border-box;
+  	-webkit-background-size: 60px 60px;
+  	background-size: 60px 60px;
+  }*/
+}
+
+.coupon-time {
+    margin: 0;
+    font-size: 1em;
+}
+
+/*=====商品折扣券 product-coupon start=====*/
+.product-coupon {
+    background: #cbcbcb;
+}
+
+    .product-coupon .coupon-price {
+        color: #EE5984;
+    }
+
+    .product-coupon .coupon-wrapper {
+        /*&:after {
+  background: -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), white;
+  background: -moz-radial-gradient(#cbcbcb 15%, transparent 16%), -moz-radial-gradient(#cbcbcb 15%, transparent 16%), white;
+  background: radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), white;
+  background-repeat: repeat-y;
+  background-position: -10px -46px, -10px -14px;
+  -webkit-background-origin: padding-box;
+  background-origin: padding-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-background-size: 60px 60px;
+  background-size: 60px 60px;
+  }*/
+    }
+
+        .product-coupon .coupon-wrapper:before {
+            background: -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), white;
+            background: -moz-radial-gradient(#cbcbcb 15%, transparent 16%), -moz-radial-gradient(#cbcbcb 15%, transparent 16%), white;
+            background: radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), white;
+            background-repeat: repeat-y;
+            background-position: -30px -39px, -30px -8px;
+            -webkit-background-origin: padding-box;
+            background-origin: padding-box;
+            -webkit-background-clip: border-box;
+            background-clip: border-box;
+            -webkit-background-size: 60px 60px;
+            background-size: 60px 60px;
+            z-index: 1;
+        }
+
+    .product-coupon .coupon-bottom:before {
+        background: -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#cbcbcb 15%, transparent 16%), -moz-radial-gradient(#cbcbcb 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -30px -46px, -30px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .product-coupon .coupon-bottom:after {
+        background: -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), -webkit-radial-gradient(#cbcbcb 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#cbcbcb 15%, transparent 16%), -moz-radial-gradient(#cbcbcb 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#cbcbcb 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .product-coupon .coupon-circle-right {
+        background: #EE5984;
+    }
+
+    .product-coupon .coupon-circle {
+        background: #EE5984;
+    }
+
+/*=====商品折扣券 product-coupon end=====*/
+/*=====類別折扣券 catalog-coupon start=====*/
+.catalog-coupon {
+    background: #FB5450;
+}
+
+    .catalog-coupon .coupon-price {
+        color: #FB5450;
+    }
+
+    .catalog-coupon .coupon-wrapper:before {
+        background: -webkit-radial-gradient(#FB5450 15%, transparent 16%), -webkit-radial-gradient(#FB5450 15%, transparent 16%), white;
+        background: -moz-radial-gradient(#FB5450 15%, transparent 16%), -moz-radial-gradient(#FB5450 15%, transparent 16%), white;
+        background: radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), white;
+        background-repeat: repeat-y;
+        background-position: -30px -39px, -30px -8px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+        z-index: 1;
+    }
+
+    .catalog-coupon .coupon-wrapper:after {
+        background: -webkit-radial-gradient(#FB5450 15%, transparent 16%), -webkit-radial-gradient(#FB5450 15%, transparent 16%), white;
+        background: -moz-radial-gradient(#FB5450 15%, transparent 16%), -moz-radial-gradient(#FB5450 15%, transparent 16%), white;
+        background: radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), white;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .catalog-coupon .coupon-bottom:before {
+        background: -webkit-radial-gradient(#FB5450 15%, transparent 16%), -webkit-radial-gradient(#FB5450 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#FB5450 15%, transparent 16%), -moz-radial-gradient(#FB5450 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -30px -46px, -30px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .catalog-coupon .coupon-bottom:after {
+        background: -webkit-radial-gradient(#FB5450 15%, transparent 16%), -webkit-radial-gradient(#FB5450 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#FB5450 15%, transparent 16%), -moz-radial-gradient(#FB5450 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#fb5450 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .catalog-coupon .coupon-circle-right {
+        background: #FB5450;
+    }
+
+    .catalog-coupon .coupon-circle {
+        background: #FB5450;
+    }
+
+/*=====類別折扣券 product-coupon end=====*/
+/*=====品牌折扣卷 brand-coupon start=====*/
+.brand-coupon {
+    background: #95D7DA;
+}
+
+    .brand-coupon .coupon-price {
+        color: #95D7DA;
+    }
+
+    .brand-coupon .coupon-wrapper:before {
+        background: -webkit-radial-gradient(#95D7DA 15%, transparent 16%), -webkit-radial-gradient(#95D7DA 15%, transparent 16%), white;
+        background: -moz-radial-gradient(#95D7DA 15%, transparent 16%), -moz-radial-gradient(#95D7DA 15%, transparent 16%), white;
+        background: radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), white;
+        background-repeat: repeat-y;
+        background-position: -30px -39px, -30px -8px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+        z-index: 10;
+    }
+
+    .brand-coupon .coupon-wrapper:after {
+        background: -webkit-radial-gradient(#95D7DA 15%, transparent 16%), -webkit-radial-gradient(#95D7DA 15%, transparent 16%), white;
+        background: -moz-radial-gradient(#95D7DA 15%, transparent 16%), -moz-radial-gradient(#95D7DA 15%, transparent 16%), white;
+        background: radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), white;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .brand-coupon .coupon-bottom:before {
+        background: -webkit-radial-gradient(#95D7DA 15%, transparent 16%), -webkit-radial-gradient(#95D7DA 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#95D7DA 15%, transparent 16%), -moz-radial-gradient(#95D7DA 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -30px -46px, -30px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .brand-coupon .coupon-bottom:after {
+        background: -webkit-radial-gradient(#95D7DA 15%, transparent 16%), -webkit-radial-gradient(#95D7DA 15%, transparent 16%), #f3f3f3;
+        background: -moz-radial-gradient(#95D7DA 15%, transparent 16%), -moz-radial-gradient(#95D7DA 15%, transparent 16%), #f3f3f3;
+        background: radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), radial-gradient(#95d7da 15%, rgba(0, 0, 0, 0) 16%), #f3f3f3;
+        background-repeat: repeat-y;
+        background-position: -10px -46px, -10px -14px;
+        -webkit-background-origin: padding-box;
+        background-origin: padding-box;
+        -webkit-background-clip: border-box;
+        background-clip: border-box;
+        -webkit-background-size: 60px 60px;
+        background-size: 60px 60px;
+    }
+
+    .brand-coupon .coupon-circle-right {
+        background: #95D7DA;
+    }
+
+    .brand-coupon .coupon-circle {
+        background: #95D7DA;
+    }
+
+/*=====品牌折扣卷 brand-coupon end=====*/
+.phone-take {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: #EE5984;
+    color: #ffffff;
+    width: 50px;
+    height: 100%;
+    line-height: 50px;
+    letter-spacing: .5em;
+    border-left: 1px dashed #565656;
+    border: 1px dashed;
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
+    overflow: hidden;
+}

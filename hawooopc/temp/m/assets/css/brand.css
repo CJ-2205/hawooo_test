@@ -1,0 +1,455 @@
+
+/*Image Slider Div (brand.html)*/
+
+.container {
+    margin: 0;
+}
+
+#titleDiv {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    background: #fff;
+    width: 100%;
+    border-bottom: 5px solid #efefef;
+}
+
+#titleDiv * {
+    display: inline-block;
+
+}
+
+#heartImg {
+
+    max-width: 12%;
+    height: auto;
+}
+
+#title {
+    background: #fff;
+    width: 100%;
+    padding-left: 3%;
+}
+
+#title * {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0;
+    line-height: 50px;
+    color: #83b8b2;
+}
+
+#brandTitle {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Helvetica";
+    letter-spacing: 2px;
+    width: 80%;
+}
+
+#burger {
+    float: right;
+    padding: 0 0% 0 5%;
+}
+
+#burger i {
+    color: #383838;
+    font-size: 140%;
+}
+
+
+
+/*slider section*/
+
+#sliderContainer {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    max-height: 14em;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.sliderBtn {
+    position: absolute;
+    z-index: 1;
+    background: transparent;
+    cursor: pointer;
+    height: 100%;
+    width: 2em;
+}
+
+.btnArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(168, 168, 168, 0.8);
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    font-size: 90%;
+}
+
+.btnArrow:active {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(56, 56, 56, 0.8);
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    font-size: 90%;
+}
+
+.btnArrow * {
+    color: #fff;
+    line-height: 1.5em;
+}
+
+
+#btnArrowPrev {
+    right: 0;
+}
+
+#btnLeftIcon {
+    padding-left: 20%;
+}
+
+#btnRightIcon {
+    padding-left: 30%;
+}
+
+
+
+
+#goPrevBtn {
+    left: 0;
+    background: transparent;
+    /*background: -webkit-linear-gradient(right, rgba(234,234,234,0),rgba(234,234,234,1));
+    background: -o-linear-gradient(left, rgba(234,234,234,0), rgba(234,234,234,1));
+    background: -moz-linear-gradient(left, rgba(234,234,234,0), rgba(234,234,234,1));
+    background: linear-gradient(to left, rgba(234,234,234,0), rgba(234,234,234,1));*/
+}
+
+
+#goNextBtn {
+    right: 0;
+    background: transparent;
+    /*background: -webkit-linear-gradient(left, rgba(234,234,234,0),rgba(234,234,234,1));
+    background: -o-linear-gradient(right, rgba(234,234,234,0), rgba(234,234,234,1));
+    background: -moz-linear-gradient(right, rgba(234,234,234,0), rgba(234,234,234,1));
+    background: linear-gradient(to right, rgba(234,234,234,0), rgba(234,234,234,1));*/
+}
+
+
+#pagesStripe {
+    width: 1000%;
+    max-height: 14em;
+    display: table;
+    table-layout: fixed;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+
+.pages {
+    width: 100%;
+    max-height: 14em;
+    display: table-cell;
+    margin: 0;
+    padding: 0 2em;
+}
+
+.pages * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.brand {
+    float: left;
+    display: block;
+    background: white;
+    width: 50%;
+    max-height: 7em;
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.brandLogo {
+    max-width: 100%;
+    max-height: 7em;
+    margin: 0 auto;
+}
+
+.brand a {
+    float: left;
+    display: block;
+    text-align: center;
+}
+
+.imgDiv {
+    margin-top: 0.5em;
+    display: inline-block;
+}
+
+
+
+
+
+
+
+/* 手機版 20161229 Amanda*/
+.brandBack{
+    position: absolute;
+    bottom:0;
+    padding:0 0 0 15px;
+    overflow: hidden;
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color:#3a3a3a;
+    background: #fff;
+    opacity:0.8;
+}
+
+.brandBox{
+    width: 95%;
+    margin:20px 0 0 0;
+    padding:0;
+    border:1px #efefef solid;
+    background: #fff;
+}
+
+
+
+.brandImg{
+    position: relative;
+    width: 100%;
+    padding:0;
+    margin:0;
+}
+.brandImg img{
+    width:100%;
+}
+
+.gallery-title {
+    font-size: 14px;
+    min-height: 40px;
+    border-bottom: 1px #e4e3e3 solid;
+}
+
+.gallery-title a {
+    font-size: 14px;
+    line-height: 12px;
+    color: #9e9e9d;
+}
+
+
+.gallery-title a:hover{
+    font-size: 14px;
+    color: #9e9e9d;
+    line-height: 12px;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.gallery-detail {
+    padding-top: 8px;
+    height: 34px;
+    color:#fd0303;
+    font-size: 18px;
+}
+
+.money_txt_style {
+    color: #f54954;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.brandBox{
+    width:95%;
+    margin:0 10px 15px 0;
+    padding:0;
+    border:1px #efefef solid;
+}
+
+.brandProdBox{
+    margin:10px 0 5px 0;
+    padding:0;
+}
+.brandProdBox li{
+    width: 50%;
+    float: left;
+    margin:0;
+    padding:0;
+}
+.brandPanel{
+    margin:0;
+    padding:8px;
+    box-shadow:none;
+    border:0;
+}
+
+
+
+
+.brand-listBox{
+    float:left;
+    display:block;
+    margin:0;
+    padding:15px 0 0 0;
+    width:100%;
+    height:auto;
+    background: #fff;
+    border:1px #efefef solid;
+}
+.brand-listBox li{
+    float:left;
+    display:block;
+    margin:10px 0 0 0;
+    padding:5px 0 10px 0;
+    width:100%;
+    height:auto;
+    background:#ffffff;
+    border-bottom:2px dotted #efefef;
+    
+}
+.noline{
+    float:left;
+    display:block;
+    margin:0 0 10px 0;
+    padding:5px 0 10px 0;
+    width:100%;
+    height:auto;
+    background:#ffffff; 
+    border-bottom:0 !important;
+}
+.brand-listBox li img{
+    float:left;
+    display:block;
+    margin:0 10px 0 0;
+    padding:2%;
+    width:35%;
+    height:auto;
+
+}
+.brand-listBox li .productInfor{
+    float:left;
+    display:block;
+    margin:10px 0 0 0;
+    padding:0;
+    width:55%;
+    height:auto;
+}
+.brand-listBox li .productInfor .hotTitle{
+    float:left;
+    display:block;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:auto;
+    font-size:14px;
+    color:#000;
+    line-height:15px;
+}
+
+.brand-listBox li .productInfor .hotText{
+    float:left;
+    display:block;
+    margin:10px 0 0 0;
+    padding:0;
+    width:100%;
+    height:auto;
+    font-size:15px;
+    line-height: 15px;
+    color:#fe6483;
+}
+.brand-listBox li .productInfor .hotLeft{
+    float:left;
+    display:block;
+    margin:10px 0 0 0;
+    padding:0;
+    width:100%;
+    height:auto;
+}
+.brand-listBox li .productInfor .hotPrcieB{
+    float:left;
+    display:block;
+    margin:0 0 5% 0;
+    padding:0;
+    width:100%;
+    height:auto;
+    font-size:110%;
+    color:#ee1867;
+    font-weight:bold;
+    line-height:1.2em;
+}
+.brand-listBox li .productInfor .hotPrcieS{
+    float:left;
+    display:block;
+    margin:3px 0 1px 0;
+    padding:0;
+    width:100%;
+    height:auto;
+    font-size:8px;
+    color:#666666;
+    text-decoration:line-through;
+    line-height:1.2em;
+}
+.brand-listBox li .productInfor .hotCartBut{
+    float:left;
+    display:block;
+    margin:0 0 10px 0; 
+    padding:0;
+    width:120px;
+    height: 35px;
+    line-height: 35px;
+    background-color:#00d1e2;
+    box-shadow:1px 1px 1px rgba(20%,20%,40%,0.5);
+    border-radius:5px;
+    color:#ffffff;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+}
+.brand-listBox li .productInfor .hotCartBut a{
+    float:right;
+    display:block;
+    margin:0; 
+    padding:0;
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    background-color:#00d1e2;
+    box-shadow:3px 3px 2px rgba(20%,20%,40%,0.5);
+    border-radius:5px;
+    color:#ffffff;
+    font-size:100%;
+    font-weight:bold;
+    text-align:center;
+}
+.brand-listBox li .productInfor .hotCartBut a:hover{
+    float:right;
+    display:block;
+    margin:0; 
+    padding:0;
+    width:100%;
+    height: 35px;
+    line-height: 35px;
+    background-color:#fd6868;
+    border-radius:5px;
+    color:#ffffff;
+    font-size:100%;
+    font-weight:bold;
+    text-align:center;
+}

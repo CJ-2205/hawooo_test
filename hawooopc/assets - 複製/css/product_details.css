@@ -1,0 +1,1016 @@
+﻿@charset "UTF-8";
+/*大片背景*/
+/*分隔線*/
+/*draktext*/
+/*首頁主要粉紅色*/
+/*首頁上方nav被hover顏色*/
+/*header語言＆購物車text顏色*/
+/*header語言＆購物車hover顏色*/
+/*內文說明文字*/
+/*側邊箭頭顏色*/
+/*側邊導覽列*/
+/*台灣代購 商品細項 標題顏色*/
+/*猜你喜歡按鈕*/
+/*猜你喜歡按鈕 hover*/
+/*名人推薦標籤*/
+/*名人推薦標籤*/
+/*首頁猜你喜歡綠色新品tag*/
+/*＝＝＝商品＝＝＝*/
+/*新品tag*/
+/*免運tag*/
+/*強調文字的粉色*/
+/*解說文字藍*/
+/*賣光拉*/
+/*售價橘*/
+/*售價背景*/
+/*喜歡按鈕*/
+/*加入購物車按鈕*/
+/*立刻買*/
+/*＝＝＝購物車＝＝＝*/
+/*購物車步驟灰*/
+/*login*/
+/*product breadcrumb（商品頁麵包屑） star*/
+/* line 5, ../../sass/product_details.scss */
+.product-breadcrumb-section {
+    text-align: center;
+}
+    /* line 7, ../../sass/product_details.scss */
+    .product-breadcrumb-section .product-breadcrumb-wrapper {
+        display: inline-block;
+        height: 30px;
+        padding: 0;
+        margin: 10px auto;
+        color: #595959;
+    }
+        /* line 13, ../../sass/product_details.scss */
+        .product-breadcrumb-section .product-breadcrumb-wrapper ul {
+            padding: 0 0 0 30px;
+            margin: 0;
+        }
+            /* line 16, ../../sass/product_details.scss */
+            .product-breadcrumb-section .product-breadcrumb-wrapper ul li.product-breadcrumb {
+                line-height: 30px;
+                padding: 0 30px 0 0;
+                position: relative;
+            }
+                /* line 20, ../../sass/product_details.scss */
+                .product-breadcrumb-section .product-breadcrumb-wrapper ul li.product-breadcrumb:after {
+                    content: '>';
+                    width: 10px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                }
+                /* line 28, ../../sass/product_details.scss */
+                .product-breadcrumb-section .product-breadcrumb-wrapper ul li.product-breadcrumb:nth-child(3):after {
+                    display: none;
+                }
+                /* line 31, ../../sass/product_details.scss */
+                .product-breadcrumb-section .product-breadcrumb-wrapper ul li.product-breadcrumb a {
+                    color: black;
+                }
+                    /* line 33, ../../sass/product_details.scss */
+                    .product-breadcrumb-section .product-breadcrumb-wrapper ul li.product-breadcrumb a:hover {
+                        color: #d9dad9;
+                    }
+
+/* line 43, ../../sass/product_details.scss */
+.product-pic-gift-container {
+    padding: 0;
+}
+
+/*products pic & gift(商品照片＆滿額贈禮區塊)*/
+/* line 49, ../../sass/product_details.scss */
+.product-pic-gift-wrapper {
+    padding: 0 10px 0 0;
+    margin: 0;
+    /*看更多商品照片slider*/
+    /*gift (滿額贈禮)*/
+}
+    /* line 52, ../../sass/product_details.scss */
+    .product-pic-gift-wrapper .product-pic-wrapper {
+        background: white;
+        padding: 10px;
+    }
+        /* line 55, ../../sass/product_details.scss */
+        .product-pic-gift-wrapper .product-pic-wrapper .product-pic {
+            position: relative;
+        }
+            /* line 57, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .product-pic-wrapper .product-pic img {
+                width: 100%;
+                height: auto;
+            }
+            /* line 61, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .product-pic-wrapper .product-pic .love-button {
+                display: inline;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: rgba(220, 220, 220, 0.5);
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                transition: .3s;
+                text-align: center;
+                line-height: 50px;
+                cursor: pointer;
+            }
+                /* line 74, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-pic-wrapper .product-pic .love-button:hover span.pink-o {
+                    opacity: 1;
+                    transition: .3s;
+                }
+                /* line 78, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-pic-wrapper .product-pic .love-button span.pink-o {
+                    opacity: 0;
+                    color: #FF7C81;
+                    transition: .3s;
+                }
+                    /* line 82, ../../sass/product_details.scss */
+                    .product-pic-gift-wrapper .product-pic-wrapper .product-pic .love-button span.pink-o.show {
+                        opacity: 1;
+                        transition: .3s;
+                    }
+                /* line 87, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-pic-wrapper .product-pic .love-button span {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    line-height: 50px;
+                    font-size: 20px;
+                    color: white;
+                }
+    /* line 101, ../../sass/product_details.scss */
+    .product-pic-gift-wrapper .more-products-pic-slider {
+        display: block;
+        height: 70px;
+        margin: 10px 0 0 0;
+        position: relative;
+        overflow: hidden;
+    }
+        /* line 107, ../../sass/product_details.scss */
+        .product-pic-gift-wrapper .more-products-pic-slider span.more-products-pic-control {
+            width: 20px;
+            height: 100%;
+            line-height: 70px;
+            text-align: center;
+            font-size: 1.3em;
+            color: white;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            z-index: 10;
+            display: none;
+            cursor: default;
+        }
+            /* line 119, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .more-products-pic-slider span.more-products-pic-control:hover {
+                background: rgba(0, 0, 0, 0.6);
+            }
+            /* line 122, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .more-products-pic-slider span.more-products-pic-control.more-products-pic-right {
+                top: 0;
+                right: 0;
+            }
+        /* line 127, ../../sass/product_details.scss */
+        .product-pic-gift-wrapper .more-products-pic-slider ul {
+            height: 100%;
+            position: absolute;
+        }
+            /* line 130, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .more-products-pic-slider ul li {
+                display: inline-block;
+                height: 70px;
+                width: 70px;
+                background: #ccc;
+                margin: 0 5px 0 0;
+                cursor: pointer;
+            }
+                /* line 137, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .more-products-pic-slider ul li:last-child {
+                    margin-right: 0;
+                }
+                /* line 140, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .more-products-pic-slider ul li img {
+                    width: 100%;
+                    height: 100%;
+                }
+    /* line 148, ../../sass/product_details.scss */
+    .product-pic-gift-wrapper .product-gift-wrapper {
+        background: white;
+        display: block;
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+        /* line 153, ../../sass/product_details.scss */
+        .product-pic-gift-wrapper .product-gift-wrapper .product-gift-title {
+            height: 40px;
+            line-height: 40px;
+            font-size: 1.1em;
+            letter-spacing: .1em;
+            text-align: center;
+            color: white;
+            background: #95D7DA;
+        }
+        /* line 163, ../../sass/product_details.scss */
+        .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item {
+            display: inline-block;
+            border: 1px solid #95D7DA;
+            border-top: 0;
+            padding: 0 0 5px 0;
+            /*滿額贈上方ＴＡＧ＆標題*/
+            /*滿額贈下方圖片＆內容*/
+        }
+            /* line 169, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top {
+                height: 40px;
+                padding: 0;
+            }
+                /* line 172, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top .product-gift-item-tag {
+                    padding: 0;
+                    height: 100%;
+                    position: relative;
+                    text-align: center;
+                }
+                    /* line 177, ../../sass/product_details.scss */
+                    .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top .product-gift-item-tag span {
+                        height: 30px;
+                        width: 80%;
+                        padding: 2px 10px;
+                        display: inline-block;
+                        text-align: center;
+                        letter-spacing: .1em;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                        /* line 190, ../../sass/product_details.scss */
+                        .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top .product-gift-item-tag span.price-qualify {
+                            border: 2px solid #95D7DA;
+                            color: #95D7DA;
+                        }
+                        /* line 194, ../../sass/product_details.scss */
+                        .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top .product-gift-item-tag span.price-not-qualify {
+                            border: 2px solid #FB5450;
+                            color: #FB5450;
+                        }
+                /* line 200, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-top .product-gift-item-title {
+                    padding: 0;
+                    line-height: 40px;
+                    font-size: 1.1em;
+                }
+            /* line 208, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-pic {
+                text-align: center;
+                position: absolute;
+                height: 100%;
+            }
+                /* line 212, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-pic img {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 100%;
+                    height: auto;
+                    max-width: 80px;
+                }
+            /* line 224, ../../sass/product_details.scss */
+            .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-text {
+                line-height: 20px;
+                min-height: 80px;
+                color: #808080;
+            }
+                /* line 228, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-text h4 {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+                /* line 233, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-text h5 {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+                /* line 238, ../../sass/product_details.scss */
+                .product-pic-gift-wrapper .product-gift-wrapper ul li.product-gift-item .product-gift-item-bottom .product-gift-text p {
+                    padding: 0;
+                    margin: 0;
+                    font-weight: normal;
+                }
+
+/*products details(商品細節)*/
+/* line 251, ../../sass/product_details.scss */
+.product-details-wrapper {
+    background: white;
+    padding: 10px 0 0 10px;
+}
+    /* line 254, ../../sass/product_details.scss */
+    .product-details-wrapper .product-details-content {
+        background: white;
+        padding: 0 15px 15px 15px;
+        /*tag 標籤（ha幣、免郵、原價....等等）*/
+        /*ptoducts title(商品標題)*/
+        /*ptoducts content(商品內容)*/
+        /*specification & qty（商品規格和數量）*/
+        /*product price(商品價格)*/
+        /*product button商品按鈕*/
+    }
+        /* line 258, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content .product-tag-wrapper {
+            height: 35px;
+            padding: 0;
+        }
+            /* line 261, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-tag-wrapper span.products-tag {
+                height: 30px;
+                font-size: 14px;
+                font-weight: 600;
+                color: #595959;
+                display: inline-block;
+                margin: 5px 20px 5px 0;
+                position: relative;
+            }
+                /* line 269, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-tag-wrapper span.products-tag img {
+                    width: 20px;
+                    height: 20px;
+                    margin: 0 5px 3px 0;
+                }
+                /* line 274, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-tag-wrapper span.products-tag p {
+                    margin: 0;
+                    line-height: 20px;
+                    display: inline-block;
+                    color: #f7588c;
+                }
+                /* line 280, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-tag-wrapper span.products-tag i {
+                    margin-left: 5px;
+                    font-size: 12px;
+                    color: #d9dad9;
+                }
+                    /* line 284, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-tag-wrapper span.products-tag i:hover {
+                        color: #808080;
+                    }
+        /* line 291, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content .product-title {
+            padding: 15px 0 15px 5px;
+            border-bottom: 1px solid #d9dad9;
+            border-top: 1px solid #d9dad9;
+        }
+            /* line 295, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-title h5 {
+                padding: 0;
+                margin: 0;
+            }
+                /* line 298, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-title h5 a {
+                    color: #ff7c81;
+                    text-decoration: underline;
+                }
+                    /* line 301, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-title h5 a:hover {
+                        color: #f7588c;
+                    }
+            /* line 306, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-title h4 {
+                width: 80%;
+                padding: 0;
+                margin: 7px 0;
+                font-size: 1.5em;
+                color: #595959;
+            }
+            /* line 313, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-title .p-stars {
+                height: 25px;
+                line-height: 25px;
+            }
+                /* line 316, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-title .p-stars ul {
+                    font-size: 18px;
+                    color: #FEC126;
+                    display: inline-block;
+                }
+                    /* line 320, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-title .p-stars ul li {
+                        padding: 0;
+                    }
+                /* line 324, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-title .p-stars p {
+                    font-size: 12px;
+                    display: inline-block;
+                    margin-left: 10px;
+                    color: #808080;
+                    cursor: pointer;
+                }
+                    /* line 330, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-title .p-stars p:hover {
+                        text-decoration: underline;
+                    }
+        /* line 337, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content .product-description {
+            padding: 15px 0 15px 30px;
+            border-top: 1px solid #d9dad9;
+            /*上方強調部分*/
+            /*說明list*/
+            /*  購買前請記得在下方選規格  */
+        }
+            /* line 341, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-description section.product-description-title {
+                background: white;
+                position: relative;
+                margin: 0 0 15px 0;
+            }
+                /* line 345, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-description section.product-description-title .product-description-line {
+                    display: inline;
+                    width: 5px;
+                    height: 100%;
+                    background: #E6006F;
+                    position: absolute;
+                    top: 0;
+                }
+                /* line 353, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-description section.product-description-title ul {
+                    padding: 0 0 0 15px;
+                }
+                    /* line 355, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-description section.product-description-title ul li.description-strong {
+                        font-size: 16px;
+                        padding: 2.5px 0;
+                        font-weight: bold;
+                    }
+                        /* line 359, ../../sass/product_details.scss */
+                        .product-details-wrapper .product-details-content .product-description section.product-description-title ul li.description-strong.red {
+                            color: #E6006F;
+                        }
+            /* line 366, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-description section.product-description-list {
+                padding: 0 0 0 50px;
+                margin-bottom: 15px;
+                color: #595959;
+            }
+                /* line 370, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-description section.product-description-list .product-description-text {
+                    font-weight: bold;
+                    list-style-type: disc;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+                    /* line 375, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content .product-description section.product-description-list .product-description-text span {
+                        color: #E6006F;
+                    }
+            /* line 381, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content .product-description section.product-description-wranning {
+                padding: 0 0 0 30px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+                /* line 385, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content .product-description section.product-description-wranning p {
+                    margin: 0;
+                }
+        /* line 391, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content section.product-spec-qty {
+            display: inline-block;
+            border-bottom: 1px solid #d9dad9;
+            padding: 5px 0;
+            width: 100%;
+        }
+            /* line 395, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content section.product-spec-qty .product-spec {
+                display: inline-block;
+            }
+                /* line 398, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-spec-qty .product-spec .product-spec-content li.product-spec-item {
+                    height: 32px;
+                    padding: 5px 10px;
+                    border: 1px solid #d9dad9;
+                    margin: 5px 5px;
+                    cursor: pointer;
+                }
+                    /* line 404, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-spec-qty .product-spec .product-spec-content li.product-spec-item.add {
+                        border: 1px solid #ff7c81;
+                        color: #ff7c81;
+                    }
+                    /* line 408, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-spec-qty .product-spec .product-spec-content li.product-spec-item:hover {
+                        border: 1px solid #ff7c81;
+                        color: #ff7c81;
+                    }
+                    /* line 412, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-spec-qty .product-spec .product-spec-content li.product-spec-item.sold-out {
+                        color: #ccc;
+                        border: 1px solid #ccc;
+                        cursor: not-allowed;
+                    }
+            /* line 421, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content section.product-spec-qty .product-qty .product-qty-content {
+                display: inline-block;
+                font-size: 1.3em;
+            }
+                /* line 424, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-spec-qty .product-qty .product-qty-content ul.qty-controler {
+                    height: 35px;
+                    margin: 5px;
+                    display: inline-block;
+                }
+                    /* line 428, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-spec-qty .product-qty .product-qty-content ul.qty-controler li {
+                        height: 35px;
+                        width: 35px;
+                        border: 1px solid #d9dad9;
+                        text-align: center;
+                        line-height: 35px;
+                        cursor: pointer;
+                        -webkit-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                    }
+                        /* line 436, ../../sass/product_details.scss */
+                        .product-details-wrapper .product-details-content section.product-spec-qty .product-qty .product-qty-content ul.qty-controler li:nth-child(2) {
+                            width: 70px;
+                            color: #FB5450;
+                            border-left: none;
+                            border-right: none;
+                            cursor: default;
+                        }
+            /* line 447, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content section.product-spec-qty .product-spec-qty-titile {
+                height: 48px;
+                line-height: 48px;
+                font-size: 1em;
+                color: #595959;
+                padding: 0;
+            }
+        /* line 456, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content section.product-price-section {
+            display: inline-block;
+            border-bottom: 1px solid #d9dad9;
+            padding: 10px 0;
+        }
+            /* line 460, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content section.product-price-section .product-price-content {
+                display: inline-block;
+                width: 700px;
+                height: 80px;
+                padding-left: 25px;
+                line-height: 80px;
+                background: #F9F3F7;
+            }
+                /* line 467, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-price-section .product-price-content .product-price-title {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #595959;
+                    display: inline-block;
+                    height: 29px;
+                    color: #FB5450;
+                }
+                /* line 475, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-price-section .product-price-content .product-price {
+                    font-size: 35px;
+                    font-weight: bold;
+                    color: #FB5450;
+                    display: inline-block;
+                }
+                    /* line 480, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-price-section .product-price-content .product-price s.original-price {
+                        font-size: 30px;
+                        margin-left: 10px;
+                        color: #d9dad9;
+                    }
+                /* line 486, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-price-section .product-price-content .discount {
+                    display: inline-block;
+                    line-height: 30px;
+                    font-size: 12px;
+                    margin-left: 10px;
+                }
+                    /* line 491, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-price-section .product-price-content .discount p {
+                        line-height: 0;
+                        display: block;
+                        font-size: 14px;
+                        color: #FB5450;
+                        padding: 0;
+                        margin: 0;
+                    }
+                    /* line 499, ../../sass/product_details.scss */
+                    .product-details-wrapper .product-details-content section.product-price-section .product-price-content .discount s {
+                        color: #808080;
+                    }
+        /* line 506, ../../sass/product_details.scss */
+        .product-details-wrapper .product-details-content section.product-button-section {
+            margin: 10px 0;
+        }
+            /* line 508, ../../sass/product_details.scss */
+            .product-details-wrapper .product-details-content section.product-button-section li {
+                margin: 0 20px 0 0;
+            }
+                /* line 510, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-button-section li i {
+                    margin-right: 5px;
+                }
+                /* line 513, ../../sass/product_details.scss */
+                .product-details-wrapper .product-details-content section.product-button-section li button:focus {
+                    outline: none;
+                }
+/* line 516, ../../sass/product_details.scss */
+.product-button {
+    line-height: 45px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+/* line 524, ../../sass/product_details.scss */
+.add-to-cart-btn {
+    width: 180px;
+    color: rgba(255, 0, 95, 0.3);
+    background: rgba(255, 0, 95, 0.1);
+    transition: .3s;
+    outline: 1px solid rgba(255, 0, 95, 0.3);
+}
+    /* line 530, ../../sass/product_details.scss */
+    .add-to-cart-btn:focus {
+        outline: 1px solid rgba(255, 0, 95, 0.3);
+        background: rgba(255, 0, 95, 0.2);
+    }
+    /* line 534, ../../sass/product_details.scss */
+    .add-to-cart-btn:hover {
+        background: rgba(255, 0, 95, 0.2);
+    }
+
+/* line 538, ../../sass/product_details.scss */
+.buy-now-btn {
+    width: 180px;
+    color: white;
+    background: #FF005B;
+    transition: .3s;
+}
+    /* line 543, ../../sass/product_details.scss */
+    .buy-now-btn:hover {
+        background: #E50052;
+        transition: .3s;
+    }
+
+/*加購*/
+/* line 555, ../../sass/product_details.scss */
+.additional-purchase-wrapper {
+    display: inline-block;
+    margin-top: 25px;
+    position: relative;
+}
+    /* line 559, ../../sass/product_details.scss */
+    .additional-purchase-wrapper:before {
+        content: '';
+        display: inline-block;
+        width: 795px;
+        height: 20px;
+        background: #f0f0f0;
+        position: absolute;
+        top: -25px;
+        left: -15px;
+    }
+    /* line 569, ../../sass/product_details.scss */
+    .additional-purchase-wrapper .additional-purchase-title {
+        height: 40px;
+        line-height: 40px;
+        color: #595959;
+        font-size: 14px;
+    }
+        /* line 574, ../../sass/product_details.scss */
+        .additional-purchase-wrapper .additional-purchase-title i {
+            margin-right: 10px;
+        }
+    /* line 579, ../../sass/product_details.scss */
+    .additional-purchase-wrapper .additional-purchase-content ul {
+        height: 100%;
+    }
+        /* line 581, ../../sass/product_details.scss */
+        .additional-purchase-wrapper .additional-purchase-content ul li {
+            padding: 5px 0;
+            height: 100px;
+            border-bottom: 1px solid #d9dad9;
+        }
+            /* line 585, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li:last-child {
+                border-bottom: none;
+            }
+            /* line 588, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li:nth-last-child(2) {
+                border-bottom: none;
+            }
+            /* line 591, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li .additional-checkbox-wrapper {
+                height: 100%;
+                position: relative;
+            }
+                /* line 594, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-checkbox-wrapper label {
+                    width: 20px;
+                    height: 20px;
+                    border: 2px solid #d9dad9;
+                    border-radius: 2px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    cursor: pointer;
+                }
+                    /* line 605, ../../sass/product_details.scss */
+                    .additional-purchase-wrapper .additional-purchase-content ul li .additional-checkbox-wrapper label.active {
+                        border: 2px solid #FB5450;
+                    }
+                        /* line 607, ../../sass/product_details.scss */
+                        .additional-purchase-wrapper .additional-purchase-content ul li .additional-checkbox-wrapper label.active:before {
+                            content: '✓';
+                            color: #FB5450;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            right: 3px;
+                            margin: auto;
+                        }
+                /* line 618, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-checkbox-wrapper input {
+                    display: none;
+                }
+            /* line 622, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li .additional-pic {
+                height: 100%;
+                padding: 4px 0;
+            }
+                /* line 625, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-pic img {
+                    width: 100%;
+                    height: 100%;
+                }
+            /* line 630, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li .additional-text {
+                padding: 0 0 0 5px;
+                height: 50%;
+            }
+                /* line 633, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-text h4 {
+                    color: #595959;
+                    height: 40px;
+                    overflow: hidden;
+                    font-weight: normal;
+                }
+            /* line 640, ../../sass/product_details.scss */
+            .additional-purchase-wrapper .additional-purchase-content ul li .additional-price {
+                padding: 0 0 5px 5px;
+                height: 50%;
+            }
+                /* line 643, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-price h5 {
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 0.9em;
+                    font-weight: normal;
+                    color: #FB5450;
+                }
+                    /* line 650, ../../sass/product_details.scss */
+                    .additional-purchase-wrapper .additional-purchase-content ul li .additional-price h5:before {
+                        content: '';
+                        display: inline-block;
+                        height: 100%;
+                        vertical-align: text-bottom;
+                    }
+                    /* line 656, ../../sass/product_details.scss */
+                    .additional-purchase-wrapper .additional-purchase-content ul li .additional-price h5 span {
+                        margin-left: 2px;
+                        font-weight: bold;
+                    }
+                /* line 661, ../../sass/product_details.scss */
+                .additional-purchase-wrapper .additional-purchase-content ul li .additional-price span {
+                    font-size: 1.3em;
+                    height: 100%;
+                    position: relative;
+                }
+                    /* line 665, ../../sass/product_details.scss */
+                    .additional-purchase-wrapper .additional-purchase-content ul li .additional-price span ul {
+                        height: auto;
+                        width: 100px;
+                        display: inline;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                        /* line 674, ../../sass/product_details.scss */
+                        .additional-purchase-wrapper .additional-purchase-content ul li .additional-price span ul li {
+                            height: 30px;
+                            width: 25px;
+                            border: 1px solid #d9dad9;
+                            text-align: center;
+                            line-height: 18px;
+                            cursor: pointer;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                        }
+                            /* line 682, ../../sass/product_details.scss */
+                            .additional-purchase-wrapper .additional-purchase-content ul li .additional-price span ul li:nth-child(2) {
+                                width: 45px;
+                                color: #FB5450;
+                                border-left: none;
+                                border-right: none;
+                                cursor: default;
+                            }
+
+/*products body description (商品中間說明區塊)*/
+/* line 701, ../../sass/product_details.scss */
+.body-description-wrapper .body-description {
+    padding: 0;
+    margin: 20px auto;
+}
+    /* line 704, ../../sass/product_details.scss */
+    .body-description-wrapper .body-description .body-description-tabs {
+        background: white;
+    }
+        /* line 706, ../../sass/product_details.scss */
+        .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav {
+            border: none;
+            background: red;
+        }
+            /* line 709, ../../sass/product_details.scss */
+            .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li {
+                padding: 0;
+                margin: 0;
+                background: #C2C0C0;
+                border: 1px solid #ccc;
+            }
+                /* line 715, ../../sass/product_details.scss */
+                .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li:nth-child(2n) {
+                    background: #dedede;
+                    border-left: none;
+                }
+                /* line 719, ../../sass/product_details.scss */
+                .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li:nth-child(3) {
+                    background: #C2C0C0;
+                    border-left: none;
+                }
+                /* line 723, ../../sass/product_details.scss */
+                .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li.am-active {
+                    border-bottom: 1px solid white;
+                }
+                    /* line 726, ../../sass/product_details.scss */
+                    .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li.am-active a {
+                        background: white;
+                    }
+                /* line 730, ../../sass/product_details.scss */
+                .body-description-wrapper .body-description .body-description-tabs .am-tabs-nav li a {
+                    color: black;
+                    text-align: center;
+                    margin: 0;
+                    padding: 10px 5px;
+                    border: 0;
+                }
+        /* line 739, ../../sass/product_details.scss */
+        .body-description-wrapper .body-description .body-description-tabs .am-tabs-bd {
+            padding: 0px;
+            border: 1px solid #ccc;
+            border-top: none;
+            text-align: left;
+        }
+
+/*商品資訊圖大小*/
+/* line 751, ../../sass/product_details.scss */
+#body-description-tab1 img {
+    width: 100%;
+    height: auto;
+}
+
+/*商品評價*/
+/* line 760, ../../sass/product_details.scss */
+#body-description-tab2 article {
+    margin: 30px 0;
+}
+    /* line 762, ../../sass/product_details.scss */
+    #body-description-tab2 article:nth-child(1) {
+        margin-top: 20px;
+    }
+    /* line 765, ../../sass/product_details.scss */
+    #body-description-tab2 article:nth-last-child(1) {
+        margin-bottom: 20px;
+    }
+    /* line 768, ../../sass/product_details.scss */
+    #body-description-tab2 article p {
+        width: 80px;
+        float: left;
+        color: #595959;
+        display: inline-block;
+        text-align: right;
+        margin: 8px 0 0 0;
+    }
+    /* line 776, ../../sass/product_details.scss */
+    #body-description-tab2 article .am-comment-main {
+        margin-left: 100px;
+    }
+/* line 780, ../../sass/product_details.scss */
+#body-description-tab2 .am-comment-hd {
+    padding: 0 50px;
+}
+    /* line 782, ../../sass/product_details.scss */
+    #body-description-tab2 .am-comment-hd .am-comment-meta {
+        /*height: 40px;*/
+        padding: 10px 0;
+        line-height: 21px;
+    }
+        /* line 786, ../../sass/product_details.scss */
+        #body-description-tab2 .am-comment-hd .am-comment-meta .c-star {
+            float: left;
+            display: inline-block;
+            color: #FEC126;
+            font-size: 15px;
+        }
+        /* line 792, ../../sass/product_details.scss */
+        #body-description-tab2 .am-comment-hd .am-comment-meta .c-title {
+            float: left;
+            display: inline-block;
+            width: 240px;
+            white-space: normal;
+            /*overflow: hidden;*/
+            font-size: 15px;
+            font-weight: bold;
+            color: #595959;
+            margin: 0 0 0 5px;
+        }
+        /* line 803, ../../sass/product_details.scss */
+        #body-description-tab2 .am-comment-hd .am-comment-meta .c-name-n-time {
+            float: right;
+        }
+/* line 808, ../../sass/product_details.scss */
+#body-description-tab2 .am-comment-bd {
+    padding: 10px 50px;
+}
+
+/*退貨說明*/
+/* line 816, ../../sass/product_details.scss */
+.body-description-tab3 {
+    text-align: left;
+}
+
+/*售後服務table*/
+/* line 822, ../../sass/product_details.scss */
+.after-salse {
+    vertical-align: top;
+}
+
+.countdown-wrapper {
+    height: 100px;
+    background: white;
+    margin-top: 10px;
+}
+    /* line 152, ../../sass/group_buying_product_details.scss */
+    .countdown-wrapper .purchas-agent-countdown {
+        display: block;
+        font-size: 22px;
+    }
+        /* line 155, ../../sass/group_buying_product_details.scss */
+        .countdown-wrapper .purchas-agent-countdown i {
+            font-size: 40px;
+            padding: 10px 10px 10px 0;
+        }
+        /* line 159, ../../sass/group_buying_product_details.scss */
+        .countdown-wrapper .purchas-agent-countdown span {
+            margin: 0 2.5px;
+        }
+            /* line 162, ../../sass/group_buying_product_details.scss */
+            .countdown-wrapper .purchas-agent-countdown span.out-of-time {
+                color: #808080 !important;
+                font-size: 20px !important;
+            }
+            /* line 166, ../../sass/group_buying_product_details.scss */
+            .countdown-wrapper .purchas-agent-countdown span.countdown-time {
+                font-size: 33px;
+                font-weight: bold;
+            }
+
+.product-description li {
+    list-style-type: disc;
+}

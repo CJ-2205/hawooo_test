@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using hawooo;
+public partial class user_static_BeautyChoice : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        bool ismobile = PbClass.IsMobile();
+        if (ismobile)
+            Response.Redirect("../mobile/BeautyChoice.aspx");
+    }
+}

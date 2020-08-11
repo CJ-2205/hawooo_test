@@ -1,0 +1,534 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hawooo</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+
+
+    <link href="../assets/css/amazeui.min.css" rel="stylesheet" />
+
+    <link href="../assets/css/app.css" rel="stylesheet" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+
+    <!--mouce hover-->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+
+    <link href="css/hoverstyle.css" rel="stylesheet" />
+    <script src="js/jquery.hoverdir.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+    <script src="js/modernizr.custom.97074.js"></script>
+
+    <!--menu css-->
+    <!--<link href="../cssmenu2/m2styles.css" rel="stylesheet" />
+    <script src="../cssmenu2/m2script.js"></script>-->
+    <!--slick-->
+    <link href="../slick/slick.css" rel="stylesheet" />
+    <link href="../slick/slick-theme.css" rel="stylesheet" />
+    <!--menu-->
+    <script type="text/javascript" src="menu/navMenu.js"></script>
+    <link href="menu/menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="background:#F6F6F6">
+
+    <header data-am-widget="header" class="am-header am-header-default am-show-md-down" style="background-color:#FF2E6C" data-am-sticky>
+        <div class="am-header-left am-header-nav">
+            <a href="#left-link" class="">
+
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">Hawooo</h1>
+        <div class="am-header-right am-header-nav">
+            <a href="#right-link" class="">
+                <span class="am-header-nav-title">menu</span>
+                <i class="am-header-icon am-icon-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <header class="am-topbar am-hide-sm-down">
+        <div class="am-container" id="top-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                <!--<li class="am-active"><a href="#">Home</a></li>-->
+
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-money"></i> USD <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">USD 美金</a></li>
+                        <li><a href="#">MYR 馬幣</a></li>
+                        <li><a href="#">SGD 新加坡幣</a></li>
+                        <li><a href="#">TWD 台幣</a></li>
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-language"></i>  ZH-TW <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">EN 英文</a></li>
+                        <li><a href="#">ZH-CN 簡體中文</a></li>
+                        <li><a href="#">ZH-TW 繁體中文</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+
+            <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                <!--<ul class="am-nav am-nav-pills am-topbar-nav">
+
+                    <li class="am-active"><a href="#" class="am-icon-home am-icon-sm"> Home</a></li>
+                </ul>-->
+
+                <div class="am-topbar-right">
+                    <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                        <li><a href="#"><i class="am-icon-user"></i> 登入/註冊</a></li>
+                        <li><a href="#"><i class="am-icon-table"></i> 訂單查詢</a></li>
+                        <li><a href="#"><i class="am-icon-tags"></i> 追蹤清單</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--上方LOGO ITEM SERCE BAR 開始-->
+    <div class="am-g logobar am-hide-sm-down" data-am-sticky="{animation: 'slide-top'}">
+        <div style="max-width:1200px; margin: 0px auto;">
+            <div class="am-u-lg-12" style="padding:0px;margin:0px;">
+                <div class="am-u-lg-3" style="padding:0px;">
+                    <img src="img/hawooologo.png" class="am-img-responsive" width="300" />
+                </div>
+                <div class="am-u-lg-6 am-text-left" style="padding-top:10px; padding-right:0px; margin:0px">
+                    <ul id="navMenu">
+                        <!-- <li class="selected_"><a href="index.html" class="memu00">首頁<span>home</span></a></li>-->
+                        <li><a href="sales.html" class="memu01">購物商城<span>shop</span></a></li>
+                        <li><a href="tuangou.html" class="memu02">團購專區<span>group buys</span></a></li>
+                        <li>
+                            <a href="#" class="memu03">品牌介紹<span>whole team</span></a>
+                            <ul>
+                                <li><a href="#">86小舖</a></li>
+                                <li><a href="#">生活童話</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="#" class="memu04">網友推薦<span>Featured</span></a></li>
+                        <li><a href="#" class="memu05">熱門討論<span>Hot Topic</span></a></li>
+                    </ul>
+                </div>
+                <div class="am-u-lg-2">
+
+                    <div class="am-form-group am-g" style="padding-top:15px">
+                        <form class="am-form-inline" style="margin:0px;">
+                            <input type="text" class="am-form-field" placeholder="keyword" style="width:70%">
+                            <button class="am-btn am-btn-warning"><i class="am-icon-search"></i></button>
+                        </form>
+
+                        <div class="am-form-group" style="margin:0px;color:#999;">
+                            <label class="am-radio-inline">
+                                <input type="radio" value="" name="docInlineRadio"> 商品搜尋
+                            </label>
+                            <label class="am-radio-inline">
+                                <input type="radio" name="docInlineRadio"> 品牌搜尋
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="am-u-lg-1">
+                    <div style="padding-top:22px;color:#5ba1c2">
+                        <div class="help-tip">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--上方LOGO ITEM SERCE BAR 結束-->
+
+
+    <div class="am-container" style="padding-top:20px">
+        <div class="am-u-md-3">
+            <div class="am-panel boxshadow">
+                <div class="class_panel_title" style="background-color:#00d3e0;color:#ffffff"><i class="am-icon-arrow-circle-o-down"></i>&nbsp;Member management</div>
+                <ul class="classbar" id="brand_class">
+                    <li>
+                        <a href="#"><i class="am-icon-caret-right"></i>&nbsp;資料管理</a>
+                    </li>
+                    <li>
+                        <a href="#" class="select"><i class="am-icon-caret-right"></i>&nbsp;訂單管理</a>
+                    </li>
+                    <li><a href="#"><i class="am-icon-caret-right"></i>&nbsp;購物金</a></li>
+                    <li><a href="#"><i class="am-icon-caret-right"></i>&nbsp;折扣卷</a></li>
+                    <li><a href="#"><i class="am-icon-caret-right"></i>&nbsp;喜愛商品</a></li>
+                    <li><a href="#"><i class="am-icon-caret-right"></i>&nbsp;分享紀錄</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="am-u-md-9">
+            <div class="am-panel boxshadow">
+                <div class="am-tabs" data-am-tabs>
+                    <ul class="am-tabs-nav am-nav am-nav-tabs">
+                        <li class="am-active"><a href="javascript: void(0)">Shop order list-商城訂單列表</a></li>
+                        <li><a href="javascript: void(0)">Group buy order list-團購訂單列表</a></li>
+
+                    </ul>
+
+                    <div class="am-tabs-bd">
+                        <div class="am-tab-panel am-active">
+                            <legend style="padding:15px">Shop order list - 商城訂單列表</legend>
+                            <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                                <thead>
+
+                                    <tr>
+                                        <th>訂購日期</th>
+                                        <th>訂單編號</th>
+                                        <th>付款方式</th>
+                                        <th>訂單金額</th>
+                                        <th>出貨單號</th>
+                                        <th>狀態</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td><a href="#" onclick="getDetail('S201505220001');"> S201505220001</a></td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>尚未出貨</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td><a href="#" onclick="getDetail('S201505220002');"> S201505220002</a></td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>2105480152142214</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>S201505220003</td>
+                                        <td>Web ATM</td>
+                                        <td>RM-500</td>
+                                        <td>2105480152142214</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>S201505220005</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>尚未出貨</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-24</td>
+                                        <td>S201505220008</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>尚未出貨</td>
+                                        <td>取消交易</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="am-tab-panel">
+                            <legend style="padding:15px">Group buy order list - 團購訂單列表</legend>
+                            <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>訂購日期</th>
+                                        <th>訂單編號</th>
+                                        <th>付款方式</th>
+                                        <th>訂單金額</th>
+                                        <th>出貨單號</th>
+                                        <th>狀態</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>G201505220001</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>2015-05-30 出貨</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>G201505220002</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>2105480152142214</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>G201505220003</td>
+                                        <td>Web ATM</td>
+                                        <td>RM-500</td>
+                                        <td>2015-05-30 出貨</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-22</td>
+                                        <td>G201505220005</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>2015-05-30 出貨</td>
+                                        <td>完成交易</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2015-05-24</td>
+                                        <td>G201505220008</td>
+                                        <td>信用卡</td>
+                                        <td>RM-500</td>
+                                        <td>2015-05-30 出貨</td>
+                                        <td>取消交易</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+          
+
+        </div>
+    </div>
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="detail-popup" style="text-align:left">
+        <div class="am-popup-inner">
+            <div class="am-popup-hd">
+                <h4 class="am-popup-title">Order Detail - 訂單明細</h4>
+                <span data-am-modal-close
+                      class="am-close">&times;</span>
+            </div>
+            <div class="am-popup-bd">
+                <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="background-color:#00d3e0;color:#ffffff">訂單編號：<o id="mid"></o></th>
+                        </tr>
+                        <tr>
+                            <th width="20%">訂購日期</th>
+                            <th width="20%">收件人</th>
+                            <th width="25%">寄送方式</th>
+                            <th width="35%">寄送單號</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2015-05-22</td>
+                            <td>陳修平</td>
+                            <td>台灣郵局</td>
+                            <td>215414516413219874651</td>
+                        </tr>
+                        <tr>
+                            <td><o style="font-weight:bold;">收件地</o></td>
+                            <td colspan="3">台北市永和區信義路777號15樓</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="4" style="background-color:#00d3e0;color:#ffffff">付款方式</th>
+                        </tr>
+                        <tr>
+                            <th width="20%">付款方式</th>
+                            <th width="20%">付款時間</th>
+                            <th width="60%">備註(ATM付款請輸入匯款帳號後5碼)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Web-ATM</td>
+                            <td>2015-05-22</td>
+                            <td>
+                                <input id="Text1" type="text" value="已匯款，後5碼為 25421" /><input id="Submit1" type="submit" value="Save" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="7" style="background-color:#00d3e0;color:#ffffff">商品明細</th>
+                        </tr>
+                        <tr>
+                            <th width="30%">商品名稱</th>
+                            <th width="10%">規格</th>
+                            <th width="10%">數量</th>
+                            <th width="10%">單價</th>
+                            <th width="10%">折扣</th>
+                            <th width="10%">小計</th>
+                            <th width="20%">備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HANAKA 花戀肌 黑玫瑰終結粉刺撕除面膜(黑面膜) 10g【RTHA052C】</td>
+                            <td>100 G</td>
+                            <td>10</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>200</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1028 全效美白CC精華霜SPF50 PA+++ 30ml</td>
+                            <td>30 ml</td>
+                            <td>10</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>200</td>
+                            <td>尚未出貨</td>
+                        </tr>
+                        <tr>
+                            <td><o style="font-weight:bold;">運費</o></td>
+                            <td colspan="2">50</td>
+                            <td><o style="font-weight:bold;">總金額</o></td>
+                            <td colspan="3">5800</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="am-table am-table-bordered am-table-radius am-table-striped">
+                    <thead>
+                        <tr>
+                            <th colspan="5" style="background-color:#00d3e0;color:#ffffff">發票資訊</th>
+                        </tr>
+                        <tr>
+                            <th width="20%">發票日期</th>
+                            <th width="20%">發票號碼</th>
+                            <th width="20%">統一編號</th>
+                            <th width="20%">抬頭</th>
+                            <th width="20%">備註</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td width="20%">2015-05-25</td>
+                            <td width="20%">VB95842521</td>
+                            <td width="20%"></td>
+                            <td width="20%"></td>
+                            <td width="20%"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function getDetail(oid) {
+            $("#mid").text(oid);
+            var $detailmodal = $("#detail-popup");
+            $detailmodal.width(1000).modal();
+        }
+    </script>
+
+
+
+
+
+    <!--footer開始-->
+    <div class="footer_topborder"></div>
+    <footer class="footer">
+
+        <div class="am-g am-g-fixed am-text-center">
+            <p>
+                <a href="#">&nbsp;平台介紹</a> | <a href="#">&nbsp;關於我們</a> | <a href="#">&nbsp;常見問題</a> | <a href="#">聯絡我們</a> | <a href="#">&nbsp;業務合作</a> | <a href="#">&nbsp;購物教學</a> | <a href="#">&nbsp;付款教學</a> | <a href="#">&nbsp;Facebook粉絲團</a> | <a href="#">&nbsp;服務條款</a> | <a href="#">&nbsp;隱私權政策</a>
+            </p>
+            <p style="font-size:11px;">
+                @ 2015 Copyright by Hawooo 好物飛行 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            var $navList = $('.nav-list');
+
+            $navList.on('click', 'li:not(.selected)', function (e) {
+                $navList.find(".selected").removeClass("selected");
+                $(e.currentTarget).addClass("selected");
+            });
+
+
+        });
+
+
+
+    </script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#jq-da-thumbs > li').each(function () { $(this).hoverdir(); });
+        });
+    </script>
+
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=206249782751179";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

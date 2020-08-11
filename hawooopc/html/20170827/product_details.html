@@ -1,0 +1,1444 @@
+﻿<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>hawooo products-details</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    
+    
+    <link rel="stylesheet" href="assets/css/footer_good_block.css">
+
+    <link rel="stylesheet" href="assets/css/newfooter.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/header.js"></script>
+    <link rel="stylesheet" href="assets/css/product_details.css">
+    <script src="assets/js/products_details.js"></script>
+
+    <!-- icon -->
+    <link rel="stylesheet" type="text/css" href="assets/css/icon-money.css">
+
+
+    <!-- <script type="text/javascript" src="scroll_float/scroll_float.js"></script>
+    <link href="scroll_float/scroll_float.css" rel="stylesheet" /> -->
+    <style>
+
+    </style>
+    
+</head>
+<body>
+
+    <!-- Header 開始 -->
+   
+    <header>
+        <div class="am-g header-wrapper">
+            <!-- language & shoppingcart star -->
+            <section class="am-u-sm-12 header-language-wrapper">
+                <div class="am-u-sm-10 am-u-sm-centered header-language-content">
+                    <div class="am-cf">
+                        <div class="am-fl header-language">
+                            <ul>
+                                <li id="language">language
+                                    <i class="am-icon-sort-desc"></i>
+                                </li>
+                            </ul>
+                            <span></span>
+                        </div>
+                        <div class="am-fr header-shoppingcart">
+                            <ul>
+                                <li class="am-fl header-shoppingcart-item" style="margin-right: 15px;">會員中心<i class="am-icon-sort-desc am-fr" style="left:50px;top:2px;color:#a8a8a8"></i></li>
+                                <li class="am-fl header-shoppingcart-item">
+                                    <i class="am-icon-list-alt"></i>
+                                    我的訂單
+                                </li>
+                                <li class="am-fl header-shoppingcart-item">
+                                    <i class="am-icon-star-o"></i>
+                                    我的Ha幣
+                                </li>
+                                <li class="am-fl header-shoppingcart-item" id="shoppingcart">
+                                    <i class="icon-cart sopping-cart-icon"></i>
+                                    購物車 件
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- language & shoppingcart end -->
+
+            <!-- mini-shopping-cart(小購物車) star-->
+            <section class="am-container mini-shopping-cart">
+                <div class="am-u-sm-10 mini-shopping-cart-wrapper">
+                    <div class="am-u-sm-12 p-0" id="emptyCartWarningContainer">
+                        <p>您的購物車沒有商品！趕快去購物吧！</p>
+                    </div>
+                    <!-- 關閉購物車 -->
+                    <span class="shopping-cart-close">✕</span>  
+                    <!-- 關閉購物車 -->
+                    <!-- 包著好物市集、限時團購 開始 -->
+                    <div class="mini-shopping-cart-items-wrapper">
+                        <!-- mini-shopping-cart-tabs 上方選項 star-->
+                        <div class="am-u-sm-12 p-0 mini-shopping-cart-tabs">
+                            <ul class="p-0 m-0 am-avg-sm-2">
+                                <li class="mini-shopping-cart-tab">好物市集</li>
+                                <li class="mini-shopping-cart-tab">限時團購</li>
+                            </ul>
+                        </div>
+                        <!-- mini-shopping-cart-tabs 上方選項 end-->
+                        <!-- 好物市集頁 開始 -->
+                        <div class="am-u-sm-12 p-0 m-0 mini-shopping-cart-content hawooo-cart">
+                            <div class="mini-shopping-cart-item">
+                                <ul>
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                </ul>
+                            </div>
+                            <!-- 好物市集總金額 開始 -->
+                            <div class="am-u-sm-12 am-cf p-0 m-0 mini-shopping-cart-price hawooo-cart-price">
+                                <p class="am-fl">總金額：</p><span class="am-fr">RM 199.99</span>
+                            </div>
+                            <!-- 好物市集總金額 結束 -->
+                        </div>
+                        <!-- 好物市集頁 結束 -->
+                        <!-- 限時團購頁 開始 -->
+                        <div class="am-u-sm-12 p-0 m-0 mini-shopping-cart-content group-cart">
+                            <div class="mini-shopping-cart-item">
+                                <ul>
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                </ul>
+                            </div>
+                            <!-- 限時團購總金額 開始 -->
+                            <div class="am-u-sm-12 am-cf p-0 m-0 mini-shopping-cart-price group-cart-price">
+                                <p class="am-fl">總金額：</p><span class="am-fr">RM 399.99</span>
+                            </div>
+                            <!-- 限時團購總金額 結束 -->
+                        </div>
+                        <!-- 限時團購頁 結束 -->
+                    </div>
+                    <!-- 包著好物市集、限時團購 結束 -->
+                    <!-- 結帳按鈕 開始 -->
+                    <div class="am-u-sm-10 checkoutShopBtnContainer">
+                        <a href="#" class="am-u-sm-12 uppercase flexibleCartContent" id="cartCheckoutBtn">馬上結帳</a>
+                        <a href="#" class="am-u-sm-12 uppercase" id="cartShopBtn">繼續購物</a>
+                    </div>
+                    <!-- 結帳按鈕 開始 -->
+                </div><!-- am-u-sm-10的wrapper腳 -->
+            </section>
+            <!-- mini-shopping-cart(小購物車) end-->
+
+            <!-- mini-language box（語言箱子）star -->
+            <section class="am-container mini-language">
+                <div class="mini-language-box jump-window ">
+                    <ul>
+                        <li>中文</li>
+                        <li style="display: none">ENGLISH</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- mini-language box（語言箱子）end -->
+
+            <!-- logo & search star -->
+            <section class="am-u-sm-12 header-logo-search-wrapper">
+                <div class="am-u-sm-10 am-u-sm-centered header-logo-search-content">
+                    <ul>
+                        <li class="am-u-sm-3 logo">
+                            <h1>HaWooo 好物飛行</h1>
+                            <img src="images/0322_hawooo好物logo.svg" alt="HaWooo 好物飛行">
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/hot_brands.png">熱門品牌
+                            </a>
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/spot_shopping.png">限時團購
+                            </a>
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/people_recommend.png">紅人推薦
+                            </a>
+                        </li>
+                        <li class="am-u-sm-3 header-search">
+                            <div class="am-u-sm-11 search-bar" style="width:96%">
+                                <input type="text" name="ct100$txt_search" id="txt_search" placeholder="原價買到台灣好東西" class="search-field">
+                                <button class="search-field-button">
+                                    <span class="am-icon-search"></span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- logo & search end -->
+
+            <!-- menu-item star -->
+            <section class="am-u-sm-12 header-menuitems-wrapper">
+                <div class="am-container header-menuitem-content">
+                    <ul class="am-cf am-avg-sm-9">
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/fashion_makeup_white.png">時尚彩妝</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/body_care_white.png">美體保養</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/health_food_white.png">保健食品</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/underwear_white.png">服裝內衣</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/shose_white.png">流行美鞋</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/bag_white.png">包包配件</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/deli_white.png">品味美食</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/life-supplies_white.png" style="margin-bottom: 3px;">生活用品</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/mom_baby_white.png">媽咪寶貝</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- menu-item & search end -->
+            <!-- side-arrow 側邊拇指 star -->
+            <section class="side-arrow">
+                <div class="side-arrow-wrapper">
+                    <div class="side-arrow-content">
+                        <i class="am-icon-arrow-left"></i>
+                    </div>
+                    <div class="sideinfo">
+                        <ul class="am-u-sm-12">
+                            <span class="close-arrow">關閉</span>
+                            <li class="am-u-sm-12 sideinfo-fb">
+                                <a href="#">
+                                    <img src="images/FB.png">
+                                </a>
+                            </li>
+                            <li class="am-u-sm-12 sideinfo-seen">
+                                <span class="sideinfo-seen-title">瀏覽紀錄</span>
+                                <ul>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="am-u-sm-12 sideinfo-gotop uppercase">
+                                top
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- side-nav 側邊導覽列 end -->
+        </div>
+    </header>
+    <!-- Header 結束 -->
+
+
+    <!-- content star -->
+    <content style="margin-top: 120px;display: block;">
+        <!--  product breadcrumb（商品頁麵包屑） star-->
+        <section class="product-breadcrumb-section">
+            <div class="am-container product-breadcrumb-wrapper">
+                <ul class="am-u-sm-12 am-cf">
+                    <li class="am-fl product-breadcrumb">
+                        <a href="#">HaWooo</a>
+                    </li>
+                    <li class="am-fl product-breadcrumb">
+                        <a href="#">美體保健</a>
+                    </li>
+                    <li class="am-fl product-breadcrumb">
+                        <a href="#">機能/健康飲品</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--  products breadcrumb（商品頁麵包屑） end-->
+
+        <!-- products (商品照片＆商品細節) star -->
+        <section class="product-pic-gift-section">
+            <div class="am-container am-cf product-pic-gift-container">
+                <!-- products pic & gift(商品照片＆滿額贈禮區塊) star -->
+                <div class="am-u-sm-4 am-fl product-pic-gift-wrapper">
+                    <div class="am-u-sm-12 product-pic-wrapper">
+                        <!-- product main pic star （商品主要大照片，ＪＱ會自動幾帶入照片）-->
+                        <div class="product-pic">
+                            <span class="love-button">
+                                <span class="am-icon-heart-o white-o"></span>
+                                <span class="am-icon-heart-o pink-o"></span>
+                            </span>
+                        </div>
+                        <!-- product main pic end -->
+                        <!-- see more products pic star-->
+                        <div class="more-products-pic-slider">
+                            <span class="more-products-pic-control more-products-pic-left"><</span>
+                            <ul class="p-0 m-0 am-cf">
+                                <li class="am-fl">
+                                    <img src="https://www.hawooo.com/images/webimgs/n20170414053014478.jpg">
+                                </li>
+                                <li class="am-fl" data-p-item="">
+                                    <img src="https://api.fnkr.net/testimg/363x363/00CED1/FFF/?text=363x363">
+                                </li>
+                                <li class="am-fl">
+                                    <img src="http://www.prinkbox.com.au/media/catalog/product/cache/1/small_image/363x0/040ec09b1e35df139433887a97daa66f/h/u/huts_and_bay_stripe_onesie_grey_2_2/Huts-and-Bay-Stripe-Onesie-Large-Grey-61371ZG3-20.jpg">
+                                </li>
+                                <li class="am-fl">
+                                    <img src="https://1.bp.blogspot.com/-w0gVuWnZ7hs/WMYHA5_yaKI/AAAAAAAALtI/VJAwMZ5c8ZoqDRLTPek9LaBR4wK5L10tQCLcB/s1600/Huts-and-Bay-Vest-Large-Pink.jpg">
+                                </li>
+                                <li class="am-fl">
+                                    <img src="http://www.snuggyhoods.com/product-images/normal/614_6/dogs-body-keep-clean-dog-coat-black.jpg">
+                                </li>
+                                <li class="am-fl">
+                                    <img src="https://pbs.twimg.com/profile_images/555926491632893952/3smP8_FI_400x400.png">
+                                </li>
+                            </ul>
+                            <span class="more-products-pic-control more-products-pic-right">></span>
+                        </div>
+                        <!-- see more products pic end-->
+                    </div>
+                    <!-- gift (滿額贈禮) star -->
+                    <div class="am-u-sm-12 m-0 product-gift-wrapper">
+                        <div class="am-u-sm-12 product-gift-title">滿額贈品 PREMIUMS</div>
+                        <ul class="p-0 m-0">
+                            <li class="am-u-sm-12 product-gift-item">
+                                <div class="am-u-sm-12 product-gift-item-top">
+                                    <div class="am-u-sm-3 product-gift-item-tag">
+                                        <span class="price-qualify">已符合</span>
+                                    </div>
+                                    <div class="am-u-sm-9 product-gift-item-title">母親節滿額贈禮</div>
+                                </div>
+                                <div class="am-u-sm-12 p-0 product-gift-item-bottom">
+                                    <div class="am-u-sm-3 p-0 product-gift-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170516031612362.jpg">
+                                    </div>
+                                    <div class="am-u-sm-9 p-0 product-gift-text">
+                                        <h4>贈品名稱：<span>滿鍋香養生鍋底滿鍋香養生鍋底</span></h4>
+                                        <h5>滿額金額：<span>ＲＭ123</span></h5>
+                                        <p>贈送方式：<span>滿額贈送+滿額贈送</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="am-u-sm-12 product-gift-item">
+                                <div class="am-u-sm-12 product-gift-item-top">
+                                    <div class="am-u-sm-3 product-gift-item-tag">
+                                        <span class="price-not-qualify">未符合</span>
+                                    </div>
+                                    <div class="am-u-sm-9 product-gift-item-title">全館消費500加贈</div>
+                                </div>
+                                <div class="am-u-sm-12 p-0 product-gift-item-bottom">
+                                    <div class="am-u-sm-3 p-0 product-gift-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170516031612362.jpg">
+                                    </div>
+                                    <div class="am-u-sm-9 p-0 product-gift-text">
+                                        <h4>贈品名稱：<span>滿鍋香養生鍋底滿鍋香養生鍋底</span></h4>
+                                        <h5>滿額金額：<span>ＲＭ123</span></h5>
+                                        <p>贈送方式：<span>滿額贈送+滿額贈送</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- gift (滿額贈禮) end -->
+                </div>
+                <!-- products pic & gift(商品照片＆滿額贈禮區塊) end -->
+                <!-- products details(商品細節) star -->
+                <div class="am-u-sm-8 am-fl product-details-wrapper">
+                    <div class="product-details-content">
+                        <!-- tag 標籤（新品....等等）star (如果標籤無效＋CLASS:not-active)-->
+                        <div class="am-u-sm-12 product-tag-wrapper">
+                            <span class="products-tag " id="p-habi">
+                                <img src="icon/habi_icon.png">Ha幣<p>x5倍</p>送<a href="#"><i class="am-icon-question-circle"></i></a> 
+                            </span>
+                            <span class="products-tag" id="p-freeshipping">
+                                <img src="icon/free_shipping_icon.png">跨國免郵<a href="#"><i class="am-icon-question-circle"></i></a>
+                            </span>
+                            <span class="products-tag" id="p-sameprice">
+                                <img src="icon/taiwanprice.png">台灣原價<a href="#"><i class="am-icon-question-circle"></i></a>
+                            </span>
+                        </div>
+                        <!-- tag 標籤（新品....等等）end -->
+                        <!-- ptoducts title(商品標題) star -->
+                        <div class="am-u-s-m-12 product-title">
+                            <h5>品牌：<a href="#">BHK's</a></h5>
+                            <h4>買2瓶 第3瓶只要RM10！KA'FEN 蝸牛洗護系列限時促銷蝸牛洗護系列限時促銷</h4>
+                            <div class="p-stars">
+                                <ul class="am-cf p-0 m-0">
+                                    <li class="am-icon-star"></li>
+                                    <li class="am-icon-star"></li>
+                                    <li class="am-icon-star"></li>
+                                    <li class="am-icon-star-half-o"></li>
+                                    <li class="am-icon-star-o"></li>
+                                </ul>
+                                <p class="p-0 m-0">（2則評論）</p>
+                            </div>
+                        </div>
+                        <!-- ptoducts title(商品標題) end -->
+                        <!-- product price(商品價格) star -->
+                        <section class="am-g product-price-section">
+                            <div class="product-price-content">
+                                <div class="product-price-title">RM</div>
+                                <div class="product-price">149.99</div>
+                                <!-- 折價部分 開始-->
+                                <div class="discount">
+                                    <p>已省30.00</p>
+                                    <s class="original-price">(RM 184.123)</s>
+                                </div>
+                                <!-- 折價部分 結束 -->
+                            </div>
+                        </section>
+                        <!-- product price(商品價格) end -->
+                        <!-- specification & qty（商品規格和數量） star -->
+                        <section class="product-spec-qty">
+                            <div class="am-g product-spec">
+                                <div class="am-u-sm-1 product-spec-qty-titile">
+                                    規格：
+                                </div>
+                                <div class="am-u-sm-11 product-spec-content p-0 m-0">
+                                    <ul class="m-0 p-0 am-cf">
+                                        <li class="am-fl product-spec-item">150ml*罐</li>
+                                        <li class="am-fl product-spec-item">1100ml*5罐</li>
+                                        <li class="am-fl product-spec-item">1200ml*5罐</li>
+                                        <li class="am-fl product-spec-item">1300ml*5罐</li>
+                                        <li class="am-fl product-spec-item">1400ml*5罐</li>
+                                        <li class="am-fl product-spec-item">1500ml*5罐</li>
+                                        <li class="am-fl product-spec-item">1600ml*5罐</li>
+                                        <li class="am-fl product-spec-item sold-out">1500ml*5罐123</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="am-g product-qty">
+                                <div class="am-u-sm-1 product-spec-qty-titile">
+                                    數量：
+                                </div>
+                                <div class="am-u-sm-11 p-0 product-qty-content">
+                                    <ul class="p-0 m-0 am-cf qty-controler">
+                                        <li class="am-fl qty-control qty-minus">-</li>
+                                        <li class="am-fl qty-total">0</li>
+                                        <li class="am-fl qty-control qty-plus">+</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- specification & qty（商品規格和數量） end -->
+                        <!-- product button(商品按鈕) star -->
+                        <section class="am-g product-button-section">
+                            <ul class="p-0 m-0 am-cf">
+                                <li class="am-fl">
+                                    <button class="product-button add-to-cart-btn uppercase"><i class="am-icon-plus"></i>add to cart</button>
+                                </li>
+                                <li class="am-fl">
+                                    <button class="product-button buy-now-btn uppercase"><i class="am-icon-bolt"></i>buy now</button>
+                                </li>
+                            </ul>
+                        </section>
+                        <!-- product button(商品按鈕) end -->
+                        <!-- ptoducts content(商品內容) star -->
+                        <div class="am-u-sm-12 product-description">
+                            <!-- 上方強調部分 star -->
+                            <section class="product-description-title">
+                                <span class="product-description-line"></span>
+                                <ul class="p-0 m-0">
+                                    <li class="description-strong">卸妝同步抗老</li>
+                                    <li class="description-strong red">對抗空汙 PM2.5</li>
+                                    <li class="description-strong red">一瓶搞定全臉彩妝 越卸越年輕！</li>
+                                </ul>
+                            </section>
+                            <!-- 上方強調部分 end -->
+                            <!-- 商品說明 star -->
+                            <section class="product-description-list">
+                                <ul class="p-0 m-0">
+                                    <li class="product-description-text">全球首創！卸後一沖即淨 不需洗臉</li>
+                                </ul>
+                            </section>
+                            <!-- 商品說明 end -->
+                            <!-- ptoducts content(商品內容) end -->
+                        </div>
+                        <!-- ptoducts content(商品內容) end -->
+                    </div>
+                    <!-- additional purchase(加購商品) star-->
+                    <div class="additional-purchase-wrapper">
+                        <div class="am-u-sm-12 additional-purchase-title">
+                            <i class="am-icon-plus-circle"></i>我要加購：
+                        </div>
+                        <div class="am-u-sm-12 additional-purchase-content">
+                            <ul class="p-0 m-0 am-cf am-avg-sm-2">
+                                <!-- 一筆加購品項 star -->
+                                <li class="am-fl am-cf am-g">
+                                    <!-- 加購checkbox -->
+                                    <div class="am-u-sm-1 am-fl p-0 additional-checkbox-wrapper">
+                                        <label ></label>
+                                        <input type="checkbox" name="" class="p-0 m-0 additional-checkbox" value="">
+                                    </div>
+                                    <!-- 加購圖片img -->
+                                    <div class="am-u-sm-3 am-fl p-0 additional-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170307042036554.jpg">
+                                    </div>
+                                    <!-- 加購商品描述description -->
+                                    <div class="am-u-sm-8 am-fl p-0 additional-text">
+                                        <a href="javascript:void(0)">
+                                            <h4 class="p-0 m-0">AKUMA 你濃我融 ROCKME接睫毛專用卸妝凝露 50ml</h4>
+                                        </a>
+                                    </div>
+                                    <!-- 價格＆數量 -->
+                                    <div class="am-u-sm-8 am-cf additional-price">
+                                        <h5 class="p-0 m-0 am-u-sm-7 am-fl">加購價<span>1234.3</span>
+                                        </h5>
+                                        <span class="p-0 m-0 am-u-sm-5 am-fl">
+                                            <ul class="p-0 m-0 am-cf">
+                                                <li class="am-fl qty-control qty-minus">-</li>
+                                                <li class="am-fl qty-total">0</li>
+                                                <li class="am-fl qty-control qty-plus">+</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- 一筆加購品項 end -->
+                                <!-- 一筆加購品項 star -->
+                                <li class="am-fl am-cf am-g">
+                                    <!-- 加購checkbox -->
+                                    <div class="am-u-sm-1 am-fl p-0 additional-checkbox-wrapper">
+                                        <label ></label>
+                                        <input type="checkbox" name="" class="p-0 m-0 additional-checkbox" value="">
+                                    </div>
+                                    <!-- 加購圖片img -->
+                                    <div class="am-u-sm-3 am-fl p-0 additional-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170307042036554.jpg">
+                                    </div>
+                                    <!-- 加購商品描述description -->
+                                    <div class="am-u-sm-8 am-fl p-0 additional-text">
+                                        <a href="javascript:void(0)">
+                                            <h4 class="p-0 m-0">AKUMA 你濃我融 ROCKME接睫毛專用卸妝凝露 50ml</h4>
+                                        </a>
+                                    </div>
+                                    <!-- 價格＆數量 -->
+                                    <div class="am-u-sm-8 am-cf additional-price">
+                                        <h5 class="p-0 m-0 am-u-sm-7 am-fl">加購價<span>1234.3</span>
+                                        </h5>
+                                        <span class="p-0 m-0 am-u-sm-5 am-fl">
+                                            <ul class="p-0 m-0 am-cf">
+                                                <li class="am-fl qty-control qty-minus">-</li>
+                                                <li class="am-fl qty-total">0</li>
+                                                <li class="am-fl qty-control qty-plus">+</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- 一筆加購品項 end -->
+                                <!-- 一筆加購品項 star -->
+                                <li class="am-fl am-cf am-g">
+                                    <!-- 加購checkbox -->
+                                    <div class="am-u-sm-1 am-fl p-0 additional-checkbox-wrapper">
+                                        <label ></label>
+                                        <input type="checkbox" name="" class="p-0 m-0 additional-checkbox">
+                                    </div>
+                                    <!-- 加購圖片img -->
+                                    <div class="am-u-sm-3 am-fl p-0 additional-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170307042036554.jpg">
+                                    </div>
+                                    <!-- 加購商品描述description -->
+                                    <div class="am-u-sm-8 am-fl p-0 additional-text">
+                                        <a href="javascript:void(0)">
+                                            <h4 class="p-0 m-0">AKUMA 你濃我融 ROCKME接睫毛專用卸妝凝露 50ml</h4>
+                                        </a>
+                                    </div>
+                                    <!-- 價格＆數量 -->
+                                    <div class="am-u-sm-8 am-cf additional-price">
+                                        <h5 class="p-0 m-0 am-u-sm-7 am-fl">加購價<span>1234.3</span>
+                                        </h5>
+                                        <span class="p-0 m-0 am-u-sm-5 am-fl">
+                                            <ul class="p-0 m-0 am-cf">
+                                                <li class="am-fl qty-control qty-minus">-</li>
+                                                <li class="am-fl qty-total">0</li>
+                                                <li class="am-fl qty-control qty-plus">+</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- 一筆加購品項 end -->
+                                <!-- 一筆加購品項 star -->
+                                <li class="am-fl am-cf am-g">
+                                    <!-- 加購checkbox -->
+                                    <div class="am-u-sm-1 am-fl p-0 additional-checkbox-wrapper">
+                                        <label ></label>
+                                        <input type="checkbox" name="" class="p-0 m-0 additional-checkbox" value="">
+                                    </div>
+                                    <!-- 加購圖片img -->
+                                    <div class="am-u-sm-3 am-fl p-0 additional-pic">
+                                        <img src="https://www.hawooo.com/images/webimgs/n20170307042036554.jpg">
+                                    </div>
+                                    <!-- 加購商品描述description -->
+                                    <div class="am-u-sm-8 am-fl p-0 additional-text">
+                                        <a href="javascript:void(0)">
+                                            <h4 class="p-0 m-0">AKUMA 你濃我融 ROCKME接睫毛專用卸妝凝露 50ml</h4>
+                                        </a>
+                                    </div>
+                                    <!-- 價格＆數量 -->
+                                    <div class="am-u-sm-8 am-cf additional-price">
+                                        <h5 class="p-0 m-0 am-u-sm-7 am-fl">加購價<span>1234.30</span>
+                                        </h5>
+                                        <span class="p-0 m-0 am-u-sm-5 am-fl">
+                                            <ul class="p-0 m-0 am-cf">
+                                                <li class="am-fl qty-control qty-minus">-</li>
+                                                <li class="am-fl qty-total">0</li>
+                                                <li class="am-fl qty-control qty-plus">+</li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                </li>
+                                <!-- 一筆加購品項 end -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- additional purchase(加購商品) end -->
+                </div>
+                <!-- products details(商品細節) end -->
+            </div>    
+        </section>
+        <!-- products (商品照片＆商品細節) end -->
+
+        <!-- products body description (商品中間說明區塊) star -->
+        <section class="body-description-wrapper">
+            <div class="am-container body-description">
+
+                <div class="am-tabs body-description-tabs" data-am-tabs>
+                    <ul class="am-tabs-nav am-nav am-nav-tabs">
+                        <li class="nav-tabs am-u-sm-4 am-active"><a href="#body-description-tab1">商品資訊(Product Info)</a></li>
+                        <li class="nav-tabs am-u-sm-4"><a href="#body-description-tab2">商品評價</a></li>
+                        <li class="nav-tabs am-u-sm-4"><a href="#body-description-tab3">運送/保固/退換貨(After sales)</a></li>
+                    </ul>
+
+                    <div class="am-tabs-bd">
+                        <!-- 商品照片或更多資訊 -->
+                        <div class="am-tab-panel am-fade am-in am-active body-description-tab1" id="body-description-tab1">
+                            <p>
+                                <h4 style="font-weight: bold">商品說明</h4>
+
+                                    <strong style="color:red">紅萃蔓越莓益生菌 簡介</strong>
+                                    <br>
+                                    <br>
+                                    BHK's嚴選採用擁有專利的北美紅寶石蔓越莓，含有極豐富的特殊A型花青素、高濃縮比34:1非常珍貴，並能在萃取過程中透過專利萃取技術完整保存蔓越莓全果實的活性營養成分，且採用獨家晶球緩釋保護製造專利，能夠達到12~16小時緩釋吸收！<br><br>
+                                    <strong style="color:red">▌女性消費者一致認可 ▌</strong><br>
+                                    <br>
+                                    特濃全果實萃取的私密呵護保養，幫助改變細菌叢生態、維持舒適健康、調整體質、青春亮麗的美麗選擇。
+                                    並透過深釋腸溶技術，讓蔓越莓錠有效通過胃酸考驗，安全送達腸道吸收，全方位呵護女性健康，完整的寵愛自己。
+                            </p>  
+                            <p class="am-u-sm-12 am-u-sm-centered am-text-center">
+                                <img src="images/BHK_cranberry_01.jpg"> 
+                            </p>
+                            
+                        </div>
+                        <!-- 商品評價 開始 -->
+                        <div class="am-tab-panel am-fade" id="body-description-tab2">
+                            <article class="am-comment"> <!-- 评论容器 -->
+                                <!-- 评论者 -->
+                                <p>飛天少女豬</p> 
+                                <div class="am-comment-main"> <!-- 评论内容容器 -->
+                                    <header class="am-comment-hd">
+                                    <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                        <div class="am-comment-meta"> <!-- 评论元数据 -->
+                                            <div class="c-star">
+                                                <ul class="am-cf p-0 m-0">
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star-half-o"></li>
+                                                    <li class="am-icon-star-o"></li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="c-title">减肥效果显著推荐持续使用希望可以出大罐装比较划算</h5>
+                                            <div class="c-name-n-time">
+                                                 <!-- 评论者 -->
+                                                評論於 <time datetime="">2017/7/7</time>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="am-comment-bd">這次要分享的是控油好物,我的肌膚是屬於混合偏油性的三不五時臉就超油，冬天也不例外這款蜜粉是朋友推薦的剛好也有朋友要去韓國玩就請他順便幫忙代購囉1.補妝時代替吸油面紙2.定妝3.當做乾洗頭可吸附頭髮油脂4.眼部妝前定妝5.指甲油底油：塗指甲油前輕點在指甲上，可去除油脂讓指甲油更服貼6.睫毛膏打底：增加服貼性跟豐盈性7.唇部：塗完唇膏後用小唇刷沾取蜜粉，輕按唇部，打造內在水潤外在乾爽唇妝8.爽身粉9.珠光蜜粉：將珠光眼影混合在一起可當珠光蜜粉使用在身體肌膚散發立體感</div> <!-- 评论内容 -->
+                                </div>
+                            </article>
+                            <article class="am-comment"> <!-- 评论容器 -->
+                                <!-- 评论者 -->
+                                <p>匿名</p> 
+                                <div class="am-comment-main"> <!-- 评论内容容器 -->
+                                    <header class="am-comment-hd">
+                                    <!--<h3 class="am-comment-title">评论标题</h3>-->
+                                        <div class="am-comment-meta"> <!-- 评论元数据 -->
+                                            <div class="c-star">
+                                                <ul class="am-cf p-0 m-0">
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star"></li>
+                                                    <li class="am-icon-star-half-o"></li>
+                                                    <li class="am-icon-star-o"></li>
+                                                </ul>
+                                            </div>
+                                            <h5 class="c-title">很喜歡</h5>
+                                            <div class="c-name-n-time">
+                                                評論於 <time datetime="">2017/7/7</time>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="am-comment-bd">我的繽紛面膜「濟州島火山泥調色面膜」分．區．保．養 一次解決所有肌膚困擾</div> <!-- 评论内容 -->
+                                </div>
+                            </article>
+                        </div>
+                        <!-- 商品評價 結束 -->
+                        <!-- 商品退貨說明 -->
+                        <div class="am-tab-panel am-fade body-description-tab3" id="body-description-tab3">
+                            <table class="after-sals am-u-sm-9 am-u-sm-centered" style="line-height: 50px">
+                                <tr>
+                                    <td class="am-u-sm-2 p-0">送貨範圍：</td>
+                                    <td class="am-u-sm-10 p-0">HaWooo.com 商品配送區域限馬來西亞。</td>
+                                </tr>
+                                <tr>
+                                    <td class="am-u-sm-2 p-0">到貨天數：</td>
+                                    <td class="am-u-sm-10 p-0">好物市集：商品訂單成立後約 5-10 個工作天送達。 <br>
+                                        跨國快送：商品訂單成立後約 3-5個工作天送達。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="am-u-sm-2 p-0">換貨說明：</td>
+                                    <td class="am-u-sm-10 p-0">若您收到的商品有瑕疵、破損等問題，請於收到貨後7天內，至「會員中心 > 訂單管理 > 退換貨申請」填寫表單，或們會盡快幫您處理。換貨標準請參照 <a href="#">退貨條款</a>。</td>
+                                </tr>
+                                <tr>
+                                    <td class="am-u-sm-2 p-0">退貨說明：</td>
+                                    <td class="am-u-sm-10 p-0">至「會員中心 > 訂單管理 > 退換貨申請」填寫表單，退貨標準請參照 <a href="#">退貨條款</a>。當我們收到您退回的商品時，退款將存入您HaWooo.com的帳戶(如運費需買方負責，將直接於退款扣除)，您可於下次消費使用。</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- products body description (商品中間說明區塊) end -->
+
+        <!-- guess what you like(猜你喜歡) star -->
+        <section class="guess-you-like">
+            <div class="am-container s-guess-you-like-wrapper">
+                <div class="am-u-sm-12 guess-you-like-title">
+                    <h3><i class="am-icon-heart-o"></i> 猜你喜歡</h3>
+                </div>
+                <div class="am-u-sm-12 guess-you-like-content">
+                    <!-- 商品slider本體 star -->
+                    <div data-am-widget="slider" class="am-slider am-slider-b3" data-am-slider='{&quot;controlNav&quot;:false,slideshow: false }'>
+                        <ul class="am-slides">
+                            <!-- 一頁商品頁 star -->
+                            <li class="more-products-slider-page">
+                                <ul class="am-avg-sm-5 p-0">
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h4 class="am-u-sm-12">【限時買一送一】LA BEAU 蘋果激塑形緊緻澎澎霜 30ml</h4>
+                                                <div class="am-cf price-discount">
+                                                    <h5 class="am-fl">
+                                                        <p>RM 108.9<span class="price-end">up</span></p>
+                                                    </h5>
+                                                    <p class="discount-range">省<span>30</span></p>
+                                                   <span id="tag-chinese">9折</span>
+                                                </div>
+                                            </div>
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h4 class="am-u-sm-12">【限時買一送一】LA BEAU 蘋果激塑形緊緻澎澎霜 30ml</h4>
+                                                <div class="am-cf price-discount">
+                                                    <h5 class="am-fl">
+                                                        <p>RM 108.9<span class="price-end">up</span></p>
+                                                    </h5>
+                                                    <p class="discount-range">省<span>30</span></p>
+                                                   <span id="tag-chinese">新品</span>
+                                                </div>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                </ul> 
+                            </li>
+                            <!-- 一頁商品頁 end -->
+
+                            <!-- 一頁商品頁 star -->
+                            <li class="more-products-slider-page">
+                                <ul class="am-avg-sm-5 p-0">
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                </ul> 
+                            </li>
+                            <!-- 一頁商品頁 end -->
+                        </ul>
+                    </div>
+                    <!-- 商品slider本體 end -->
+                </div> 
+            </div>
+        </section>
+        <!-- guess what you like end -->
+
+        <!-- most view(最多人觀看) star -->
+        <section class="s-guess-you-like">
+            <div class="am-container s-guess-you-like-wrapper">
+                <div class="am-u-sm-12 guess-you-like-title">
+                    <h3><i class="am-icon-heart-o"></i> 最多人觀看</h3>
+                </div>
+                <div class="am-u-sm-12 guess-you-like-content">
+                    <!-- 商品slider本體 star -->
+                    <div data-am-widget="slider" class="am-slider am-slider-b3" data-am-slider='{&quot;controlNav&quot;:false,slideshow: false }'>
+                        <ul class="am-slides">
+                            <!-- 一頁商品頁 star -->
+                            <li class="more-products-slider-page">
+                                <ul class="am-avg-sm-5 p-0">
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                </ul> 
+                            </li>
+                            <!-- 一頁商品頁 end -->
+
+                            <!-- 一頁商品頁 star -->
+                            <li class="more-products-slider-page">
+                                <ul class="am-avg-sm-5 p-0">
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h3>極致美白元氣代謝</h3>
+                                                <h4>LA BEAU 心機妹媚緊緻潤澤凝膠 30ml  </h4>
+                                                <p>RM 123</p>
+                                                <span id="new-arrival-tag-chinese">新品</span><h5>RM 35.50 <span>起</span></h5>
+                                            </div> 
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="am-u-sm-12 more-products-slider-pic">
+                                                <img src="https://www.hawooo.com/images/webimgs/n20170726052701359.jpg">
+                                            </div>
+                                            <div class="am-u-sm-12 more-products-slider-text">
+                                                <h4 class="am-u-sm-12">【限時買一送一】LA BEAU 蘋果激塑形緊緻澎澎霜 30ml</h4>
+                                                <div class="am-cf price-discount">
+                                                    <h5 class="am-fl">
+                                                        <p>RM 108.9<span class="price-end">起</span></p>
+                                                    </h5>
+                                                    <p class="discount-range">省<span>30</span></p>
+                                                   <span id="tag-chinese">新品</span>
+                                                </div>
+                                            </div>  
+                                        </a> 
+                                    </li>
+                                </ul> 
+                            </li>
+                            <!-- 一頁商品頁 end -->
+                        </ul>
+                    </div>
+                    <!-- 商品slider本體 end -->
+                </div> 
+            </div>
+        </section>
+        <!-- most view(最多人觀看) end -->
+
+
+        <!-- footer-good-block 頁尾三大好處的icon star -->
+        <section class="footer-good-block">
+            <div class="am-g" style="background:white;margin:20px 0px;">
+                <div class="am-container footer-good-block-wrapper">
+                    <ul class="am-avg-sm-3">
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_01.png" id="company-quality1">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>100％海外正品</h4>
+                                    <p>100% Authentic</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_02.png" id="company-quality2">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>RM199 免運</h4>
+                                    <p>RM199 Free Shipping</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_03.png">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>3-10天到貨</h4>
+                                    <p>Fast Delivery</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer-good-block 頁尾三大好處的icon end -->
+        
+        <!-- footer-web-map 網頁地圖 star -->
+        <section class="footer-web-map">
+            <div class="finfo_top"></div>
+            <div class="am-container">
+            <div class="am-g">
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">NEED&nbsp;&nbsp;&nbsp;HELP</div>
+                    <ul class="finfo_ul">
+                        <li><i class="am-icon-phone" style="font-size:20px;width:20px;"></i>+603-23866096</li>
+                        <li><a href="mailto:service@hawooo.com">service@hawooo.com</a></li>
+                    </ul>
+                    <div class="finfo_title">WORKING  HOURS</div>
+                    <ul class="finfo_ul">
+                        <li>Mon. - Fri.<span style="font-size:10px;">(except public holiday)</span></li>
+                        <li style="font-size:16px;">9.00AM - 6.00PM</li>
+                    </ul>
+
+                </div>
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">HELP</div>
+                    <ul class="finfo_ul">
+                        <li><a href="#" target="_blank">Content Us&nbsp;&nbsp;關於我們</a></li>
+                        <li><a href="#" target="_blank">FAQ&nbsp;&nbsp;問與答</a></li>
+                        <li><a href="#" target="_blank">Join Us&nbsp;&nbsp;人才招募</a></li>
+                    </ul>
+                    <ul class="am-avg-sm-4" style="width: 150px">
+                        <li>
+                            <a href="http://www.facebook.com/hawooohawooo" target="_blank">
+                                <img src="images/footer/0930_website-footer-6.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://myhawooo.blogspot.tw" target="_blank">
+                                <img src="images/footer/0930_website-footer-7.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com/+hawooomy" target="_blank">
+                                <img src="images/footer/0930_website-footer-8.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/hawooo_shopping/" target="_blank">
+                                <img src="images/footer/0930_website-footer-9.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">MY&nbsp;&nbsp;&nbsp;ORDER</div>
+                    <ul class="finfo_ul">
+                        <li><a href="#" target="_blank">My Order&nbsp;&nbsp;訂單管理</a></li>
+                        <li><a href="#" target="_blank">Agent Order&nbsp;&nbsp;代購單管理</a></li>
+                        <li><a href="#" target="_blank">Track My Order&nbsp;&nbsp;查詢貨態</a></li>
+                        <li><a href="#" target="_blank">E-Wallet&nbsp;&nbsp;購物金查詢</a> </li>
+                        <li><a href="#" target="_blank">My Voucher&nbsp;&nbsp;折扣券查詢</a></li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-3" style="padding-left: 0px; padding-right: 0px">
+                    <div style="padding-top: 10px;" class="finfo_title">
+                        ABOUT&nbsp;&nbsp;&nbsp;HAWOOO
+                    </div>
+                    <br />
+                    <table class="table-style">
+                        <tr>
+                            <td>HaWooo.com是專門為馬來西亞女孩打造的夢幻平價時尚網站，我們追蹤台灣最實用的美妝、保養、穿搭以及生活資訊，與妳分享如何用最簡單、平價的方式，一起品味時尚生活。 </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-text-center" style="background-color: #000;width:100%">
+            <ul class="am-avg-sm-5 finfo_menu">
+                <li><a href="#">隱私權條款</a></li>
+                <li><a href="#">貨運條款</a></li>
+                <li><a href="#">退貨條款</a></li>
+                <li><a href="#">服務條款</a></li>
+                <li><i class="am-icon-mobile" style="font-size:20px;width:20px;"></i><a href="#">手機版</a></li>
+            </ul>
+        </div>
+        <div class="am-u-sm-12 am-text-center finfo_cr">
+            Copyright © since 2015 hawooo.com All Rights Reserved
+        </div>
+        </section>
+        <!-- footer-web-map 網頁地圖 end -->
+
+
+
+    </content>
+
+
+
+    <!-- content end -->
+    
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+    
+        
+
+
+    
+
+</body>
+</html>

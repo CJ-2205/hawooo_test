@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hawooo</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+
+
+    <link href="../assets/css/amazeui.min.css" rel="stylesheet" />
+
+    <link href="../assets/css/app.css" rel="stylesheet" />
+    <link href="../assets/css/buttons.css" rel="stylesheet" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+
+
+    <!--mouce hover-->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+
+    <link href="css/hoverstyle.css" rel="stylesheet" />
+    <script src="js/jquery.hoverdir.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+    <script src="js/modernizr.custom.97074.js"></script>
+
+    <!--menu css-->
+    <!--<link href="../cssmenu2/m2styles.css" rel="stylesheet" />
+    <script src="../cssmenu2/m2script.js"></script>-->
+    <!--slick-->
+    <link href="../slick/slick.css" rel="stylesheet" />
+    <link href="../slick/slick-theme.css" rel="stylesheet" />
+
+    <!--menu-->
+    <script type="text/javascript" src="menu/navMenu.js"></script>
+    <link href="menu/menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="background:#F6F6F6">
+
+
+    <header data-am-widget="header" class="am-header am-header-default am-show-md-down" style="background-color:#FF2E6C" data-am-sticky>
+        <div class="am-header-left am-header-nav">
+            <a href="#left-link" class="">
+
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">Hawooo</h1>
+        <div class="am-header-right am-header-nav">
+            <a href="#right-link" class="">
+                <span class="am-header-nav-title">menu</span>
+                <i class="am-header-icon am-icon-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <header class="am-topbar am-hide-sm-down">
+        <div class="am-container" id="top-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                <!--<li class="am-active"><a href="#">Home</a></li>-->
+
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-money"></i> USD <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">USD 美金</a></li>
+                        <li><a href="#">MYR 馬幣</a></li>
+                        <li><a href="#">SGD 新加坡幣</a></li>
+                        <li><a href="#">TWD 台幣</a></li>
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-language"></i>  ZH-TW <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">EN 英文</a></li>
+                        <li><a href="#">ZH-CN 簡體中文</a></li>
+                        <li><a href="#">ZH-TW 繁體中文</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+
+            <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                <!--<ul class="am-nav am-nav-pills am-topbar-nav">
+
+                    <li class="am-active"><a href="#" class="am-icon-home am-icon-sm"> Home</a></li>
+                </ul>-->
+
+                <div class="am-topbar-right">
+                    <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                        <li><a href="login.html"><i class="am-icon-user"></i> 登入/註冊</a></li>
+                        <li><a href="#"><i class="am-icon-table"></i> 訂單查詢</a></li>
+                        <li><a href="#"><i class="am-icon-tags"></i> 追蹤清單</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--上方LOGO ITEM SERCE BAR 開始-->
+    <div class="am-g logobar am-hide-sm-down" data-am-sticky="{animation: 'slide-top'}">
+        <div style="max-width:1200px; margin: 0px auto;">
+            <div class="am-u-sm-12" style="padding:0px;margin:0px;">
+                <div class="am-u-sm-3" style="padding:0px;">
+                    <img src="img/hawooologo.png" class="am-img-responsive" width="300" />
+                </div>
+                <div class="am-u-sm-6 am-text-left" style="padding-top:10px; padding-right:0px; margin:0px">
+                    <ul id="navMenu">
+                        <!-- <li class="selected_"><a href="index.html" class="memu00">首頁<span>home</span></a></li>-->
+                        <li><a href="shop.html" class="memu01">購物商城<span>shop</span></a></li>
+                        <li><a href="tuangou.html" class="memu02">團購專區<span>group buys</span></a></li>
+                        <li>
+                            <a href="#" class="memu03">品牌介紹<span>whole team</span></a>
+                            <ul>
+                                <li><a href="brands.html">86小舖</a></li>
+                                <li><a href="brands.html">生活童話</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="featured.html" class="memu04">網友推薦<span>Featured</span></a></li>
+                        <li><a href="hottopic.html" class="memu05">熱門討論<span>Hot Topic</span></a></li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-2">
+
+                    <div class="am-form-group am-g" style="padding-top:25px">
+                        <form class="am-form-inline" style="margin:0px;">
+                            <input type="text" class="am-form-field" placeholder="keyword" style="width:70%">
+                            <button class="am-btn am-btn-warning"><i class="am-icon-search"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--上方LOGO ITEM SERCE BAR 結束-->
+    
+    <!--代購系統 開始-->
+    <div id="main">
+        <div class="am-container" style="margin-top:10px;" >
+            <div class="am-g">
+                <!--左側內容 開始-->
+            <div class="am-u-sm-12">
+                <div class="am-u-sm-9" >
+                   <div class="orderListBox">
+                         <p class="orderRuleTitle"><img src="img/rule_icon.png" style="width:23px;">代購規則</p>
+                         <p class="orderRuleContent">
+                             <img src="img/rules-img.png" width="99%">
+                         </p>
+                    </div>
+                    <div class="am-u-sm-12" style="margin: 0;padding:0">
+                    <div class="join-provision">
+                      <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }' style="background-color: #fff;">
+                        <dl class="am-accordion-item">
+                          <dt class="am-accordion-title" style="color:#343333">
+                            <span><img src="img/qa_icon.png" width="32">&nbsp;代購流程說明</span>
+                          </dt>
+                          <dd class="am-accordion-bd am-collapse">
+                            <div class="am-accordion-content" >
+                              <div>
+                                <p>歡迎來到HaWooo.com。若您繼續瀏覽或使用我們的網站，即代表您已經遵守並同意我們所列明的條款。</p>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </section>
+                    </div>
+                </div>
+                <div class="am-u-sm-12" style="margin: 0;padding:0">
+                    <div class="join-provision">
+                      <section data-am-widget="accordion" class="am-accordion am-accordion-default" data-am-accordion='{ "multiple": true }' style="background-color: #fff;margin-top:3px;">
+                        <dl class="am-accordion-item">
+                          <dt class="am-accordion-title" style="color:#343333">
+                            <span><img src="img/qa_icon.png" width="32">&nbsp;代購流程說明</span>
+                          </dt>
+                          <dd class="am-accordion-bd am-collapse">
+                            <div class="am-accordion-content" >
+                              <div>
+                                <p>歡迎來到HaWooo.com。若您繼續瀏覽或使用我們的網站，即代表您已經遵守並同意我們所列明的條款。</p>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </section>
+                    </div>
+                </div>
+                </div>
+                
+        <!-- QA問題1  結束-->
+
+                <!--左側內容 結束-->
+                
+                <!--右側內容 開始-->
+            <div class="am-g"  style="padding-top: 10px">
+                <div class="am-u-sm-3" style="padding-left:0px;">
+                    <ul class="channel">
+                        <li class="orderform">
+                        <a href="page2.html">填寫代購單
+                        <span class="angle-right"><img src="img/angle_right.png"></span></a>
+                        </li>
+                        <li class="rules">
+                        <a href="page1.html">代購規則
+                        <span class="angle-right"><img src="img/angle_right.png"></span></a>
+                        </li>
+                        <li class="hotBand">
+                        <img src="img/hot-band-title.png">
+                        </li>
+                    </ul>
+                    <div class="bandContent" style="background: url(img/hot-band-bg.png) repeat-y;">
+                        <ul class="bandList">
+                        <li style="margin-bottom: 10px;">
+                            <a href=""><img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li>
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <img src="img/hot-band-bottom.png" style="font-size:0;margin:0 0 20px 0;">   
+                </div>
+            </div>
+                <!--右側內容 結束-->
+        </div>
+    </div>
+    </div> 
+</div>
+
+    <!--代購系統 結束-->
+    
+    <!--footer開始-->
+    <div class="footer_topborder"></div>
+    <footer class="footer">
+        <div class="am-g am-g-fixed am-text-center">
+            <p>
+                <a href="#">&nbsp;平台介紹</a> | <a href="#">&nbsp;關於我們</a> | <a href="#">&nbsp;常見問題</a> | <a href="#">聯絡我們</a> | <a href="#">&nbsp;業務合作</a> | <a href="#">&nbsp;購物教學</a> | <a href="#">&nbsp;付款教學</a> | <a href="#">&nbsp;Facebook粉絲團</a> | <a href="#">&nbsp;服務條款</a> | <a href="#">&nbsp;隱私權政策</a>
+            </p>
+            <br />
+            <p>
+                @ 2015 Copyright by Hawooo 好物飛行 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(function () {
+            $('#jq-da-thumbs > li').each(function () { $(this).hoverdir(); });
+        });
+    </script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--<script src="../slick/slick.min.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('.mid-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 7,
+            //    slidesToScroll: 7,
+            //    autoplaySpeed: 2000,
+            //});
+            //$('.brand-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 5,
+            //    slidesToScroll: 5,
+            //    autoplaySpeed: 2000,
+            //});
+
+            var $navList = $('.nav-list');
+
+            $navList.on('click', 'li:not(.selected)', function (e) {
+                $navList.find(".selected").removeClass("selected");
+                $(e.currentTarget).addClass("selected");
+            });
+        });
+
+
+
+    </script>
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=284638981548324";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--tabs slider-->
+    <script src="js/tab-slider.js"></script>
+
+</body>
+</html>

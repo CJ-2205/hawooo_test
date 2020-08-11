@@ -1,0 +1,101 @@
+
+.articleButton{
+    width: 60px;
+    height: 30px;
+    background-color: #00d0e2;
+    line-height: 30px;
+}
+.articleList{
+	width: 100%;
+	margin:15px 10px 0 5px;
+	padding: 5px;
+}
+.articleImg{
+    position:absolute;
+    clip:rect(0px,60px,80px,0px);
+}
+.grid-item { 
+	float:left;
+	width: 405px;
+	margin: 0 10px 0 0;
+	padding:0;
+	box-sizing: border-box;
+}
+.grid-item img { 
+	width: 100%;
+	height:auto;
+}
+
+
+.shareBox{
+	float: left;
+	display: block;
+	margin: 20px 0 20px 0;
+	width: 100%;
+	list-style-type: none;
+}
+
+.shareBox .facebook_share{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #3b5998;
+	font-family: montserrat;
+	color: #fff;
+	text-align: center;
+}
+.shareBox .twitter_share{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #00aced;
+	font-family: montserrat;
+	color: #fff;
+	text-align: center;
+}
+.shareBox .google_share{
+	float: left;
+	display: block;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	background-color: #dd4b39;
+	font-family: montserrat;
+	color: #fff;
+	text-align: center;
+}
+.facebook_share a{
+	color: #fff;
+}
+.twitter_share a{
+	color: #fff;
+}
+.google_share a{
+	color: #fff;
+}
+
+/**** Transitions ****/
+.masonry,
+.masonry .masonry-brick {
+	-webkit-transition-duration: 0.7s;
+	-moz-transition-duration: 0.7s;
+	-o-transition-duration: 0.7s;
+	transition-duration: 0.7s;
+}
+.masonry {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+.masonry .masonry-brick {
+	-webkit-transition-property: left, right, top;
+	-moz-transition-property: left, right, top;
+	-o-transition-property: left, right, top;
+	transition-property: left, right, top;
+}
+

@@ -1,0 +1,765 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>hawooo Index</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <!-- <meta http-equiv="Cache-Control" content="no-siteapp" /> -->
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png"> -->
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png"> -->
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <!-- <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png"> -->
+    <!-- <meta name="msapplication-TileColor" content="#0e90d2"> -->
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <!-- 通用＋menu -->
+    <link rel="stylesheet" href="assets/css/header.css">
+    <!-- 加入會員專用 -->
+    <link rel="stylesheet" href="assets/css/newmember.css">
+    <!-- 下方三個好處免運、正品、快送 -->
+    <link rel="stylesheet" href="assets/css/footer_good_block.css">
+    <!-- 登入光箱專用 -->
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+
+    <link rel="stylesheet" href="assets/css/newfooter.css" />
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
+
+    <!-- 加入會員script掛在下面 -->
+    
+</head>
+<body>
+
+    <!-- Header 開始 -->
+    <header>
+        <div class="am-g header-wrapper">
+            <!-- language & shoppingcart （最上方選擇語言） star -->
+            <section class="am-u-sm-12 header-language-wrapper">
+                <div class="am-u-sm-10 am-u-sm-centered header-language-content">
+                    <div class="am-cf">
+                        <div class="am-fl header-language">
+                            <ul>
+                                <li id="language">language
+                                    <i class="am-icon-sort-desc"></i>
+                                </li>
+                            </ul>
+                            <span></span>
+                        </div>
+                        <div class="am-fr header-shoppingcart">
+                            <ul>
+                                <li class="am-fl header-shoppingcart-item" style="margin-right: 15px;" onclick="doLogin()">會員中心<i class="am-icon-sort-desc am-fr" style="left:50px;top:2px;color:#a8a8a8"></i></li>
+                                <li class="am-fl header-shoppingcart-item">
+                                    <i class="am-icon-list-alt"></i>
+                                    我的訂單
+                                </li>
+                                <li class="am-fl header-shoppingcart-item">
+                                    <i class="am-icon-star-o"></i>
+                                    我的Ha幣
+                                </li>
+                                <li class="am-fl header-shoppingcart-item" id="shoppingcart">
+                                    <i class="am-icon-shopping-cart"></i>
+                                    購物車
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- language & shoppingcart（最上方選擇語言） end -->
+
+            <!-- mini-language box（語言箱子）star -->
+            <section class="am-container mini-language">
+                <div class="mini-language-box jump-window ">
+                    <ul>
+                        <li>中文</li>
+                        <li style="display: none">ENGLISH</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- mini-language box（語言箱子）end -->
+
+            <!-- mini-shopping-cart(小購物車) star-->
+            <section class="am-container mini-shopping-cart">
+                <div class="am-u-sm-10 mini-shopping-cart-wrapper">
+                    <!-- 關閉購物車 -->
+                    <span class="shopping-cart-close">✕</span>  
+                    <!-- 關閉購物車 -->
+                    <!-- 包著好物市集、限時團購 開始 -->
+                    <div class="mini-shopping-cart-items-wrapper">
+                        <!-- mini-shopping-cart-tabs 上方選項 star-->
+                        <div class="am-u-sm-12 p-0 mini-shopping-cart-tabs">
+                            <ul class="p-0 m-0 am-avg-sm-2">
+                                <li class="mini-shopping-cart-tab">好物市集
+                                <span class="mini-shopping-cart-hint"><p>99</p></span></li>
+                                <li class="mini-shopping-cart-tab">限時團購
+                                <span class="mini-shopping-cart-hint"><p>3</p></span></li>
+                            </ul>
+                        </div>
+                        <!-- mini-shopping-cart-tabs 上方選項 end-->
+                        <!-- 好物市集頁 開始 -->
+                        <div class="am-u-sm-12 p-0 m-0 mini-shopping-cart-content hawooo-cart">
+                            <div class="mini-shopping-cart-item">
+                                <ul>
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/B1C4A1139B0661D3FB18CC19AC09DA620D90B4AB" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    BEVY C. 肌淨無限卸妝潔顏兩件組BEVY
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                </ul>
+                            </div>
+                            <!-- 好物市集總金額 開始 -->
+                            <div class="am-u-sm-12 am-cf p-0 m-0 mini-shopping-cart-price hawooo-cart-price">
+                                <p class="am-fl">總金額：</p><span class="am-fr">RM 199.99</span>
+                            </div>
+                            <!-- 好物市集總金額 結束 -->
+                        </div>
+                        <!-- 好物市集頁 結束 -->
+                        <!-- 限時團購頁 開始 -->
+                        <div class="am-u-sm-12 p-0 m-0 mini-shopping-cart-content group-cart">
+                            <div class="mini-shopping-cart-item">
+                                <ul>
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                    <!-- 小購物車裡面的一條商品明細  開始-->
+                                    <li class="cartProductContainer am-cf">
+                                        <a href="javascript:void(0)">
+                                            <!-- 小購物車照片 開始-->
+                                            <div class="am-u-sm-4 am-fl cartImgContainer">
+                                                <img src="https://s.yimg.com/wb/images/08D726E3B85191D21B044699AFB23A24A2F83D28" alt="">
+                                            </div>
+                                            <!-- 小購物車照片 結束-->
+                                            <!-- 小購物車內容 開始-->
+                                            <div class="am-u-sm-7 am-fl cartDetailsContainer">
+                                                <!-- Item Specifications -->
+                                                <div class="cartProductSpec">
+                                                    Moschino Glamour Eau de Parfum 櫻桃心淡香精 100ml
+                                                </div>
+                                                <!-- Item Price -->
+                                                <div class="cartProductPrice uppercase">
+                                                    RM1000
+                                                </div>
+                                                <!-- Item-Quantity -->
+                                                <div class="cartProductQuantity uppercase">
+                                                    <span class="mini-price-qty">Qty：</span><span class="cartQuantityValue">10</span>
+                                                </div>
+                                            </div>
+                                            <!-- 小購物車內容 結束-->
+                                        </a>
+                                        <!-- 刪除一筆商品 開始 -->
+                                        <div class="am-u-sm-1 am-fr mini-shopping-delete">
+                                            <div class="cartDeleteButton">
+                                                <i class="am-icon-remove"></i>
+                                            </div>
+                                        </div>
+                                        <!-- 刪除一筆商品 結束 -->
+                                    </li>
+                                    <!-- 小購物車裡面的一條商品明細  結束-->
+                                </ul>
+                            </div>
+                            <!-- 限時團購總金額 開始 -->
+                            <div class="am-u-sm-12 am-cf p-0 m-0 mini-shopping-cart-price group-cart-price">
+                                <p class="am-fl">總金額：</p><span class="am-fr">RM 399.99</span>
+                            </div>
+                            <!-- 限時團購總金額 結束 -->
+                        </div>
+                        <!-- 限時團購頁 結束 -->
+                    </div>
+                    <!-- 包著好物市集、限時團購 結束 -->
+                    <!-- 結帳按鈕 開始 -->
+                    <div class="am-u-sm-10 checkoutShopBtnContainer">
+                        <a href="#" class="am-u-sm-12 uppercase flexibleCartContent" id="cartCheckoutBtn">馬上結帳</a>
+                        <a href="#" class="am-u-sm-12 uppercase" id="cartShopBtn">繼續購物</a>
+                    </div>
+                    <!-- 結帳按鈕 開始 -->
+                </div><!-- am-u-sm-10的wrapper腳 -->
+            </section>
+            <!-- mini-shopping-cart(小購物車) end-->
+
+            <!-- logo & search star -->
+            <section class="am-u-sm-12 header-logo-search-wrapper">
+                <div class="am-u-sm-11 am-u-sm-centered header-logo-search-content">
+                    <ul>
+                        <li class="am-u-sm-3 logo">
+                            <h1>HaWooo 好物飛行</h1>
+                            <img src="images/0322_hawooo好物logo.svg" alt="HaWooo 好物飛行">
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/hot_brands.png">熱門品牌
+                            </a>
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/spot_shopping.png">限時團購
+                            </a>
+                        </li>
+                        <li class="am-u-sm-2 logo-item">
+                            <a href="#">
+                                <img src="icon/people_recommend.png">紅人推薦
+                            </a>
+                        </li>
+                        <li class="am-u-sm-3 header-search">
+                            <div class="am-u-sm-8 search-bar">
+                                <input type="text" name="ct100$txt_search" id="txt_search" placeholder="原價買到台灣好東西" class="search-field">
+                                <button class="search-field-button">
+                                    <span class="am-icon-search"></span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- logo & search end -->
+
+            <!-- menu-item star 中間menulist -->
+            <section class="am-u-sm-12 header-menuitems-wrapper">
+                <div class="am-container header-menuitem-content">
+                    <ul class="am-cf am-avg-sm-9">
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/fashion_makeup_white.png">時尚彩妝</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/body_care_white.png">美體保養</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/health_food_white.png">保健食品</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/underwear_white.png">服裝內衣</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/shose_white.png">流行美鞋</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/bag_white.png">包包配件</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/deli_white.png">品味美食</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/life-supplies_white.png" style="margin-bottom: 3px;">生活用品</a>
+                        </li>
+                        <li class="header-menuitem am-fl">
+                            <a href="#"><img src="icon/mom_baby_white.png" style="margin-bottom: 3px;">媽咪寶貝</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- menu-item & search end -->
+            <!-- side-arrow 側邊拇指 star -->
+            <section class="side-arrow">
+                <div class="side-arrow-wrapper">
+                    <div class="side-arrow-content">
+                        <i class="am-icon-arrow-left"></i>
+                    </div>
+                    <div class="sideinfo">
+                        <ul class="am-u-sm-12">
+                            <span class="close-arrow">關閉</span>
+                            <li class="am-u-sm-12 sideinfo-fb">
+                                <a href="#">
+                                    <img src="images/FB.png">
+                                </a>
+                            </li>
+                            <li class="am-u-sm-12 sideinfo-seen">
+                                <span class="sideinfo-seen-title">瀏覽紀錄</span>
+                                <ul>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                    <li class="sideinfo-item">
+                                        <img src="https://api.fnkr.net/testimg/70x70/CD47D1/FFF/?text=img+placeholder">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="am-u-sm-12 sideinfo-gotop uppercase">
+                                top
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- side-nav 側邊導覽列 end -->
+        </div>
+    </header>
+    <!-- Header 結束 -->
+
+    <!-- 登入光箱 開始  登入的functoin在header.js裡面 -->
+    <section>
+        <div class="am-modal am-modal-no-btn am-modal-login" tabindex="-1" id="poplogin" >
+            <div class="am-modal-dialog login-wrapper">
+                <div class="am-modal-hd login-title">會員登入
+                    <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+                </div>
+                <div class="am-modal-bd login-content">
+                    <div class="am-u-sm-12 login-form">
+                      <!-- 表單開始 -->
+                      <div class="am-u-sm-12 am-u-sm-centered">
+                        <form class="am-form am-form-horizontal">
+                          <!-- 帳號input -->
+                          <div class="am-form-group">
+                            <div class="am-u-sm-10 am-u-sm-centered am-cf input-wrapper id-wrapper">
+                              <div class="am-fl logoin-icon"><i class="am-icon-user"></i></div>
+                              <input class="am-fl" type="text" placeholder="帳號" required/>
+                            </div>
+                          </div>
+
+                          <!-- 密碼input -->
+                          <div class="am-form-group">
+                            <div class="am-u-sm-10 am-u-sm-centered am-cf input-wrapper password-wrapper">
+                              <div class="am-fl logoin-icon"><i class="am-icon-lock"></i></div>
+                              <input class="am-fl" type="password" placeholder="密碼" required/>
+                            </div>
+                          </div>
+
+                          <!-- 忘記密碼 -->
+                          <div class="am-u-sm-10 am-u-sm-centered am-text-right forget-password">登入有問題嗎？ <a href="#">忘記密碼</a></div>
+
+                          <!-- 登入按鈕 -->
+                          <div class="am-form-group">
+                            <div class=" am-u-sm-10 am-u-sm-centered login-btn-wrapper">
+                              <button type="submit" class="am-btn am-btn-default login-btn">SIGN IN</button>
+                            </div>
+                          </div>
+
+                          <!-- 加入新會員 -->
+                          <div class="am-u-sm-10 am-u-sm-centered am-text-center new-member">還不是會員? <a href="#">加入會員</a></div>
+                          
+                          <!-- 臉書按鈕 -->
+                          <div class="am-form-group">
+                            <div class=" am-u-sm-10 am-u-sm-centered facebook-wrapper">
+                              <button type="button" class="am-btn am-btn-default facebook-btn"><i class="am-icon-facebook"></i>Facebook</button>
+                            </div>
+                          </div>
+
+                          <!-- 同意隱私權說明 -->
+                          <div class="am-u-sm-12 am-u-sm-centered am-text-center login-description">擁有帳號表示您同意 <a href="#">會員權益聲明</a>與<a href="#">隱私權條款</a></div>
+
+                        </form>
+                      </div>
+                      <!-- 表單結束 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 登入光箱 結束 -->
+    
+    <!-- content star -->
+    <content style="margin-top: 140px;display: block;">
+
+        <!-- newmember 加入會員 開始 -->
+        <section>
+            <div class="am-container newmember-wrapper">
+                <!-- 左邊登入表單 -->
+                <div class="am-u-sm-6 nm-form">
+                    <h4 class="newmember-title"><i class="am-icon-user-plus"></i>加入會員</h4>
+                    <form class="am-form am-form-horizontal" id="newmemer-form">
+                        <!-- 帳號input -->
+                        <div class="am-form-group">
+                            <div class="am-u-sm-8 am-u-sm-centered am-cf input-wrapper">
+                                <div class="am-fl logoin-icon"><i class="am-icon-user"></i></div>
+                                <input class="am-fl" type="text" placeholder="請輸入帳號" required/>
+                            </div>
+                        </div>
+
+                        <!-- 電郵input -->
+                        <div class="am-form-group">
+                            <div class="am-u-sm-8 am-u-sm-centered am-cf input-wrapper">
+                                <div class="am-fl logoin-icon"><i class="am-icon-envelope"></i></div>
+                                <input class="am-fl" type="email" placeholder="請輸入email"required/>
+                            </div>
+                        </div>
+
+                        <!-- 密碼input -->
+                        <div class="am-form-group">
+                            <div class="am-u-sm-8 am-u-sm-centered am-cf input-wrapper">
+                                <div class="am-fl logoin-icon"><i class="am-icon-lock"></i></div>
+                                <input class="am-fl" type="password" placeholder="請輸入長度6~15字母的密碼"required/>
+                            </div>
+                        </div>
+
+                        <!-- 再次確認密碼input -->
+                        <div class="am-form-group">
+                            <div class="am-u-sm-8 am-u-sm-centered am-cf input-wrapper">
+                                <div class="am-fl logoin-icon"><i class="am-icon-lock"></i></div>
+                                <input class="am-fl" type="password" placeholder="請再次確認密碼"required/>
+                            </div>
+                        </div>
+
+                        <!-- 我同意條款checkbox -->
+                        <div class="am-u-sm-8 am-u-sm-centered am-text-left nm-agree-terms"><input type="checkbox" name="" id="nm-agree-checkbox"><label for="nm-agree-checkbox">我同意HaWooo會員條款</label></div>
+
+                        <!-- 登入按鈕 -->
+                        <div class="am-form-group">
+                            <div class=" am-u-sm-8 am-u-sm-centered nm-btn-wrapper">
+                                <button type="submit" class="am-btn am-btn-default nm-btn" form="newmemer-form" onclick="notAgreeTerms(event)">加入會員</button>
+                            </div>
+                        </div>
+
+                        <!-- 臉書按鈕 -->
+                        <div class="am-form-group">
+                            <div class=" am-u-sm-8 am-u-sm-centered facebook-wrapper">
+                                <button type="button" class="am-btn am-btn-default facebook-btn"><i class="am-icon-facebook"></i>Facebook</button>
+                            </div>
+                        </div>
+
+                        <!-- 同意隱私權說明 -->
+                        <div class="am-u-sm-12 am-u-sm-centered am-text-center nm-agree-description">擁有帳號表示您同意 <a href="#">會員權益聲明</a>與<a href="#">隱私權條款</a></div>
+                    </form>
+                </div>
+                <!-- 左邊登入表單 結束-->
+                <!-- 右邊加入條款 開始-->
+                <div class="am-u-sm-6 nm-terms">
+                    <h4 class="newmember-title"><i class="am-icon-university"></i>HaWooo會員條款</h4>
+                    <div class="nm-terms-content">
+                        <p> 歡迎來到HaWooo.com。若您繼續瀏覽或使用我們的網站，即代表您已經遵守並同意我們所列明的條款。
+                            <br><br>
+                            1. 凡本站所顯示的內容都為一般資訊用途，有任何的修改將不會做額外的通知。<br>
+                            2. 本站所使用的伺服器將蒐集並管理您所參考過的資訊，若您願意並允許使用該伺服器，您的個人訊息將可能供第三方使用。<br>
+                            3. 對於本站所提供的數據或資料的準確性、時間性、完整性我們與第三方將不會提供任何的保障以及承諾。此外，您也必須了解網絡資料可能存在著錯誤和不準確等風險，而在這些風險下我們將會在法律的保護下，摒除一切承擔責任的風險。另外，關於本站的任何產品相關訊息，您有責任確保相關產品符合您的所需，對此我們將不會承擔任何責任風險。<br>
+                            4. 本站的網路服務內容包括文字、圖片、影像、廣告，而所有內容受版權、商標、標籤和其他財產所有權的法律保護。用戶只能在取得我們或商家的授權之下才能使用這些內容，且不得擅自複製並再造這些內容。任何人需要轉載本網站的內容，必須經過本站的同意。<br>
+                            5. 凡在該網站上所連接的額外信息都為一般資訊用途，此連接並不意味我們完全贊同裡面所顯示的資訊，若連接中的信息發生任何差異，本站將不會負起任何責任。<br>
+                            6. 凡任何濫用本站相關資訊的客戶用戶將會受到馬來西亞法律的製裁/追究。<br><br>
+                            網站聲明<br>
+
+                            為了讓HaWooo.com更具完整性以及信息指標性，HaWooo.com擁有一切保留、更改以及聲明各項內容、圖像、服務之權利，而本站將不會對所有會員進行個別通知。此外，若有任何信息接收錯誤，用戶必須自行承擔類似的信息風險。<br>
+
+                            本站在一些特定的情況下可以連接至其他的網站，而這些連接網站將不會在HaWooo.com的條款管制下受到保護。我們並沒有任何的權利乾涉以及完全認同連接裡所傳遞的信息以及內容，故所有信息內容一切風險將由會員自行承擔。<br>
+
+                            最後，為了讓所有的客戶能夠享有簡易的網購服務，HaWooo.com將會盡全力讓網站更加完善並且能更順利的運行。但若因銷售系統發生故障或網絡癱瘓導致交易無法完成或丟失有關信息、記錄等，本站將不會負起任何的責任。</p>
+                    </div>
+                </div>
+                <!-- 右邊加入條款 結束-->
+            </div>
+        </section>
+        <!-- newmember 加入會員 結束 -->
+
+        <!-- footer-good-block 頁尾三大好處的icon star -->
+        <section class="footer-good-block">
+            <div class="am-g" style="background:white;margin:20px 0px;">
+                <div class="am-container footer-good-block-wrapper">
+                    <ul class="am-avg-sm-3">
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_01.png" id="company-quality1">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>100％海外正品</h4>
+                                    <p>100% Authentic</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_02.png" id="company-quality2">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>RM199 免運</h4>
+                                    <p>RM199 Free Shipping</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="footer-good-block-icons">
+                            <div class="footer-good-block-icon am-cf">
+                                <div class="icon-wrapper am-fl">
+                                    <img src="icon/icon-company-quality_03.png">
+                                </div>
+                                <div class="footer-good-block-text am-fl">
+                                    <h4>3-10天到貨</h4>
+                                    <p>Fast Delivery</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer-good-block 頁尾三大好處的icon end -->
+        
+        <!-- footer-web-map 網頁地圖 star -->
+        <section class="footer-web-map">
+            <div class="finfo_top"></div>
+            <div class="am-container">
+            <div class="am-g">
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">NEED&nbsp;&nbsp;&nbsp;HELP</div>
+                    <ul class="finfo_ul">
+                        <li><i class="am-icon-phone" style="font-size:20px;width:20px;"></i>+603-23866096</li>
+                        <li><a href="mailto:service@hawooo.com">service@hawooo.com</a></li>
+                    </ul>
+                    <div class="finfo_title">WORKING  HOURS</div>
+                    <ul class="finfo_ul">
+                        <li>Mon. - Fri.<span style="font-size:10px;">(except public holiday)</span></li>
+                        <li style="font-size:16px;">9.00AM - 6.00PM</li>
+                    </ul>
+
+                </div>
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">HELP</div>
+                    <ul class="finfo_ul">
+                        <li><a href="#" target="_blank">Content Us&nbsp;&nbsp;關於我們</a></li>
+                        <li><a href="#" target="_blank">FAQ&nbsp;&nbsp;問與答</a></li>
+                        <li><a href="#" target="_blank">Join Us&nbsp;&nbsp;人才招募</a></li>
+                    </ul>
+                    <ul class="am-avg-sm-4" style="width: 150px">
+                        <li>
+                            <a href="http://www.facebook.com/hawooohawooo" target="_blank">
+                                <img src="images/footer/0930_website-footer-6.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://myhawooo.blogspot.tw" target="_blank">
+                                <img src="images/footer/0930_website-footer-7.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.google.com/+hawooomy" target="_blank">
+                                <img src="images/footer/0930_website-footer-8.png" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com/hawooo_shopping/" target="_blank">
+                                <img src="images/footer/0930_website-footer-9.png" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-3">
+                    <div style="padding-top: 10px" class="finfo_title">MY&nbsp;&nbsp;&nbsp;ORDER</div>
+                    <ul class="finfo_ul">
+                        <li><a href="#" target="_blank">My Order&nbsp;&nbsp;訂單管理</a></li>
+                        <li><a href="#" target="_blank">Agent Order&nbsp;&nbsp;代購單管理</a></li>
+                        <li><a href="#" target="_blank">Track My Order&nbsp;&nbsp;查詢貨態</a></li>
+                        <li><a href="#" target="_blank">E-Wallet&nbsp;&nbsp;購物金查詢</a> </li>
+                        <li><a href="#" target="_blank">My Voucher&nbsp;&nbsp;折扣券查詢</a></li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-3" style="padding-left: 0px; padding-right: 0px">
+                    <div style="padding-top: 10px;" class="finfo_title">
+                        ABOUT&nbsp;&nbsp;&nbsp;HAWOOO
+                    </div>
+                    <br />
+                    <table class="table-style">
+                        <tr>
+                            <td>HaWooo.com是專門為馬來西亞女孩打造的夢幻平價時尚網站，我們追蹤台灣最實用的美妝、保養、穿搭以及生活資訊，與妳分享如何用最簡單、平價的方式，一起品味時尚生活。 </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="am-u-sm-12 am-text-center" style="background-color: #000;width:100%">
+            <ul class="am-avg-sm-5 finfo_menu">
+                <li><a href="#">隱私權條款</a></li>
+                <li><a href="#">貨運條款</a></li>
+                <li><a href="#">退貨條款</a></li>
+                <li><a href="#">服務條款</a></li>
+                <li><i class="am-icon-mobile" style="font-size:20px;width:20px;"></i><a href="#">手機版</a></li>
+            </ul>
+        </div>
+        <div class="am-u-sm-12 am-text-center finfo_cr">
+            Copyright © since 2015 hawooo.com All Rights Reserved
+        </div>
+        </section>
+        <!-- footer-web-map 網頁地圖 end -->
+
+    </content>
+    <!-- content end -->
+    
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+    
+    <script src="assets/js/header.js"></script>
+    <script type="text/javascript" src="assets/js/newmember.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,310 @@
+/*========猜你喜歡等..沒有愛心的商品 products don't have love-btn========*/
+/*好物市集也可以用哦*/
+ul.product-style-1 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul.product-style-1 .more-products-slider-page {
+  height: 100%;
+}
+ul.product-style-1 .more-products-slider-page li {
+  width: calc(20% - 2px);
+  height: calc(100% - 2px);
+  padding: 7.5px 15px;
+}
+ul.product-style-1 .more-products-slider-page li:hover {
+  border: 1px solid #ff7c81;
+  padding: 6.5px 14px;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-pic {
+  padding: 0;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-pic img {
+  width: 100%;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-pic span#tag-chinese {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: white;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text {
+  padding: 0;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text h4 {
+  font-size: 13px;
+  font-weight: normal;
+  height: 38px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: 5px 0;
+  color: #595959;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount h5 {
+  height: 25px;
+  font-size: 17px;
+  color: #FB5450;
+  padding: 0;
+  margin: 0;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount h5 span.price-end {
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  padding-left: 5px;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount h5 p {
+  padding: 0;
+  margin: 0;
+  color: #FB5450;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount p.discount-range {
+  display: inline-block;
+  float: right;
+  color: #595959;
+  margin: 0 0 0 15px;
+  line-height: 28px;
+  font-size: 12px;
+}
+ul.product-style-1 .more-products-slider-page li .more-products-slider-text .price-discount p.discount-range span {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #FB5450;
+}
+
+
+/*========限時團購的商品 products in group-buying========*/
+ul.product-style-2 {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+ul.product-style-2 li {
+  height: 360px;
+  width: calc(25% - 15px);
+  border: 3px solid #f0f0f0;
+  padding: 10px;
+  margin: 0px 20px 20px 0;
+  font-weight: normal;
+  text-align: center;
+}
+ul.product-style-2 li:nth-child(4n) {
+  margin-right: 0;
+}
+ul.product-style-2 li:hover {
+  border: 3px solid #FB5450;
+}
+ul.product-style-2 li span#tag-chinese {
+  display: block;
+  background: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+ul.product-style-2 li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+ul.product-style-2 li img {
+  width: 100%;
+  height: auto;
+}
+ul.product-style-2 li .items-content-text {
+  padding: 0;
+  text-align: left;
+  margin-top: 20px;
+}
+ul.product-style-2 li .items-content-text h4 {
+  font-size: 13px;
+  font-weight: normal;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: 5px 0;
+  color: #595959;
+}
+ul.product-style-2 li .items-content-text .price-discount {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+ul.product-style-2 li .items-content-text .price-discount h5 {
+  height: 25px;
+  font-size: 17px;
+  color: #FB5450;
+  padding: 0;
+  margin: 0;
+}
+ul.product-style-2 li .items-content-text .price-discount h5 span.price-end {
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  padding-left: 5px;
+}
+ul.product-style-2 li .items-content-text .price-discount h5 p {
+  padding: 0;
+  margin: 0;
+  color: #FB5450;
+}
+ul.product-style-2 li .items-content-text .price-discount p.discount-range {
+  display: inline-block;
+  color: #595959;
+  margin: 0 0 0 20px;
+  line-height: 28px;
+  font-size: 12px;
+  float: right;
+}
+ul.product-style-2 li .items-content-text .price-discount p.discount-range span {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #FB5450;
+}
+
+
+/*========首頁猜你喜歡有愛心的商品 products with love-btn 開始========*/
+ul.product-style-3 {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul.product-style-3 li.guess-you-like-item {
+  height: 50%;
+  padding: 20px 15px 0px 15px;
+  position: relative;
+}
+ul.product-style-3 li.guess-you-like-item:hover .guess-you-like-item-content {
+  box-shadow: 0px 0px 10px 0px #ccc;
+  transition: .3s;
+}
+ul.product-style-3 li.guess-you-like-item .guess-you-like-item-content {
+  height: 100%;
+  background: white;
+  padding: 0;
+  border: 1px solid #eee;
+  position: relative;
+  cursor: pointer;
+  transition: .3s;
+}
+ul.product-style-3 .guess-you-like-item-pic {
+  height: 198px;
+  background: #aaa;
+  padding: 0;
+}
+ul.product-style-3 .guess-you-like-item-pic img {
+  width: 100%;
+  height: 100%;
+}
+ul.product-style-3 .guess-you-like-item-pic span#tag-chinese {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: white;
+}
+ul.product-style-3 .guess-you-like-item-text {
+  padding: 10px;
+  position: relative;
+}
+ul.product-style-3 .guess-you-like-item-text h4 {
+  font-size: 13px;
+  font-weight: normal;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: 5px 0;
+  color: #595959;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 28px;
+  line-height: 28px;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount h5 {
+  height: 28px;
+  font-size: 17px;
+  color: #FB5450;
+  padding: 0;
+  margin: 0;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount h5 span.price-end {
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  padding-left: 5px;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount h5 p {
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  color: #FB5450;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount p.discount-range {
+  display: inline-block;
+  float: right;
+  color: #595959;
+  margin: 0 0 0 10px;
+  font-size: 12px;
+}
+ul.product-style-3 .guess-you-like-item-text .price-discount p.discount-range span {
+  display: inline-block;
+  height: 28px;
+  font-size: 14px;
+  color: #FB5450;
+}
+ul.product-style-3 .guess-you-like-button {
+  /*加入追蹤按鈕 可以獨立出來喔 add to favorite*/
+  display: inline;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(220, 220, 220, 0.5);
+  position: absolute;
+  top: 160px;
+  right: 25px;
+  transition: .3s;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+ul.product-style-3 .guess-you-like-button:hover span.pink-o {
+  opacity: 1;
+  transition: .3s;
+}
+ul.product-style-3 .guess-you-like-button span.pink-o {
+  opacity: 0;
+  color: #FF7C81;
+  transition: .3s;
+}
+ul.product-style-3 .guess-you-like-button span.pink-o.show {
+  opacity: 1;
+  transition: .3s;
+}
+ul.product-style-3 .guess-you-like-button span {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 50px;
+  font-size: 20px;
+  color: white;
+}
+

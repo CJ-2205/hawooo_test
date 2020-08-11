@@ -1,0 +1,433 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hawooo</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+
+
+    <link href="../assets/css/amazeui.min.css" rel="stylesheet" />
+
+    <link href="../assets/css/app.css" rel="stylesheet" />
+    <link href="../assets/css/buttons.css" rel="stylesheet" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+
+
+    <!--mouce hover-->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+
+    <link href="css/hoverstyle.css" rel="stylesheet" />
+    <script src="js/jquery.hoverdir.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+    <script src="js/modernizr.custom.97074.js"></script>
+
+    <!--menu css-->
+    <!--<link href="../cssmenu2/m2styles.css" rel="stylesheet" />
+    <script src="../cssmenu2/m2script.js"></script>-->
+    <!--slick-->
+    <link href="../slick/slick.css" rel="stylesheet" />
+    <link href="../slick/slick-theme.css" rel="stylesheet" />
+
+    <!--menu-->
+    <script type="text/javascript" src="menu/navMenu.js"></script>
+    <link href="menu/menu.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body style="background:#F6F6F6">
+
+
+    <header data-am-widget="header" class="am-header am-header-default am-show-md-down" style="background-color:#FF2E6C" data-am-sticky>
+        <div class="am-header-left am-header-nav">
+            <a href="#left-link" class="">
+
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">Hawooo</h1>
+        <div class="am-header-right am-header-nav">
+            <a href="#right-link" class="">
+                <span class="am-header-nav-title">menu</span>
+                <i class="am-header-icon am-icon-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <header class="am-topbar am-hide-sm-down">
+        <div class="am-container" id="top-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                <!--<li class="am-active"><a href="#">Home</a></li>-->
+
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-money"></i> USD <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">USD 美金</a></li>
+                        <li><a href="#">MYR 馬幣</a></li>
+                        <li><a href="#">SGD 新加坡幣</a></li>
+                        <li><a href="#">TWD 台幣</a></li>
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-language"></i>  ZH-TW <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">EN 英文</a></li>
+                        <li><a href="#">ZH-CN 簡體中文</a></li>
+                        <li><a href="#">ZH-TW 繁體中文</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+
+            <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                <!--<ul class="am-nav am-nav-pills am-topbar-nav">
+
+                    <li class="am-active"><a href="#" class="am-icon-home am-icon-sm"> Home</a></li>
+                </ul>-->
+
+                <div class="am-topbar-right">
+                    <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                        <li><a href="login.html"><i class="am-icon-user"></i> 登入/註冊</a></li>
+                        <li><a href="#"><i class="am-icon-table"></i> 訂單查詢</a></li>
+                        <li><a href="#"><i class="am-icon-tags"></i> 追蹤清單</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--上方LOGO ITEM SERCE BAR 開始-->
+    <div class="am-g logobar am-hide-sm-down" data-am-sticky="{animation: 'slide-top'}">
+        <div style="max-width:1200px; margin: 0px auto;">
+            <div class="am-u-sm-12" style="padding:0px;margin:0px;">
+                <div class="am-u-sm-3" style="padding:0px;">
+                    <img src="img/hawooologo.png" class="am-img-responsive" width="300" />
+                </div>
+                <div class="am-u-sm-6 am-text-left" style="padding-top:10px; padding-right:0px; margin:0px">
+                    <ul id="navMenu">
+                        <!-- <li class="selected_"><a href="index.html" class="memu00">首頁<span>home</span></a></li>-->
+                        <li><a href="shop.html" class="memu01">購物商城<span>shop</span></a></li>
+                        <li><a href="tuangou.html" class="memu02">團購專區<span>group buys</span></a></li>
+                        <li>
+                            <a href="#" class="memu03">品牌介紹<span>whole team</span></a>
+                            <ul>
+                                <li><a href="brands.html">86小舖</a></li>
+                                <li><a href="brands.html">生活童話</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="featured.html" class="memu04">網友推薦<span>Featured</span></a></li>
+                        <li><a href="hottopic.html" class="memu05">熱門討論<span>Hot Topic</span></a></li>
+                    </ul>
+                </div>
+                <div class="am-u-sm-2">
+                    <div class="am-form-group am-g" style="padding-top:25px">
+                        <form class="am-form-inline" style="margin:0px;">
+                            <input type="text" class="am-form-field" placeholder="keyword" style="width:70%">
+                            <button class="am-btn am-btn-warning"><i class="am-icon-search"></i></button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--上方LOGO ITEM SERCE BAR 結束-->
+    
+    <!--代購系統 開始-->
+    <div id="main">
+        <div class="am-container" style="margin-top:10px;">
+            <div class="am-g am-g-fixed">
+                <div class="am-u-sm-9">
+                    <h3 style="margin:20px 0 10px 20px;font-size:20px;">【填寫代購單】</h3>
+                        <div class="orderListBox">
+                        <form class="am-form am-form-horizontal">
+                        <!-- 代購單-商品1 --> 
+                        <div class="orderList">
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">商品名稱：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品名稱" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">參考連結：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品參考連結" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">規&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span></label>
+                              <div class="am-u-sm-10">
+                                <textarea rows="3" cols="20" id="" placeholder="請輸入規格內容" style="font-size:13px;"></textarea>
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">數&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品數量" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">參&nbsp;&nbsp;考&nbsp;&nbsp;價：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品參考價" style="font-size:13px;">
+                              </div>
+                            </div>    
+                        </div>
+                       <!-- 代購單-商品2 --> 
+                        <div class="orderList">
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">商品名稱：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品名稱" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">參考連結：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品參考連結" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">規&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span></label>
+                              <div class="am-u-sm-10">
+                                <textarea rows="3" cols="20" id="" placeholder="請輸入規格內容" style="font-size:13px;"></textarea>
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">數&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品數量" style="font-size:13px;">
+                              </div>
+                            </div>
+                            <div class="am-form-group">
+                              <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">參&nbsp;&nbsp;考&nbsp;&nbsp;價：</span></label>
+                              <div class="am-u-sm-10">
+                                <input type="text" id="doc-ipt-3" placeholder="輸入商品參考價" style="font-size:13px;">
+                              </div>
+                            </div>    
+                        </div>
+                        
+                        <!-- 代購單-新增商品按鈕 --> 
+                        <div class="am-form-group" style="margin-top:15px;">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" ></label>
+                          <div class="am-u-sm-12 am-u-sm-offset-2" style="margin:0 auto;padding:0;">
+                            <button type="submit" class="button button-3d button-primary2 button-rounded" style="width:200px;font-size:16px;background-color:#5a5a5a;">
+                            <img src="img/add.png" style="width:25%">
+                            <span>新增商品</span></button>
+                          </div>
+                        </div>
+                    </form> 
+                    </div>
+                    <!-- 代購單-商品資料 結束-->
+
+
+                    <!-- 代購單-訂購資料 開始-->
+                    <h3 style="margin:20px 0 10px 20px;font-size:20px;">【代購資料】</h3>
+                    <div class="orderListBox">
+                      <form class="am-form am-form-horizontal">
+                         <div class="orderList-infor">
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">姓&nbsp;&nbsp;&nbsp;&nbsp;名：</span></label>
+                                <div class="am-u-sm-10">
+                                  <input type="text" id="doc-ipt-3" placeholder="請輸入姓名" style="font-size:13px;">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">電&nbsp;&nbsp;&nbsp;&nbsp;話：</span></label>
+                                <div class="am-u-sm-10">
+                                  <input type="text" id="doc-ipt-3" placeholder="請輸入電話" style="font-size:13px;">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">E-mail：</span></label>
+                                <div class="am-u-sm-10">
+                                  <input type="text" id="doc-ipt-3" placeholder="請輸入E-mail" style="font-size:13px;">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">地&nbsp;&nbsp;&nbsp;&nbsp;址：</span></label>
+                                <div class="am-u-sm-10">
+                                  <input type="text" id="doc-ipt-3" placeholder="請輸入地址" style="font-size:13px;">
+                                </div>
+                            </div>
+                            <div class="am-form-group">
+                                <label for="doc-ipt-3" class="am-u-sm-2 am-form-label" style="text-align:right;"><span style="font-size:13px;">內&nbsp;&nbsp;&nbsp;&nbsp;容：</span></label>
+                                <div class="am-u-sm-10">
+                                  <textarea  rows="5" cols="30"  placeholder="請輸入內容" style="font-size:13px;"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="am-form-group" style="margin-top:15px;">
+                        <label for="doc-ipt-3" class="am-u-sm-2 am-form-label"></label>
+                          <div class="am-u-sm-12 am-u-sm-offset-2">
+                            <button type="submit" class="button button-3d button-primary button-rounded" style="width:200px;font-size:16px;background-color:#f0767d;">
+                            <span>送出代購單</span></button>
+                          </div>
+                        </div>
+                    </form>
+                 </div>
+                 <!-- 代購單-訂購資料 結束-->
+                </div>
+            
+
+                <!--左側內容 結束-->
+                
+                <!--右側內容 開始-->
+            <div class="am-g"  style="padding-top: 10px">
+                <div class="am-u-sm-3" style="padding-left:0px;">
+                    <ul class="channel">
+                        <li class="orderform">
+                        <a href="page2.html">填寫代購單
+                        <span class="angle-right"><img src="img/angle_right.png"></span></a>
+                        </li>
+                        <li class="rules">
+                        <a href="page1.html">代購規則
+                        <span class="angle-right"><img src="img/angle_right.png"></span></a>
+                        </li>
+                        <li class="hotBand">
+                        <img src="img/hot-band-title.png">
+                        </li>
+                    </ul>
+                    <div class="bandContent" style="background: url(img/hot-band-bg.png) repeat-y;">
+                        <ul class="bandList">
+                        <li style="margin-bottom: 10px;">
+                            <a href=""><img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li style="margin-bottom: 10px;">
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                        <li>
+                            <img src="img/band-img-1.png" width="235">
+                            <p>一個讓你更喜歡自己的地方</p>
+                        </li>
+                    </ul>
+                    </div>
+                    <img src="img/hot-band-bottom.png" style="font-size:0;margin:0 0 20px 0;">   
+                </div>
+            </div>
+                <!--右側內容 結束-->
+        </div>
+    </div>
+
+
+    <!--代購系統 結束-->
+    
+    <!--footer開始-->
+    <div class="footer_topborder"></div>
+    <footer class="footer">
+        <div class="am-g am-g-fixed am-text-center">
+            <p>
+                <a href="#">&nbsp;平台介紹</a> | <a href="#">&nbsp;關於我們</a> | <a href="#">&nbsp;常見問題</a> | <a href="#">聯絡我們</a> | <a href="#">&nbsp;業務合作</a> | <a href="#">&nbsp;購物教學</a> | <a href="#">&nbsp;付款教學</a> | <a href="#">&nbsp;Facebook粉絲團</a> | <a href="#">&nbsp;服務條款</a> | <a href="#">&nbsp;隱私權政策</a>
+            </p>
+            <br />
+            <p>
+                @ 2015 Copyright by Hawooo 好物飛行 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        $(function () {
+            $('#jq-da-thumbs > li').each(function () { $(this).hoverdir(); });
+        });
+    </script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!--<script src="../slick/slick.min.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('.mid-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 7,
+            //    slidesToScroll: 7,
+            //    autoplaySpeed: 2000,
+            //});
+            //$('.brand-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 5,
+            //    slidesToScroll: 5,
+            //    autoplaySpeed: 2000,
+            //});
+
+            var $navList = $('.nav-list');
+
+            $navList.on('click', 'li:not(.selected)', function (e) {
+                $navList.find(".selected").removeClass("selected");
+                $(e.currentTarget).addClass("selected");
+            });
+        });
+
+
+
+    </script>
+
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3&appId=284638981548324";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--tabs slider-->
+    <script src="js/tab-slider.js"></script>
+
+</body>
+</html>

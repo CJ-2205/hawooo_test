@@ -1,0 +1,17 @@
+.pc-timer {
+  font-size: 30px !important;
+  bottom: 26% !important; }
+
+.timer {
+  background: url("https://p8r7m4d5.stackpathcdn.com/images/ftp/201909192/new_time.svg") no-repeat center center;
+  background-size: contain;
+  font-size: 24px;
+  bottom: 28%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 0 auto; }
+  @media screen and (max-width: 576px) {
+    .timer {
+      font-size: 12px;
+      bottom: 28%; } }

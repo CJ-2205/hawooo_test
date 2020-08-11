@@ -1,0 +1,24 @@
+*----------------------------------------------------------
+Time:2017-08-10 11:33:12
+Request:{"object":"page","entry":[{"id":"780442165450140","time":1502336001829,"messaging":[{"sender":{"id":"1600646209965606"},"recipient":{"id":"780442165450140"},"timestamp":1502336001826,"delivery":{"mids":["mid.$cAAKfPbvsvX5j-3lnJFdyjQeokpZ9"],"watermark":1502335999780,"seq":0}}]}]}
+Message:System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 fb_fbWebhook.Page_Load(Object sender, EventArgs e) 於 d:\hawooo\web\user\fbWebhook.aspx.cs: 行 96
+----------------------------------------------------------*
+*----------------------------------------------------------
+Time:2017-08-10 11:33:55
+Request:{"object":"page","entry":[{"id":"780442165450140","time":1502336045155,"messaging":[{"sender":{"id":"1600646209965606"},"recipient":{"id":"780442165450140"},"timestamp":1502336045153,"delivery":{"mids":["mid.$cAAKfPbvsvX5j-3oSZldyjTJoU2GJ"],"watermark":1502336043622,"seq":0}}]}]}
+Message:System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 fb_fbWebhook.Page_Load(Object sender, EventArgs e) 於 d:\hawooo\web\user\fbWebhook.aspx.cs: 行 96
+----------------------------------------------------------*
+*----------------------------------------------------------
+Time:2017-08-10 11:34:29
+Request:{"object":"page","entry":[{"id":"780442165450140","time":1502336079550,"messaging":[{"sender":{"id":"1600646209965606"},"recipient":{"id":"780442165450140"},"timestamp":1502336079547,"read":{"watermark":1502336043622,"seq":0}}]}]}
+Message:System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 fb_fbWebhook.Page_Load(Object sender, EventArgs e) 於 d:\hawooo\web\user\fbWebhook.aspx.cs: 行 96
+----------------------------------------------------------*
+*----------------------------------------------------------
+Time:2017-08-10 11:34:58
+Request:{"object":"page","entry":[{"id":"780442165450140","time":1502336107895,"messaging":[{"sender":{"id":"1600646209965606"},"recipient":{"id":"780442165450140"},"timestamp":1502336107893,"read":{"watermark":1502336107378,"seq":0}}]}]}
+Message:System.NullReferenceException: 並未將物件參考設定為物件的執行個體。
+   於 fb_fbWebhook.Page_Load(Object sender, EventArgs e) 於 d:\hawooo\web\user\fbWebhook.aspx.cs: 行 96
+----------------------------------------------------------*

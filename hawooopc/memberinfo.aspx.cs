@@ -1,0 +1,384 @@
+﻿using hawooo;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Threading;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class user_memberinfo : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+
+            ViewState["LG"] = (this.Master as user_user).LgType;
+            SetLgInit();
+            if (Session["A01"] != null)
+            {
+                GetData(Convert.ToInt32(Session["A01"].ToString()));
+                VerifyStatus(int.Parse(Session["A01"].ToString()));
+
+            }
+            else
+            {
+                Response.Redirect("index.aspx");
+            }
+        }
+    }
+    //設定語系顯示
+    private void SetLgInit()
+    {
+        LangType lg = (LangType)ViewState["LG"];
+        switch (lg)
+        {
+            case LangType.en:
+                {
+
+                    txt_A15.Attributes.Add("placeholder", "Please enter name");
+                    txt_A21.Attributes.Add("placeholder", "Please enter nickname");
+                    txt_A08.Attributes.Add("placeholder", "Please enter Email");
+                    foreach (ListItem item in ddl_A16.Items)
+                    {
+                        switch (item.Value)
+                        {
+                            case "1":
+                                {
+                                    item.Text = "male";
+                                    break;
+                                }
+                            case "0":
+                                {
+                                    item.Text = "female";
+                                    break;
+                                }
+                        }
+
+                    }
+
+                    txt_A10.Attributes.Add("placeholder", "Please enter telphone");
+                    txt_A09.Attributes.Add("placeholder", "Please enter phone");
+                    txt_A14.Attributes.Add("placeholder", "Please enter address");
+                    txt_old_password.Attributes.Add("placeholder", "Please enter old password");
+                    txt_new_password.Attributes.Add("placeholder", "Please enter new password");
+                    txt_chk_new_password.Attributes.Add("placeholder", "Please enter confirm password ");
+
+                    break;
+                }
+                //case LangType.zh:
+                //    {
+                //        txt_A15.Attributes.Add("placeholder", "請輸入姓名");
+                //        txt_A21.Attributes.Add("placeholder", "請輸入暱稱");
+                //        txt_A08.Attributes.Add("placeholder", "請輸入Email");
+                //        foreach (ListItem item in rb_A16.Items)
+                //        {
+                //            switch (item.Value)
+                //            {
+                //                case "1":
+                //                    {
+                //                        item.Text = "男性";
+                //                        break;
+                //                    }
+                //                case "0":
+                //                    {
+                //                        item.Text = "女性";
+                //                        break;
+                //                    }
+                //            }
+
+                //        }
+
+                //        txt_A10.Attributes.Add("placeholder", "請輸入聯絡電話");
+                //        txt_A09.Attributes.Add("placeholder", "請輸入手機號碼");
+                //        txt_A14.Attributes.Add("placeholder", "請輸入收件地址");
+                //        txt_old_password.Attributes.Add("placeholder", "請輸入舊密碼");
+                //        txt_new_password.Attributes.Add("placeholder", "請輸入新密碼");
+                //        txt_chk_new_password.Attributes.Add("placeholder", "請再次輸入新密碼");
+                //        break;
+                //    }
+        }
+    }
+    private void GetData(int A01)
+    {
+        DataTable dt = CFacade.GetFac.GetAFac.MemberInfo(A01);
+        if (dt.Rows.Count > 0)
+        {
+            //txt_A02.Text = dt.Rows[0]["A02"].ToString();
+            lit_A02.Text = dt.Rows[0]["A02"].ToString();
+            hf_A01.Value = dt.Rows[0]["A02"].ToString();
+            txt_A08.Text = dt.Rows[0]["A08"].ToString();
+            txt_A09.Text = dt.Rows[0]["A09"].ToString();
+            txt_A10.Text = dt.Rows[0]["A10"].ToString();
+            txt_A14.Text = dt.Rows[0]["A14"].ToString();
+            //switch (dt.Rows[0]["A19"].ToString())
+            //{
+            //    case "0":
+            //        {
+            //            txt_A19.Text = "一般會員";
+            //            break;
+            //        }
+            //}
+            txt_A15.Text = dt.Rows[0]["A15"].ToString();
+            if (dt.Rows[0]["A16"].ToString().Equals("0"))
+            {
+                ddl_A16.SelectedValue = "0";
+            }
+            else if (dt.Rows[0]["A16"].ToString().Equals("1"))
+            {
+                ddl_A16.SelectedValue = "1";
+            }
+            //if (!dt.Rows[0]["A18"].ToString().Equals(""))
+            //{
+            //    hf_A18.Value = dt.Rows[0]["A18"].ToString();
+            //    img_A18.ImageUrl = dt.Rows[0]["A18"].ToString();
+            //}
+            //else
+            //{
+            //    hf_A18.Value = "../images/userimgs/member-default.png";
+            //    img_A18.ImageUrl = "../images/userimgs/member-default.png";
+            //}
+            txt_A21.Text = dt.Rows[0]["A21"].ToString();
+            if (dt.Rows[0]["A04"].ToString().Equals("1"))
+            {
+                btn_pw_save.Visible = false;
+            }
+            txt_A26.Enabled = true;
+            if (FieldCheck.isDateTime(dt.Rows[0]["A26"].ToString()))
+            {
+                txt_A26.Enabled = false;
+                txt_A26.Text = Convert.ToDateTime(dt.Rows[0]["A26"].ToString()).ToString("yyyy-MM-dd");
+            }
+
+            ////20170907修改
+            //if (dt.Rows[0]["A23"].ToString().Equals("1"))
+            //{
+            //    btnSend.Enabled = false;
+            //    btnSend.Text = "已認證";
+            //}
+            //else
+            //{
+            //    //btnSend.InnerText = "發驗證信";
+            //}
+
+
+            if (dt.Rows[0]["A04"].ToString().Equals("1"))
+            {
+                partPW.Visible = false;
+                partPWname.Visible = false;
+                part.Visible = true;
+            }
+
+
+
+        }
+        else
+        {
+            Response.Redirect("index.aspx");
+        }
+    }
+
+    private void VerifyStatus(int userId)
+    {
+	    var rval = VerifyPhoneBL.CheckPhoneIsVerify(userId);
+	    if (!rval.Item1.Equals("NO_DATA"))
+	    {
+		    if (rval.Item1.Equals("YES"))
+		    {
+			    txt_A09.Enabled = false;
+		    }
+		    else
+		    {
+			    lit_verify_phone.Text = " <span><a href='verify_phone.aspx'>[Go to Verify Phone]</a></span>";
+		    }
+	    }
+    }
+
+    protected void btn_pw_save_Click(object sender, EventArgs e)
+    {
+        //密碼修改
+        string oPW = Server.HtmlEncode(txt_old_password.Text.Trim());
+        string nPW = Server.HtmlEncode(txt_new_password.Text.Trim());
+        string cnPW = Server.HtmlEncode(txt_chk_new_password.Text.Trim());
+        string emsg = "";
+        if (oPW.Equals(""))
+        {
+            emsg += "請輸入舊密碼。 \\n";
+        }
+        if (nPW.Equals(""))
+        {
+            emsg += "請輸入新密碼。 \\n";
+        }
+        if (!nPW.Equals(cnPW))
+        {
+            emsg += "兩次密碼輸入不相同。 \\n";
+        }
+        bool cbool = CFacade.GetFac.GetAFac.checkpw(Convert.ToInt32(Session["A01"].ToString()), oPW);
+        if (!cbool)
+        {
+            emsg += "請輸入正確的舊密碼。 \\n";
+        }
+        if (emsg.Equals(""))
+        {
+            bool rval = CFacade.GetFac.GetAFac.changpw(Convert.ToInt32(Session["A01"].ToString()), nPW);
+            if (rval.Equals(true))
+            {
+                ScriptManager.RegisterClientScriptBlock(UpdatePanel1, typeof(UpdatePanel), "msg", "alert('密碼修改成功');", true);
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock(UpdatePanel1, typeof(UpdatePanel), "msg", "alert('密碼修改失敗');", true);
+            }
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(UpdatePanel1, typeof(UpdatePanel), "msg", "alert('" + emsg + "');", true);
+        }
+    }
+
+
+    protected void btn_date_save_Click(object sender, EventArgs e)
+    {
+
+        string errMsg = "";
+
+        //確認網站暱稱是否重複
+
+        if (!txt_A08.Text.Trim().Equals(""))
+        {
+            if (!RegexClass.IsEmail(txt_A08.Text.Trim()))
+            {
+                errMsg += "請輸入正確的EMail格式 \\n";
+            }
+        }
+        if (txt_A21.Text.Trim().Equals(""))
+        {
+            errMsg += "請輸入暱稱 \\n";
+        }
+        bool isExist = CFacade.GetFac.GetAFac.MemberUseNameIsExist(Convert.ToInt32(Session["A01"].ToString()), txt_A21.Text.Trim());
+        if (isExist.Equals(false))
+        {
+            errMsg += "此暱稱已使用，請修改其暱稱 \\n";
+        }
+        if (errMsg == "")
+        {
+            //資料修改
+            hawooo.A objA = new hawooo.A();
+            objA.A01 = Convert.ToInt32(Session["A01"].ToString());
+            objA.A08 = txt_A08.Text.Trim();
+            objA.A09 = txt_A09.Text.Trim();
+            objA.A10 = txt_A10.Text.Trim();
+            objA.A14 = txt_A14.Text.Trim();
+            objA.A15 = txt_A15.Text.Trim();
+            objA.A16 = ddl_A16.SelectedIndex != -1 ? Convert.ToInt32(ddl_A16.SelectedValue.ToString()) : 2;
+            if (FieldCheck.isDateTime(txt_A26.Text.Trim()))
+            {
+                objA.A26 = Convert.ToDateTime(txt_A26.Text.Trim()).ToString("yyyy-MM-dd");
+            }
+
+            //string A18 = "";
+            //if (!hf_A18.Value.Equals(""))
+            //{
+            //    if (hf_A18.Value.Substring(0, 1).ToString().Equals("n"))
+            //    {
+            //        hf_A18.Value = "../images/userimgs/" + hf_A18.Value;
+            //    }
+            //}
+            //objA.A18 = hf_A18.Value;
+            objA.A21 = txt_A21.Text.Trim();
+            bool rval = MemberInfoEditSave(objA);
+            if (rval)
+            {
+                Session["A01"] = objA.A01;
+                Session["A21"] = objA.A21;
+                ScriptManager.RegisterClientScriptBlock(UpdatePanel2, typeof(UpdatePanel), "msg", "alert('資料修改成功');", true);
+            }
+            else
+            {
+                ScriptManager.RegisterClientScriptBlock(UpdatePanel2, typeof(UpdatePanel), "msg", "alert('資料修改失敗');", true);
+            }
+        }
+        else
+        {
+            ScriptManager.RegisterClientScriptBlock(UpdatePanel2, typeof(UpdatePanel), "msg", "alert('" + errMsg + "');", true);
+        }
+
+    }
+    public bool MemberInfoEditSave(A objA)
+    {
+        var cmd = SqlExtension.getUpdateSqlCmd("A", objA, new List<string>() { "A01", "A06" }, "A01=@A01");
+        bool rval = SqlDbmanager.executeNonQry(cmd);
+        return rval;
+    }
+    //protected void btnSend_ServerClick(object sender, EventArgs e)
+    //{
+    //    hawooo.A objA = new hawooo.A();
+    //    objA.A02 = hf_A01.Value;
+    //    objA.A08 = txt_A08.Text;
+
+    //    CFacade.GetFac.GetAFac.SendJoinEdmMsg(objA);
+
+    //    ScriptManager.RegisterStartupScript(UpdatePanel3, typeof(UpdatePanel), "block", "btnBlock()", true);
+    //    ScriptManager.RegisterStartupScript(UpdatePanel3, typeof(UpdatePanel), "alert", "openModal('member1')", true);
+
+    //    SqlCommand cmd = new SqlCommand();
+    //    cmd.CommandText = "UPDATE A SET A08=@A08 WHERE A01=@A01";
+    //    cmd.Parameters.Add(SafeSQL.CreateInputParam("A01", SqlDbType.Int, Session["A01"].ToString()));
+    //    cmd.Parameters.Add(SafeSQL.CreateInputParam("A08", SqlDbType.NVarChar, txt_A08.Text));
+    //    SqlDbmanager.executeNonQry(cmd);
+    //}
+
+    protected void btnSend_Click(object sender, EventArgs e)
+    {
+        hawooo.A objA = new hawooo.A();
+        objA.A02 = hf_A01.Value;
+        objA.A08 = txt_A08.Text;
+
+        CFacade.GetFac.GetAFac.SendJoinEdmMsg(objA);
+
+        ScriptManager.RegisterStartupScript(UpdatePanel3, typeof(UpdatePanel), "block", "btnBlock()", true);
+        ScriptManager.RegisterStartupScript(UpdatePanel3, typeof(UpdatePanel), "alert", "openModal('member1')", true);
+
+        SqlCommand cmd = new SqlCommand();
+        cmd.CommandText = "UPDATE A SET A08=@A08 WHERE A01=@A01";
+        cmd.Parameters.Add(SafeSQL.CreateInputParam("A01", SqlDbType.Int, Session["A01"].ToString()));
+        cmd.Parameters.Add(SafeSQL.CreateInputParam("A08", SqlDbType.NVarChar, txt_A08.Text));
+        SqlDbmanager.executeNonQry(cmd);
+    }
+
+    protected void lnk_verify_account_OnClick(object sender, EventArgs e)
+    {
+        string val = CookieHelper.Get("veryfiycount");
+        int clickCount = 1;
+        if (val == "")
+        {
+            CookieHelper.Add("veryfiycount", clickCount.ToString(), 0.1);
+        }
+        else
+        {
+            clickCount = int.Parse(val) + 1;
+            CookieHelper.Add("veryfiycount", clickCount.ToString(), 0.1);
+        }
+        val = CookieHelper.Get("veryfiycount");
+        if(int.Parse(val) > 4) //
+        {
+
+        }
+        else
+        {
+            int memberId = int.Parse(hf_A01.Value);
+            CheckEmail chkEmail = new CheckEmail();
+            chkEmail.CE01 = Guid.NewGuid().ToString();
+            chkEmail.CE02 = memberId;
+            CheckEmailFac.DoInsert(chkEmail);
+            //寄送驗證信件
+            MailCls mc = new MailCls();
+            Thread t = new Thread(() => mc.SendCheckEmail(memberId.ToString()));
+            t.Start();
+        }
+       
+    }
+}

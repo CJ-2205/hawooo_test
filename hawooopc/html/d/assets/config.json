@@ -1,0 +1,124 @@
+{
+  "name": "icon-money",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "10e444e650c211fbcb6ae5e73671d94b",
+      "css": "opencart",
+      "code": 62013,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bczb7qup4axmc490xmuuv8qdhcnbgeyf",
+      "css": "user",
+      "code": 59392,
+      "src": "typicons"
+    },
+    {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user-1",
+      "code": 59393,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbd66ef66bb8fa9edde54d9a90b89150",
+      "css": "user-2",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "86ee1fc7ff57e9c9c60d8a5e57183776",
+      "css": "user-3",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "11d74f891bce30f1bdf73d3259d59ed5",
+      "css": "user-4",
+      "code": 61537,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "fd3128bf109153952b1b775ea574504b",
+      "css": "user-5",
+      "code": 59396,
+      "src": "websymbols"
+    },
+    {
+      "uid": "eae068bed86aca956cdd10edcaaf24ee",
+      "css": "phone-outline",
+      "code": 59397,
+      "src": "typicons"
+    },
+    {
+      "uid": "24eiet6l58t0myywueih34b0e5a30bw1",
+      "css": "phone",
+      "code": 59398,
+      "src": "typicons"
+    },
+    {
+      "uid": "c91098f07ff0df45b3f8666b72b75801",
+      "css": "phone-1",
+      "code": 59399,
+      "src": "elusive"
+    },
+    {
+      "uid": "7222571caa5c15f83dcfd447c58d68d9",
+      "css": "search",
+      "code": 59400,
+      "src": "entypo"
+    },
+    {
+      "uid": "id8wp0cygl9trzbhlbd9o0fygiesi629",
+      "css": "search-1",
+      "code": 59401,
+      "src": "modernpics"
+    },
+    {
+      "uid": "ec21fe3492bb04d9e29103c319556ed8",
+      "css": "search-2",
+      "code": 62733,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search-3",
+      "code": 59402,
+      "src": "websymbols"
+    },
+    {
+      "uid": "d27bcf5c8638e4078aaadae1d49b6909",
+      "css": "fast-food",
+      "code": 59413,
+      "src": "maki"
+    },
+    {
+      "uid": "jh3jpcb1t1bcm80gidkadilh080aq79h",
+      "css": "menu",
+      "code": 59403,
+      "src": "typicons"
+    },
+    {
+      "uid": "a151e07df1262b33b210de5d956e4cc8",
+      "css": "menu-outline",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "c55fdf978f617992b43ee7cbaa6ef87e",
+      "css": "menu-1",
+      "code": 61448,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "c1f0120c5cb9af80a2f56d7d7fb2f489",
+      "css": "cart",
+      "code": 59405,
+      "src": "zocial"
+    }
+  ]
+}

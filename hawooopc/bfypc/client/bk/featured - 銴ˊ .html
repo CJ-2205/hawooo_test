@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Hawooo</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <link rel="apple-touch-icon-precomposed" href="../assets/i/app-icon72x72@2x.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+
+
+    <link href="../assets/css/amazeui.min.css" rel="stylesheet" />
+
+    <link href="../assets/css/app.css" rel="stylesheet" />
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/amazeui.min.js"></script>
+
+    <!--mouce hover-->
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:700,400italic' rel='stylesheet' type='text/css' />
+
+    <link href="css/hoverstyle.css" rel="stylesheet" />
+    <script src="js/jquery.hoverdir.js"></script>
+    <noscript><link rel="stylesheet" type="text/css" href="css/noJS.css" /></noscript>
+    <script src="js/modernizr.custom.97074.js"></script>
+
+    <!--menu css-->
+    <!--<link href="../cssmenu2/m2styles.css" rel="stylesheet" />
+    <script src="../cssmenu2/m2script.js"></script>-->
+    <!--slick-->
+    <link href="../slick/slick.css" rel="stylesheet" />
+    <link href="../slick/slick-theme.css" rel="stylesheet" />
+    <!--menu-->
+    <script type="text/javascript" src="menu/navMenu.js"></script>
+    <link href="menu/menu.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background:#F6F6F6">
+
+
+
+    <header data-am-widget="header" class="am-header am-header-default am-show-md-down" style="background-color:#FF2E6C" data-am-sticky>
+        <div class="am-header-left am-header-nav">
+            <a href="#left-link" class="">
+
+                <i class="am-header-icon am-icon-home"></i>
+            </a>
+        </div>
+        <h1 class="am-header-title">Hawooo</h1>
+        <div class="am-header-right am-header-nav">
+            <a href="#right-link" class="">
+                <span class="am-header-nav-title">menu</span>
+                <i class="am-header-icon am-icon-bars"></i>
+            </a>
+        </div>
+    </header>
+
+    <header class="am-topbar am-hide-sm-down">
+        <div class="am-container" id="top-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                <!--<li class="am-active"><a href="#">Home</a></li>-->
+
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-money"></i> USD <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">USD 美金</a></li>
+                        <li><a href="#">MYR 馬幣</a></li>
+                        <li><a href="#">SGD 新加坡幣</a></li>
+                        <li><a href="#">TWD 台幣</a></li>
+                    </ul>
+                </li>
+                <li class="am-dropdown" data-am-dropdown>
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                        <i class="am-icon-language"></i>  ZH-TW <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content">
+                        <li><a href="#">EN 英文</a></li>
+                        <li><a href="#">ZH-CN 簡體中文</a></li>
+                        <li><a href="#">ZH-TW 繁體中文</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+
+
+            <div class="am-collapse am-topbar-collapse" id="collapse-head">
+                <!--<ul class="am-nav am-nav-pills am-topbar-nav">
+
+                    <li class="am-active"><a href="#" class="am-icon-home am-icon-sm"> Home</a></li>
+                </ul>-->
+
+                <div class="am-topbar-right">
+                    <ul class="am-nav am-nav-pills am-topbar-nav topbarTextColor">
+                        <li><a href="#"><i class="am-icon-user"></i> 登入/註冊</a></li>
+                        <li><a href="#"><i class="am-icon-table"></i> 訂單查詢</a></li>
+                        <li><a href="#"><i class="am-icon-tags"></i> 追蹤清單</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--上方LOGO ITEM SERCE BAR 開始-->
+    <div class="am-g logobar am-hide-sm-down" data-am-sticky="{animation: 'slide-top'}">
+        <div style="max-width:1200px; margin: 0px auto;">
+            <div class="am-u-lg-12" style="padding:0px;margin:0px;">
+                <div class="am-u-lg-3" style="padding:0px;">
+                    <img src="img/hawooologo.png" class="am-img-responsive" width="300" />
+                </div>
+                <div class="am-u-lg-6 am-text-left" style="padding-top:10px; padding-right:0px; margin:0px">
+                    <ul id="navMenu">
+                        <!-- <li class="selected_"><a href="index.html" class="memu00">首頁<span>home</span></a></li>-->
+                        <li><a href="sales.html" class="memu01">購物商城<span>shop</span></a></li>
+                        <li><a href="tuangou.html" class="memu02">團購專區<span>group buys</span></a></li>
+                        <li>
+                            <a href="#" class="memu03">品牌介紹<span>whole team</span></a>
+                            <ul>
+                                <li><a href="#">86小舖</a></li>
+                                <li><a href="#">生活童話</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="selected"><a href="#" class="memu04">網友推薦<span>Featured</span></a></li>
+                        <li><a href="#" class="memu05">熱門討論<span>Hot Topic</span></a></li>
+                    </ul>
+                </div>
+                <div class="am-u-lg-2">
+
+                    <div class="am-form-group am-g" style="padding-top:15px">
+                        <form class="am-form-inline" style="margin:0px;">
+                            <input type="text" class="am-form-field" placeholder="keyword" style="width:70%">
+                            <button class="am-btn am-btn-warning"><i class="am-icon-search"></i></button>
+                        </form>
+
+                        <div class="am-form-group" style="margin:0px;color:#999;">
+                            <label class="am-radio-inline">
+                                <input type="radio" value="" name="docInlineRadio"> 商品搜尋
+                            </label>
+                            <label class="am-radio-inline">
+                                <input type="radio" name="docInlineRadio"> 品牌搜尋
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="am-u-lg-1">
+                    <div style="padding-top:22px;color:#5ba1c2">
+                        <div class="help-tip">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--上方LOGO ITEM SERCE BAR 結束-->
+
+
+    <div class="am-container">
+        <!--上方廣告與詢問購買BAR開始-->
+        <div class="am-g" style="padding-top: 15px; ">
+
+            <div class="am-u-md-12">
+                <div class="am-panel am-panel-default">
+                    <p style="padding: 10px;background-color:#ff888e;color:#ffffff">HaWooo最推薦，海外購物最佳平台</p>
+                    <p>
+                        <div class="am-input-group" style="padding: 10px">
+                            <input type="text" class="am-form-field" placeholder="輸入HaWooo合作供應商的網址，我們平價輸入給您">
+                            <span class="am-input-group-btn">
+                                <button class="am-btn am-btn-danger" type="button">SEND</button>
+                            </span>
+                        </div>
+                    </p>
+                    <p style="padding-left:10px;">
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--上方廣告與詢問購買BAR結束-->
+        <style>
+            .classmenu > li > a:hover, .classmenu > li > a:focus {
+                color: #F6F6F6;
+                background-color: #0E90D2;
+            }
+
+            .featured_like_class {
+                margin: 8px;
+                font-size: 12px;
+                color: #999;
+            }
+
+            .user-share-text {
+                margin-top: 5px;
+                background-color: #F6F6F6;
+                border-top: 1px solid #E9E9E9;
+                border-bottom: 1px solid #E9E9E9;
+                padding: 5px;
+            }
+
+            .user-share-info {
+                background-color: #F6F6F6;
+                padding: 5px;
+            }
+
+            .user-share-info-text {
+                padding: 0px;
+                margin: 0px;
+                font-size: 13px;
+                vertical-align: middle;
+                padding-top: 10px;
+            }
+        </style>
+
+
+        <div class="am-g" style=" padding-bottom: 5px">
+            <div class="am-u-md-12">
+
+                <ul class="am-avg-md-4 am-avg-sm-1 am-gallery-bordered product">
+
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <div class="imgContain">
+                                <a href="#">
+                                    <img src="../coimage/product/p1.jpg" class="am-img-responsive" />
+                                </a>
+                            </div>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <!--<div class="gallery-detail">
+                                    <span class="moneyspan">RM:350 up</span>
+                                    <span class="moneybtn">
+                                        <button class="am-btn am-btn-warning am-btn-sm">
+                                            <i class="am-icon-heart  am-icon-sm"></i>
+                                        </button>
+                                        <button class="am-btn am-btn-danger am-btn-sm">
+                                            <i class="am-icon-shopping-cart  am-icon-sm"></i>
+                                        </button>
+                                    </span>
+                                </div>-->
+
+                                <div class="user-share-text">
+                                    真的很好用哦。只要配合洗脸霜一用，粉刺很快不见了，脸颊也变得滑溜溜。 比其他清洁刷平价，很适合小资女孩。^^
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <div class="imgContain">
+                                <a href="#">
+                                    <img src="../coimage/product/p2.jpg" class="am-img-responsive" />
+                                </a>
+                            </div>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    这个在夜间用，你可以明显的发现手上的手纹会明显淡化。 超好效，值得买
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Doris 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p3.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p4.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                   之前曾经用过别的修眉刀，刀片常脱落，而且修眉时还会有刺痛感。 不过PRETTY修眉刀根本不会有类似困扰的问题，因为不需太用力就可把眉毛处的杂毛剃干净，非常方便。
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p5.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p6.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p7.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p8.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <div class="imgContain">
+                                <a href="#">
+                                    <img src="../coimage/product/p1.jpg" class="am-img-responsive" />
+
+                                </a>
+                            </div>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <div class="imgContain">
+                                <a href="#">
+                                    <img src="../coimage/product/p2.jpg" class="am-img-responsive" />
+                                </a>
+                            </div>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p3.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    Love it. Easy to use and wash off. My feet feel cool, smooth and clean after using it. Love the smell too. Will definitely buy again
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="am-panel am-panel-default pitem">
+                            <div class="product_brand_bar">
+                                <img src="../coimage/brand/86-s.jpg" />
+                                <span class="am-align-right featured_like_class">
+                                    <i class="am-icon-heart-o"></i> 21000
+                                </span>
+                            </div>
+                            <a href="#">
+                                <img src="../coimage/product/p4.jpg" class="am-img-responsive" />
+
+                            </a>
+                            <div class="am-panel-bd">
+                                <div class="gallery-title"><a href="#">HANAKA 花戀肌 凍亮掃黑面膜炭炭炭..</a></div>
+
+                                <div class="user-share-text">
+                                    看到好评才购入的，但是没有想象中好用。根据每个步骤使用了，但是头发还是很干燥，而且还感觉很厚重
+                                </div>
+                                <div class="user-share-info">
+                                    <div class="am-g">
+                                        <div class="am-u-md-3">
+                                            <img src="img/p1.jpg" alt="" class="am-circle am-img-responsive" />
+                                        </div>
+                                        <div class="am-u-md-9 user-share-info-text">
+                                            Eddie 分享於  2015-07-12 15:30
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="am-g" style="padding-bottom: 10px">
+            <ul class="am-pagination am-pagination-centered">
+                <li class="am-disabled"><a href="#">&laquo;</a></li>
+                <li class="am-active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!--footer開始-->
+    <div class="footer_topborder"></div>
+    <footer class="footer">
+
+        <div class="am-g am-g-fixed am-text-center">
+            <p>
+                <a href="#">&nbsp;平台介紹</a> | <a href="#">&nbsp;關於我們</a> | <a href="#">&nbsp;常見問題</a> | <a href="#">聯絡我們</a> | <a href="#">&nbsp;業務合作</a> | <a href="#">&nbsp;購物教學</a> | <a href="#">&nbsp;付款教學</a> | <a href="#">&nbsp;Facebook粉絲團</a> | <a href="#">&nbsp;服務條款</a> | <a href="#">&nbsp;隱私權政策</a>
+            </p>
+            <p style="font-size:11px;">
+                @ 2015 Copyright by Hawooo 好物飛行 All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--[if (gte IE 9)|!(IE)]><!-->
+    <!--<![endif]-->
+    <!--[if lte IE 8 ]>
+    <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //$('.mid-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 7,
+            //    slidesToScroll: 7,
+            //    autoplaySpeed: 2000,
+            //});
+            //$('.brand-slick').slick({
+            //    infinite: true,
+            //    slidesToShow: 5,
+            //    slidesToScroll: 5,
+            //    autoplaySpeed: 2000,
+            //});
+
+            var $navList = $('.nav-list');
+
+            $navList.on('click', 'li:not(.selected)', function (e) {
+                $navList.find(".selected").removeClass("selected");
+                $(e.currentTarget).addClass("selected");
+            });
+
+
+            //$('ul.nav-list li:has(ul)').mouseover(function () {
+            //    $('.nav-list-node').css('display', 'block');
+            //})
+            //.mouseout(function () {
+            //    $('.nav-list-node').css('display', 'none');
+            //})
+        });
+
+
+
+    </script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $('#jq-da-thumbs > li').each(function () { $(this).hoverdir(); });
+        });
+    </script>
+
+</body>
+</html>

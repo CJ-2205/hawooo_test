@@ -1,0 +1,46 @@
+﻿button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #FFF;
+    border-color: #CCC;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    line-height: normal;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0px;
+    font: inherit;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
