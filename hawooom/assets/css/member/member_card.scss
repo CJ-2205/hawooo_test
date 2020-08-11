@@ -1,0 +1,349 @@
+﻿@import "helpers/variables";
+@import "mixins/mixins";
+@import "mixins/resize";
+@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Luckiest+Guy&display=swap');
+
+/*深灰重要文字*/
+@mixin dark-gray-important-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark-gray;
+}
+
+/*深灰icon及內文文字*/
+@mixin dark-gray-text-m {
+    font-size: 12px;
+    font-weight: 500;
+    color: $dark-gray;
+}
+
+.description-text {
+    @include font_style(14px,500,$dark-gray);
+}
+
+.dark-gray-title {
+    @include font_style(16px,bold,$dark-gray);
+}
+
+.pink-title-text {
+    @include font_style(16px,bold, $hawooo-pink);
+}
+
+img {
+    width: 100%;
+}
+
+.member-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.vip-rule-box, .vip-card-wrapper {
+    background-color: $color-white;
+    padding: 20px 3%;
+}
+
+.vip-card-icon-box {
+    display: inline-block;
+
+    .vip-card-icon {
+        @include size(27px,27px);
+        margin-right: 7px;
+    }
+
+    .card-level-title {
+        margin: 0;
+        @include font_style(16px,700,$dark-gray);
+    }
+}
+
+.about-level-btn {
+    background-color: $hawooo-pink;
+    padding: 3px 5px;
+    border-radius: 2px;
+    @include font_style(14px,200,$color-white);
+
+    &.about-level-btn:active {
+        border: 0.5px solid $hawooo-pink;
+        color: $color-white;
+    }
+}
+
+.vip-card {
+    width: 73%;
+    margin-top: 3%;
+}
+
+.vip-card-benefits {
+    li {
+        display: inline-block;
+        padding-right: 5px;
+        font-size: 12px;
+        /*@include dark-gray-text-m;*/
+        .pink-circle {
+            display: inline-block;
+            @include size(12px,12px,50%);
+            border: 2px solid $hawooo-pink;
+            margin: 0 1px -1px 0;
+        }
+    }
+}
+
+.code-btn {
+    background: $light-gray;
+    padding: 8px;
+    line-height: 25px;
+    border-radius: 3px;
+    @include font_style(18px,200,$strong-fuchsia);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Archivo Black', sans-serif;
+
+    &:hover, focus {
+        color: $hawooo-pink;
+        border: 1px solid $hawooo-pink;
+    }
+}
+
+.upgrade-vip-card-p {
+    @include dark-gray-important-text;
+}
+
+.progress-bar-wrap {
+    z-index: 3;
+    /*@include absolute(0,0);*/
+    display: inline;
+    margin: 0 auto;
+    overflow: hidden;
+    /*border: 3px solid $color-white;*/
+    img {
+        width: 100%;
+        z-index: 5;
+        position: relative;
+        display: block;
+    }
+
+    .gray-bar {
+        @include absolute(0,0);
+        z-index: 1;
+        border: 1px solid white;
+        background: $light-gray;
+    }
+
+    .pink-bar {
+        background: #ee5984;
+        z-index: 2;
+        border: 1px solid white;
+        @include absolute(0,auto,0,0);
+    }
+}
+
+.progres-percent-p {
+    @include font_style(12px,500,$dark-gray);
+    margin: 0 auto;
+    padding-top: 5px;
+    /*li {
+        padding-right: 7%;
+    }*/
+}
+
+.member-icon-box {
+    background-color: $color-white;
+
+    .member-icon-block {
+        margin: 0 3%;
+
+        li {
+            padding: 5px;
+            clear: none;
+
+
+            a {
+                @include dark-gray-text-m;
+                position: relative;
+
+                img {
+                    @include size(25px,auto);
+                    margin-top: 7px;
+                }
+
+                span {
+                    display: block;
+                    /*padding-top: 5px;*/
+                }
+            }
+        }
+        /*.btn-img {
+            height: 25px;
+            width: 25px;
+        }*/
+    }
+}
+
+.friend-qrcode {
+    width: 160px;
+
+    img {
+        border: 2px solid #e3eae9;
+    }
+}
+
+.qr-code-news {
+    a {
+        @include dark-gray-important-text;
+        border-bottom: 1px solid $light-gray;
+    }
+}
+
+.order-status-title {
+    color: #689b94;
+}
+
+.order-status {
+    position: relative;
+    @include size(40px,40px,50%);
+    background-color: #e3eae9;
+    margin: 0 auto;
+}
+
+.ctag {
+    @include absolute(0,$left:70%);
+    @include size(16px,16px,50%);
+    background-color: #FF0068;
+    color: white;
+    font-size: 10px;
+    padding-left: 2px;
+}
+
+.go-back-btn a {
+    @include font_style(18px,800,$dark-gray);
+}
+
+.progres-color-p {
+    @include font_style(14px,500,$dark-gray);
+    margin: 0 auto;
+    padding-right: 8%;
+}
+
+.level-card-p {
+    @include dark-gray-text-m;
+    padding-top: 3% 0;
+}
+/*========================表格開始================*/
+.level-table {
+    background: $color-white;
+
+    .table-title {
+        background: $light-gray;
+    }
+
+    td {
+        @include dark-gray-text-m;
+        padding: 18% 2% 0 2%;
+        height: 45px;
+        vertical-align: middle !important;
+    }
+}
+/*------------------------------------------表格end---------------------------------*/
+.vip-info-wrapper {
+    padding-top: 3%;
+
+    .vip-info-title {
+        @include dark-gray-important-text;
+
+        .question-mark {
+            margin-right: 5px;
+            margin-top: -1px;
+            @include size(14px,14px);
+        }
+    }
+
+    .vip-info-p {
+        margin: 10px 0;
+        @include dark-gray-text-m;
+        letter-spacing: 1px;
+
+        a {
+            @include dark-gray-text-m;
+            border-bottom: 0.5px solid $light-gray;
+        }
+    }
+}
+
+.to-account-btn {
+    border: 1px solid $hawooo-pink;
+    background: $hawooo-pink;
+    border-radius: 3px;
+    padding: 8px;
+    @include font_style(16px,600,$color-white);
+    letter-spacing: 8px;
+    /*margin-bottom: 10px;*/
+}
+
+.close-btn {
+    border: 1px solid $hawooo-pink;
+    background: $color-white;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 15px auto;
+}
+
+@media screen and (max-width: 320px) {
+    .to-account-btn {
+        padding: 5px !important;
+        font-size: 14px !important;
+    }
+
+    .go-back-btn a {
+        font-size: 16px !important;
+    }
+
+    .description-text {
+        @include font_style(12px,500,$dark-gray);
+    }
+
+    .dark-gray-title {
+        @include font_style(14px,bold,$dark-gray);
+    }
+
+    .pink-title-text {
+        @include font_style(14px,bold, $hawooo-pink);
+    }
+
+    .card-level-title {
+        font-size: 12px;
+    }
+
+    .vip-card-benefits {
+        li {
+            padding-right: 5px;
+            @include dark-gray-text-m;
+
+            .pink-circle {
+                @include size(10px,10px,50%);
+            }
+        }
+    }
+
+    .vip-card-icon {
+        @include size(20px,20px);
+        margin-right: 5px;
+        margin-top: -5px;
+    }
+
+    .card-level-title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .about-level-btn {
+        font-size: 12px;
+    }
+
+    .code-btn {
+        line-height: 18px;
+    }
+}

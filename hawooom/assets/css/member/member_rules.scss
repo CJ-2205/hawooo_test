@@ -1,0 +1,216 @@
+﻿$hawooo_pink: #EE5984;
+$dark_gray: #707070;
+$light_gray: #E1E1E1;
+$second_gray: #9b9a9a;
+$color_white: #fff;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+.member-sidemenu {
+    @include size(22%,600px);
+    background-color: $color_white;
+}
+
+
+.member-rules {
+    display: block;
+    width: calc(78% - 20px);
+    margin-left: 20px;
+    background-color: $color_white;
+    padding: 60px 120px 100px 120px;
+}
+
+.member-rules-title {
+    padding-left: 18px;
+    @include font_style(18px,800,$dark_gray);
+}
+
+.vip-card {
+    @include size(120px,auto);
+
+    img {
+        width: 100%;
+    }
+}
+/*========================進度條 Star========================*/
+.member-progress {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        z-index: 3;
+        display: inline;
+        width: 100%;
+        position: relative;
+    }
+
+    .gray-bar {
+        background: $light_gray;
+        z-index: 1;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 50px;
+        border: 1px solid white;
+    }
+
+    .pink-bar {
+        background: $hawooo_pink;
+        z-index: 2;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        height: 50px;
+        border: 1px solid white;
+    }
+}
+
+.progres-percent-p {
+    @include font_style(13px,500,$second_gray);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 3px;
+}
+
+.card-level-p {
+    @include font_style(13px,700,$dark_gray);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+/*========================進度條 End========================*/
+.member-Info-text {
+    line-height: 30px;
+    @include font_style(17px,800,$dark_gray);
+    display: inline-block;
+
+    .grand-total-p {
+        @include font_style(17px,800,$hawooo_pink);
+    }
+}
+
+.grand-total-now {
+    @include font_style(14px,700,$second_gray);
+
+    .grand-total-money {
+        @include font_style(17px,800,$dark_gray);
+    }
+}
+
+
+.card-level-title {
+    @include font_style(16px,700,$dark_gray);
+}
+
+
+/*========================表格star========================*/
+
+.table-title {
+    background: #f0f0f0;
+}
+
+td {
+    @include font_style(14px,700,$dark_gray);
+    height: 60px;
+    vertical-align: middle !important;
+}
+
+/*========================表格End========================*/
+
+.card-question-title {
+    position: relative;
+    @include size(57px,55px,10px);
+    @include font_style(14px,bold,$hawooo_pink);
+    border: 2px solid $hawooo_pink;
+    padding: 3px;
+    letter-spacing: 2px;
+    margin: 0 18px;
+    vertical-align: middle;
+
+    .question-mark {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        @include size(18px,18px);
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.vip-info-p {
+    @include font_style(14px,700,$second_gray);
+    /*margin-top: -3px;*/
+    padding-left: 0px;
+    letter-spacing: 1px;
+    line-height: 20px;
+
+    a {
+        @include font_style(14px,700,$second_gray);
+        border-bottom: 0.5px solid $second_gray;
+    }
+}
+/*========================Qr-code Star========================*/
+.qr-code-title {
+    @include font_style(18px,800,$dark_gray);
+}
+
+.qr-code-news {
+    letter-spacing: 1px;
+    @include font_style(16px,700,$dark_gray);
+    line-height: 30px;
+
+    a {
+        @include font_style(16px,300,$dark_gray);
+        border-bottom: 0.5px solid $dark_gray;
+    }
+
+    .rm-ten {
+        @include font_style(16px,700,$hawooo_pink);
+    }
+
+    .qrcode-news-ps {
+        @include font_style(14px,700,$dark_gray);
+    }
+}
+
+.code-btn {
+    background: #e1e1e1;
+    padding: 8px;
+    line-height: 25px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 900;
+    color: #ff0068;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.copy-p {
+    @include font_style(16px,700,$dark_gray);
+    padding: 30px 0 0 120px;
+}
+
+.to-account-btn {
+    border: 1px solid #ee5984;
+    background: #ee5984;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 8px;
+}

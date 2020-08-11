@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* compileCompressed: ../css/$1.css*/
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/* line 6, ../scss/login.scss */
+.login-wrapper {
+  height: 100vh;
+  padding: 0 !important;
+  background: #aaa;
+  overflow: hidden;
+}
+
+/* line 13, ../scss/login.scss */
+.login-logo-wraper {
+  padding: 0;
+  height: 30%;
+  background: white;
+}
+
+/* line 19, ../scss/login.scss */
+.login-form {
+  padding: 30px 0 0 0;
+  height: 70%;
+  background: #f5f5f5;
+}
+
+/*log-in 回上一頁*/
+/* line 28, ../scss/login.scss */
+.login-home {
+  position: fixed;
+  z-index: 999;
+}
+/* line 31, ../scss/login.scss */
+.login-home i {
+  width: 100%;
+  color: #565656;
+  font-size: 2em;
+}
+
+/* line 38, ../scss/login.scss */
+.login-logo {
+  height: 100%;
+  background: url(../../images/hawooo.png) center 80% no-repeat;
+  background-size: 60%;
+}
+
+/*表單樣式*/
+/* line 47, ../scss/login.scss */
+.login-form {
+  /*忘記密碼*/
+  /*還不是會員*/
+  /*臉書*/
+  /*隱私權條款*/
+}
+/* line 48, ../scss/login.scss */
+.login-form .am-form-group {
+  margin: 0;
+  position: relative;
+}
+/* line 52, ../scss/login.scss */
+.login-form .am-form-group .input-wrapper {
+  background: white;
+  padding: .5em 0 .5em .5em;
+}
+/* line 55, ../scss/login.scss */
+.login-form .am-form-group .input-wrapper.id-wrapper {
+  position: relative;
+}
+/* line 57, ../scss/login.scss */
+.login-form .am-form-group .input-wrapper.id-wrapper:before {
+  content: '';
+  width: calc(100% - 16px);
+  height: 1px;
+  background: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+}
+/* line 67, ../scss/login.scss */
+.login-form .am-form-group input {
+  width: 90%;
+  border: 0;
+}
+/* line 70, ../scss/login.scss */
+.login-form .am-form-group input:focus {
+  box-shadow: none;
+}
+/* line 74, ../scss/login.scss */
+.login-form .am-form-group .logoin-icon {
+  width: 10%;
+  display: inline-block;
+  color: #d9dad9;
+  line-height: 2em;
+  text-align: center;
+}
+/* line 80, ../scss/login.scss */
+.login-form .am-form-group .logoin-icon .icon-user-2 {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+/* line 84, ../scss/login.scss */
+.login-form .am-form-group .logoin-icon .am-icon-lock {
+  font-size: 1.3em;
+  margin-top: 2px;
+}
+/* line 89, ../scss/login.scss */
+.login-form .am-form-group .login-btn-wrapper {
+  padding: 0;
+}
+/* line 91, ../scss/login.scss */
+.login-form .am-form-group .login-btn-wrapper .login-btn {
+  background: #ff0068;
+  color: white;
+  width: 100%;
+  border: 0;
+  padding: .7em 1em;
+  font-weight: bold;
+}
+/* line 98, ../scss/login.scss */
+.login-form .am-form-group .login-btn-wrapper .login-btn:focus {
+  border: 0;
+  outline: 0;
+}
+/* line 106, ../scss/login.scss */
+.login-form .forget-password {
+  font-size: .6em;
+  padding: .5em 0;
+  color: #999999;
+}
+/* line 112, ../scss/login.scss */
+.login-form .new-member {
+  font-size: .8em;
+  padding: .5em 0;
+  color: #999999;
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 1.3em;
+}
+/* line 120, ../scss/login.scss */
+.login-form .facebook-wrapper {
+  padding: 0;
+}
+/* line 122, ../scss/login.scss */
+.login-form .facebook-wrapper .facebook-btn {
+  background: #344E97;
+  color: white;
+  width: 100%;
+  border: 0;
+  padding: .7em 1em;
+  font-weight: bold;
+  position: relative;
+}
+/* line 130, ../scss/login.scss */
+.login-form .facebook-wrapper .facebook-btn:focus {
+  border: 0;
+  outline: 0;
+}
+/* line 134, ../scss/login.scss */
+.login-form .facebook-wrapper .facebook-btn i {
+  font-size: 1.5em;
+  position: absolute;
+  left: 1em;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 144, ../scss/login.scss */
+.login-form .login-description {
+  font-size: .7em;
+  margin-top: 1em;
+  -webkit-transform: scale(0.9);
+}

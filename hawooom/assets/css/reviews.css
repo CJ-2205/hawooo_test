@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/* compileCompressed: ../css/$1.css*/
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/* line 7, ../scss/reviews.scss */
+.review-goback .login-home i {
+  font-size: 1.4em;
+  color: #565656;
+}
+
+/* line 14, ../scss/reviews.scss */
+.reviews-wrapper {
+  text-align: center;
+  padding: 0;
+}
+/* line 17, ../scss/reviews.scss */
+.reviews-wrapper textarea {
+  height: 25vh;
+  resize: none;
+}
+/* line 20, ../scss/reviews.scss */
+.reviews-wrapper textarea:focus {
+  box-shadow: none;
+  border: 1px solid #ff0068;
+}
+/* line 26, ../scss/reviews.scss */
+.reviews-wrapper input[type="text"]:focus {
+  box-shadow: none;
+  border: 1px solid #ff0068;
+}
+
+/* line 34, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-title {
+  width: 90%;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 0 5%;
+  padding: 20px 0;
+}
+/* line 42, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content img {
+  width: 100%;
+}
+/* line 45, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content h3 {
+  padding: 0 0 10px 0;
+  margin: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  color: #565656;
+}
+/* line 51, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content .wr-content-pic {
+  padding: 0;
+}
+/* line 55, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content-text {
+  background: #f9f9f9;
+  padding-top: 10px;
+}
+/* line 58, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content-text .sendreview-btn-wrapper {
+  text-align: right;
+  padding: 0;
+}
+/* line 61, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content-text .sendreview-btn-wrapper button {
+  background: #ff0068;
+  color: white;
+}
+/* line 66, ../scss/reviews.scss */
+.wirte-reviews-wrapper .wr-content-text .reviews-description {
+  padding: 20px 0;
+  border-top: 1px solid #eaeaea;
+  font-size: .7em;
+}
+
+/* line 74, ../scss/reviews.scss */
+#star-alert {
+  color: #ff0068;
+  font-size: .8em;
+}
+
+/*星星外層*/
+/* line 80, ../scss/reviews.scss */
+.rating-star-wrapper {
+  display: inline-flex;
+}
+/* line 82, ../scss/reviews.scss */
+.rating-star-wrapper i.rating-icon {
+  pointer-events: none;
+  font-size: 2.5em;
+  color: orange;
+}
+/* line 87, ../scss/reviews.scss */
+.rating-star-wrapper .star-input {
+  display: none;
+}
+/* line 90, ../scss/reviews.scss */
+.rating-star-wrapper label.rating-label {
+  cursor: pointer;
+  padding: 0 0.26em;
+  /*上下兩個padding和margin會互相影響*/
+}
+/* line 94, ../scss/reviews.scss */
+.rating-star-wrapper label.rating-label.rating-label-half {
+  padding-right: 0;
+  margin-right: -1.5em;
+  z-index: 2;
+}
+
+/*有星星被點了，其他星星的顏色*/
+/* line 103, ../scss/reviews.scss */
+.star-input:checked ~ .rating-label .rating-icon {
+  color: #eaeaea;
+}
+
+/*感謝撰寫評論*/
+/* line 111, ../scss/reviews.scss */
+.review-end {
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+  padding: 10px;
+  color: #565656;
+}
+/* line 117, ../scss/reviews.scss */
+.review-end .review-end-title {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 1rem 0;
+}
+/* line 122, ../scss/reviews.scss */
+.review-end .review-end-text {
+  float: left !important;
+  font-size: .9em;
+  background: #f9f9f9;
+  padding: 1rem;
+  /*height: 100vh;*/
+}
+/* line 129, ../scss/reviews.scss */
+.review-end .review-end-text .inner-text {
+  padding: 10px 0 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 134, ../scss/reviews.scss */
+.review-end .review-end-btn {
+  margin: 10px 0 0 0;
+}
+/* line 136, ../scss/reviews.scss */
+.review-end .review-end-btn button {
+  background: #ff0068;
+  color: white;
+}

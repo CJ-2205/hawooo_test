@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/*======= 搜尋bar 取代九大類 start=======*/
+.search-nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 50px;
+  width: 100vw;
+  min-width: 320px;
+  line-height: 50px;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.search-back {
+  padding: 0 15px;
+  font-size: 1.3em;
+  color: #FB5450;
+}
+
+.search-field {
+  position: relative;
+  display: inline-block;
+  width: 65%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+.search-submit {
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  color: #999999;
+}
+
+.search-input {
+  margin: 0 0 5px 0;
+  padding: 0 .5em;
+  height: 35px;
+  width: 100%;
+  border: 2px solid #eaeaea;
+  border-radius: 1em;
+  -webkit-appearance: none;
+}
+.search-input:focus {
+  outline: none;
+  border: 2px solid rgba(251, 84, 80, 0.6);
+}
+
+.side-filter-btn {
+  margin-right: 10px;
+  color: #565656;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.side-filter-a {
+  border: 0;
+  background: white;
+}
+
+.view-style {
+  display: inline-block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.view-style i {
+  margin: 0 .2em;
+  font-size: 1.3em;
+  color: #737373;
+}
+.view-style i.active {
+  color: #FB5450;
+}
+.view-style h4 {
+  display: inline;
+  margin: 0;
+  font-weight: normal;
+}
+
+/*======= 搜尋bar 取代九大類 end=======*/
+/*＝＝＝＝＝＝＝ 篩選sidefilter start ＝＝＝＝＝＝＝*/
+.search-side-filter {
+  display: block;
+  position: relative;
+  padding: 0;
+}
+.search-side-filter h5 {
+  color: #565656;
+}
+.search-side-filter hr {
+  margin: 10px 0;
+}
+
+#sidefilter {
+  z-index: 1100;
+}
+
+#sidefilter .am-offcanvas-bar {
+  overflow: hidden;
+}
+
+.filter-scroll {
+  position: relative;
+  overflow: scroll;
+  padding: 15px;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+
+.search-filter-wrapper {
+  padding-bottom: 100px;
+}
+
+.nav-title {
+  font-size: 1em;
+  height: 35px;
+  line-height: 35px;
+}
+
+.nav-subtitle {
+  font-size: 1em;
+  height: 35px;
+  line-height: 35px;
+}
+
+.nav-group {
+  padding: 10px;
+  margin: 10px;
+  width: calc(100% - 20px);
+  border-bottom: 1px solid #eaeaea;
+  z-index: 1;
+}
+.nav-group:last-child {
+  border: none;
+}
+.nav-group ul {
+  margin: 10px 0 0 16px;
+  padding: 0;
+}
+.nav-group li {
+  padding: 5px 0;
+}
+.nav-group label {
+  display: inline;
+  font-weight: normal;
+  cursor: pointer;
+}
+.nav-group input {
+  margin: 0 5px 0 0;
+}
+.nav-group .am-btn {
+  width: 100%;
+}
+
+.filter-submit {
+  position: absolute;
+  bottom: 0;
+  padding: 5px 0 0 0;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  background: white;
+  border-top: 1px solid #eaeaea;
+  z-index: 9999;
+}
+.filter-submit .am-btn {
+  height: 35px;
+  width: 40%;
+}
+
+/*＝＝＝＝＝＝＝ 篩選sidefilter end ＝＝＝＝＝＝＝*/
+/*＝＝＝＝＝＝＝ 篩選bar filter bar start ＝＝＝＝＝＝＝*/
+.filter-bar {
+  position: fixed;
+  top: 50px;
+  padding: 0;
+  height: 45px;
+  width: 100vw;
+  background: white;
+  line-height: 45px;
+}
+.filter-bar ul {
+  height: 100%;
+}
+.filter-bar li {
+  height: 100%;
+  text-align: center;
+  border-bottom: 2px solid #eaeaea;
+  position: relative;
+  transition: .3s;
+}
+.filter-bar li:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 1px;
+  height: 25px;
+  background: #eaeaea;
+}
+.filter-bar li:last-child:before {
+  width: 0;
+}
+.filter-bar li.active {
+  border-color: #FB5450;
+  transition: .3s;
+}
+.filter-bar a {
+  display: inline-block;
+  width: 100%;
+  font-size: .9em;
+  color: #565656;
+}
+.filter-bar a i {
+  margin: 0 0 0 5px;
+}
+
+/*＝＝＝＝＝＝＝ 篩選bar filter bar end ＝＝＝＝＝＝＝*/
+/*＝＝＝＝＝＝＝ 關鍵字tab filter bar start ＝＝＝＝＝＝＝*/
+.search-tab {
+  margin: -10px 0 0 0;
+  padding: 0 !important;
+  height: 60px;
+  background: #eaeaea;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+.search-tab::-webkit-scrollbar {
+  display: none;
+}
+.search-tab ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.search-tab li {
+  display: flex;
+  margin: 7px  0 0 10px;
+  padding: 0 10px;
+  height: 45px;
+  width: 100px;
+  max-height: 45px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.search-tab a {
+  display: -webkit-box;
+  max-height: 45px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  white-space: normal;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  color: #7284A3;
+}
+
+/*＝＝＝＝＝＝＝ 關鍵字tab filter bar end ＝＝＝＝＝＝＝*/
+/*＝＝＝＝＝＝＝ 空搜尋 empty-search-result start ＝＝＝＝＝＝＝*/
+.search-container {
+  margin-top: -55px;
+  padding: 0 !important;
+}
+
+/*
+sample1
+版本2的*/
+.search-empty {
+  height: 100vh;
+  background: #f9f9f9;
+  color: #565656;
+  text-align: center;
+}
+.search-empty div {
+  margin-top: 50%;
+  display: block;
+}
+.search-empty i {
+  display: block;
+  color: #eaeaea;
+  font-size: 3em;
+}
+
+/*
+sample2
+版本2的*/
+.search-keyword-content {
+  padding: 1em .5em 0 .5em;
+  min-height: 80vh;
+  background: white;
+  color: #565656;
+}
+
+.search-keyword h5 {
+  font-weight: 500;
+}
+.search-keyword a {
+  color: #565656;
+}
+.search-keyword ul {
+  margin: 1.5em 0;
+  padding: 0 1em;
+}
+.search-keyword li {
+  margin: 0 10px 10px 0;
+  padding: 5px 10px;
+  height: 30px;
+  min-width: 30px;
+  font-size: .9em;
+  line-height: 20px;
+  background: #f9f9f9;
+  border-radius: 30px;
+}

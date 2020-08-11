@@ -1,0 +1,163 @@
+$lpc-media: 1025px;
+$lpcs-media: 1024px; //大螢幕
+$pc-media: 960px;
+$pcs-media: 959px;//電腦
+$pad-media: 760px;
+$pads-media: 759px;//平板
+$phone-media: 480px;
+$phones-media: 479px;//小平板
+$plus-iphone-media: 415px;
+$plus-iphones-media: 414px;//iphone7 plus
+$s-iphone-media: 375px;
+$s-iphones-media: 374px;//iphone6
+$xs-iphone-media: 320px;
+
+
+//電腦xl1025↑
+@mixin lpc-width() {
+    @media all and (min-width: $lpc-media) {
+        @content;
+    }
+}
+//電腦960~1024
+@mixin pc-width() {
+    @media all and (min-width:$pc-media) and (max-width: $lpcs-media) {
+        @content;
+    }
+}
+//平板760~959
+@mixin pad-width() {
+    @media all and (min-width:$pad-media) and (max-width: $pcs-media) {
+        @content;
+    }
+}
+//小平板480~759
+@mixin small-pad-width() {
+    @media all and (min-width: $phone-media) and (max-width:$pads-media) {
+        @content;
+    }
+}
+//iphone7-8 plus 415~479
+@mixin iphone-plus-width() {
+    @media all and (min-width: $plus-iphones-media) and (max-width:$phones-media) {
+        @content;
+    }
+}
+//iphone6  375~414
+@mixin iphone-6-width() {
+    @media all and (min-width: $s-iphone-media) and (max-width:$plus-iphones-media) {
+        @content;
+    }
+}
+
+//iphone6  320~374
+@mixin iphone-mini-width() {
+    @media all and (min-width: $xs-iphone-media) and (max-width:$s-iphones-media) {
+        @content;
+    }
+}
+//手機iphone5s  320
+@mixin iphone5s-width() {
+    @media all and (max-width: $xs-iphone-media) {
+        @content;
+    }
+}
+
+//container
+@mixin container-width() {
+    @media all and (max-width: $pad-media) {
+        @content;
+    }
+}
+
+
+//timer
+@mixin timer() {
+    @media all and (min-width: $pad-media) {
+        @content;
+    }
+}
+
+//padding responsive的mixin
+
+@mixin responsive-padding($lpc,$pc,$pad,$small-pad,$iphone-plus,$iphonesix,$iphone-mini,$phone5s) {
+    //電腦版L
+    @include lpc-width {
+        padding: $lpc;
+    }
+    //電腦版
+    @include pc-width {
+        padding: $pc;
+    }
+    //平板
+    @include pad-width {
+        padding: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        padding: $small-pad;
+    }
+    //iphone-plus-width
+    @include iphone-plus-width {
+        padding: $iphone-plus;
+    }
+    //iphone-6-width
+    @include iphone-6-width {
+        padding: $iphonesix;
+    }
+    //iphone-mini-width
+    @include iphone-mini-width {
+        padding: $iphone-mini;
+    }
+    //手機
+    @include iphone5s-width {
+        padding: $phone5s;
+    }
+}
+
+@mixin responsive-timer-size($lpc,$pc,$pad,$small-pad,$phone5s) {
+    //電腦版L
+    @include lpc-width {
+        font-size: $lpc;
+    }
+    //電腦版
+    @include pc-width {
+        font-size: $pc;
+    }
+    //平板
+    @include pad-width {
+        font-size: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        font-size: $small-pad;
+    }
+
+    //手機
+    @include iphone5s-width {
+        font-size: $phone5s;
+    }
+}
+
+@mixin responsive-timer-bottom($lpc,$pc,$pad,$small-pad,$phone5s) {
+    //電腦版L
+    @include lpc-width {
+        bottom: $lpc;
+    }
+    //電腦版
+    @include pc-width {
+        bottom: $pc;
+    }
+    //平板
+    @include pad-width {
+        bottom: $pad;
+    }
+    //小平板
+    @include small-pad-width {
+        bottom: $small-pad;
+    }
+    //手機
+    @include iphone5s-width {
+        bottom: $phone5s;
+    }
+}

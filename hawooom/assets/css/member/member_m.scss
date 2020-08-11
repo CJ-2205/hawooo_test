@@ -1,0 +1,221 @@
+﻿$hawooo_pink: #EE5984;
+$second_color: #BBBCBC;
+$dark_gray: #707070;
+$light_gray: #E1E1E1;
+$color_white: #fff;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin abpos($l,$t) {
+    position: absolute;
+    left: $l;
+    top: $t;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+/*粉色重點文字*/
+@mixin pink-important-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: $hawooo_pink;
+}
+
+/*深灰重要文字*/
+@mixin dark-gray-important-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark_gray;
+}
+
+/*深灰icon及表格等文字*/
+@mixin dark-gray-text-m {
+    font-size: 12px;
+    font-weight: 500;
+    color: $dark_gray;
+}
+
+
+img {
+    width: 100%;
+}
+
+.member-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.vip-card-wrapper {
+    background-color: $color_white;
+    padding: 20px 3%;
+
+    .vip-card-title {
+        vertical-align: middle;
+
+        .vip-card-icon-box {
+            display: inline-block;
+
+            .vip-card-icon {
+                @include size(27px,27px);
+                margin-right: 7px;
+            }
+
+            .card-level-title {
+                margin: 0;
+                @include font_style(16px,700,$dark_gray);
+            }
+        }
+    }
+
+    .about-level-btn {
+        border: 0.5px solid $dark_gray;
+        padding: 3px 5px;
+        border-radius: 2px;
+        @include font_style(12px,200,$dark_gray);
+
+        &.about-level-btn:active {
+            border: 0.5px solid $hawooo_pink;
+            color: $hawooo_pink;
+        }
+    }
+}
+
+.vip-card {
+    width: 73%;
+    margin-top: 3%;
+}
+
+.vip-card-benefits {
+    li {
+        display: inline-block;
+        /*margin-right: 4%;*/
+        padding-right: 5px;
+        @include dark-gray-text-m;
+
+        .pink-circle {
+            display: inline-block;
+            @include size(12px,12px,50%);
+            border: 2px solid $hawooo_pink;
+            margin: 0 3% -1px 0;
+        }
+    }
+}
+
+.to-account-btn {
+    border: 1px solid $hawooo_pink;
+    background: $hawooo_pink;
+    padding: 8px;
+    border-radius: 3px;
+    @include font_style(16px,600,$color_white);
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+
+.upgrade-vip-card-p {
+    /*padding-left: 2%;*/
+    position: relative;
+    display: inline-block;
+    @include dark-gray-important-text;
+
+    .upgrade-rm-total {
+        @include pink-important-text;
+    }
+
+    .card-color-p {
+        @include font_style(14px,400,$dark_gray);
+    }
+}
+
+.progress-bar-wrap {
+    z-index: 3;
+
+    @include abpos(0,5px);
+    /*display: inline;*/
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 3px solid $color_white;
+
+    img {
+        width: 100%;
+        z-index: 5;
+        position: relative;
+        display: block;
+    }
+
+    .gray-bar {
+        @include abpos(0,0);
+        z-index: 1;
+        background: $light_gray;
+    }
+
+    .pink-bar {
+        background: #ee5984;
+        z-index: 2;
+        /*padding: 3%;*/
+        @include abpos(0,0);
+    }
+}
+
+.progres-percent-p {
+    @include font_style(12px,500,$dark_gray);
+    margin: 0 auto;
+    padding-top: 5%;
+    /*padding-top: 14%;*/
+    li {
+        text-align: left;
+    }
+}
+
+.member-icon-box {
+    background-color: $color_white;
+
+    .member-icon-block {
+        margin: 0 3%;
+
+        .bottom-border {
+            border-bottom: 1px solid #d7d9da;
+        }
+
+        li {
+            padding: 5px;
+            clear: none;
+            /*border-right: 1px solid #d7d9da;*/
+            /*border-bottom:1px solid #d7d9da;*/
+            a {
+                @include dark-gray-text-m;
+                position: relative;
+
+                .cart-num {
+                    vertical-align: middle;
+                    background-color: #FF0068;
+                    padding: 1px;
+                    @include size(13px,13px,50%);
+                    @include font_style(7px,500,$color_white);
+                    @include abpos(13px,-2px);
+                }
+
+                img {
+                    @include size(20px,auto);
+                }
+            }
+
+            .title {
+                padding-top: 5px;
+                display: block;
+            }
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+}

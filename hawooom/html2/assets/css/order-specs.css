@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/* compileCompressed: ../css/$1.css*/
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/* line 5, ../scss/order-specs.scss */
+.order-specs {
+  margin: -40px 0 0 0;
+}
+
+/* line 9, ../scss/order-specs.scss */
+.order-specs-panel {
+  border: none;
+  margin: 0;
+}
+/* line 12, ../scss/order-specs.scss */
+.order-specs-panel .panel-hd-main {
+  border: none;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #565656;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 20, ../scss/order-specs.scss */
+.order-specs-panel .panel-hd-secondary {
+  border: none;
+  background-color: #f9f9f9;
+  color: #737373;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 2rem;
+}
+/* line 28, ../scss/order-specs.scss */
+.order-specs-panel .am-panel-bd {
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* line 34, ../scss/order-specs.scss */
+.order-specs-data-list {
+  margin: 0;
+  padding: 0;
+  color: #9d9597;
+  font-size: 1.3rem;
+}
+
+/* line 42, ../scss/order-specs.scss */
+.order-specs-product-list li {
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+/* line 46, ../scss/order-specs.scss */
+.order-specs-product-list li:last-of-type {
+  border-bottom: none;
+}
+/* line 49, ../scss/order-specs.scss */
+.order-specs-product-list li .m-write-review {
+  margin-top: 10px;
+  float: right;
+  color: #7be5d7;
+  border: 1px solid #7be5d7;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 1px 3px;
+}
+
+/* line 63, ../scss/order-specs.scss */
+.order-specs-row-notes {
+  padding-top: 1rem;
+}
+/* line 66, ../scss/order-specs.scss */
+.order-specs-row-payment {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+/* line 74, ../scss/order-specs.scss */
+.order-specs-col-status {
+  text-align: center;
+  color: #FB5450;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* line 81, ../scss/order-specs.scss */
+.order-specs-col-icon {
+  min-height: 25px;
+  position: relative;
+}
+/* line 84, ../scss/order-specs.scss */
+.order-specs-col-icon img {
+  width: 100%;
+  max-width: 2.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 94, ../scss/order-specs.scss */
+.order-specs-col-user {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 97, ../scss/order-specs.scss */
+.order-specs-col-user ul {
+  padding: 0;
+}
+/* line 99, ../scss/order-specs.scss */
+.order-specs-col-user ul li {
+  line-height: 1.8rem;
+  color: #9d9597;
+}
+/* line 102, ../scss/order-specs.scss */
+.order-specs-col-user ul li:first-of-type {
+  margin-bottom: 1rem;
+}
+/* line 106, ../scss/order-specs.scss */
+.order-specs-col-user ul strong {
+  color: #565656;
+}
+/* line 110, ../scss/order-specs.scss */
+.order-specs-col-user span {
+  line-height: 1rem;
+}
+/* line 115, ../scss/order-specs.scss */
+.order-specs-col-user_pending {
+  font-size: 1.4rem;
+}
+/* line 117, ../scss/order-specs.scss */
+.order-specs-col-user_pending ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 120, ../scss/order-specs.scss */
+.order-specs-col-user_pending ul li {
+  line-height: 1.8rem;
+  color: #9d9597;
+}
+/* line 123, ../scss/order-specs.scss */
+.order-specs-col-user_pending ul li:first-of-type {
+  margin-bottom: 1rem;
+}
+/* line 127, ../scss/order-specs.scss */
+.order-specs-col-user_pending ul strong {
+  color: #565656;
+}
+/* line 131, ../scss/order-specs.scss */
+.order-specs-col-user_pending span {
+  line-height: 1rem;
+}
+/* line 136, ../scss/order-specs.scss */
+.order-specs-col-notes {
+  font-size: 1.4rem;
+}
+/* line 138, ../scss/order-specs.scss */
+.order-specs-col-notes span {
+  color: #9d9597;
+}
+/* line 143, ../scss/order-specs.scss */
+.order-specs-col-product-img {
+  min-height: 7.5rem;
+  position: relative;
+}
+/* line 146, ../scss/order-specs.scss */
+.order-specs-col-product-img img {
+  width: 100%;
+  max-width: 7.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 157, ../scss/order-specs.scss */
+.order-specs-col-product-data .order-specs-product-title {
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: #565656;
+}
+/* line 162, ../scss/order-specs.scss */
+.order-specs-col-product-data .order-specs-product-type {
+  font-size: 1.4rem;
+  color: #737373;
+  padding-top: .3rem;
+}
+/* line 167, ../scss/order-specs.scss */
+.order-specs-col-product-data .order-specs-product-price {
+  padding-top: .3rem;
+  font-size: 1.4rem;
+  color: #737373;
+}
+/* line 171, ../scss/order-specs.scss */
+.order-specs-col-product-data .order-specs-product-price-total {
+  text-align: right;
+  color: #565656;
+}
+/* line 176, ../scss/order-specs.scss */
+.order-specs-col-product-data .order-specs-delivery-fee {
+  color: #737373;
+  font-size: 1.4rem;
+}
+/* line 182, ../scss/order-specs.scss */
+.order-specs-col-payment {
+  font-size: 1.4rem;
+}
+/* line 185, ../scss/order-specs.scss */
+.order-specs-col-payment ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 189, ../scss/order-specs.scss */
+.order-specs-col-payment strong {
+  color: #565656;
+}
+/* line 192, ../scss/order-specs.scss */
+.order-specs-col-payment span {
+  color: #737373;
+}
+/* line 195, ../scss/order-specs.scss */
+.order-specs-col-payment-R {
+  text-align: right;
+  line-height: 1.8rem;
+}
+/* line 199, ../scss/order-specs.scss */
+.order-specs-col-payment-L {
+  line-height: 2.2rem;
+}
+/* line 202, ../scss/order-specs.scss */
+.order-specs-col-payment .order-specs-payment-total {
+  color: #f54954;
+}
+
+/* line 208, ../scss/order-specs.scss */
+.order-specs-btn-section {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 214, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn-col {
+  padding: 1rem 1.5rem;
+}
+/* line 218, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn {
+  width: 100%;
+  border: 1px solid #EE5984;
+  background-color: #fff;
+  color: #ff0068;
+  height: 4.5rem;
+}
+/* line 225, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn-img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 232, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn-img.order-atm-img {
+  width: 2rem;
+}
+/* line 236, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn-img-pending {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 244, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn-text {
+  display: inline-block;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 251, ../scss/order-specs.scss */
+.order-specs-btn-section .order-specs-btn:nth-of-type(n+2) {
+  margin-top: 1rem;
+}
+
+/* line 257, ../scss/order-specs.scss */
+.order-specs-bottom-btn-section {
+  margin-top: .5rem;
+}
+/* line 260, ../scss/order-specs.scss */
+.order-specs-bottom-btn-section .order-specs-bottom-btn-col {
+  padding: 1rem 1.5rem;
+}
+/* line 264, ../scss/order-specs.scss */
+.order-specs-bottom-btn-section .order-specs-bottom-btn {
+  width: 100%;
+  border: 1px solid #ff0068;
+  background-color: #ff0068;
+  color: #fff;
+  height: 4.5rem;
+}
+/* line 271, ../scss/order-specs.scss */
+.order-specs-bottom-btn-section .order-specs-bottom-btn-text {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 281, ../scss/order-specs.scss */
+.order-specs-expiry-date {
+  color: #7be5d7;
+  font-weight: bold;
+}
+
+/* line 286, ../scss/order-specs.scss */
+.order-specs-active-img {
+  width: 2rem;
+  margin-left: .5rem;
+}
+
+/* line 291, ../scss/order-specs.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/*ＡＴＭ未付款盒子*/
+/* line 297, ../scss/order-specs.scss */
+.m-atm-info {
+  padding: 0;
+}
+/* line 300, ../scss/order-specs.scss */
+.m-atm-info .m-bank-info {
+  padding: .5rem;
+  border: 1px solid #EE5984;
+}
+/* line 303, ../scss/order-specs.scss */
+.m-atm-info .m-bank-info:first-child {
+  border-top: 0;
+  border-bottom: 0;
+}
+/* line 307, ../scss/order-specs.scss */
+.m-atm-info .m-bank-info .m-bank-img {
+  padding: 0;
+  margin-top: 12px;
+}
+/* line 311, ../scss/order-specs.scss */
+.m-atm-info .m-bank-info img {
+  width: 100%;
+}
+/* line 314, ../scss/order-specs.scss */
+.m-atm-info .m-bank-info p {
+  color: #565656;
+  margin: 0;
+  margin-top: 1rem;
+}

@@ -1,0 +1,361 @@
+﻿@charset "UTF-8";
+/* === COLORS ===*/
+/*?��?tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/*.brand-body{
+	padding:0 1em;
+}*/
+.brand-catalog-title-w {
+    position: relative;
+}
+
+.brand-catalog-title {
+    margin: 0;
+    padding: 5px 0;
+    background: #eaeaea;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.b-collapse-title {
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    border: 0;
+    background: #eaeaea;
+    color: #565656;
+}
+
+    .b-collapse-title:hover {
+        background: #eaeaea;
+        color: #565656;
+    }
+
+    .b-collapse-title:focus {
+        background: #eaeaea;
+        color: #565656;
+        outline: none;
+    }
+
+    .b-collapse-title:active {
+        box-shadow: none;
+        background: #eaeaea;
+        color: #565656;
+        outline: none;
+    }
+
+        .b-collapse-title:active:focus {
+            outline: none;
+        }
+
+    .b-collapse-title h3 {
+        display: inline;
+        margin: 0;
+        font-weight: 500;
+    }
+
+.brand-catalog-nav {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    background: white;
+    max-height: 480px;
+    overflow-y: scroll;
+}
+
+    .brand-catalog-nav.brand-inside-nav {
+        top: 5px;
+    }
+
+    .brand-catalog-nav li {
+        margin: 0 !important;
+        border-bottom: 1px solid #eaeaea;
+    }
+
+        .brand-catalog-nav li.am-active {
+            margin: 0;
+            background: #f9f9f9;
+        }
+
+            .brand-catalog-nav li.am-active > a {
+                color: #565656;
+                background: none;
+            }
+
+    .brand-catalog-nav a {
+        padding: 1em 1em !important;
+        font-size: .9em;
+        color: #565656;
+    }
+
+        .brand-catalog-nav a:hover {
+            background: #f9f9f9;
+        }
+
+        .brand-catalog-nav a:focus {
+            background: #f9f9f9;
+        }
+
+/*?��?�?/
+.brands-catalog-wrapper {
+  margin: .5em 0 1em 0;
+  padding: 1em 0;
+  background: white;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+.brands-catalog-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.brands-catalog-wrapper div {
+  display: block;
+  padding: 0 5px;
+  height: 100%;
+}
+.brands-catalog-wrapper ul {
+  margin: 0;
+  padding: 0;
+}
+.brands-catalog-wrapper li {
+  margin: 0 5px 0 5px;
+  width: 120px;
+  height: 70px;
+  border: 1px solid #eaeaea;
+}
+.brands-catalog-wrapper img {
+  width: 100%;
+}
+
+/*?��?館slider*/
+.brands-catalog-wrapper .am-control-nav {
+    display: none;
+}
+
+/*?��?館單?��???/
+.brand-body ul {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-single {
+  padding: 10px;
+  background: white;
+}
+@media screen and (max-width: 640px) {
+  .brand-single {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 640px) {
+  .brand-single {
+    margin-bottom: 10px;
+    width: calc(50% - 5px);
+    float: left;
+  }
+  .brand-single:nth-child(2n-1) {
+    margin: 0 10px 20px 0;
+  }
+}
+.brand-single h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.brand-img {
+  position: relative;
+}
+.brand-img img {
+  width: 100%;
+}
+.brand-img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  font-size: 14px;
+  color: #565656;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+}
+
+.brand-products-list {
+  color: #565656;
+}
+.brand-products-list li {
+  display: table;
+  background: white;
+  border-bottom: 1px solid #eaeaea;
+}
+.brand-products-list a:last-child li {
+  border: 0;
+}
+
+/*?��??��?*/
+.brand-product-title {
+    display: table-cell;
+    position: relative;
+    padding: 10px 10px 10px 0;
+    width: 40%;
+}
+
+    .brand-product-title img {
+        width: 100%;
+    }
+
+    .brand-product-title span {
+        top: 10px;
+        right: 10px;
+    }
+
+.brand-product-content {
+    display: table-cell;
+    position: relative;
+    padding: 10px 10px 10px 0;
+    width: 60%;
+    max-width: 0;
+    height: 100%;
+    vertical-align: top;
+}
+
+    .brand-product-content p {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        color: #f1b13b;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .brand-product-content h5 {
+        display: inline-block;
+        margin: 5px 0 0 0;
+        height: 43px;
+        color: #565656;
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: normal;
+        overflow: hidden;
+    }
+
+/*?��??�格*/
+.brand-content-price {
+    display: table-cell;
+    position: absolute;
+    bottom: 5px;
+    width: calc(100% - 10px);
+    height: 30px;
+}
+
+    .brand-content-price h5 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        height: auto;
+        color: #FB5450;
+        font-size: 1.1em;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    .brand-content-price p {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: .8em;
+        color: #999999;
+    }
+
+/*=========?��?館內?? brand inside start=========*/
+.brand-inside-title {
+    margin-top: -45px;
+    position: relative;
+}
+
+.brand-inside-nav {
+    position: absolute;
+    top: 5px;
+    width: 100%;
+    z-index: 50;
+}
+
+    .brand-inside-nav li {
+        padding: 0 10px;
+    }
+
+        .brand-inside-nav li.active a {
+            color: #FB5450;
+        }
+
+        .brand-inside-nav li a {
+            font-size: .9em;
+            color: #565656;
+        }
+
+.admin-sidebar-list {
+    display: none;
+}
+
+.brand-inside-btn {
+    margin: 0;
+    width: 50%;
+    font-size: .85em;
+    font-weight: 400;
+    line-height: 30px;
+    float: right;
+    text-align: right;
+}
+
+.brand-inside-back {
+    display: inline-block;
+    padding: 0 10px;
+    width: 50%;
+    color: #565656;
+}
+
+    .brand-inside-back p {
+        display: inline-block;
+        margin: 0 0 0 5px;
+        font-size: .85em;
+        font-weight: 400;
+    }
+
+/*?��?館內banner 3 banners~*/
+.brand-inside-banner {
+    margin: 1em 0 0 0;
+}
+
+    .brand-inside-banner div {
+        background: white;
+        overflow: auto;
+        -ms-overflow-style: none;
+    }
+
+        .brand-inside-banner div::-webkit-scrollbar {
+            display: none;
+        }
+
+    .brand-inside-banner ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .brand-inside-banner li {
+        width: 300px;
+        background: white;
+    }
+
+    .brand-inside-banner img {
+        padding: 10px;
+        width: 100%;
+    }
+
+/*=========?��?館內?? brand inside end=========*/

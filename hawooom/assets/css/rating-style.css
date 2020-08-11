@@ -1,0 +1,44 @@
+.rating-wrapper {
+  display: inline-block;
+  padding: 0 5px;
+  margin-bottom: 10px;
+}
+.rating-avg{
+  display: none;
+}
+.rating-count{
+  display: inline-block;
+  font-size: 12px;
+  font-family: "微軟正黑體修正","微軟正黑體","Microsoft JhengHei","AHeiti TC","LiHei Pro","新細明體";
+  color: #BBBCBC;
+}
+.rating-stars {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0px;
+}
+.star {
+  display: inline-block;
+  text-align: center;
+  margin-right:2px;
+}
+.fa-star{
+  font-size: 10px;
+}
+.rating-stars-empty {
+  color: #BBBCBC;
+}
+.rating-stars-filled {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  color: #FEBC11;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0; /*亮星星的寬度百分比*/
+}

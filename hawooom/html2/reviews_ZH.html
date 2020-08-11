@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>精選品牌 | HaWooo.com 好物飛行-幫你找到台灣的好東西 _ 台灣美妝,生活用品,包包配件,鞋子,服裝貼身衣物,媽媽寶貝用品</title>
+
+  <!-- Set render engine for 360 browser -->
+  <meta name="renderer" content="webkit">
+
+  <!-- No Baidu Siteapp-->
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+  <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+  <meta name="msapplication-TileColor" content="#0e90d2">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/fontello/css/icon-money.css">
+  <link rel="stylesheet" href="assets/css/amazeui.min.css">
+
+
+
+  <!-- 評論專用 -->
+  <link rel="stylesheet" type="text/css" href="assets/css/reviews.css">
+
+  <!-- Vendor Scripts -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- 商品評分 開始  檢查及submit在reviews.js裡面 -->
+  <section>
+    <div class="am-u-sm-12 review-goback">
+      <div class="am-u-sm-2 login-home">
+        <a href="order-specs.html"><i class="am-icon-angle-left"></i></a>
+      </div>
+    </div>
+    <div class="wirte-reviews-wrapper">
+      <div class="am-u-sm-12 wr-title">發表商品評論 Write a review</div>
+        <div class="am-u-sm-12 wr-content">
+            <div class="am-u-sm-12 am-cf wr-content-text">
+              <div class="am-u-sm-12 am-u-md-8 am-u-md-centered am-u-lg-4 wr-content-pic">
+                <img src="https://www.hawooo.com/images/webimgs/n20170627094452569.jpg">
+                <h3 class="am-u-sm-12 ">KA'FEN 歐娜雅活性碳深層護髮素 600ml (黑銀頭)+贈洗護精裝組*2、沐浴乳試管組*1  </h3>
+              </div>
+                <!-- 表格開始 -->
+                <form class="am-form am-form-horizontal" id="wr-form" onsubmit="reviewEnd()">
+                <div class="am-form-group">
+                    <div class="am-u-sm-12 am-cf reviews-wrapper id-wrapper"  id="rating-wrapper">
+                        <!-- 評分星星開始 input組成的星星們 -->
+                        <div class="rating-star-wrapper" ontouchstart="starTouch(event)">
+                            <!-- 初始值是0分被checked -->
+                            <input class="star-input" name="reviews-rating" id="rating00" value="0" type="radio" checked>
+                            <label title="0.5 stars" class="rating-label rating-label-half" for="rating05"><i class="rating-icon am-icon-star-half"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating05" value="0.5" type="radio">
+                            <label title="1 star" class="rating-label" for="rating10"><i class="rating-icon am-icon-star"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating10" value="1" type="radio" required>
+                            <label title="1.5 stars" class="rating-label rating-label-half" for="rating15"><i class="rating-icon am-icon-star-half"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating15" value="1.5" type="radio">
+                            <label title="2 stars" class="rating-label" for="rating20"><i class="rating-icon am-icon-star"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating20" value="2" type="radio">
+                            <label title="2.5 stars" class="rating-label rating-label-half" for="rating25"><i class="rating-icon am-icon-star-half"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating25" value="2.5" type="radio">
+                            <label title="3 stars" class="rating-label" for="rating30"><i class="rating-icon am-icon-star"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating30" value="3" type="radio">
+                            <label title="3.5 stars" class="rating-label rating-label-half" for="rating35"><i class="rating-icon am-icon-star-half"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating35" value="3.5" type="radio">
+                            <label title="4 stars" class="rating-label" for="rating40"><i class="rating-icon am-icon-star"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating40" value="4" type="radio">
+                            <label title="4.5 stars" class="rating-label rating-label-half" for="rating45"><i class="rating-icon am-icon-star-half"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating45" value="4.5" type="radio">
+                            <label title="5 stars" class="rating-label" for="rating50"><i class="rating-icon am-icon-star"></i></label>
+                            <input class="star-input" name="reviews-rating" id="rating50" value="5" type="radio">
+                        </div>
+                        <!-- 評分星星結束 -->
+                    </div>
+                </div>
+
+                <!-- 標題 -->
+                <div class="am-form-group">
+                    <div class="am-u-sm-12 am-u-md-8 am-u-md-centered am-u-lg-4 am-cf reviews-wrapper">
+                        <input class="am-u-sm-10 am-fr" type="text" placeholder="請輸入心得主題" required/>
+                    </div>
+                </div>
+
+                <!-- 內文 -->
+                <div class="am-form-group">
+                    <div class="am-u-sm-12 am-u-md-8 am-u-md-centered am-u-lg-4 am-cf reviews-wrapper">
+                        <textarea class="am-u-sm-10 am-fr" placeholder="請輸入三十字以上心得內容" required></textarea>
+                    </div>
+                </div>
+
+                <!-- 送出按鈕 -->
+                <div class="am-form-group am-cf">
+                    <div class="am-u-sm-12 am-u-md-8 am-u-md-centered am-u-lg-4 sendreview-btn-wrapper">
+                        <button type="submit" class=" am-u-sm-12 am-u-md-12 am-btn am-btn-dult send-btn" onclick="checkStarPoint(this)">送出</button>
+                    </div>
+                </div>    
+                
+                <!-- 發表評論說明 -->
+                <div class="am-u-sm-12 am-u-md-8 am-u-md-offset-2 am-text-left am-u-lg-4 am-u-lg-offset-4 reviews-description">送出商品評論後將會獲得Ha幣<a href="#"><i class="am-icon-question-circle"></i></a>100元，您的意見有機會成為其他消費者寶貴的參考資訊。(注意：送出評價後將不能修改)</div>
+
+                </form>
+                <!-- 表格結束 -->
+            </div>
+        </div><!-- wr-content foot -->
+    </div><!-- wrapper foot -->
+  </section>
+  <!-- 商品評分 結束 -->
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--<![endif]-->
+<script src="assets/js/amazeui.min.js"></script>
+
+
+<script type="text/javascript" src="assets/js/reviews.js"></script>
+
+
+
+</body>
+
+</html>

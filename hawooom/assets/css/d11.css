@@ -1,0 +1,151 @@
+﻿@charset "UTF-8";
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+.banner-img img {
+  width: 100%;
+}
+
+.d11-table-wrapper {
+  margin: 5px 0;
+  width: 100%;
+  background: white;
+  overflow: scroll;
+}
+
+.d11-table {
+  width: 100%;
+  text-align: center;
+}
+.d11-table th {
+  padding: 5px 0;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  background: #23000b !important;
+}
+.d11-table th:nth-child(1) {
+  padding-left: 15px;
+}
+.d11-table th:nth-child(3) {
+  text-align: left;
+  padding-left: 15px;
+}
+.d11-table i {
+  font-size: 1.5em;
+}
+.d11-table td {
+  position: relative;
+  padding: 1em 0;
+  border-bottom: 1px solid white;
+}
+.d11-table td:nth-child(1) {
+  padding-left: 15px;
+}
+.d11-table td:nth-child(3) {
+  text-align: left;
+  padding-left: 10px;
+  font-size: .9em;
+  color: #9e9e9e;
+}
+.d11-table td:nth-child(3) p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #565656;
+}
+.d11-table td:nth-child(4) {
+  text-align: left;
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 1.15em;
+  color: #EE5984;
+}
+.d11-table tr:nth-child(1) {
+  background: #ffd0d1;
+}
+.d11-table tr:nth-child(1) i {
+  color: #ffba26;
+}
+.d11-table tr:nth-child(2) {
+  background: #ffe7e8;
+}
+.d11-table tr:nth-child(2) i {
+  color: #ffda32;
+}
+.d11-table tr:nth-child(3) {
+  background: #fff2f2;
+}
+.d11-table tr:nth-child(3) i {
+  color: #ffe673;
+}
+.d11-table tr:nth-child(4) {
+  background: #fff6f6;
+}
+.d11-table tr:nth-child(4) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(5) {
+  background:#fff6f6;
+}
+.d11-table tr:nth-child(5) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(6) {
+  background: #fff6f6;
+}
+.d11-table tr:nth-child(6) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(7) {
+  background: #fff6f6;
+}
+.d11-table tr:nth-child(7) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(8) {
+  background: #fff6f6;
+}
+.d11-table tr:nth-child(8) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(9) {
+  background: #fff6f6;
+}
+.d11-table tr:nth-child(9) i {
+  color: #ffe9b0;
+}
+.d11-table tr:nth-child(10) {
+  background:#fff6f6;
+}
+.d11-table tr:nth-child(10) i {
+  color: #ffe9b0;
+}
+
+/*.d11-number{
+	i{
+		position: absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		z-index: 1
+	}
+	p{
+		position: absolute;
+		top:0;
+		bottom:0;
+		left:0;
+		right:0;
+		margin:auto;
+		line-height: 3.5em;
+		z-index: 2
+	}
+}*/
+.d11-footer {
+  padding: 1em;
+  background: #565656;
+  color: white;
+}

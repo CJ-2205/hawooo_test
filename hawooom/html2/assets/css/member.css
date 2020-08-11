@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/* compileCompressed: ../css/$1.css*/
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/*＝＝＝＝＝訂單 order star＝＝＝＝＝＝*/
+/* line 8, ../scss/member.scss */
+#member-order-tab-wrapper {
+  margin-top: -35px;
+}
+/* line 10, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-tab {
+  padding: 0;
+  margin-bottom: 3px;
+}
+/* line 13, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-tab a {
+  line-height: 2em;
+  background-color: #fff;
+  border: 1px solid #FB5450;
+  color: #FB5450;
+}
+/* line 21, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-tab .am-active a {
+  background-color: #FB5450;
+  border: 1px solid #FB5450;
+  color: #fff;
+}
+/* line 29, ../scss/member.scss */
+#member-order-tab-wrapper .am-tabs-bd {
+  background-color: #fff;
+  border-top: 1px solid #c6c7c6;
+  border-bottom: 1px solid #c6c7c6;
+  border-left: none;
+  border-right: none;
+}
+/* line 37, ../scss/member.scss */
+#member-order-tab-wrapper .am-tabs-bd .am-pagination li a {
+  color: #565656;
+  border: none;
+  padding: .5em;
+}
+/* line 43, ../scss/member.scss */
+#member-order-tab-wrapper .am-tabs-bd .am-pagination li.am-active a {
+  color: white;
+  border: none;
+  background: #FB5450;
+}
+/* line 52, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-list-link {
+  display: block;
+  font-size: 1.3rem;
+  color: #9d9597;
+}
+/* line 58, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-shop-list {
+  padding: 0;
+  margin: 0;
+}
+/* line 62, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-shop-list .member-order-shop-li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 65, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-shop-list .member-order-shop-li:last-of-type {
+  border-bottom: none;
+}
+/* line 71, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-buyer-list {
+  padding: 0;
+  margin: 0;
+}
+/* line 75, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-buyer-list .member-order-buyer-li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 78, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-buyer-list .member-order-buyer-li:last-of-type {
+  border-bottom: none;
+}
+/* line 83, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-data-list {
+  padding: 0;
+  margin: 0;
+}
+/* line 88, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-data-row {
+  height: 10rem;
+}
+/* line 93, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-data-col {
+  padding: 0 .5rem;
+}
+/* line 97, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-status-col {
+  position: relative;
+  text-align: center;
+  padding: 0 .5rem;
+}
+/* line 101, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-status-col span {
+  font-size: 1.5rem;
+  color: #FB5450;
+  font-weight: bold;
+}
+/* line 106, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-status-col i {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 42%;
+  font-size: 3rem;
+  color: #c6c7c6;
+}
+/* line 116, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-item-total {
+  color: red;
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+}
+/* line 121, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-status {
+  padding-right: .5rem;
+}
+/* line 123, ../scss/member.scss */
+#member-order-tab-wrapper .member-order-status.complete {
+  color: #999999;
+}
+
+/* line 129, ../scss/member.scss */
+#member-center-section {
+  margin: 2rem 1rem;
+  border: none;
+}
+/* line 132, ../scss/member.scss */
+#member-center-section .am-panel-hd {
+  background-color: #fff;
+  color: #565656;
+  border: 1px solid #eaeaea;
+  border-bottom: none;
+  text-align: center;
+  font-size: 1.1em;
+}
+/* line 140, ../scss/member.scss */
+#member-center-section .am-panel-bd {
+  padding: 0;
+  color: #565656;
+}
+/* line 143, ../scss/member.scss */
+#member-center-section .am-panel-bd li {
+  border: 1px solid #eaeaea;
+  border-bottom: none;
+}
+/* line 146, ../scss/member.scss */
+#member-center-section .am-panel-bd li:nth-of-type(odd) {
+  border-right: none;
+}
+/* line 151, ../scss/member.scss */
+#member-center-section .member-center-row {
+  padding: .5rem 1rem;
+}
+/* line 153, ../scss/member.scss */
+#member-center-section .member-center-row div {
+  height: 5rem;
+  position: relative;
+}
+/* line 159, ../scss/member.scss */
+#member-center-section .member-center-icon {
+  width: 100%;
+  max-width: 5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 169, ../scss/member.scss */
+#member-center-section .member-center-subTitle {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 1rem;
+  color: #565656;
+  font-size: 1.5rem;
+}
+
+/*＝＝＝＝＝訂單 order end＝＝＝＝＝＝*/
+/*＝＝＝＝＝會員資料 member info star＝＝＝＝＝＝*/
+/* line 184, ../scss/member.scss */
+.member-info {
+  background: white;
+  padding: 0;
+}
+/* line 187, ../scss/member.scss */
+.member-info .am-form {
+  padding: 10px 0 0 0;
+}
+/* line 190, ../scss/member.scss */
+.member-info .am-form-group {
+  padding: 0 1rem;
+  margin: 15px 0;
+}
+/* line 194, ../scss/member.scss */
+.member-info h5 {
+  font-size: .9em;
+  font-weight: 500;
+  margin: 0 0 5px 0;
+  color: #565656;
+}
+/* line 200, ../scss/member.scss */
+.member-info .m-btn-wrapper {
+  width: calc(100% - 2rem);
+  border-top: 1px solid #eaeaea;
+  margin: 10px 1rem;
+  padding: 20px 0;
+  text-align: center;
+}
+/* line 206, ../scss/member.scss */
+.member-info .m-btn-wrapper button {
+  width: 150px;
+}
+/* line 211, ../scss/member.scss */
+.member-info .am-form-group input {
+  height: 35px;
+  font-size: 14px;
+}
+/* line 214, ../scss/member.scss */
+.member-info .am-form-group input:focus {
+  border: 1px solid #FB5450;
+  box-shadow: none;
+}
+
+/*是否有認證email*/
+/* line 223, ../scss/member.scss */
+#member-email {
+  /*點我認證*/
+  /*已認證*/
+}
+/* line 224, ../scss/member.scss */
+#member-email input {
+  width: 100%;
+  display: inline-block;
+}
+/* line 227, ../scss/member.scss */
+#member-email input.unchecked {
+  width: 78%;
+}
+/* line 231, ../scss/member.scss */
+#member-email h5 {
+  display: inline-block;
+}
+/* line 234, ../scss/member.scss */
+#member-email i {
+  margin: 0 5px 0 0;
+}
+/* line 238, ../scss/member.scss */
+#member-email button {
+  display: inline-block;
+  width: 20%;
+  height: 35px;
+  font-size: 12px;
+  padding: 0;
+  white-space: pre-wrap;
+}
+/* line 247, ../scss/member.scss */
+#member-email span {
+  display: inline-block;
+  font-size: .8em;
+  color: #95D7DA;
+  margin: 0 5px 0 5px;
+}
+
+/*＝＝＝＝＝會員資料 member info end＝＝＝＝＝＝*/
