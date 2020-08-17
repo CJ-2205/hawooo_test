@@ -1,0 +1,64 @@
+﻿.select-currency {
+    border-top: 1px solid #505050;
+
+    .material-icons {
+        font-size: 14px;
+    }
+}
+
+
+.modal-currency {
+
+
+    .select-currency {
+        width: 100%;
+    }
+
+    .am-close {
+        font-size: 30px;
+    }
+
+    .am-selected {
+        width: 100%;
+    }
+
+    .am-selected-btn {
+        background: inherit;
+        border: 1px solid #CED4DA;
+    }
+
+    .am-modal-footer {
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .see-detail-btn, .confirm-btn {
+        width: 42%;
+    }
+
+    .see-detail-btn {
+        background: inherit;
+        border: 1px solid #BBBCBC;
+        color: #BBBCBC;
+    }
+
+    .confirm-btn {
+        background: #F7588C;
+        border: none;
+    }
+
+    .currency-notice {
+        color: #757575;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .am-selected-list li.am-checked .am-icon-check {
+        color: #689B94;
+    }
+
+    .am-icon-check {
+        color: #E3EAE9;
+    }
+}

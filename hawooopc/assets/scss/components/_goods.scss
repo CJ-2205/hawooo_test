@@ -1,0 +1,139 @@
+﻿
+/*商品明細*/
+.detail_title {
+    font-size: 18px;
+    color: #ff006e;
+    padding-left: 1.5rem;
+}
+
+.detail_price {
+    /*background-color: #faea56;*/
+    font-size: 18px;
+    height: 42px;
+    color: #EF3479;
+}
+
+.detail_from_info {
+    line-height: 30px;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+.detail_button {
+    text-align: center;
+}
+/*商品列表CSS開始*/
+.gallery-title a {
+    font-size: 14px;
+    line-height: 12px;
+}
+
+.gallery-time {
+    font-size: 12px;
+    padding: 0px 5px;
+    text-align: center;
+    background-color: rgb(128,147,192);
+    background-color: #d2d2d2;
+    color: #FFF;
+}
+
+.moneyoldspan {
+    text-decoration: line-through;
+    color: #808080;
+    padding-left: 5px;
+}
+
+.moneyspan {
+    padding-left: 5px;
+    color: #b3b3b3;
+    font-size: 12px;
+    margin-right: 2px;
+    /*font-weight: bold;*/
+}
+
+.moneyspan_brands img {
+    width: 72px;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.money_txt_style {
+    color: #f54954;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.money_txt_up {
+    color: #f54954;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 2px;
+}
+
+.moneybtn {
+    float: right;
+}
+
+.listbrand {
+    color: #ffd800;
+}
+
+.product li {
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+.product .pitem {
+    margin: 0px;
+    padding: 2px;
+    border-color: #FFF;
+    /*border-color: rgb(212,212,212);*/
+    -webkit-transform: translateZ(0);
+}
+
+.product .pitem:hover {
+    padding: 0px;
+    border: 5px solid #cbcbcb;
+    transition: border 0.2s linear 0s, color 0.2s linear 0s, background-color 0.2s linear 0s;
+    -webkit-transform: translateZ(0);
+}
+
+.product .am-panel-bd {
+    padding: 2px;
+}
+
+.product_title {
+    background-color: #EF3479;
+    font-size: 26px;
+    color: #ffffff;
+    height: 60px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.product_title a {
+    color: #ffffff;
+}
+
+.product_title a:hover {
+    color: #f9f2f2;
+}
+
+.gallery-title {
+    font-size: 14px;
+    margin-left: 5px;
+    height: 42px;
+    overflow: hidden;
+}
+
+.gallery-title a {
+    color: #6F6957;
+}
+
+.gallery-detail {
+    padding-top: 4px;
+    height: 34px;
+    border-top: 1px solid #E9E9E9;
+}
+/*商品CSS列表結束*/

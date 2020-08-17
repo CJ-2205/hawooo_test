@@ -1,0 +1,411 @@
+@keyframes up_down {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+
+@keyframes up_down_reverse {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+@keyframes samll_ani {
+    0% {
+        transform: scale(.9);
+    }
+
+    50% {
+        transform: scale(.9);
+    }
+
+    100% {
+        transform: scale(.9);
+    }
+}
+
+@keyframes samll_ani {
+    0% {
+        transform: translateY(-10px) scale(.9);
+    }
+
+    50% {
+        transform: translateY(10px) scale(.9);
+    }
+
+    100% {
+        transform: translateY(-10px) scale(.9);
+    }
+}
+
+@keyframes samll_2_ani {
+    0% {
+        transform: translateY(-10px) scale(.4);
+    }
+
+    50% {
+        transform: translateY(10px) scale(.4);
+    }
+
+    100% {
+        transform: translateY(-10px) scale(.4);
+    }
+}
+
+@keyframes list {
+    from {
+        transform-origin: 120px 0;
+        transform: rotateY(45deg);
+    }
+
+    to {
+        transform-origin: 120px 0;
+        transform: rotateY(0);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform-origin: center center;
+        transform: rotate(0);
+    }
+
+    100% {
+        transform-origin: center center;
+        transform: rotate(45deg);
+    }
+}
+
+/*商品上下浮動*/
+.hvr-float {
+    vertical-align: middle;
+    box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-float:active, .hvr-float:focus, .hvr-float:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+/*商品Hover2*/
+.hvr-float2 {
+    vertical-align: middle;
+    box-shadow: 0 0 2px transparent;
+}
+
+.hvr-float2:active, .hvr-float2:focus, .hvr-float2:hover {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+
+@keyframes alittlescale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.95) ;
+    }
+
+    80% {
+        transform: scale(1) ;
+    }
+
+}
+
+//浮誇砰砰跳動
+@keyframes heartAnimate {
+    0%,100% {
+        transform: scale(1) rotate(0);
+    }
+
+    10%,30% {
+        transform: scale(0.9) rotate(3deg);
+    }
+
+    20%,40%,60%,80% {
+        transform: scale(1.1) rotate(-3deg);
+    }
+
+    50%,70% {
+        transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@-webkit-keyframes heartAnimate {
+    0%,100% {
+        -webkit-transform: scale(1) rotate(0);
+    }
+
+    10%,30% {
+        -webkit-transform: scale(0.9) rotate(3deg);
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: scale(1.1) rotate(-3deg);
+    }
+
+    50%,70% {
+        -webkit-transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@-moz-keyframes heartAnimate {
+    0%,100% {
+        -moz-transform: scale(1) rotate(0);
+    }
+
+    10%,30% {
+        -moz-transform: scale(0.9) rotate(3deg);
+    }
+
+    20%,40%,60%,80% {
+        -moz-transform: scale(1.1) rotate(-3deg);
+    }
+
+    50%,70% {
+        -moz-transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@-o-keyframes heartAnimate {
+    0%,100% {
+        -o-transform: scale(1) rotate(0);
+    }
+
+    10%,30% {
+        -o-transform: scale(0.9) rotate(3deg);
+    }
+
+    20%,40%,60%,80% {
+        -o-transform: scale(1.1) rotate(-3deg);
+    }
+
+    50%,70% {
+        -o-transform: scale(1.1) rotate(3deg);
+    }
+}
+
+@-ms-keyframes heartAnimate {
+    0%,100% {
+        -ms-transform: scale(1) rotate(0);
+    }
+
+    10%,30% {
+        -ms-transform: scale(0.9) rotate(3deg);
+    }
+
+    20%,40%,60%,80% {
+        -ms-transform: scale(1.1) rotate(-3deg);
+    }
+
+    50%,70% {
+        -ms-transform: scale(1.1) rotate(3deg);
+    }
+}
+
+
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -100% 0;
+    }
+}
+
+//跑馬燈
+@keyframes marqee {
+    0% {
+        left: 100%;
+        transform: translateX(0%);
+    }
+
+    100% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+}
+
+
+
+@keyframes jumpjump {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-1px);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: rotate(1deg)translateY(-3px);
+    }
+}
+
+//圓形光圈變色
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 8px 6px #fff;
+    }
+
+    50% {
+        box-shadow: 0 0 8px 6px #5133FF;
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px #7EB6B2;
+    }
+}
+
+@keyframes pulse2 {
+    0% {
+        box-shadow: 0 0 8px 6px #fff;
+    }
+
+    50% {
+        box-shadow: 0 0 8px 6px #DE8EFC;
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px #BDB4EF;
+    }
+}
+
+@keyframes pulse3 {
+    0% {
+        box-shadow: 0 0 8px 6px #FFB8B8;
+    }
+
+    50% {
+        box-shadow: 0 0 8px 6px #FF72BA;
+    }
+
+    100% {
+        box-shadow: 0 0 8px 6px #FCAEAE;
+    }
+}
+//圓形光圈
+
+.loader-path {
+    stroke-dasharray: 75,100;
+    stroke-dashoffset: -10;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 2.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1,200;
+        stroke-dashoffset: 0;
+    }
+
+    50% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -35;
+    }
+
+    100% {
+        stroke-dasharray: 89,200;
+        stroke-dashoffset: -124;
+    }
+}
+
+@-webkit-keyframes color {
+    0% {
+        stroke: #fff;
+    }
+
+    40% {
+        stroke: #fff;
+    }
+
+    66% {
+        stroke: #fff;
+    }
+
+    80%, 90% {
+        stroke: #fff;
+    }
+}
+
+@keyframes color {
+    0% {
+        stroke: #fff;
+    }
+
+    40% {
+        stroke: #fff;
+    }
+
+    66% {
+        stroke: #fff;
+    }
+
+    80%, 90% {
+        stroke: #fff;
+    }
+}

@@ -1,0 +1,231 @@
+﻿
+/*頁尾*/
+.am-footer {
+    @include size(100%,auto);
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 5% 0 2% 0;
+    background-color: #8f908f;
+}
+
+
+.am-footer #company {
+    @include size(100%,auto);
+    float: left;
+    display: block;
+    margin: 4% 0;
+    padding: 0;
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+
+    span {
+        text-decoration: underline;
+    }
+}
+
+.am-footer #company .company-col {
+    @include size(33.33%,auto);
+    display: block;
+    float: left;
+}
+
+.am-footer #company a {
+    @include size(100%,auto);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.am-footer #company a:active {
+    @include size(100%,25px);
+    color: $auxiliary2;
+    text-decoration: none;
+}
+
+.am-footer #reserved {
+    @include size(100%,25px);
+    float: left;
+    display: block;
+    padding: 0;
+    font-size: 10px;
+    line-height: 25px;
+    color: #ffffff;
+    padding-bottom: 90px;
+    margin: 0px;
+}
+
+
+/*商頁詳細頁固定bar*/
+
+.am-footer-fixed {
+    @include size(100%,55px);
+    @include fixed(auto,0,0,0);
+    z-index: 1010;
+    background: -moz-linear-gradient(top, #fcfcfc 0%, #e5e5e5 100%);
+    border-top: 1px solid #b1b1b1;
+}
+
+.am-cart-icon {
+    @include size( 40px, 40px);
+    float: left;
+    padding: 0;
+    margin: 15px 10px 0 5px;
+
+    img {
+        width: 40px;
+    }
+}
+ 
+
+/*.cart-number-box {
+    position: absolute;
+    top: 12px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    z-index: 1010;
+    border-radius: 50%;
+    background-color: #e75353;
+}*/
+
+.footer_menu li {
+    border-right: 1px solid #d7d9da;
+    padding: 0.3rem 0 0 0;
+}
+
+.footer_menu li:last-child {
+    border-right: 0px;
+}
+
+.cart_num {
+    @include size(15px,15px,10px);
+    @include font-style(10px,$white);
+    position: absolute;
+    background-color: $hw-strong;
+    margin: 2px 8px auto 1.7em;
+    vertical-align: top;
+    float: right;
+}
+
+
+/*======footer icon======*/
+.footer-cart {
+    @include size(100%,45px);
+    margin: 4px 0;
+    z-index: 1000;
+    background-color: white;
+    display: inline-block;
+    font-size: 1em;
+    line-height: 45px;
+    border-right: 1px solid #d7d9da;
+    text-align: center;
+}
+
+.padding-n {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.footer-icon {
+    width: 25px;
+    margin: 5px auto;
+    margin-bottom: 0;
+}
+
+.footer-icon-text {
+    text-align: center;
+    font-size: 10px;
+    color: #282828;
+    vertical-align: middle;
+}
+
+.img-footer-icon {
+    min-width: 25px;
+    max-width: 20%;
+    margin-bottom: -7px;
+    /*margin-bottom: -10px;*/
+    /* margin-top: 10px;*/
+}
+
+.title-footer-text {
+    text-align: center;
+}
+
+//jump service icon
+#soft-jumb {
+    -webkit-animation-name: soft-jumb;
+    animation-name: soft-jumb;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+}
+
+@-webkit-keyframes soft-jumb {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.gold-service-text {
+    color: #F5C519 !important;
+}
+
+/*=========Black-service=========*/
+#black-service {
+    padding: 3px 2px;
+    color: transparent;
+    background-size: 700% 400%;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: all 0.20s ease-in;
+    animation: move 1.5s infinite linear;
+    background-image: -webkit-linear-gradient(45deg,#1b1b1b 0%,#050404 80%,#575454 90%,#050404 100%);
+    /*background-image: -webkit-linear-gradient(45deg,#d39e31 0%,#F5C519 80%,#fff 90%,#d39e31 100%);*/
+    @keyframes move {
+        0% {
+            background-position: 0 0;
+        }
+
+        100% {
+            background-position: -100% 0;
+        }
+    }
+}

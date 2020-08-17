@@ -1,0 +1,106 @@
+﻿body {
+    max-width: 767px;
+    margin: 0 auto !important;
+    background: $soft-grey !important;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+/*主Banner Slider Dot*/
+.am-slider-a1 .am-control-nav li a {
+    width: 5px;
+    height: 5px;
+
+    .am-active {
+        background-color: $white;
+        opacity: .5;
+    }
+}
+
+/*主Banner Slider Dot end*/
+
+.am-top-nav .menu {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+.am-top-nav .menu li {
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 20%;
+    height: 70px;
+    color: #565656;
+    list-style-type: none;
+    text-align: center;
+
+    a {
+        float: left;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 70px;
+        color: #565656;
+        list-style-type: none;
+        text-decoration: none;
+        background: #fff;
+
+        &:hover {
+            float: left;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 70px;
+            list-style-type: none;
+            text-decoration: none;
+            background: -ms-linear-gradient( top, #dfdfdf 5%, #ededed 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+            background: -webkit-gradient( linear, left top, left bottom, color-stop(5%, #dfdfdf), color-stop(100%, #ededed));
+            background-color: #dfdfdf;
+        }
+    }
+}
+
+
+/*.am-btn {
+    &:hover, &:active, &:focus {
+        background: transparent;
+        color:white;
+        box-shadow:none;
+    }
+}*/
+
+/*.am-accordion-content {
+    padding: 0px !important;
+}*/
+
+.am-selected {
+    width: 100%;
+    background-color: white;
+}
+section.am-container {
+    padding: 0 5px;
+}
+
+.am-slider-a1 {
+    box-shadow: none;
+}

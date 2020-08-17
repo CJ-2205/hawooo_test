@@ -1,0 +1,121 @@
+﻿
+//新增贈品區塊彈跳面板
+/*.premium-modal-content {
+    position: relative;
+    padding: 1.5rem 0;
+}*/
+
+
+    li.premium-modal-item {
+        width: 100%;
+        border-bottom: 1px solid #eaeaea;
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+
+/*.premium-modal-footer {
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 5px;
+
+    a {
+        display: block;
+        line-height: 40px;
+        font-weight: bold;
+    }
+}*/
+
+
+
+.premium-modal-close {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.premium-modal-date {
+    background: $soft-grey;
+    line-height: 1.2;
+    padding: 10px 3px;
+
+    h5 {
+        color: #E65E5E;
+        font-size: 14px;
+    }
+
+    span {
+        text-align: center;
+        color: $pro-text-grey;
+        font-size: 0.875rem;
+    }
+}
+
+.premium-goods {
+    width: 75px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.promotion-modal-info {
+
+    h4 {
+        color: $auxiliary1;
+    }
+
+    span {
+        color: $hw-primary;
+    }
+}
+
+.promotion-modal-info-list {
+    ul li {
+        position: relative;
+        color: $pro-text-grey;
+
+        &:before {
+            content: "-";
+            padding: 3px;
+        }
+    }
+}
+
+/*.close-premiumModal{
+    position:absolute;
+    right:0;
+}*/
+
+.premium-modal, .vouchers-modal {
+    height:75% !important;
+    .modal-header {
+        border-bottom: none;
+        position: relative;
+        justify-content: center;
+    }
+
+    .modal-title {
+        position: relative;
+        color: $pro-text-grey;
+    }
+
+    .modal-content {
+        border: none !important;
+    }
+
+    .modal-footer {
+        border-top: none !important;
+
+        .am-btn {
+            background-color: $hw-primary;
+            border-color: $hw-primary;
+        }
+    }
+}
+

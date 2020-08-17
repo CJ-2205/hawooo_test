@@ -1,0 +1,208 @@
+﻿.product_item_pic {
+    position: relative;
+    padding: 1px;
+    img{
+        width:100%;
+    }
+}
+
+.product_item_block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+
+.product_item_text {
+    background: white;
+    margin-top: 10px;
+    padding: 0 5px 0px 5px;
+    height: 100px;
+    overflow: hidden;
+
+    @include breakpoints-max($iphone5s) {
+        padding: 0 1px 0px 1px;
+    }
+
+    h3 {
+        @include font-style($fontWeight: normal );
+        height: 37px;
+        overflow: hidden;
+    }
+
+    h4 {
+        @include font-style(15px,#FB5450);
+        display: inline-block;
+        white-space: nowrap;
+
+        @include breakpoints-max($iphone5s) {
+            font-size: 13px;
+        }
+    }
+
+    p {
+        @include font-style(12px,$medium-text-grey,700);
+        display: inline-block;
+
+        @include breakpoints-max($iphone5s) {
+            -webkit-text-size-adjust: none !important;
+            -webkit-transform: scale(0.9) !important;
+        }
+    }
+}
+
+
+
+.product_item_dis {
+    @include font-style(12px,$medium-text-grey,700);
+    margin: 0px;
+    display: inline-block;
+    bottom: 0px;
+    float: right;
+    padding-top: 5px;
+
+    @include breakpoints-max($iphone5s) {
+        padding-top: 0;
+        -webkit-text-size-adjust: none !important;
+        -webkit-transform: scale(0.9) !important;
+    }
+}
+
+
+//品牌收藏刪除按鈕
+.product_item_del_icon {
+    @include size (20px,20px);
+    @include absolute(5px,8px);
+    z-index: 2;
+    cursor: pointer;
+    color: $mouse-grey;
+}
+
+
+
+/*180414 Linda*/
+.product-items-tag {
+    padding: 3px 4px;
+    color: #689b94;
+    background: #e3eae9;
+    vertical-align: bottom;
+    border-radius: 12px;
+
+    img {
+        width: 20px !important;
+    }
+
+    @include breakpoints-max($iphone5s) {
+        padding: 1px 4px 3px 0px;
+        -webkit-text-size-adjust: none !important;
+        -webkit-transform: scale(0.8) !important;
+    }
+}
+
+.product-tag-wrapper-d {
+    margin: 0;
+    padding: 10px 0;
+    font-size: .85em;
+    border-bottom: 1px solid #eaeaea;
+    a {
+        color: $pro-black;
+    }
+}
+
+
+.actual-price-b {
+    color: #ff0068;
+    font-size: 2.1em;
+    letter-spacing: -2px;
+}
+
+.time-countdown {
+    margin-top: 13px;
+    line-height: 15px;
+    text-align: right;
+    float: right;
+}
+
+.view-text {
+    @include font-style(0.5em,$mouse-grey,bold);
+}
+
+.countdown-text {
+    @include font-style(0.5em,$pro-black, lighter);
+    letter-spacing: 1px
+}
+
+
+
+.pnote_div {
+    border-top: 1px solid #f5f5f5;
+    padding-top: 5px
+}
+
+.pnote {
+    margin: 0px 0px 5px 0px !important;
+}
+
+.pnote span {
+    padding-left: 3px;
+    font-size: 12px;
+    color: #a2a2a2;
+}
+
+.pnote img {
+    width: 25px;
+}
+
+//slider看更多
+.goods-more-text {
+    max-width: 135px;
+
+    h3 {
+        color: $pro-text-grey;
+        text-align: center;
+        line-height: 4;
+        margin-bottom: 0;
+    }
+}
+
+
+.goods-brand-contain{
+    padding:5px 0;
+    display:flex;
+    align-items:center;
+    img{
+        width:100%;
+    }
+}
+
+.goods-brand {
+    display:inline-block;
+    width: 72px;
+    height: 44px;
+    border: 1px solid $dotted-grey;
+    margin-right: 10px;
+}
+
+.flagship-tag {
+    display: inline-block;
+    color: #D7AC5F;
+    border: 1px solid #D7AC5F;
+    padding: 0 3px;
+}
+
+
+.follow-btn {
+    float:right;
+    font-size: 12px;
+    color: $auxiliary1;
+    border: 1px solid $auxiliary1;
+    display: inline-block;
+    padding: 0 5px;
+    line-height:1.2;
+    /*&:before {
+        font-size:20px;
+        content: "+";
+        font-weight: bold;
+        margin-right: 3px;
+    }*/
+}

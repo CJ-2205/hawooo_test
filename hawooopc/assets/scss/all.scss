@@ -1,0 +1,43 @@
+﻿/*utils*/
+@import "utils/variables",
+             "utils/functions", 
+             "utils/mixins", 
+             "utils/reboot", 
+             "utils/breakpoints",
+             "utils/_flex.scss";
+/*base*/
+@import "base/amazeUI-overrides";
+
+/*layout*/
+@import "layout/grid",
+             "layout/header", 
+             "layout/footer", 
+             "layout/sidebar", 
+             "layout/forms";
+
+/*components*/
+@import "components/buttons", 
+             "components/cover", 
+             "components/dropdown",
+             "components/goods", 
+             "components/tags", 
+             "components/tabs",
+             "components/modal",
+             "components/breadcrumb",
+             "components/slider";
+
+/*pages*/
+@import "pages/app",
+             "pages/brand", 
+           /*  "pages/cart", */
+             "pages/all_activities",
+             "pages/search", 
+             "pages/product", 
+             "pages/product_details", 
+             "pages/member", 
+             "pages/login",
+             "pages/new_footer", 
+             "pages/new_premiums";
+
+@import url("../css/animate.css");
+@import url("css/hover-min.css");

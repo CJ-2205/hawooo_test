@@ -1,0 +1,55 @@
+﻿.articleButton {
+    width: 60px;
+    height: 30px;
+    background-color: #00d0e2;
+    line-height: 30px;
+}
+
+.articleList {
+    width: 100%;
+    margin: 15px 10px 0 5px;
+    padding: 5px;
+}
+
+.articleImg {
+    position: absolute;
+    clip: rect(0px,60px,80px,0px);
+}
+
+.shareBox {
+
+    span {
+        font-size: 13px;
+        color: $pro-black;
+        display: block;
+        margin: 3px 5px;
+    }
+
+    ul li {
+        @include size(85px,25px);
+        float: left;
+        display: block;
+        line-height: 25px;
+        font-family: montserrat;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+
+        a {
+            color: $white;
+        }
+    }
+
+    .facebook_share {
+        background-color: #3b5998;
+    }
+
+    .twitter_share {
+        background-color: #00aced;
+    }
+
+    .google_share {
+        background-color: #dd4b39;
+    }
+}
+

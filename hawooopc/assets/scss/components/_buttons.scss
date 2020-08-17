@@ -1,0 +1,38 @@
+﻿.hw-primary-btn {
+    width: 100%;
+    @include font-style(20px,$white,bold);
+    background: $hw-primary;
+
+    &:hover {
+        background: $hw-primary;
+        color:$white;
+    }
+}
+
+
+.gray-btn {
+    border: 1px solid $hw-secondary;
+    color: $hw-secondary;
+    font-size: 18px;
+    background: $white;
+    padding: 5px 20px;
+
+    &:hover, &:active, &:focus {
+        background: $hw-secondary;
+        color: $white;
+    }
+}
+
+.success-btn {
+    border: 1px solid$auxiliary1;
+    color: $white;
+    font-size: 18px;
+    background: $auxiliary1;
+    padding: 5px 20px;
+
+    &:hover, &:active, &:focus {
+        background: $white;
+        color: $auxiliary1;
+        border: 1px solid $auxiliary1;
+    }
+}

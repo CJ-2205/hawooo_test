@@ -1,0 +1,347 @@
+﻿//轉盤 Stert
+.spinwheel-wrapper {
+    position: relative;
+    @include size(100%,1200px);
+    max-height: 1200px;
+
+    img {
+        width: 100%;
+    }
+
+    .led-panel {
+        @include absolute(22.7%,0,auto,0);
+
+        &-img {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .led-marqee {
+            white-space: nowrap;
+            text-align: center;
+            margin: 0 auto;
+            position: inherit;
+            top: 40%;
+            left: 0;
+            right: 0;
+            width: 420px;
+            color: #ff0;
+            font-size: 2.3em;
+            overflow: hidden;
+            text-shadow: 0 0 0.1em yellow, 0 0 0.1px yellow;
+
+            .marquee {
+                padding: 0;
+                width: 80%;
+            }
+        }
+    }
+
+    .spinwheel {
+        @include absolute(auto,12%,13%,auto);
+
+        &-contain {
+            position: relative;
+        }
+
+        &-circle {
+            width: 600px;
+            height: 600px;
+            @include flex-center;
+            position: relative;
+            margin: 0 auto;
+            z-index: 1;
+            //指針
+            .pointer {
+                @include absolute(-2%,0,auto,0);
+                width: 9%;
+                z-index: 10;
+            }
+            //禮物面板
+            .spinwheel-rotate {
+                width: 78%;
+                @include absolute(auto,0,auto,0);
+            }
+            //按了就開始
+            .start-btn {
+                width: 28%;
+                @include absolute(auto,0,auto,0);
+                z-index: 8;
+
+                & :hover {
+                    cursor: pointer;
+                }
+            }
+            //燈泡
+            .small-bulbs {
+                width: 96%;
+                /*@include size(575px,575px);*/
+                @include absolute(auto,0,auto,0);
+
+                @media screen and (max-width:576px) {
+                    width: 88%;
+                }
+            }
+        }
+
+        .spinwheel-seat {
+            width: 71%;
+            @include absolute(auto,0,-12%,0);
+        }
+    }
+
+    .small-bulbs, .start-btn, .spinwheel-rotate, .pointer, .spinwheel-seat {
+        margin: 0 auto;
+    }
+
+
+}
+
+//轉盤 End
+
+//公告欄
+.bulletin-board {
+    background: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 110px;
+    line-height: 1.5;
+
+    @media screen and (max-width:412px) {
+        font-size: 12px;
+    }
+
+    .bulletin-title {
+        color: #f8d1dd;
+    }
+
+    .highlight {
+        color: #FEE322;
+        text-decoration: underline;
+    }
+}
+
+
+
+.gift-box {
+    @include absolute($left:15%,$bottom:16%);
+
+    .gift-panel {
+        position: relative;
+        width: 260px;
+        height: 180px;
+
+        .gift {
+            position: absolute;
+            bottom: -50%;
+            left: -19%;
+            width: 150px;
+        }
+
+        .gift-text {
+            width: 84%;
+            height: 132px;
+            overflow: hidden;
+            padding-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5%;
+            @include absolute(12%,0,0,0);
+            margin: 0 auto;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.5;
+            color: $auxiliary1;
+            z-index: 1;
+
+            span {
+                color: $hw-primary;
+            }
+        }
+    }
+}
+
+
+.rewards-table-wrapper {
+    font-size: 15px;
+
+    .gift {
+        width: 20%;
+        @include absolute(auto,0,4%,7%);
+        z-index: 20;
+    }
+}
+
+
+
+.rewards-table {
+    width: 100%;
+    color: #595959;
+    text-align: center;
+}
+
+.rewards-table i {
+    font-size: 30px;
+    color: #ffe9b0;
+}
+
+.rewards-table th {
+    padding: 5px 0;
+    font-weight: normal;
+    background: #f9898d;
+    color: white;
+}
+
+.rewards-table th:nth-child(2) {
+    text-align: center;
+}
+
+.rewards-table th:nth-child(3) {
+    padding-left: 40px;
+}
+
+.rewards-table th:nth-child(4) {
+    padding-left: 60px;
+}
+
+
+.rewards-table td:nth-child(3) {
+    padding-left: 40px;
+    text-align: left;
+}
+
+.rewards-table td:nth-child(4) {
+    padding-left: 60px;
+    text-align: left;
+}
+
+.rewards-table td:nth-child(5) {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    color: #EE5984;
+}
+
+.rewards-table tr {
+    border-bottom: 1px solid white;
+}
+
+.rewards-table tr:nth-child(1) {
+    background: #ffd0d1;
+}
+
+.rewards-table tr:nth-child(1) i {
+    color: #ffba26;
+}
+
+.rewards-table tr:nth-child(2) {
+    background: #ffe7e8;
+}
+
+.rewards-table tr:nth-child(2) i {
+    color: #ffda32;
+}
+
+.rewards-table tr:nth-child(3) {
+    background: #fff2f2;
+}
+
+.rewards-table tr:nth-child(3) i {
+    color: #ffe673;
+}
+
+.rewards-table tr:nth-child(4) {
+    background: #fff6f6;
+}
+
+.rewards-table tr:nth-child(5) {
+    background: #fff6f6;
+}
+
+.rewards-table tr:nth-child(6) {
+    background: #f9f9f9;
+}
+
+.rewards-table tr:nth-child(7) {
+    background: #f9f9f9;
+}
+
+.rewards-table tr:nth-child(8) {
+    background: #f9f9f9;
+}
+
+.rewards-table tr:nth-child(9) {
+    background: #f9f9f9;
+}
+
+.rewards-table tr:nth-child(10) {
+    background: #f9f9f9;
+}
+
+.rewards-table tr:nth-child(11) {
+    background: #ffff;
+}
+
+.d11-footer {
+    padding: 20px;
+    background: #595959;
+    color: white;
+}
+
+
+.rewards-item {
+    color: $hw-primary;
+}
+
+.rewards-img {
+    width: 40px;
+    padding: 15px 20px;
+
+    img {
+        float: left;
+        display: block;
+        width: 20px;
+    }
+}
+
+//黑卡獎項說明
+.about-award {
+    background: #fff3f6;
+    color: #000;
+}
+
+.about-award-btn {
+    right: 8%;
+    position: absolute;
+    bottom: 15%;
+    border-radius: 50%;
+    color: #689B94;
+    font-weight: bold;
+    animation: up_down 2s infinite;
+    text-align: center;
+    background: #fff;
+    border: 3px solid #689B94;
+
+    &:hover,&:focus,&:active {
+        color: #428682;
+        cursor: pointer;
+    }
+}
+
+@keyframes up_down {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}

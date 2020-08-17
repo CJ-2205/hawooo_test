@@ -1,0 +1,445 @@
+﻿//轉盤 Stert
+.led-panel {
+    @include absolute(22.7%,0,auto,0);
+
+    .led-panel-img {
+        position: relative;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .led-marqee {
+        white-space: nowrap;
+        text-align: center;
+        margin: 0 auto;
+        position: inherit;
+        top: 26%;
+        left: 0;
+        right: 0;
+        width: 400px;
+        color: #ff0;
+        font-size: 2em;
+        overflow: hidden;
+        text-shadow: 0 0 0.1em yellow, 0 0 0.1px yellow;
+
+        @media screen and (max-width: 650px) {
+            font-size: 1em;
+            width: 50%;
+        }
+
+    }
+}
+
+.spinwheel {
+    @include absolute(auto,12%,13%,auto);
+
+    .spinwheel-circle {
+        width: 600px;
+        height: 600px;
+        @include flex-center;
+        position: relative;
+        margin: 0 auto;
+        z-index: 1;
+        //指針
+        .pointer {
+            @include absolute(-2%,0,auto,0);
+            width: 9%;
+            z-index: 10;
+        }
+        //禮物面板
+        .spinwheel-rotate {
+            width: 78%;
+            @include absolute(auto,0,auto,0);
+        }
+        //按了就開始
+        .start-btn {
+            width: 28%;
+            @include absolute(auto,0,auto,0);
+            z-index: 8;
+
+            & :hover {
+                cursor: pointer;
+            }
+        }
+        //燈泡
+        .small-bulbs {
+            width: 96%;
+            /*@include size(575px,575px);*/
+            @include absolute(auto,0,auto,0);
+
+            @media screen and (max-width:576px) {
+                width: 88%;
+            }
+        }
+    }
+
+    .spinwheel-seat {
+        width: 71%;
+        @include absolute(auto,0,-12%,0);
+    }
+}
+
+.small-bulbs, .start-btn, .spinwheel-rotate, .pointer, .spinwheel-seat {
+    margin: 0 auto;
+}
+
+
+.gift {
+    width: 20%;
+    @include absolute(auto,0,4%,7%);
+    z-index: 20;
+}
+
+
+//轉盤 End
+//公告欄
+.bulletin-board {
+    background: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 110px;
+    line-height: 1.5;
+
+    @media screen and (max-width:412px) {
+        font-size: 12px;
+    }
+
+    .bulletin-title {
+        color: #f8d1dd;
+    }
+
+    .highlight {
+        color: #FEE322;
+        text-decoration: underline;
+    }
+}
+
+.mb-bulletin-board {
+    padding: 20px 6%;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.gift-box {
+    @include absolute($left:1%,$bottom:1%);
+    display: flex;
+    align-items: center;
+
+    .gift-text {
+        font-size: 15px;
+        border-radius: 15px;
+        background: #fff;
+        padding: 15px 20px;
+        font-weight: bold;
+        line-height: 1.5;
+        color: $auxiliary1;
+        width: 80%;
+        border: 1px solid #ff0;
+        @media screen and (max-width:576px) {
+            padding: 3px 10px;
+            font-size: 12px;
+        }
+
+        span {
+            color: $hw-primary;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+//手機板轉盤
+.spinwheel-content, .mb-spinwheel-content {
+    position: relative;
+    @include flex-center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.mb-spinwheel {
+    width: 100%;
+    @include absolute(auto,0,21%,0);
+
+    @media screen and (max-width:576px) {
+        bottom: 18%;
+    }
+
+    .spinwheel-circle {
+        @include flex-center;
+        z-index: 18;
+    }
+
+    .spinwheel-seat {
+        width: 42%;
+        @include absolute(auto,0,-12%,0);
+    }
+
+    .mb-spinwheel-seat {
+        width: 56%;
+        @include absolute(auto,0,-14%,0);
+
+        @media screen and (max-width:576px) {
+            width: 65%;
+            bottom: -13%;
+        }
+    }
+
+    .start-btn {
+        width: 28%;
+        /*@include size(190px,190px);*/
+        @include absolute(auto,0,auto,0);
+        z-index: 8;
+    }
+    //禮物面板
+    .spinwheel-rotate {
+        width: 75%;
+        /*@include size(475px,475px);*/
+        @include absolute(auto,0,auto,0);
+    }
+
+    .small-bulbs {
+        width: 90%;
+        /*@include size(575px,575px);*/
+        @include absolute(auto,0,auto,0);
+
+        @media screen and (max-width:576px) {
+            width: 88%;
+        }
+    }
+
+    .pointer {
+        @include absolute(-2%,0,auto,0);
+        width: 9%;
+        z-index: 10;
+    }
+}
+
+//公告欄
+.bulletin-board {
+    background: #000;
+    font-family: Arial,Helvetica,sans-serif;
+    @include font_style(13px,bold,#fff);
+    padding: 20px 110px;
+    line-height: 1.5;
+
+    @media screen and (max-width:412px) {
+        font-size: 12px;
+    }
+
+    .bulletin-title {
+        color: #f8d1dd;
+    }
+
+    .highlight {
+        color: #FEE322;
+        text-decoration: underline;
+    }
+}
+
+.mb-bulletin-board {
+    padding: 20px 8%;
+    line-height: 1.5;
+}
+
+
+.d11-table-wrapper {
+    margin: 5px 0;
+    width: 100%;
+    background: white;
+    overflow: scroll;
+}
+
+.rewards-table {
+    width: 100%;
+    text-align: center;
+
+    th {
+        padding: 5px 0;
+        font-weight: normal;
+        background: #23000b;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+
+
+
+.d11-table th:nth-child(1) {
+    padding-left: 15px;
+}
+
+.d11-table th:nth-child(3) {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.d11-table i {
+    font-size: 1.5em;
+}
+
+.d11-table td {
+    font-size: 14px;
+    position: relative;
+    padding: 1em 0;
+    border-bottom: 1px solid white;
+}
+
+.d11-table td:nth-child(1) {
+    padding-left: 15px;
+}
+
+.d11-table td:nth-child(3) {
+    text-align: left;
+    padding-left: 10px;
+    /*font-size: .9em;*/
+    color: #9e9e9e;
+}
+
+.d11-table td:nth-child(3) p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #565656;
+}
+
+.d11-table td:nth-child(4) {
+    text-align: left;
+    padding-left: 15px;
+    font-weight: 500;
+    /*font-size: 1.15em;*/
+    color: #EE5984;
+}
+
+.d11-table tr:nth-child(1) {
+    background: #ffd0d1;
+}
+
+.d11-table tr:nth-child(1) i {
+    color: #ffba26;
+}
+
+.d11-table tr:nth-child(2) {
+    background: #ffe7e8;
+}
+
+.d11-table tr:nth-child(2) i {
+    color: #ffda32;
+}
+
+.d11-table tr:nth-child(3) {
+    background: #fff2f2;
+}
+
+.d11-table tr:nth-child(3) i {
+    color: #ffe673;
+}
+
+.d11-table tr:nth-child(4) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(4) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(5) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(5) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(6) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(6) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(7) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(7) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(8) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(8) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(9) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(9) i {
+    color: #ffe9b0;
+}
+
+.d11-table tr:nth-child(10) {
+    background: #fff6f6;
+}
+
+.d11-table tr:nth-child(10) i {
+    color: #ffe9b0;
+}
+
+
+.d11-footer {
+    padding: 1em;
+    background: #565656;
+    color: white;
+}
+
+.gift-box-panel {
+    position: relative;
+}
+
+.gift-text-panel {
+    width: 90%;
+    padding-top: 50px;
+
+    @media screen and (max-width:576px) {
+        width: 94%;
+        padding-top: 13px;
+    }
+}
+
+.gift-img {
+    width: 80%;
+    float: right;
+    padding: 0 0 10px 10px;
+
+    @media screen and (max-width:576px) {
+        width: 100%;
+    }
+}
+
+.about-award-btn {
+    z-index: 10;
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: -3%;
+}
+.about-award {
+    background: #fff3f6;
+    color: #000;
+
+    a {
+        color: $hw-primary;
+    }
+}

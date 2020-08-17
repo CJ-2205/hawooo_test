@@ -1,0 +1,60 @@
+@mixin no-box-shadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+//size調整
+@mixin size($width,$height: auto,$border-radius: 0) {
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+
+@mixin max-size($max-width,$max-height: auto) {
+    max-width: $max-width;
+    max-height: $max-height;
+}
+
+@mixin min-size($min-width,$min-height: auto) {
+    min-width: $min-width;
+    min-height: $min-height;
+}
+
+@mixin font-style($fontSize: 12px,$fontColor: $pro-black,$fontWeight: inherit) {
+    font-size: $fontSize;
+    color: $fontColor;
+    font-weight: $fontWeight;
+}
+
+//字數行數調整
+@mixin text-overflow($height,$line-clamp) {
+    height: $height;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+}
+
+//定位
+@mixin absolute($top: auto,$right: auto,$bottom: auto,$left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin fixed($top: auto,$right: auto,$bottom: auto,$left: auto) {
+    position: fixed;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,408 @@
+﻿//加入收藏入口
+.favorite-brand-ent {
+    position: relative;
+
+    .favorite-brand-img {
+        position: relative;
+        width: 100%;
+        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, .5)));
+    }
+
+    .favorite-brand-bottom {
+        @include size(100%,200px);
+        @include absolute (auto,0,0,0);
+    }
+
+    .favorite-brand {
+        margin: 0 auto;
+        text-align: center;
+        //圓框品牌
+        .favorite-brand-logo {
+            @include flex-center;
+            @include size (90px, 90px,50%);
+            border: 2px solid $white;
+            margin: 0 auto;
+            background-color: $white;
+
+            @media screen and (min-width: 415px) {
+                @include size(110px,110px,50%);
+            }
+
+            @media screen and (max-width: 320px) {
+                @include size(75px,75px,50%);
+            }
+        }
+        //+收藏按鈕
+        .favorite-brand-btn {
+            margin-top: 8px;
+            font-size: 14px;
+
+
+            @media screen and (min-width: 415px) {
+                margin-top: 15px;
+            }
+
+            a {
+                @include font_style (13px,600,$pro-text-grey);
+                @include size(75px,20px,20px);
+                padding: 2px 17px;
+                border: 1px solid$mouse-grey;
+                @include flex-center;
+
+                @media screen and (min-width: 415px) {
+                    width: 98px;
+                    padding: 13px 5px;
+                }
+
+                @media screen and (max-width: 415px) {
+                    font-size: 13px;
+                    padding: 1px 6px;
+                }
+                /*@media screen and (max-width: 320px) {
+                    width: 80px;
+                    padding: 1px 3px;
+                }*/
+            }
+        }
+        //品牌小字標語
+        .favorite-brand-Introduce {
+            @include font_style (14px,bold,$medium-text-grey);
+            margin: 10px auto;
+
+            @media screen and (min-width: 415px) {
+                margin: 10px auto 20px auto;
+            }
+
+            @media screen and (max-width:480px) and (min-width:319px) {
+                bottom: 20%;
+            }
+
+            @media screen and (max-width: 415px) {
+                font-size: 12px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+//一般店圖片倒影盒子
+.favorite-brand-box {
+    @include size(100%,700px);
+
+    @media screen and (max-width:480px) and (min-width:411px) {
+        height: 400px;
+    }
+
+    @media screen and (max-width:410px) and (min-width:319px) {
+        height: 380px;
+    }
+
+    @media screen and (max-width: 320px) {
+        height: 310px;
+    }
+}
+
+//一般店品牌收藏
+
+.shop-favorite-brand {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 320px) {
+        bottom: -6%;
+    }
+}
+
+
+
+
+//旗艦館白色漸變背景
+.bg-white-Inner {
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4),white);
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.4),white);
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.4),white);
+    background: linear-gradient(rgba(255, 255, 255, 0.4),white,50%);
+    @include absolute (auto,0,0,0);
+    @include size (100%,45%);
+
+    @media screen and (min-width: 768px) {
+        height: 25%;
+    }
+}
+//旗艦館品牌收藏
+.flagship-favorite-brand {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (max-width:480px) and (min-width:319px) {
+        bottom: 10%;
+    }
+
+    @media screen and (max-width: 320px) {
+        bottom: 0;
+    }
+}
+
+//旗艦店5張縮小圖
+/*.brand-thumbnails {
+    padding: 0;
+
+    li {
+        padding: 4px 2px 2px 2px;
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}*/
+
+
+//搜尋旗艦店
+
+    /*position: relative;
+    background: #fff;*/
+.brands-all {
+    li {
+        width:100%;
+        border-bottom: 1px solid $soft-grey;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            height: 100px;
+        }
+    }
+
+    span {
+        font-size: 14px;
+
+        i {
+            font-size: 2rem;
+            padding-left: 3px;
+        }
+    }
+}
+
+
+
+
+.brand-logo {
+    /*@include size (80px,80px);*/
+    width:95px;
+
+    /*@media screen and (max-width: 415px) {
+        @include size (90px,90px);
+    }
+
+    @media screen and (max-width: 320px) {
+        @include size (65px,65px);
+    }*/
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+#brands-alphabet-all{
+    width:30px !important;
+    height:75vh;
+    overflow-y:auto;
+}
+
+.brand-name {
+    margin-left: 10px;
+    color: $pro-text-grey;
+    font-size: 14px;
+
+    @include breakpoints-max($mobile) {
+        font-size: 12px;
+    }
+}
+
+
+.brands-alphabet-sort {
+    position: fixed;
+    right: 4%;
+    bottom: 10%;
+    font-size: 13px;
+    line-height:2;
+    color: $pro-text-grey;
+    font-weight: bold;
+}
+
+.brands-search-contain {
+    position: relative;
+    margin-top: -33px;
+    background: $white;
+}
+
+.brands-alphabet {
+    background: $dotted-grey;
+    color: $pro-text-grey;
+    font-weight:bold;
+    padding-left:1.5rem;
+}
+
+.search-brands-bar{
+    display:flex;
+}
+
+.serach-home {
+    width: 30px;
+}
+
+.alphabet-sort-active {
+    @include size (20px,20px,50%);
+    background: #eee;
+    text-align: center;
+    line-height: 1.5;
+    margin:0 auto;
+}
+//小改版新增旗艦店品牌館
+.flagship-store-content {
+    margin: 5px auto 20px auto;
+
+    .more-tag {
+        border: 0;
+    }
+
+    .theme-title {
+        font-size: 14px;
+        padding: 10px;
+        overflow: hidden;
+
+        @include breakpoints-max($mobile) {
+            font-size: 12px;
+            padding: 5px;
+        }
+    }
+}
+
+
+//Logo區塊
+.brands-catalog-block {
+
+    ul li {
+        margin-top: 10px;
+
+        &:nth-child(-n+3) {
+            margin-top: 0;
+        }
+
+        a {
+            /*padding: 10px;*/
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            @include size(230px,230px);
+            border: 1px solid $dotted-grey;
+            /*line-height: 170px;*/
+            margin: 0 auto;
+            background-color: #fff;
+
+            @media screen and (max-width: 650px) {
+                @include size(110px,110px);
+                /*line-height: 100px;*/
+                /*padding: 5px;*/
+            }
+
+            @media screen and (max-width: 320px) {
+                @include size(95px,95px);
+                /*line-height: 81px;*/
+            }
+
+            img {
+                width: 100%;
+            }
+        } 
+}
+}
+
+.menu-slider-contain {
+    background: #fff;
+    max-height: 180px;
+    overflow: auto;
+    -ms-overflow-style: none;
+    margin-top: -33px;
+
+    ul {
+        display: flex;
+        overflow-x: scroll;
+        margin: 10px 0;
+
+        li {
+            white-space: nowrap;
+            position: relative;
+            padding: 0 10px;
+            border-right: 1px solid #eaeaea;
+            text-align: center;
+
+            .menu-slider-icon {
+                max-width: 36px;
+                height: 36px;
+                position: relative;
+                margin: 0 auto;
+
+                img {
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+
+            span {
+                position: relative;
+                top: -5px;
+                color: $pro-black;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.search-brands {
+    padding: 0 15px;
+    color: $pro-black;
+    width: 100%;
+    height: 48px;
+
+    @include breakpoints-max($mobile) {
+        padding: 0 10px;
+    }
+
+    .search-back {
+        font-size: 20px;
+        margin-left: 3px;
+        color: $pro-black;
+    }
+
+    a {
+        color: $pro-black;
+    }
+
+    span {
+        width:30px;
+        font-size: 14px;
+    }
+
+}
+
+
+.home-icon {
+    width: 36px;
+}
+

@@ -1,0 +1,92 @@
+﻿
+
+.brand-catalog-title-w {
+    position: relative;
+}
+
+.brand-catalog-title {
+    margin: 0;
+    padding: 5px 0;
+    background: #eaeaea;
+    font-size: 1.2em;
+    font-weight: 400;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.b-collapse-title {
+    display: inline-block;
+    padding: 0 10px;
+    width: 100%;
+    border: 0;
+    background: #eaeaea;
+    color: #565656;
+}
+
+.b-collapse-title:hover {
+    background: #eaeaea;
+    color: #565656;
+}
+
+.b-collapse-title:focus {
+    background: #eaeaea;
+    color: #565656;
+    outline: none;
+}
+
+.b-collapse-title:active {
+    box-shadow: none;
+    background: #eaeaea;
+    color: #565656;
+    outline: none;
+}
+
+.b-collapse-title:active:focus {
+    outline: none;
+}
+
+.b-collapse-title h3 {
+    display: inline;
+    margin: 0;
+    font-weight: 500;
+}
+
+.brand-catalog-nav {
+    position: absolute;
+    top: 32px;
+    z-index: 50;
+    width: 100%;
+    background: white;
+}
+
+.brand-catalog-nav.brand-inside-nav {
+    top: 5px;
+}
+
+.brand-catalog-nav li {
+    margin: 0 !important;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.brand-catalog-nav li.am-active {
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.brand-catalog-nav li.am-active > a {
+    color: #565656;
+    background: none;
+}
+
+.brand-catalog-nav a {
+    padding: 1em 1em !important;
+    font-size: .9em;
+    color: #565656;
+}
+
+.brand-catalog-nav a:hover {
+    background: #f9f9f9;
+}
+
+.brand-catalog-nav a:focus {
+    background: #f9f9f9;
+}

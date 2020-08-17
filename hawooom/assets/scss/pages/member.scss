@@ -1,0 +1,156 @@
+﻿@import "../utils/utils";
+/*@import "../components/components";*/
+@import "member2";
+@import "member_card";
+
+/* 200716 Joanne 新增 */
+/* order-list */
+.order-list {
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+/* order-list-header */
+.order-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 8px 0;
+}
+
+.order-list-header .order-number {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #707070;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.order-list-header .order-date {
+    font-size: 12px;
+    color: #BBBCBC;
+}
+
+.order-list-header .order-btn {
+    background-color: #fff;
+    border: 0.5px solid #F7588C;
+    border-radius: 3px;
+    padding: 5px 15px;
+    color: #F7588C;
+    font-size: 13px;
+    max-width: 100px;
+}
+
+/* order-list-body */
+.order-list-body {
+    padding: 10px 0;
+}
+
+.order-product-wrap {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    max-height: 98px;
+}
+
+.order-product-show {
+    max-height: initial;
+}
+
+.order-product-wrap .order-product {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.order-product-wrap .order-product-img {
+    width: 40px;
+    padding-right: 10px;
+}
+
+.order-product-wrap .order-product-img img {
+    width: 100%;
+}
+
+.order-product-wrap .order-product-name {
+    font-size: 12px;
+    margin: 0;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.order-product-wrap .order-product-price {
+    color: #F7588C;
+    margin: 0;
+    font-size: 12px;
+}
+
+.order-product-wrap .order-product-price span {
+    color: #bbbcbc;
+}
+
+.btn-view-all {
+    text-align: center;
+}
+
+.btn-view-all a {
+    font-size: 12px;
+    color: #689B94;
+}
+
+.btn-view-all .fa {
+    margin-left: 5px;
+}
+
+.btn-view-all .fa-angle-down {
+    display: none;
+}
+
+.btn-view-all .fa-angle-up {
+    display: inline-block;
+}
+
+.btn-view-all.show .fa-angle-down {
+    display: inline-block;
+}
+
+.btn-view-all.show .fa-angle-up {
+    display: none;
+}
+
+/* order-list-footer */
+.order-list-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #EAEAEA;
+    font-size: 12px;
+}
+
+.order-list-footer img {
+    width: 16px;
+}
+
+.order-list-footer .order-payment {
+    color: #bbbcbc;
+}
+
+.order-list-footer .order-total {
+    margin: 10px 0;
+}
+
+.order-list-footer .order-total span {
+    color: #F7588C;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 5px;
+}

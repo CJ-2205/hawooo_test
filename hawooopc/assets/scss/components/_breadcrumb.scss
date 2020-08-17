@@ -1,0 +1,43 @@
+﻿.product-breadcrumb-section {
+    text-align: center;
+
+    .product-breadcrumb-wrapper {
+        display: inline-block;
+        height: 30px;
+        padding: 0;
+        margin: 10px auto;
+        color: #595959;
+
+        ul {
+            padding: 0 0 0 30px;
+            margin: 0;
+
+            li.product-breadcrumb {
+                line-height: 30px;
+                padding: 0 30px 0 0;
+                position: relative;
+
+                &:after {
+                    content: '>';
+                    width: 10px;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                }
+
+                &:nth-child(3):after {
+                    display: none;
+                }
+
+                a {
+                    color: black;
+
+                    &:hover {
+                        color: $pro-text-grey;
+                    }
+                }
+            }
+        }
+    }
+}

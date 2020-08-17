@@ -1,0 +1,25 @@
+﻿/*utils*/
+@import "utils/utils";
+/*@import "utils/variables",
+             "utils/mixins",
+             "utils/breakpoints";*/
+
+/*base*/
+@import "base/amazeUI-overrides";
+
+/*layout*/
+@import "layout/app";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/grid";
+@import "layout/homepage";
+@import "layout/left_menu";
+@import "layout/navigation";
+@import "layout/product";
+
+/*components*/
+@import "components/components";
+
+/*@import url('../css/animate.css');
+@import url('css/hover-min.css');*/

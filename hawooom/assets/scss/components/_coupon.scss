@@ -1,0 +1,137 @@
+﻿.coupon_discount {
+    color: #FB5450;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.coupun_row {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    /* border-style: solid; */
+    border-color: #eaeaea;
+    padding: 5px;
+}
+
+
+.vouchers-box {
+    color: #333;
+
+    &:hover, &:active {
+        color: #333;
+    }
+
+    i {
+        color: #bbbcbc;
+    }
+
+    .vouchers {
+        color: $hw-primary;
+        position: relative;
+        border: 1px solid $hw-primary;
+        font-size: 12px;
+        margin-right: 8px;
+        padding: 0 5px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 7rem;
+        line-height: 1.7;
+        /*&:before {
+            content: "";
+            border: 1px solid #ff0068;
+            transform: translateX(-50%);
+            transform: translate(-130%,50%);
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            left: -5%;
+        }*/
+    }
+}
+
+.voucher-info-group {
+    height: 100px;
+    min-height: 95px;
+    max-height: 120px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 3px 2px 5px -2px #aaa;
+}
+
+.voucher-item {
+    padding: 10px;
+
+    a {
+        color: $pro-black;
+    }
+
+    .voucher-info {
+        padding: 1.8rem 1rem;
+        background: #fff;
+        width: calc(100% - 10rem);
+    }
+
+    .voucher-collect {
+        text-align: center;
+        position: relative;
+        padding: 1.8rem 1rem;
+        background: #f7e7e7;
+        min-width: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h5 {
+            color: $hw-primary;
+            font-weight: bold;
+        }
+
+        &:before, &:after {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            position: absolute;
+            left: -8%;
+            background: #f9f9f9;
+        }
+
+        &:before {
+            top: 0;
+            z-index: 1;
+            transform: translateY(-50%);
+        }
+
+        &:after {
+            bottom: 0;
+            z-index: 2;
+            transform: translateY(50%);
+        }
+    }
+
+    .voucher-collect-btn {
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 12px;
+        min-width: 2.5rem;
+        background: #fff;
+        color: $hw-primary;
+        border-radius: 3px;
+        border: 1px solid $hw-primary;
+    }
+}
+
+.voucher-item-group {
+    border-top: 1px solid #eaeaea;
+}

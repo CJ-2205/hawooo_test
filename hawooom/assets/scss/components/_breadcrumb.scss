@@ -1,0 +1,21 @@
+﻿.ul_class {
+    padding: 5px;
+    font-size: 14px;
+    margin-bottom: 0px
+}
+
+.ul_class a {
+    color: #565656;
+}
+
+.event_note {
+    @include absolute(auto,auto,0,auto);
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    background: #000;
+    opacity: 0.4;
+    color: white;
+    z-index: 999;
+}

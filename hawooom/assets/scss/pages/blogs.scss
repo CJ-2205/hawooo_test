@@ -1,0 +1,201 @@
+﻿//import bootstrap
+@import "../utils/variables";
+@import "../vendors/bootstrap/functions";
+@import "../vendors/theme/functions";
+@import "../vendors/theme/variables";
+@import "../vendors/bootstrap/variables";
+@import "../vendors/bootstrap/mixins";
+/*@import "../vendors/bootstrap/root";
+@import "../vendors/bootstrap/reboot";*/
+@import "../vendors/bootstrap/utilities";
+@import "../vendors/theme/utilities/text";
+@import "../vendors/theme/utilities/background";
+
+
+@import "../vendors/bootstrap/bootstrap-grid";
+@import "../vendors/bootstrap/nav";
+@import "../vendors/bootstrap/card";
+@import "../vendors/theme/card";
+@import "../vendors/bootstrap/buttons";
+@import "../vendors/bootstrap/print";
+@import "../vendors/bootstrap/pagination";
+@import "../vendors/bootstrap/forms";
+@import "../vendors/bootstrap/badge";
+
+@import "../utils/utils";
+@import "../components/components";
+
+.button-next, .button-prev {
+    top: 50%;
+    position: absolute;
+    color: rgba(0,0,0,.5);
+    z-index: 2;
+    font-size: 18px;
+}
+
+.button-next {
+    right: 6px;
+}
+
+.button-prev {
+    left: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+}
+
+.article-card {
+    .card-title {
+        @include text-overflow(auto, 2);
+    }
+
+    .card-text {
+        @include text-overflow(auto, 3);
+    }
+
+    .text-overflow2 {
+        @include text-overflow(auto, 2);
+    }
+}
+
+.text-overflow2 {
+    @include text-overflow(auto, 2);
+}
+
+.share-group {
+    .share-facebook:hover {
+        color: $facebook;
+    }
+
+    .share-instagram:hover {
+        color: #9B1989;
+    }
+
+    .share-google:hover {
+        color: $google-plus;
+    }
+}
+
+//商品塊樣式
+.ha-goods:hover {
+    color: transparent;
+}
+
+.ha-goods-pic img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.ha-goods-content {
+    background: white;
+    padding: 5px;
+}
+
+.ha-tag {
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.ha-tag-style1 {
+    background-color: #e3eae9;
+    color: #689b94;
+}
+
+.ha-tag-style2 {
+    background: rgba(255, 0, 95, 0.1);
+    color: #ee5984;
+}
+
+.ha-goods-name {
+    font-size: 12px;
+    font-weight: normal;
+    color: #000;
+    margin: 5px 0;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: auto;
+    min-height: 28px;
+    /* min-height: 40px; 沒有用BS時要抓最小高40px*/
+}
+
+.ha-goods-price {
+    color: #ee5984;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ha-goods-origin-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    vertical-align: text-bottom;
+    padding-top: 0;
+    margin-left: 2px;
+    color: #BBBCBC;
+    font-weight: normal;
+}
+
+.ha-viewd {
+    margin: 0;
+    font-size: 12px;
+    color: #BBBCBC;
+    font-weight: 700;
+}
+
+/* 評價星星樣式 */
+.rating-wrapper {
+    display: inline-block;
+}
+
+.rating-avg {
+    display: none;
+}
+
+.rating-count {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "微軟正黑體修正","微軟正黑體","Microsoft JhengHei","AHeiti TC","LiHei Pro","新細明體";
+    color: #BBBCBC;
+}
+
+.rating-stars {
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.star {
+    display: inline-block;
+    text-align: center;
+    margin-right: 1px;
+}
+
+.fa-star {
+    font-size: 10px;
+}
+
+.rating-stars-empty {
+    color: #BBBCBC;
+}
+
+.rating-stars-filled {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #FEBC11;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0; /*亮星星的寬度百分比*/
+}
+                

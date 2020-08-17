@@ -1,0 +1,94 @@
+﻿
+/*======button======*/
+.hw-primary-btn {
+    background: $hw-primary;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+
+    &:hover, &:focus {
+        background: $hw-primary;
+        color: white;
+    }
+}
+
+.fuchsia-btn {
+    background: #ff0068;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+
+    &:hover {
+        background: #E50052;
+        color: white;
+    }
+
+    &:focus {
+        background: #E50052;
+        color: white;
+        outline: none;
+    }
+}
+
+.fuchsia-o-btn {
+    background: white;
+    border: 1px solid $hw-strong;
+    color: $hw-strong;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+
+    &:hover {
+        background: rgba(255, 0, 95, 0.1);
+        color: $hw-strong;
+        border: 1px solid $hw-strong;
+    }
+
+    &:focus {
+        background: rgba(255, 0, 95, 0.1);
+        color: $hw-strong;
+        outline: none;
+        border: 1px solid $hw-strong;
+    }
+}
+
+.header-pink-btn {
+    background: #f7588c;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+
+    &:hover {
+        background: #FF7C81;
+        color: white;
+    }
+
+    &:focus {
+        background: #FF7C81;
+        color: white;
+        outline: none;
+    }
+}
+
+
+.grey-btn {
+    background: #f9f9f9;
+    color: #565656;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+
+    &:hover {
+        background: #ccc;
+        color: #565656;
+    }
+    &:focus {
+        background: #ccc;
+        color: #565656;
+        outline: none;
+    }
+}
+

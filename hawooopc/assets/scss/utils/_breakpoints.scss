@@ -1,0 +1,23 @@
+﻿//@media only screen and (max-width: __ px) {}
+$pc: 1024px;
+$pad: 640px;
+$mobile: 414px;
+$iphone5s:320px;
+
+@mixin breakpoints-max($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}
+
+//@media only screen and (min-width: __ px) {}
+/*$pc: 1025px;
+$pad: 641px;
+$mobile: 415px;
+$iphone5s: 321px;
+
+@mixin breakpoints-min($width) {
+    @media only screen and (max-width: $width) {
+        @content;
+    }
+}*/
