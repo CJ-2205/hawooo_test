@@ -1,0 +1,345 @@
+@import "../../utils/utils";
+
+.button-next, .button-prev {
+    top: 50%;
+    position: absolute;
+    color: rgba(0,0,0,.5);
+    z-index: 2;
+    font-size: 18px;
+}
+
+.button-next {
+    right: 6px;
+}
+
+.button-prev {
+    left: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+}
+
+.article-card {
+    .card-title {
+        @include text-overflow(40px, 2);
+    }
+
+    .card-text {
+        @include text-overflow(auto, 2);
+    }
+
+    .text-overflow2 {
+        @include text-overflow(auto, 2);
+    }
+}
+
+.text-overflow2 {
+    @include text-overflow(auto, 2);
+}
+
+/*愛心icon*/
+
+
+.love-icon {
+    --heart-color: $primary;
+    --heart-active-color: $primary;
+    --bg-color: white;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    color: $gray-300;
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+
+        &:checked {
+            & ~ * {
+                --heart-color: $primary;
+                color: $primary;
+            }
+
+            & ~ {
+                i {
+                    animation: scale-out-elastic 1.2s ease-out reverse forwards;
+                }
+
+                .lines {
+                    .line::before {
+                        animation: slide-left-right 0.4s ease-in forwards;
+                    }
+                }
+
+                .ring {
+                    background: var(--heart-color);
+                    animation: scale-out-bigger 0.75s cubic-bezier(0, 1, 0.5, 1) forwards;
+
+                    &::before {
+                        animation: scale-out 0.75s cubic-bezier(0, 1, 0.5, 1) forwards;
+                    }
+                }
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+
+        .line {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            width: 10px;
+            height: 1px;
+            opacity: 0.6;
+
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    transform: rotate($i * 60deg + 30deg) translate(20px);
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--heart-color);
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+        }
+    }
+}
+
+
+
+@keyframes slide-left-right {
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50.1% {
+        transform-origin: right;
+    }
+
+    100% {
+        transform-origin: right;
+    }
+}
+
+@keyframes scale-out {
+    to {
+        transform: scale(1.02);
+    }
+}
+
+@keyframes scale-out-bigger {
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.blog-bn-pagination .swiper-pagination-bullet-active {
+    background: $gray-900;
+}
+
+.box-right-shadow {
+    -webkit-box-shadow: 9px 2px 5px -9px rgba(148,148,148,1);
+    -moz-box-shadow: 9px 2px 5px -9px rgba(148,148,148,1);
+    box-shadow: 9px 2px 5px -9px rgba(148,148,148,1);
+}
+
+.blog-top::-webkit-scrollbar {
+    -ms-overflow-style: none;
+}
+
+.blog-top {
+    overflow: -moz-hidden-unscrollable;
+    /*   a:active{
+        color:$primary !important;
+    }*/
+    a.nav-link:focus {
+        color: $secondary !important;
+        position: relative;
+        transition: .5s;
+    }
+
+    a.nav-link:focus:before {
+        content: "";
+        position: absolute;
+        border-bottom: 2px solid $secondary;
+        width: 85%;
+        bottom: 15%;
+        transition: .5s;
+    }
+}
+
+.share-facebook {
+    color: $white;
+    background-color: $facebook;
+
+    &:hover {
+        color: $white;
+        background-color: darken($facebook,10%);
+    }
+}
+
+.sub-category {
+    a {
+        white-space: wrap !important;
+    }
+}
+
+.am-pagination a {
+    color: $gray-600;
+}
+
+
+#category-filter .popover-body {
+    min-width: 200px;
+
+    .dropdown-item {
+        white-space: normal !important;
+
+        &:hover {
+            background: $gray-50;
+            color: $secondary;
+        }
+    }
+}
+
+#category-filter ul li a:hover {
+    color: $secondary;
+    position: relative;
+}
+
+.article-goods {
+    h5 {
+        height: 50px;
+        overflow: hidden;
+    }
+
+    @media screen and (min-width: 640px) {
+        width: 75% !important;
+    }
+}
+
+.swiper-pagination a {
+    color: $gray-900;
+}
+
+.category-menu {
+    display: flex;
+    margin-bottom: 0;
+    overflow-x: auto;
+
+    .active {
+        color: $secondary !important;
+        position: relative;
+        color: $secondary !important;
+
+        &:hover {
+            color: $secondary !important;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            border: 1px solid $secondary !important;
+            transition: .3s;
+        }
+    }
+
+    .am-active > a {
+        background: $gray-50 !important;
+        color: $secondary !important;
+    }
+}
+
+
+
+.category-menu::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.category-sub-menu {
+    .am-active > a {
+        background: $gray-50 !important;
+        color: $secondary !important;
+    }
+}
+
+.open-content {
+    top: 100;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: absolute;
+    display: none;
+
+    span:hover {
+        border: 1px solid $secondary !important;
+    }
+
+    a:hover {
+        color: $secondary !important;
+    }
+    /*小箭頭
+    &:before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        top: -5px;
+        right: 17%;
+        background: white;
+        box-shadow: 0px 0px 2px 0px rgba(119, 119, 119, 0.7);
+        position: absolute;
+        z-index: -1;
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        content: '';
+        width: 40px;
+        height: 20px;
+        top: 0px;
+        right: 14%;
+        background: white;
+        position: absolute;
+        z-index: -1;
+    }*/
+}
+
+.article-title {
+    @include text-overflow(42px, 2);
+}
+
+.ha-tag-style1 {
+    background-color:$lighter-secondary;
+    color: $secondary;
+}

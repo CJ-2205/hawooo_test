@@ -1,0 +1,25 @@
+//size
+@mixin size($width,$height:auto,$brs: 0) {
+    width: $width;
+    height: $height;
+    border-radius: $brs;
+}
+
+//字數行數調整
+@mixin text-overflow($h,$line-clamp:2) {
+    height: $h;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $line-clamp;
+    -webkit-box-orient: vertical;
+}
+
+//字樣式
+@mixin font-style($fontSize: 1rem,$fontColor: $gray-500,$fontWeight: inherit) {
+    font-size: $fontSize;
+    color: $fontColor;
+    font-weight: $fontWeight;
+}
+
+

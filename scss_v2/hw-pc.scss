@@ -1,0 +1,23 @@
+// @import '../theme-hwsg-pc';
+@import "vendors/bootstrap/functions";
+@import "vendors/theme/functions";
+@import "utils/utils";
+@import "vendors/theme/variables";
+@import "vendors/bootstrap/variables";
+@import "vendors/bootstrap/bootstrap";
+
+/*-----------------------------------------------
+|   Theme Styles
+-----------------------------------------------*/
+@import "vendors/theme/theme";
+
+/*-----------------------------------------------
+|   Layout Styles
+-----------------------------------------------*/
+@import "utils/reboot";
+/*@import "layout/pc/header";
+@import "layout/pc/footer";
+@import "layout/pc/main";*/
+@import "layout/pc/goods";
+@import "components/components";
+

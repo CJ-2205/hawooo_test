@@ -1,0 +1,432 @@
+@import "../../utils/utils";
+
+//定位
+@mixin absolute($top: auto,$right: auto,$bottom: auto,$left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+.slot-machine-contain {
+    width:58%;
+    height:680px;
+    position:absolute;
+    top:9%;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+
+//漂浮氣球
+
+.balloon-left {
+    animation: up_down 3s infinite;
+    animation-delay: 1.5s;
+}
+
+.balloon-right {
+    animation: up_down 3s infinite;
+    animation-direction:reverse;
+}
+
+@keyframes up_down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+
+//公告欄jackpot
+.bulletin-board {
+    font-family: Arial,Helvetica,sans-serif;
+    padding: 20px 110px;
+    line-height: 1.5;
+
+    ul li {
+        list-style: decimal;
+    }
+
+    @media screen and (max-width:412px) {
+        font-size: 12px;
+    }
+
+    .bulletin-title {
+        color: #f8d1dd;
+    }
+
+    .highlight {
+        color: #FEE322;
+        text-decoration: underline;
+    }
+}
+
+.mb-bulletin-board {
+    padding: 20px 8%;
+    line-height: 1.5;
+}
+
+
+.slot {
+    @include size(100%,106px,10px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.slot-machine {
+    @include size(680px,680px);
+    position: relative;
+    background-size: contain !important;
+}
+
+.slot-machine-goods {
+    @include size (65%,106px);
+    position:absolute;
+    top:37.5%;
+    right:20.5%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.machineContainer {
+    padding: 5px 1px 5px 1px;
+    height: 135px;
+}
+
+.randomizeMachine {
+    @include size( 33.3%,111px,10px);
+    margin: 0 auto;
+    padding: 0 21px;
+}
+
+.metal-frame {
+    z-index: 1;
+    width: 77.2%;
+    position:absolute;
+    right:14.5%;
+    bottom:8%;
+}
+
+.redeem-ticket {
+    display: none;
+    width: 29%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 15%;
+    margin: 0 auto;
+    padding-right: 22px;
+}
+
+#randomizeButton {
+    position:absolute;
+    right:-10.5%;
+    bottom:39.8%;
+
+    a {
+        position: relative;
+        display: block;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.shake {
+    -webkit-animation: shake 5s ease;
+    animation: shake 5s ease;
+}
+
+.fell-out {
+    -webkit-animation: coin 0.3s 5.2s 1 ease-out both;
+    animation: fell-out 0.3s 5.2s 1 ease-out both;
+    display: block !important;
+}
+
+@-webkit-keyframes fell-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0,-1em) scale(1) rotateY(0) rotateX(0);
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0.1em,1em) scale(2) rotateY(1turn) rotateX(1turn);
+    }
+}
+
+
+@keyframes shake {
+    0%,7%,90%,95%,100% {
+        transform: translate(0,0) rotate(0);
+    }
+
+    1%,5%,91%,93% {
+        transform: translate(0,0.1em) rotate(0.2deg);
+    }
+
+    2%,6%,92%,94% {
+        transform: translate(0,-0.1em) rotate(-0.5deg);
+    }
+}
+
+
+#lever-stick {
+    width: 37%;
+    z-index: 300;
+    transform-origin: bottom;
+    position: relative;
+    top: -14px;
+}
+
+#lever-ball {
+    position:absolute;
+    top:-34px;
+    left:-27px;
+    width: 100px;
+    z-index: 600;
+}
+
+.slot-machine-panel {
+    @include size(50%,65px);
+    @include absolute(9.5%,5%,auto,0);
+    overflow: hidden;
+    font-size: 22px;
+    margin: 0 auto;
+    line-height: 1.5;
+    /*webkit-line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;*/
+    h2 {
+        color: #ff0;
+        font-weight: 500;
+        text-shadow: 0 0 3px #ff0, 0 0 3px #ff0;
+    }
+}
+
+
+.award-block {
+    @include absolute(auto,0,3%,0);
+    border-radius: 20px;
+    background: #f5f5f5;
+    opacity: .9;
+    padding: 15px;
+
+    h2 {
+        color: $primary;
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+}
+
+.award-slider-contain {
+    background: $white;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+
+    ul {
+        padding: 10px;
+
+        li {
+            position: relative;
+            padding: 8px;
+            border-right: 1px dashed #f5f5f5;
+        }
+    }
+}
+
+
+.hover-box .award-goods {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        transition: transform 0.5s;
+    }
+}
+
+.award-info-box {
+    @include absolute(10px,10px,10px,10px);
+    color: #fff;
+    background: rgba(0,0,0,.6);
+    transform: scaleY(0);
+    transition: transform .5s;
+
+    .award-info {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include size(100%,100%);
+        font-size: 12px;
+        color: $white;
+        padding: 15px 20px;
+
+        .goods-name {
+            width: 100%;
+            height: 75px;
+            overflow: hidden;
+        }
+
+        .goods-price {
+            margin-top: 5px;
+        }
+    }
+}
+
+.hover-box:hover .award-goods img {
+    transform: scale(1.3);
+}
+
+.hover-box:hover .award-info-box {
+    transform: scaleY(1);
+}
+
+.award {
+    z-index: 1;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    font-size: 30px;
+    text-align: center;
+    color: #BBBCBC;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.goods-qty {
+    white-space: nowrap;
+    font-size: 13px;
+    color: #FEE322;
+
+    span {
+        font-size: 18px;
+    }
+}
+
+.brands-wrapper {
+    background: #F5E6FF;
+}
+
+.best-award-contain {
+    border: 11px solid #BC92FF;
+    background: #FAEEFF;
+    border-radius: 20px;
+}
+
+.brand-box-neme {
+    background: #DFDCF9;
+}
+
+.event-record-wrapper {
+    background: #FAEEFF;
+
+    .event-record-table thead {
+        background: #34344C;
+    }
+
+    .event-record-btn {
+        background: #34344C;
+    }
+}
+
+.yellow-line {
+    position: relative;
+
+    &:before {
+        content: "";
+        height: 10px;
+        position: absolute;
+        content: "";
+        background: #ff0;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+
+.marquee h2 {
+    display: inline-block;
+    padding-left: 100%;
+    /* show the marquee just outside the paragraph */
+    will-change: transform;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee h2:hover {
+    animation-play-state: paused
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+/* Respect user preferences about animations */
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee {
+        white-space: normal
+    }
+
+    .marquee span {
+        animation-iteration-count: 1;
+        animation-duration: 0.01;
+        /* instead of animation: none, so an animationend event is
+     * still available, if previously attached.
+     */
+        padding-left: 0;
+    }
+}

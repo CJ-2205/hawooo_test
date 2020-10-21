@@ -1,0 +1,74 @@
+// Notification
+
+$translate: 40%;
+
+.ha-notification {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  // To fix the inconsistence vertical-align between button (.btn) and "inline-div".
+  vertical-align: middle;
+  // To fix a small gap between fa icon and this container (.ha-notification).
+  line-height: 0;
+  // border: 1px solid red !important;
+
+  &.btn {
+    // To set border-width to 0;
+    border: 0px solid transparent;
+    background-color: transparent;
+  }
+  .badge {
+    --translate-x-direction: 1;
+    --translate-y-direction: -1;
+
+    position: absolute;
+    top: 0;
+    bottom: unset;
+    left: unset;
+    right: 0;
+    transform:
+      translate(
+        calc(#{$translate} * var(--translate-x-direction)),
+        calc(#{$translate} * var(--translate-y-direction))
+      )
+      scale(0.98);
+    pointer-events: none;
+    z-index: 1;
+
+    &.badge-tl {
+      --translate-x-direction: -1;
+      --translate-y-direction: -1;
+      top: 0;
+      bottom: unset;
+      left: 0;
+      right: unset;
+    }
+    // Default.
+    &.badge-tr {
+      --translate-x-direction: 1;
+      --translate-y-direction: -1;
+      top: 0;
+      bottom: unset;
+      left: unset;
+      right: 0;
+    }
+    &.badge-bl {
+      --translate-x-direction: -1;
+      --translate-y-direction: 1;
+      top: unset;
+      bottom: 0;
+      left: 0;
+      right: unset;
+    }
+    // Default.
+    &.badge-br {
+      --translate-x-direction: 1;
+      --translate-y-direction: 1;
+      top: unset;
+      bottom: 0;
+      left: unset;
+      right: 0;
+    }
+  }
+}

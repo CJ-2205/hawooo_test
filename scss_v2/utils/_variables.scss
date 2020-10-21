@@ -1,0 +1,135 @@
+///*-----------------------------------------------
+//|   Breakpoints
+//-----------------------------------------------*/
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+) !default;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+) !default;
+
+
+//*-----------------------------------------------
+//|   Color System
+//-----------------------------------------------*/
+$white: #fff !default;
+$gray-50: #F9F9F9 !default;
+$gray-100: #EBEBEB !default;
+$gray-200: #DDDEDE !default;
+$gray-300: #CFD0D0 !default;
+$gray-400: #C5C6C6 !default;
+$gray-500: #BBBCBC !default;
+$gray-600: #B5B6B6 !default;
+$gray-700: #ACADAD !default;
+$gray-800: #A4A5A5 !default;
+$gray-900: #969797 !default;
+$gray-1000: #797A7A !default;
+$gray-1100: #686969 !default;
+$black: #000 !default;
+
+$grays: () !default;
+$grays: map_merge($grays, (
+  'black': $black,
+  '50': $gray-50,
+  '100': $gray-100,
+  '200': $gray-200,
+  '300': $gray-300,
+  '400': $gray-400,
+  '500': $gray-500,
+  '600': $gray-600,
+  '700': $gray-700,
+  '800': $gray-800,
+  '900': $gray-900,
+  '1000': $gray-1000,
+  '1100': $gray-1100,
+  'white': $white,
+));
+
+
+//*-----------------------------------------------
+//|   Solid Colors
+//-----------------------------------------------*/
+$yellow: #ffc107;
+$pink-tone: #ffaca8;
+$soft-pink: #EE5984;
+$pure-pink: #ff0068;
+$dark-cyan: #689B94;
+$light-cyan: #E3EAE9;
+$dark-red: #D0011B;
+$lighter-yellow: #FEFBF3;
+
+//*-----------------------------------------------
+//|   Theme Colors
+//-----------------------------------------------*/
+$primary: $soft-pink;
+$light-primary:lighten($primary,20%);
+$lighter-primary:lighten($primary,34%);
+$dark-primary: $pure-pink;
+$secondary: $dark-cyan;
+$lighter-secondary: $light-cyan;
+
+$theme-colors: (
+  'dark-primary':$dark-primary,
+  'light-primary':$light-primary,
+  'lighter-primary':$lighter-primary,
+  'dark-red':$dark-red,
+  'lighter-yellow':$lighter-yellow,
+  'lighter-secondary':$lighter-secondary
+) !default;
+
+
+//*-----------------------------------------------
+//|   Social colors
+//-----------------------------------------------*/
+$linkedin: #0077b5 !default;
+$facebook: #3c5a99 !default;
+$twitter: #1da1f2 !default;
+$google-plus: #dd4b39 !default;
+$github: #333 !default;
+$youtube: #ff0000 !default;
+
+
+//*-----------------------------------------------
+//|   Fonts Families
+//-----------------------------------------------*/
+/*$font-family-sans-serif: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;
+$font-family-base: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;*/
+$font-family-sans-serif: inherit !default;
+$font-family-base: inherit !default;
+
+//*-----------------------------------------------
+//|   Pagination
+//-----------------------------------------------*/
+$pagination-color: $secondary;
+$pagination-border-color:  $secondary;
+
+$pagination-hover-color: $secondary;
+$pagination-hover-bg:$lighter-secondary;
+$pagination-hover-border-color: $secondary;
+
+$pagination-active-color: $lighter-secondary;
+$pagination-active-bg: $secondary;
+$pagination-active-border-color: $secondary;
+
+
+//*-----------------------------------------------
+//|   Forms
+//-----------------------------------------------*/
+$input-disabled-bg: $gray-100;
+$input-group-addon-bg: $gray-200 !default;
+$input-border-color: $gray-300 !default;
+$input-color: $gray-900 !default;
+$form-check-input-margin-y: 0.34375rem !default;
+
+//*-----------------------------------------------
+//|   Custom Select
+//-----------------------------------------------*/
+$custom-select-disabled-bg:$gray-100;

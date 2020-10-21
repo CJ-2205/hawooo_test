@@ -1,0 +1,20 @@
+@import "../../utils/utils";
+.mb-categories {
+  .category-list {
+    width: 95px;
+  }
+  .chat-contact.active:after {
+    background-color: $primary  !important;
+  }
+  .chat-contact:focus:after,
+  .chat-contact:hover:after {
+    background-color: $primary !important;;
+  }
+
+}
+#categories-nav{
+.fancy-tab .nav-bar .tab-indicator{
+    bottom:-0.8rem !important;
+}
+}
+

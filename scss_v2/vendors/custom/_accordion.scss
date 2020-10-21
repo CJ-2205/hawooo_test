@@ -1,0 +1,19 @@
+//accordion
+.accordion-icon-expanded{
+  transition: transform 0.1s linear;
+  color: $gray-900;
+  display: none;
+
+  [aria-expanded="true"] & {
+    display: inline-block;
+  }
+}
+
+.accordion-icon-unexpanded{
+  transition: transform 0.1s linear;
+  color: $gray-900;
+
+  [aria-expanded="true"] & {
+    display: none;
+  }
+}

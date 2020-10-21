@@ -1,0 +1,25 @@
+@import "../../utils/utils";
+
+.event-name {
+  &:before,
+  &:after {
+    content: " '' ";
+    color: $primary;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+}
+
+.event-date {
+  @include text-overflow(100%, 2);
+  min-height: 40px;
+}
+
+.event-title {
+  margin: 0;
+  @include text-overflow(100%, 2);
+  min-height: 40px;
+}

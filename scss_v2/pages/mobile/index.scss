@@ -1,0 +1,53 @@
+@import "../../utils/utils";
+// index (pc)
+.pc-index {
+  .brand-logo {
+    display: inline-block;
+    height: 100%;
+    &:hover {
+      background-color: $gray-300;
+      opacity: 0.8;
+    }
+  }
+  .categories-items {
+    border-top: 2px solid $primary;
+    &-title {
+      @include text-overflow(auto, 3);
+      color: $black;
+      min-height: 3rem;
+    }
+  }
+  .categories-icon{
+    width: 2rem;
+  }
+  .block-service img {
+    width: 3.75rem;
+  }
+  .categories-menu{
+    background-color: $gray-50;
+    box-shadow: 0 7px 14px 0 rgba(65,69,88,.1), 0 3px 6px 0 rgba(0,0,0,.07);
+  }
+}
+// index (mb)
+.mb-index {
+  .btn {
+    border: 1px solid $primary;
+    padding: 0rem 0.75rem;
+  }
+  .block-service img {
+    width: 40px;
+  }
+  .owl-loaded.owl-dots-inner .owl-dots {
+    bottom: 0 !important;
+  }
+  .mall-brand {
+    &-logo {
+      width: 4rem;
+      transform: translateY(50%);
+      box-shadow: 0 0 1px 0 $gray-500;
+      @include media-breakpoint-up(md) {
+       width: 5rem;
+      }
+    }
+  }
+}

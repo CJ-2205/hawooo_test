@@ -1,0 +1,238 @@
+@import "../../utils/utils";
+.shop-now-line {
+  height: 30px;
+  a {
+    top: 15px;
+    width: 100px;
+  }
+}
+
+//Select Payment Banking
+.online-banking-panel {
+  .payment-banking {
+    display: flex;
+    align-items: center;
+    .icon-circle {
+      position: absolute;
+      top: 4% !important;
+      left: 4% !important;
+    }
+    .check-circle {
+      top: 4% !important;
+      left: 4% !important;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.payment-banking {
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0px 2px 5px $gray-600;
+  min-height: 46px;
+  max-height: 80px;
+  &:hover,
+  &:active {
+    border: 1px solid $secondary;
+    transition: 0.3s;
+  }
+  .check-circle {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    color: #689b94;
+    display: none;
+  }
+  .bank-img {
+    min-width: 120px;
+    max-width: 150px;
+    margin: 0 auto;
+  }
+  img {
+    width: 120px;
+  }
+}
+
+.check-active {
+  border: 1px solid $secondary;
+}
+
+.payment-panel {
+  .icon-circle i {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: auto;
+    bottom: auto;
+    left: 5px;
+    color: $secondary;
+  }
+
+  .check-circle.check-tick {
+    display: inline;
+  }
+}
+.payment-banking-info {
+  display: flex;
+  align-items: center;
+}
+
+.modal-backdrop {
+  z-index: 998;
+}
+
+//Selected Voucher
+.voucher-item .voucher-collect {
+  min-width: 100px;
+  width: 120px;
+  text-align: center;
+}
+
+.voucher-item .voucher-collect:before {
+  top: 0;
+  z-index: 1;
+  transform: translate(50%, -50%);
+  border-bottom: 1px solid $gray-200;
+  border-top: 1px solid #fff;
+}
+
+.voucher-item .voucher-collect:before,
+.voucher-item .voucher-collect:after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  background: $white;
+}
+
+.voucher-item .voucher-collect:after {
+  bottom: 0;
+  z-index: 2;
+  transform: translate(50%, 50%);
+  border-top: 1px solid $gray-200;
+  border-bottom: 1px solid #fff;
+}
+
+.voucher-item {
+  height: 95px;
+  min-height: 85px;
+  max-height: 110px;
+  box-shadow: 3px 2px 5px -2px $gray-600;
+}
+
+.lace {
+  background: radial-gradient(
+    circle at 0 0.375rem,
+    transparent 0,
+    rgba(0, 0, 0, 0.03) 0.1875rem,
+    #e8e8e8 0,
+    #e8e8e8 0.25rem,
+    transparent 0
+  );
+  background-size: 0.25rem 0.625rem;
+  background-repeat: repeat-y;
+  width: 20px;
+}
+
+.close-voucher {
+  top: -5px;
+  width: 25px;
+  height: 25px;
+  right: -5px;
+  span {
+    background: #aaa;
+    border: 1px solid #aaa;
+    border-radius: 30% 0% 30% 50%;
+    padding: 0 4px;
+  }
+}
+
+.use-voucher {
+  transform: translateY(100%);
+}
+
+.voucher-brand {
+  transform: translateY(30%);
+}
+
+.other-vouchers {
+  overflow-y: auto;
+  height: 220px;
+}
+
+.voucher-use {
+  min-width: 75px;
+}
+
+//滿額贈品
+.cover-white {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.premium-out-of-stock {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: .8;
+  background:$white;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-select-qty {
+  max-width: 70px;
+  min-width: 65px;
+}
+
+.voucher-modal{
+  .modal-title {
+  @include text-overflow(auto, 1);
+}
+} 
+
+.mb-cart{
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    color: $gray-1000;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.625rem + 2px);
+    padding: 0.3125rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #cfd0d0;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .select2-container--default .select2-selection--single {
+    border: none;
+  }
+}
+
+.cart-footer{
+  box-shadow:1px -1px 2px 0 $gray-200;
+}

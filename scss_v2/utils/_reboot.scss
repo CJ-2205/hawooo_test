@@ -1,0 +1,55 @@
+//Global
+@import "variables";
+body {
+    /*  font-family: Roboto-Regular, "Helvetica Neue", Helvetica, Tahoma, Arial,
+    Sans-serif;*/
+    font-family: "微軟正黑體修正","微軟正黑體","Microsoft JhengHei","AHeiti TC","LiHei Pro" ;
+    color: $gray-1100;
+}
+ol,
+ul {
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+a {
+  color: $gray-500;
+}
+a:hover {
+    color: $gray-400;
+    text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    /* color: $gray-1100;*/
+    color: inherit;
+    line-height: initial;
+}
+p {
+  margin: 0;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled),select,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],button,a {
+  -webkit-appearance: none !important; /* 用於iOS下移除內建樣式 */
+  -moz-appearance: none !important; /* FireFox */
+  appearance: none !important;
+}
+button:focus{
+  outline: none;
+}
+
+section {
+    padding: 0;
+
+    @media screen and (min-width: 992px) {
+        padding: 0;
+    }
+}

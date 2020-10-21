@@ -1,0 +1,307 @@
+@import "../../utils/utils";
+
+.button-next, .button-prev {
+    top: 50%;
+    position: absolute;
+    color: rgba(0,0,0,.5);
+    z-index: 2;
+    font-size: 18px;
+}
+
+.button-next {
+    right: 6px;
+}
+
+.button-prev {
+    left: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+}
+
+.article-title {
+    font-size: 18px;
+    @include text-overflow(46px,2);
+}
+
+.article-content {
+    @include text-overflow(40px,2);
+}
+
+/*.article-card {
+    .card-title {
+        @include text-overflow(auto, 2);
+    }
+
+    .card-text {
+        @include text-overflow(auto, 3);
+    }
+
+    .text-overflow2 {
+        height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+}*/
+
+.text-overflow2 {
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+.share-facebook {
+    color: $white;
+    background-color: $facebook;
+
+    &:hover {
+        color: $white;
+        background-color: darken($facebook,10%);
+    }
+}
+
+.share-instagram:hover {
+    color: #9B1989;
+}
+
+.share-google:hover {
+    color: $google-plus;
+}
+
+
+
+//商品塊樣式
+.ha-goods:hover {
+    color: transparent;
+}
+
+.ha-goods-pic img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.ha-goods-content {
+    background: white;
+    padding: 5px;
+}
+
+.ha-tag {
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.ha-tag-style1 {
+    background-color: #e3eae9;
+    color: #689b94;
+}
+
+.ha-tag-style2 {
+    background: rgba(255, 0, 95, 0.1);
+    color: #ee5984;
+}
+
+.ha-goods-name {
+    font-size: 12px;
+    font-weight: normal;
+    color: #000;
+    margin: 5px 0;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: auto;
+    min-height: 28px;
+    /* min-height: 40px; 沒有用BS時要抓最小高40px*/
+}
+
+.ha-goods-price {
+    color: #ee5984;
+    font-weight: bold;
+    margin: 0;
+}
+
+.ha-goods-origin-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    vertical-align: text-bottom;
+    padding-top: 0;
+    margin-left: 2px;
+    color: #BBBCBC;
+    font-weight: normal;
+}
+
+.ha-viewd {
+    margin: 0;
+    font-size: 12px;
+    color: #BBBCBC;
+    font-weight: 700;
+}
+
+/* 評價星星樣式 */
+.rating-wrapper {
+    display: inline-block;
+}
+
+.rating-avg {
+    display: none;
+}
+
+.rating-count {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "微軟正黑體修正","微軟正黑體","Microsoft JhengHei","AHeiti TC","LiHei Pro","新細明體";
+    color: #BBBCBC;
+}
+
+
+/*0818新增*/
+
+.love-icon {
+    --heart-color: $primary;
+    --heart-active-color: $primary;
+    --bg-color: white;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    color: $gray-300;
+    label {
+        font-size:14px;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+
+        &:checked {
+            & ~ * {
+                --heart-color: $primary;
+                color: $primary;
+            }
+
+            & ~ {
+                i {
+                    animation: scale-out-elastic 1.2s ease-out reverse forwards;
+                }
+
+                .lines {
+                    .line::before {
+                        animation: slide-left-right 0.4s ease-in forwards;
+                    }
+                }
+
+                .ring {
+                    background: var(--heart-color);
+                    animation: scale-out-bigger 0.75s cubic-bezier(0, 1, 0.5, 1) forwards;
+
+                    &::before {
+                        animation: scale-out 0.75s cubic-bezier(0, 1, 0.5, 1) forwards;
+                    }
+                }
+            }
+        }
+    }
+
+    .lines {
+        position: absolute;
+        top: 10px;
+        z-index: 1;
+        width: 10px;
+        height: 10px;
+        pointer-events: none;
+
+        .line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 1px;
+            opacity: 0.6;
+
+            @for $i from 1 through 6 {
+                &:nth-child(#{$i}) {
+                    transform: rotate($i * 60deg + 30deg) translate(20px);
+                }
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: var(--heart-color);
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+        }
+    }
+}
+
+
+
+@keyframes slide-left-right {
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    50.1% {
+        transform-origin: right;
+    }
+
+    100% {
+        transform-origin: right;
+    }
+}
+
+@keyframes scale-out {
+    to {
+        transform: scale(1.02);
+    }
+}
+
+@keyframes scale-out-bigger {
+    to {
+        transform: scale(1.5);
+    }
+}
+
+.blog-bn-pagination .swiper-pagination-bullet-active {
+    background: $gray-900;
+}
+
+#category-filter .popover-body {
+    min-width: 200px;
+
+    .dropdown-item {
+        white-space: normal !important;
+
+        &:hover {
+            background: $gray-50;
+            color: $secondary;
+        }
+    }
+}
+
+.category-menu a:hover, a:active {
+    color: $secondary !important;
+    position: relative;
+}
+
+.category-menu .active {
+    color: $secondary !important;
+}
+

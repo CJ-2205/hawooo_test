@@ -1,0 +1,23 @@
+﻿.form-control:focus {
+  box-shadow: none; }
+
+.fb-btn {
+  background-color: #344E97;
+  color: #fff; }
+  .fb-btn:hover {
+    color: #fff; }
+
+.membership-terms {
+  max-height: 450px; }
+
+.user-form label {
+  position: relative;
+  display: block; }
+
+.user-form span {
+  position: absolute;
+  left: 15px; }
+
+.user-form input {
+  text-indent: 30px;
+  width: 100%; }

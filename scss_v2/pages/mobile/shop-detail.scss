@@ -1,0 +1,11 @@
+@import "../../utils/utils";
+
+/*【新增】商品效期*/
+.product-minimum-date {
+    background-color: $lighter-yellow;
+}
+
+.product-minimum-date span {
+    color: $dark-red;
+    font-weight: bold;
+}

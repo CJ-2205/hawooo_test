@@ -1,0 +1,453 @@
+@import "../../utils/utils";
+
+body, html {
+    height: 100%;
+}
+
+
+
+//定位
+@mixin absolute($top: auto,$right: auto,$bottom: auto,$left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+.slot-machine-contain {
+    height: 75%;
+    width: 85%;
+    @include absolute(17%,0,0,0);
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.bigwin {
+    width: 240px;
+    margin: 0 auto;
+
+    @media screen and (max-width:650px) {
+        width: 140px;
+    }
+}
+
+//漂浮氣球
+.balloon {
+    margin: 0 auto;
+    width: 80px;
+
+    @media screen and (max-width:650px) {
+        width: 50px;
+    }
+}
+
+.balloon-left {
+    animation: up_down 3s infinite;
+    animation-delay: 1.5s;
+}
+
+.balloon-right {
+    animation: up_down 3s infinite;
+    animation-direction: reverse;
+}
+@keyframes up_down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+//公告欄
+.bulletin-board {
+    @include font_style(13px,#fff,bold);
+    padding: 20px 50px;
+    line-height: 1.5;
+
+    @media screen and (max-width:650px) {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .bulletin-title {
+        color: #f8d1dd;
+    }
+
+    .highlight {
+        color: #FEE322;
+        text-decoration: underline;
+    }
+
+    ul li {
+        list-style: decimal;
+    }
+}
+
+.mb-bulletin-board {
+    padding: 20px 8%;
+    line-height: 1.5;
+}
+
+
+.slot {
+    width: 100%;
+    min-height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media screen and (max-width:414px) {
+        min-height: 58px;
+    }
+
+    @media screen and (max-width:320px) {
+        min-height: 50px;
+    }
+}
+
+.slot-machine {
+    @include size(100%,100%);
+    position: relative;
+    background-size: contain !important;
+}
+
+
+.slot-machine-goods {
+    @include size (65%,106px);
+    @include absolute(36%,20.5%,auto,auto);
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+
+    @media screen and (max-width:414px) {
+        top: 37.5%;
+        height: 58px;
+    }
+
+    @media screen and (max-width:320px) {
+        top: 37%;
+        height: 50px;
+    }
+}
+
+.machineContainer {
+    padding: 5px 1px 5px 1px;
+    height: 135px;
+}
+
+.randomizeMachine {
+    width: 33%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.metal-frame {
+    z-index: 1;
+    width: 77%;
+    @include absolute(auto,14.5%,11.2%,auto);
+
+    @media screen and (max-width:650px) {
+        bottom: 12.5%;
+    }
+}
+
+.redeem-ticket {
+    display: none;
+    width: 20%;
+    @include absolute(auto,8%,0,0);
+    margin: 0 auto;
+
+    @media screen and (min-width:650px) {
+        bottom: 20%;
+    }
+}
+
+#randomizeButton {
+    width: 26%;
+    @include absolute(auto,-9%,42%,auto);
+
+    @media screen and (max-width:650px) {
+        right: -8.5%;
+        bottom: 42.5%;
+    }
+
+    a {
+        position: relative;
+        display: block;
+    }
+}
+
+.shake {
+    -webkit-animation: shake 4s ease;
+    animation: shake 4s ease;
+}
+
+.fell-out {
+    -webkit-animation: coin 0.2s 4.2s 1 ease-out both;
+    animation: fell-out 0.2s 4.2s 1 ease-out both;
+    display: block !important;
+}
+
+@-webkit-keyframes fell-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate(0,-1em) scale(1) rotateY(0) rotateX(0);
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0.1em,1em) scale(2) rotateY(1turn) rotateX(1turn);
+    }
+}
+
+
+@keyframes shake {
+    0%,7%,90%,95%,100% {
+        transform: translate(0,0) rotate(0);
+    }
+
+    1%,5%,91%,93% {
+        transform: translate(0,0.1em) rotate(0.2deg);
+    }
+
+    2%,6%,92%,94% {
+        transform: translate(0,-0.1em) rotate(-0.5deg);
+    }
+}
+
+
+#lever-stick {
+    width: 28%;
+    z-index: 300;
+    transform-origin: bottom;
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+}
+
+#lever-ball {
+    @include absolute(0,0,auto,0);
+    width: 100px;
+    z-index: 600;
+    margin: 0 auto;
+    width: 56%;
+}
+
+.slot-machine-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(62%,30px);
+    position: inherit;
+    top: 12%;
+    right: 3%;
+    /*@include absolute(14%,6%,auto,0);*/
+    overflow: hidden;
+    margin: 0 auto;
+
+    @media screen and (min-width: 650px) {
+        top: 13%;
+    }
+
+    h5 {
+        color: #ff0;
+        text-shadow: 0 0 1px #ff0, 0 0 1px #ff0;
+        display: inline-block;
+        padding-left: 100%;
+        will-change: transform;
+        animation: marquee 15s linear infinite;
+    }
+}
+
+
+.award-box a {
+    display: flex;
+    align-items: center;
+}
+
+.award-block {
+    background: #f5f5f5;
+    opacity: .9;
+    padding: 10px 15px;
+
+    @media screen and (min-width:650px) {
+        padding: 20px 50px;
+    }
+
+    h2 {
+        color: $primary;
+        font-size: 14px;
+        padding-bottom: 5px;
+
+        @media screen and (min-width:650px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.award-slider-contain {
+    background: $white;
+    overflow: hidden;
+    border-radius: 15px;
+
+    ul {
+        padding: 5px;
+
+        li {
+            position: relative;
+            padding: 5px;
+            border-right: 1px dashed #BBBCBC;
+        }
+    }
+}
+
+
+.award-info-box {
+    padding: 10px 0;
+
+    .goods-name {
+        font-size: 12px;
+        color: #BBBCBC;
+        height: 80px;
+        overflow: hidden;
+    }
+
+    .goods-qty {
+        white-space: nowrap;
+        font-size: 12px;
+        color: $secondary;
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+.award-goods, .award-info-box {
+    position: relative;
+}
+
+.award-goods {
+    padding: 0 8px 0 0;
+}
+
+.award {
+    z-index: 1;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+ul.record-list li {
+    position:relative;
+    border-bottom: 1px solid $gray-100;
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.redeemed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    opacity: .8;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    overflow:hidden;
+
+    img {
+        width:95px;
+        transform: translateY(11%);
+    }
+}
+
+.best-award-contain {
+    border: 11px solid #BC92FF;
+    background: #FAEEFF;
+    border-radius: 20px;
+}
+
+.brands-wrapper {
+    background: #F5E6FF;
+}
+
+.brand-box-neme {
+    background: #DFDCF9;
+}
+
+.event-record-wrapper {
+    background: #FAEEFF;
+
+    .event-record-btn {
+        background: #34344C;
+    }
+}
+
+.award-goods-info {
+    bottom: 4%;
+
+    @media screen and (min-width:650px) {
+        bottom: 6%;
+    }
+}
+
+.big-award {
+    .award-goods-info {
+        bottom: 2.5%;
+
+        @media screen and (min-width:650px) {
+            bottom: 3.5%;
+        }
+    }
+}
+
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+.yellow-line {
+    position: relative;
+
+    &:before {
+        content: "";
+        height: 10px;
+        position: absolute;
+        content: "";
+        background: #ff0;
+        width: 50%;
+        left: 0;
+        right:0;
+        margin:0 auto;
+        bottom: 0;
+        z-index: -1;
+    }
+}

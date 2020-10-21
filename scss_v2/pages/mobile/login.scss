@@ -1,0 +1,29 @@
+@import "../../utils/utils";
+// sign up
+.form-control:focus{
+    box-shadow: none;
+}
+.fb-btn{
+    background-color: #344E97;
+    color: $white;
+    &:hover{
+        color: $white;
+    }
+}
+
+.membership-terms{
+    max-height: 450px;
+}
+
+.user-form label{
+    position:relative;
+    display:block;
+}
+.user-form span{
+    position: absolute; 
+    left: 15px;
+}
+.user-form input{
+    text-indent: 30px;
+    width: 100%;
+}

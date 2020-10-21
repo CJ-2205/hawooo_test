@@ -1,0 +1,378 @@
+﻿@import "../../utils/utils";
+@import "brand2";
+.order-specs {
+    margin: -40px 0 0 0;
+}
+
+.order-specs-panel {
+    border: none;
+    margin: 0;
+}
+
+.order-specs-panel .panel-hd-main {
+    border: none;
+    text-align: center;
+    background-color: #f9f9f9;
+    color: #565656;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.order-specs-panel .panel-hd-secondary {
+    border: none;
+    background-color: #f9f9f9;
+    color: #737373;
+    font-size: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 2rem;
+}
+
+.order-specs-panel .am-panel-bd {
+    border: none;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.order-specs-data-list {
+    margin: 0;
+    padding: 0;
+    color: #9d9597;
+    font-size: 1.3rem;
+}
+
+.order-specs-product-list li {
+    padding: 1rem 0 1rem 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.order-specs-product-list li:last-of-type {
+    border-bottom: none;
+}
+
+.order-specs-product-list li .m-write-review {
+    margin-top: 10px;
+    float: right;
+    color: #7be5d7;
+    border: 1px solid #7be5d7;
+    cursor: pointer;
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 1px 3px;
+}
+
+.order-specs-row-notes {
+    padding-top: 1rem;
+}
+
+.order-specs-row-payment {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.order-specs-col-status {
+    text-align: center;
+    color: #FB5450;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.order-specs-col-icon {
+    min-height: 25px;
+    position: relative;
+}
+
+.order-specs-col-icon img {
+    width: 100%;
+    max-width: 2.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.order-specs-col-user {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.order-specs-col-user ul {
+    padding: 0;
+}
+
+.order-specs-col-user ul li {
+    line-height: 1.8rem;
+    color: #9d9597;
+}
+
+.order-specs-col-user ul li:first-of-type {
+    margin-bottom: 1rem;
+}
+
+.order-specs-col-user ul strong {
+    color: #565656;
+}
+
+.order-specs-col-user span {
+    line-height: 1rem;
+}
+
+.order-specs-col-user_pending {
+    font-size: 1.4rem;
+}
+
+.order-specs-col-user_pending ul {
+    padding: 0;
+    margin: 0;
+}
+
+.order-specs-col-user_pending ul li {
+    line-height: 1.8rem;
+    color: #9d9597;
+}
+
+.order-specs-col-user_pending ul li:first-of-type {
+    margin-bottom: 1rem;
+}
+
+.order-specs-col-user_pending ul strong {
+    color: #565656;
+}
+
+.order-specs-col-user_pending span {
+    line-height: 1rem;
+}
+
+.order-specs-col-notes {
+    font-size: 1.4rem;
+}
+
+.order-specs-col-notes span {
+    color: #9d9597;
+}
+
+.order-specs-col-product-img {
+    /*min-height: 7.5rem;*/
+    position: relative;
+}
+
+.order-specs-col-product-img img {
+    width: 100%;
+    max-width: 7.5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.order-specs-col-product-data .order-specs-product-title {
+    padding-right: 0;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    color: #565656;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.order-specs-col-product-data .order-specs-product-type {
+    padding-right: 0;
+    font-size: 1.3rem;
+    color: #737373;
+}
+
+.order-specs-col-product-data .order-specs-habi {
+    font-size: 1.3rem;
+    color: #FB5450;
+}
+
+.order-specs-col-product-data .order-specs-habi img {
+    margin: 0 5px 2px 0;
+    width: 15px;
+}
+
+.order-specs-col-product-data .order-specs-product-price {
+    padding-right: 0;
+    font-size: 1.3rem;
+    color: #737373;
+}
+
+.order-specs-col-product-data .order-specs-product-price-total {
+    text-align: right;
+    color: #565656;
+}
+
+.order-specs-col-product-data .order-specs-delivery-fee {
+    color: #737373;
+    font-size: 1.4rem;
+}
+
+.order-specs-col-payment {
+    font-size: 1.4rem;
+}
+
+.order-specs-col-payment ul {
+    margin: 0;
+    padding: 0;
+}
+
+.order-specs-col-payment strong {
+    color: #565656;
+}
+
+.order-specs-col-payment span {
+    color: #737373;
+}
+
+.order-specs-col-payment-R {
+    text-align: right;
+    line-height: 1.8rem;
+}
+
+.order-specs-col-payment-L {
+    line-height: 2.2rem;
+}
+
+.order-specs-col-payment .order-specs-payment-total {
+    color: #f54954;
+}
+
+.order-specs-habi-get {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    font-size: .9em;
+    line-height: 2em;
+    color: #565656;
+}
+
+.order-specs-habi-get img {
+    margin: 0 5px 3px 0;
+    width: 30px;
+}
+
+.order-specs-habi-get p {
+    margin: 0;
+    float: right;
+    font-size: 1.5em;
+    color: #FB5450;
+}
+
+.order-specs-btn-section {
+    margin-top: 2rem;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.order-specs-btn-section .order-specs-btn-col {
+    padding: 1rem 1.5rem;
+}
+
+.order-specs-btn-section .order-specs-btn {
+    width: 100%;
+    border: 1px solid #EE5984;
+    background-color: #fff;
+    color: #ff0068;
+    height: 4.5rem;
+}
+
+.order-specs-btn-section .order-specs-btn-img {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.order-specs-btn-section .order-specs-btn-img.order-atm-img {
+    width: 2rem;
+}
+
+.order-specs-btn-section .order-specs-btn-img-pending {
+    width: 2.5rem;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.order-specs-btn-section .order-specs-btn-text {
+    display: inline-block;
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.order-specs-btn-section .order-specs-btn:nth-of-type(n+2) {
+    margin-top: 1rem;
+}
+
+.order-specs-bottom-btn-section {
+    margin-top: .5rem;
+}
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn-col {
+    padding: 1rem 1.5rem;
+}
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn {
+    width: 100%;
+    border: 1px solid #ff0068;
+    background-color: #ff0068;
+    color: #fff;
+    height: 4.5rem;
+}
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn-text {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.order-specs-expiry-date {
+    color: #7be5d7;
+    font-weight: bold;
+}
+
+.order-specs-active-img {
+    width: 2rem;
+    margin-left: .5rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+/*ＡＴＭ未付款盒子*/
+.m-atm-info {
+    padding: 0;
+}
+
+.m-atm-info .m-bank-info {
+    padding: .5rem;
+    border: 1px solid #EE5984;
+}
+
+.m-atm-info .m-bank-info:first-child {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.m-atm-info .m-bank-info .m-bank-img {
+    padding: 0;
+    margin-top: 12px;
+}
+
+.m-atm-info .m-bank-info img {
+    width: 100%;
+}
+
+.m-atm-info .m-bank-info p {
+    color: #565656;
+    margin: 0;
+    margin-top: 1rem;
+}

@@ -1,0 +1,60 @@
+// example 2：
+.ha-tag{
+  position: absolute;
+  z-index: 10;
+  &-lt{
+    left: 0;
+    top: 0;
+  }
+  &-lb{
+    left: 0;
+    bottom: 0;
+  }
+  &-rt{
+    right: 0;
+    top: 0;
+  }
+  &-rb{
+    right: 0;
+    bottom: 0;
+  }
+}
+// example 3：
+.ha-corner{
+  &-lt{
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+  &-rt{
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+.ha-ribbon{
+  &-lt{
+    position: absolute;
+    left: -1.5625rem;
+    width: 6.25rem;
+    margin-top: 0.625rem;
+    transform:rotate(-45deg);
+  }
+  &-rt{
+    position: absolute;
+    right: -1.5625rem;
+    width: 6.25rem;
+    margin-top: 0.625rem;
+    transform:rotate(-315deg);
+  }
+}
+// example 4：
+.ha-progress-gradient{
+  background-image: linear-gradient(to right, #ff0000, #ffd07b);
+}
