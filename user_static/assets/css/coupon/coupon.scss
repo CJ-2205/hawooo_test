@@ -1,0 +1,205 @@
+﻿$hawooo_pink: #EE5984;
+$coupon-color:#FFE5EF;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+    .am-container {
+        max-width: 1920px;
+    }
+a:hover, a:focus {
+    color: #FF0068;
+}
+    .coupon-wrapper {
+        background: #fff;
+        padding: 10px 0 0 10px;
+    }
+
+    .coupon-block {
+        display: inline-block;
+        border-bottom: 1px solid #d9dad9;
+        padding: 5px 0;
+        width: 100%;
+
+        .coupon-item {
+            height: 48px;
+            line-height: 48px;
+            font-size: 1em;
+            padding: 0;
+        }
+    }
+
+    .coupon {
+        @include size(116px,45px);
+        padding: 0 10px;
+        position: relative;
+    }
+
+    .coupon:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 10px;
+        right: 10px;
+    }
+
+    .coupon1 {
+        background: $coupon-color;
+        background: radial-gradient(transparent 0,transparent 3px,$coupon-color 4px);
+        background-size: 14px 13px;
+        background-position: 9px 3px;
+    }
+
+    .coupon1:before {
+        content: '';
+        background-color: $coupon-color;
+    }
+
+.coupon-p {
+    position: absolute;
+    z-index: 3;
+    color: #FF0068;
+    font-weight: 700;
+    padding-left: 6%;
+    font-size: 12px;
+}
+
+.coupon-text {
+    h2 {
+        color: #FF0068;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .coupon-num-title, p {
+        word-wrap: break-word;
+        font-size: 12px;
+        color: #595959;
+    }
+
+    .coupon-num {
+        color: #FF0068;
+        font-size: 13px;
+    }
+
+    .coupon-expiry {
+        color: black;
+    }
+}
+
+    .get-now-btn-wrop {
+        border-left: 0.8px solid #eee;
+        line-height: 6;
+        text-align: center;
+        padding-bottom: 3%;
+    }
+
+.get-now-btn {
+    background-color: #FF0068;
+}
+@media screen and (max-width: 1024px) and (min-width: 649px){
+    .coupon {
+        width: 116px;
+        height: 40px;
+        padding: 12px 23px;
+        margin: 10px;
+    }
+    .coupon1 {
+        background-size: 14px 9px;
+        background-position: 9px 2px;
+    }
+}
+
+@media screen and (max-width: 650px) and (min-width: 321px) {
+    .am-container {
+        max-width: 650px;
+    }
+    .coupon-box {
+        padding: 8px 5px;
+    }
+    .coupon {
+        vertical-align:middle;
+        @include size(80px,33px);
+        padding: 0 8px;
+        display: inline-block;
+
+        &:before {
+            left: 6px;
+            right: 6px;
+        }
+    }
+
+    .coupon1 {
+        background: radial-gradient(transparent 0,transparent 3px,#ffe5ef -3px);
+        background-size: 10px 8px;
+        background-position: 15px 0px;
+    }
+    .coupon-p {
+        line-height: 33px;
+        font-size: 12px;
+    }
+    .get-now-btn-wrop {
+        border-left: none;
+    }
+}
+.am-btn-danger {
+    background-color: #dd514c !important;
+    border-color: #dd514c !important;
+}
+.get-now-btn {
+    background-color: #FF0068 !important;
+}
+.box {
+    height: 800px;
+    background: #fff;
+
+    .title {
+        padding-top: 20px;
+        text-align: center;
+        line-height: 5px;
+
+        h3 {
+            font-size: 16px;
+            color: black;
+        }
+
+        p {
+            color: #595959;
+            font-size:12px;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .coupon {
+        vertical-align: middle;
+        @include size(80px,33px);
+        padding: 0 8px;
+        display: inline-block;
+
+        &:before {
+            left: 6px;
+            right: 6px;
+        }
+    }
+
+    .coupon1 {
+        background: radial-gradient(transparent 0,transparent 3px,#ffe5ef -3px);
+        background-size: 10px 8px;
+        background-position: 15px 0px;
+    }
+    .coupon-p {
+        line-height: 33px;
+        font-size: 12px;
+    }
+      .get-now-btn {
+            padding:  5px 7px;
+        }
+
+    .am-btn-danger {
+        padding: 5px 5px;
+    }
+ }

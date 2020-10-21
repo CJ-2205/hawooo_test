@@ -1,0 +1,21 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+.am-g {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.am-g-fixed {
+    max-width: 1920px;
+    background-color: #aaa;
+}
+
+.opps-img {
+    background: url(../images/opps.svg) no-repeat 0 0;
+    background-size: cover;
+    width:100%;
+    height:110vh;
+}

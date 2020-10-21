@@ -1,0 +1,78 @@
+﻿ul{
+    padding:0;
+    margin:0;
+}
+.nav-top-item {
+    font-size: 12px;
+    a {
+        color: #595959;
+    }
+
+    .material-icons {
+        font-size: 15px;
+        vertical-align: middle;
+    }
+}
+.nav-top-item:nth-child(2) {
+    &:before {
+        content: "/";
+        position: absolute;
+        left: -5px;
+    }
+}
+.modal-currency {
+    width: 400px;
+
+    .select-currency {
+        width: 100%;
+    }
+
+    .am-close {
+        font-size: 30px;
+    }
+
+    .am-selected {
+        width: 100%;
+    }
+
+    .am-selected-btn {
+        background: inherit;
+        border: 1px solid #CED4DA;
+    }
+
+    .am-modal-footer {
+        display: flex;
+        justify-content: space-around;
+        height: auto;
+    }
+
+    .am-btn {
+        width: 40%;
+    }
+
+    .see-detail-btn {
+        background: inherit;
+        border: 1px solid #BBBCBC;
+        color: #BBBCBC;
+    }
+
+    .confirm-btn {
+        background: #F7588C;
+        border: none;
+    }
+
+    .currency-notice {
+        color: #757575;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .am-selected-list li.am-checked .am-icon-check {
+        color: #689B94;
+    }
+
+    .am-icon-check {
+        color: #E3EAE9;
+    }
+}
+

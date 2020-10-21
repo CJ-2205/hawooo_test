@@ -4,16 +4,18 @@ $dark_gray: #707070;
 $light_gray: #E1E1E1;
 $color_white: #fff;
 
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Luckiest+Guy&display=swap');
 @mixin size($w,$h: $w,$brs: 0) {
     width: $w;
     height: $h;
     border-radius: $brs;
 }
 
-@mixin abpos($l,$t) {
+@mixin abpos($left,$top) {
     position: absolute;
-    left: $l;
-    top: $t;
+    left: $left;
+    top: $top;
 }
 
 @mixin font_style($fs,$fw,$fc) {
@@ -42,7 +44,12 @@ $color_white: #fff;
     font-weight: 500;
     color: $dark_gray;
 }
-
+/*淺灰內文*/
+@mixin light-gray-text-m {
+    font-size: 14px;
+    font-weight: 500;
+    color: $dark_gray;
+}
 
 img {
     width: 100%;
@@ -76,14 +83,15 @@ img {
     }
 
     .about-level-btn {
-        border: 0.5px solid $dark_gray;
+        background-color: $hawooo_pink;
+        /*border: 0.5px solid $dark_gray;*/
         padding: 3px 5px;
         border-radius: 2px;
-        @include font_style(12px,200,$dark_gray);
+        @include font_style(14px,200,$color_white);
 
         &.about-level-btn:active {
             border: 0.5px solid $hawooo_pink;
-            color: $hawooo_pink;
+            color: $color_white;
         }
     }
 }
@@ -96,7 +104,6 @@ img {
 .vip-card-benefits {
     li {
         display: inline-block;
-        /*margin-right: 4%;*/
         padding-right: 5px;
         @include dark-gray-text-m;
 
@@ -109,20 +116,28 @@ img {
     }
 }
 
-.to-account-btn {
-    border: 1px solid $hawooo_pink;
-    background: $hawooo_pink;
+.code-btn {
+    /*border: 1px solid $hawooo_pink;*/
+    background: $light_gray;
     padding: 8px;
+    line-height: 25px;
     border-radius: 3px;
-    @include font_style(16px,600,$color_white);
-    letter-spacing: 8px;
+    /*border: 1px groove  #e3eae9;*/
+    @include font_style(18px,200,#FF0068);
+    letter-spacing: 3px;
     margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Archivo Black', sans-serif;
+
+    &:hover, focus {
+        color: $hawooo_pink;
+        border: 1px solid $hawooo_pink;
+    }
 }
 
 .upgrade-vip-card-p {
-    /*padding-left: 2%;*/
-    position: relative;
-    display: inline-block;
+    padding-left: 2%;
     @include dark-gray-important-text;
 
     .upgrade-rm-total {
@@ -136,19 +151,18 @@ img {
 
 .progress-bar-wrap {
     z-index: 3;
-
     @include abpos(0,5px);
-    /*display: inline;*/
-    position: relative;
+    display: inline;
     margin: 0 auto;
     overflow: hidden;
     border: 3px solid $color_white;
 
+
     img {
-        width: 100%;
-        z-index: 5;
-        position: relative;
-        display: block;
+            width: 100%;
+            z-index: 5;
+            position: relative;
+            display: block;
     }
 
     .gray-bar {
@@ -160,36 +174,35 @@ img {
     .pink-bar {
         background: #ee5984;
         z-index: 2;
-        /*padding: 3%;*/
-        @include abpos(0,0);
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 
 .progres-percent-p {
     @include font_style(12px,500,$dark_gray);
     margin: 0 auto;
-    padding-top: 5%;
-    /*padding-top: 14%;*/
+    padding-top: 14%;
+
     li {
-        text-align: left;
+        padding-right: 7%;
     }
 }
 
 .member-icon-box {
     background-color: $color_white;
 
+
+
     .member-icon-block {
         margin: 0 3%;
 
-        .bottom-border {
-            border-bottom: 1px solid #d7d9da;
-        }
-
         li {
-            padding: 5px;
-            clear: none;
-            /*border-right: 1px solid #d7d9da;*/
-            /*border-bottom:1px solid #d7d9da;*/
+                padding: 5px;
+                clear: none;
+          
+
             a {
                 @include dark-gray-text-m;
                 position: relative;
@@ -204,18 +217,206 @@ img {
                 }
 
                 img {
-                    @include size(20px,auto);
+                    @include size(25px,auto);
+                    margin-top:7px;
                 }
-            }
 
-            .title {
-                padding-top: 5px;
-                display: block;
-            }
-
-            &:last-child {
-                border-right: none;
+                span {
+                    display: block;
+                }
             }
         }
     }
+}
+
+
+.qr-code-news {
+    letter-spacing: 1px;
+    @include dark-gray-important-text;
+
+    a {
+        @include font_style(14px,300,$dark_gray);
+        border-bottom: 1px solid $light_gray;
+    }
+
+    .rm-ten {
+        @include pink-important-text;
+    }
+
+    .qrcode-news-ps {
+        @include dark-gray-important-text;
+    }
+}
+.share-now-btn{
+    background-color:$hawooo_pink;
+    color:$color_white;
+    border:none;
+}
+
+.code-num{
+    border:2px solid $light_gray;
+    color:$dark_gray;
+    font-weight:bold;
+
+}
+.referrer-code{
+    font-size:18px;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.order-status-title {
+    color: #689b94;
+    
+}
+.order-status {
+    position:relative;
+    width: 40px;
+    height: 40px;
+    background-color: #e3eae9;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.ctag {
+    top: 0;
+    left: 70%;
+    position: absolute;
+    background-color: #FF0068;
+    border-radius: 10px;
+    color: white;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    padding-left: 2px;
+}
+
+.finger-right {
+    color: $dark_gray;
+}
+
+
+@media screen and (max-width: 320px) {
+    .vip-card-wrapper {
+        background-color: $color_white;
+        padding: 20px 3%;
+
+        .vip-card-title {
+
+            .vip-card-icon-box {
+
+                .vip-card-icon {
+                    @include size(20px,20px);
+                    margin-right: 5px;
+                    margin-top: -5px;
+                }
+
+                .card-level-title {
+                    margin: 0;
+                    font-size: 14px;
+                    font-weight:500;
+                }
+            }
+        }
+    }
+    .about-level-btn {
+     font-size:12px;
+    }
+}
+
+.am-modal-dialog{
+    height:350px!important;
+}
+
+/*------memberlist*/
+
+h5 {
+    text-align: center;
+    @include font_style(18px,800,$dark_gray);
+}
+
+.vip-rule-box {
+    background-color: $color_white;
+    padding: 20px 4%;
+}
+
+.go-back-btn a {
+    @include font_style(18px,800,$dark_gray);
+}
+
+.vip-condition-word {
+    padding-left: 2%;
+    @include font_style(14px,400,$dark_gray);
+}
+
+.progres-color-p {
+    @include light-gray-text-m;
+    margin: 0 auto;
+    padding-right: 8%;
+}
+
+.level-card-p {
+    @include dark-gray-text-m;
+    padding-top: 3% 0;
+}
+/*========================表格開始================*/
+.level-table {
+    background: $color_white;
+
+    .table-title {
+        background: $light_gray;
+    }
+
+    td {
+        @include dark-gray-text-m;
+        padding: 18% 2% 0 2%;
+        height: 45px;
+        vertical-align: middle !important;
+    }
+}
+/*------------------------------------------表格end---------------------------------*/
+.vip-info-wrapper {
+    padding-top: 3%;
+
+    .vip-info-title {
+        @include dark-gray-important-text;
+
+        .question-mark {
+            margin-right: 5px;
+            margin-top: -1px;
+            @include size(14px,14px);
+        }
+    }
+
+    .vip-info-p {
+        margin: 10px 0;
+        @include light-gray-text-m;
+        letter-spacing: 1px;
+
+        a {
+            @include font_style(14px,200,$dark_gray);
+            border-bottom: 0.5px solid $light_gray;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .qr-code-news {
+        white-space: initial;
+    }
+}
+.to-account-btn {
+    border: 1px solid $hawooo_pink;
+    background: $hawooo_pink;
+    padding: 8px;
+    border-radius: 3px;
+    @include font_style(16px,600,$color_white);
+    letter-spacing: 8px;
+    margin-bottom: 10px;
+}
+.close-btn {
+    border: 1px solid $hawooo_pink;
+    background: $color_white;
+    @include pink-important-text;
+    padding: 8px;
+    margin: 15px auto;
 }

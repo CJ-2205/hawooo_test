@@ -1,0 +1,480 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="u.master.cs" Inherits="user_static_u" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hawooo 好物飛行 : 找到台灣好東西，嚴選彩妝、保養、鞋包以及更多優質商。 </title>
+    <meta name="description" content="馬來西亞最大的「台灣商品」購物網站｜彩妝、保養、保健、鞋包、美食、生活｜100%正品、台灣直送、滿額免國際運費" />
+    <meta name="keywords" content="保養,彩妝,衣服,鞋子,包包" />
+
+    <meta name="renderer" content="webkit" />
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <!--Css-->
+    <link href="assets_v2/css/hw-pc.min.css" rel="stylesheet" />
+    <link href="assets/css/amazeui.min.css?v=20160509" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/header.css?v=20180903" />
+    <link rel="stylesheet" href="assets/css/index.css?v=20180903" />
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/footer_good_block.css" />
+    <link href="assets/css/app.css?v=20161202" rel="stylesheet" />
+    <%--<link href="scroll_float/scroll_float.css?v=20180903" rel="stylesheet" />--%>
+    <link href="assets/css/newfooter.css" rel="stylesheet" />
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/amazeui.min.js?v=20180903"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" type="text/javascript" async></script>
+    <script src="assets/js/header.js?v=20180123"></script>
+    <script src="../jquery-plus/lazysizes-gh-pages/lazysizes.min.js"></script>
+  <%--  <script type="text/javascript" src="scroll_float/scroll_float.js?v=20180903"></script>--%>
+  <%--  <link href="../assets/css/btnstyle1.css?v=20180903" rel="stylesheet" />--%>
+    <script src="../jquery-plus/translation/language.js?v=1"></script>
+    <asp:Literal ID="lit_fb" runat="server" EnableViewState="false"></asp:Literal>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!--Hawooo End Facebook Pixel Code -->
+    <style>
+        .scrollit {
+            overflow: scroll;
+            max-height: 300px;
+        }
+
+        .header-full {
+            width: 100%;
+            height: 122px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            z-index: 999;
+        }
+    </style>
+
+    <script>
+        function setUrl(url) {
+            $("#rurl").val(url);
+        }
+        function doLogin() {
+            $("#poplogin").modal();
+        }
+        function doLogin(url) {
+            $("#poplogin").modal();
+            setUrl(url);
+        }
+        function doLoginEnableClose(url) {
+            $("#close_modal").hide();
+            $("#poplogin").modal({ closeViaDimmer: false });
+            $("#rurl").val(url);
+        }
+
+    </script>
+    <style>
+        .header-sticky {
+            width: 1180px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+    <script>
+        function alert(msg) {
+            $("#alert-msg").html(msg);
+            $("#my-alert").css("z-index", 9999);
+            $("#my-alert").modal('open');
+        }
+        function alert2url(msg, url) {
+            $("#alert-msg").html(msg);
+            $("#my-alert").css("z-index", 9999);
+            $("#my-alert").modal({
+                relatedTarget: this,
+                closeViaDimmer: false,
+                onConfirm: function (options) {
+                    location.href = url;
+                }
+            });
+        }
+        function confirm2url(msg, url) {
+            $("#confirm-msg").html(msg);
+            $("#my-confirm").css("z-index", 9999);
+            $('#my-confirm').modal({
+                relatedTarget: this,
+                //closeOnCancel: false,
+                closeViaDimmer: false,
+                onConfirm: function (options) {
+                    location.href = url;
+                },
+                // closeOnConfirm: false,
+                onCancel: function () {
+                    $("#my-confirm").modal('close');
+                }
+            });
+        }
+    </script>
+    <script>
+
+        function popEvent() {
+            $("#popup").modal('open');
+        }
+        function popEventClose() {
+            $("#popup").modal('close');
+        }
+    </script>
+
+    <style>
+        a {
+            color: #a8a8a8;
+        }
+    </style>
+    <%--    <script src="../jquery-plus/pre-load/page-preloading.js"></script>
+    <link href="../jquery-plus/pre-load/preloader.css" rel="stylesheet" />--%>
+    <!--AutoComplete-->
+    <%--  <link href="../jquery-plus/autocomplete/jquery-autocomplete.css" rel="stylesheet" />
+    <script src="../jquery-plus/autocomplete/jquery-ui.min.js"></script>
+    <script src="../jquery-plus/jquery-blockUI/jquery.blockUI.js"></script>--%>
+    <script>
+        function blockMsg(msg) {
+            $.blockUI({
+                message: msg,
+                css: {
+                    border: 'none',
+                    padding: '15px',
+                    backgroundColor: '#000',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    opacity: .5,
+                    color: '#fff'
+                }
+            });
+        }
+
+        function unblockMsg() {
+            $.unblockUI();
+        }
+    </script>
+</head>
+<body id="mbody" class="page-preloading">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" ScriptMode="Release" EnablePageMethods="true">
+        </asp:ScriptManager>
+        <header>
+            <div class="am-g header-wrapper">
+                <div id="top-msg" style="display: none">
+                    <div>
+                        <img src="../survey/image/20190123_01_dt_01.png" style="width: 100%; cursor: pointer;" onclick="javascript:location.href='https://www.hawooo.com/user/survey_q1.aspx';" />
+                        <div id="top-close" onclick="closeTopMsg();" style="position: absolute; width: 4%; height: 100%; max-height: 55px; right: 0px; top: 0px;">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function openTopMsg() {
+                        $("#top-msg").css('display', '');
+                        $("#_page_content").css('margin-top', '200px');
+                    }
+                    function closeTopMsg() {
+                        $("#top-msg").slideUp("slow");
+                        $("#_page_content").css('margin-top', '120px');
+                    }
+
+                </script>
+                <!-- language & shoppingcart （最上方選擇語言） star -->
+                <section class="am-u-sm-12 header-language-wrapper">
+                    <div class="am-u-sm-10 am-u-sm-centered header-language-content">
+                        <div class="am-cf">
+                            <div class="am-fl header-language">
+                                <!-- 0326新增幣別 (start)-->
+                                <ul class="am-nav am-nav-pills am-topbar-nav">
+                                    <li class="am-dropdown nav-top-item" data-am-dropdown>
+                                        <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;" style="color: #595959">
+                                            <span class="material-icons">language</span>
+                                            &nbsp;Language
+                                          <span class="am-icon-caret-down"></span>
+                                        </a>
+                                        <ul class="am-dropdown-content">
+                                            <asp:Literal ID="lit_lg_link" runat="server"></asp:Literal>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-top-item">
+                                        <a class="" href="" style="color: #595959">
+                                            <span class="material-icons">monetization_on</span>
+                                            SGD ( <span>$</span>)
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- 0326新增幣別 (End)-->
+                                <div class="am-fr header-shoppingcart" style="right: 0px; position: absolute">
+                                    <ul>
+                                        <asp:Literal ID="lit_top_menu" runat="server"></asp:Literal>
+                                        <li class="am-fl header-shoppingcart-item" id="shoppingcart" onclick="miniShoppingToggle()" style="color: Black">
+                                            <i class="am-icon-shopping-cart"></i>&nbsp;
+                                            Cart<span id="scCount">(<asp:Literal ID="litCartCount" runat="server" Text="0"></asp:Literal>)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- logo & search star -->
+                <section class="am-u-sm-12 header-logo-search-wrapper">
+                    <div class="am-u-sm-11 am-u-sm-centered header-logo-search-content">
+                        <ul>
+                            <li class="am-u-sm-3 logo">
+                                <a href="index.aspx">
+                                    <img src="https://www.hawooo.com/user/images/V2/logo2.svg" alt="HaWooo 好物飛行" style="height: 60px" />
+                                </a>
+                            </li>
+                            <li class="am-u-sm-2 logo-item">
+                                <a href="brandlist.aspx">
+                                    <img src="https://www.hawooo.com/user/icon/hot_brands.png" />
+                                    <span class="txtRsc" data-id="head001">熱門品牌</span>
+                                </a>
+                            </li>
+                            <li class="am-u-sm-2 logo-item">
+                                <a href="spinwheel.aspx">
+                                    <img src="https://www.hawooo.com/user/icon/spot_shopping.png" />
+                                    <span class="txtRsc" data-id="head002">Ha幣活動</span>
+                                </a>
+                            </li>
+                            <li class="am-u-sm-2 logo-item">
+                                <a href="article.aspx">
+                                    <img src="https://www.hawooo.com/user/icon/people_recommend.png" />
+                                    <span class="txtRsc" data-id="head003">紅人推薦</span>
+                                </a>
+                            </li>
+                            <li class="am-u-sm-3 header-search">
+                                <div class="am-u-sm-8 search-bar">
+                                    <asp:TextBox ID="txt_search" runat="server" CssClass="search-field" placeholder="買到台灣好東西" ClientIDMode="Static"></asp:TextBox>
+                                    <a href="#" style="background: transparent; display: inline-table; width: 30px; height: 30px; border: none; position: absolute; top: 0; bottom: 0; color: #d9dad9; right: 10px; margin: auto; padding: 0;">
+                                        <span class="am-icon-search"></span>
+                                    </a>
+
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </section>
+                <!-- logo & search end -->
+                <style>
+                    .en-class {
+                        padding-left: 13px;
+                        padding-right: 13px;
+                        font-size: 12px !important;
+                    }
+
+                    .topEnClass {
+                        float: left;
+                        display: inline-flex;
+                    }
+                </style>
+
+                <section class="am-u-sm-12 header-menuitems-wrapper">
+                    <div class="am-container header-menuitem-content">
+                        <ul id="topClass" class="am-cf am-avg-sm-9">
+                            <li class="header-menuitem am-fl" id="h-16"><a href="market.aspx?cid=16">
+                                <img src="https://www.hawooo.com/user/icon/fashion_makeup_white.svg">時尚彩妝</a></li>
+                            <li class="header-menuitem am-fl" id="h-42"><a href="market.aspx?cid=42">
+                                <img src="https://www.hawooo.com/user/icon/body_care_white.svg">美體&amp;保養</a></li>
+                            <li class="header-menuitem am-fl" id="h-43"><a href="market.aspx?cid=43">
+                                <img src="https://www.hawooo.com/user/icon/health_food_white.svg">保健食品</a></li>
+                            <li class="header-menuitem am-fl" id="h-48"><a href="market.aspx?cid=48">
+                                <img src="https://www.hawooo.com/user/icon/life-supplies_white.svg">生活用品</a></li>
+                            <li class="header-menuitem am-fl" id="h-44"><a href="market.aspx?cid=44">
+                                <img src="https://www.hawooo.com/user/icon/underwear_white.svg">服裝內衣</a></li>
+                            <li class="header-menuitem am-fl" id="h-45"><a href="market.aspx?cid=45">
+                                <img src="https://www.hawooo.com/user/icon/shose_white.svg">流行美鞋</a></li>
+                            <li class="header-menuitem am-fl" id="h-46"><a href="market.aspx?cid=46">
+                                <img src="https://www.hawooo.com/user/icon/bag_white.svg">包包配件</a></li>
+                            <li class="header-menuitem am-fl" id="h-47"><a href="market.aspx?cid=47">
+                                <img src="https://www.hawooo.com/user/icon/deli_white.svg">品味美食</a></li>
+                            <li class="header-menuitem am-fl" id="h-49"><a href="market.aspx?cid=49">
+                                <img src="https://www.hawooo.com/user/icon/mom_baby_white.svg">媽咪寶貝</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <asp:PlaceHolder ID="p_header" runat="server"></asp:PlaceHolder>
+
+        <div id="body">
+            <div id="_page_content" style="margin-top: 120px; display: block;">
+                <!--上方LOGO ITEM SERCE BAR 開始-->
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <!-- 網站活動 events 開始 -->
+                <section>
+                    <div class="events-wrapper" onmouseover="openEvents(this)" onmouseout="closeEvents(this)" onload="openEvents(this)" style="display: none">
+                        <div class="events-handle">NEWS</div>
+                        <div class="am-cf events-content">
+                            <ul class="am-cf">
+                                <li class="am-fl index-announcement">
+                                    <div class="index-announcement-title">
+                                        <img src="icon/hw566.png" />
+                                    </div>
+                                    <span style="color: black">
+                                        <asp:Literal ID="lit_news" runat="server"></asp:Literal></span>
+                                </li>
+                                <li class="am-fl">
+                                    <asp:Literal ID="lit_img" runat="server"></asp:Literal>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <!-- 網站活動 events 結束 -->
+            </div>
+        </div>
+
+        <asp:PlaceHolder ID="p_footer" runat="server"></asp:PlaceHolder>
+        <!--body 結束-->
+        <footer class="footer" id="footer" style="min-width: 1180px; background-color: #f5f5f5;">
+            <div class="am-u-sm-12 am-text-center finfo_top"></div>
+            <div class="am-container">
+                <div class="am-g">
+
+                    <div class="am-u-sm-3">
+                        <div style="padding-top: 10px" class="finfo_title">NEED&nbsp;&nbsp;&nbsp;HELP</div>
+                        <ul class="finfo_ul">
+                            <li><i class="am-icon-phone" style="font-size: 20px; width: 20px;"></i>+603-76102050</li>
+                            <li><a href="mailto:service@hawooo.com">service@hawooo.com</a></li>
+                        </ul>
+                        <div class="finfo_title">WORKING  HOURS</div>
+                        <ul class="finfo_ul">
+                            <li>Mon. - Fri.<span style="font-size: 10px;">(except public holiday)</span></li>
+                            <li style="font-size: 16px;">9.00AM - 6.00PM</li>
+                        </ul>
+
+                    </div>
+                    <div class="am-u-sm-3">
+                        <div style="padding-top: 10px" class="finfo_title">HELP</div>
+                        <ul class="finfo_ul" style="margin-bottom: 5px;">
+                            <li><a href="service.aspx" target="_blank"><span class="txtRsc" data-id="foot015">聯絡我們</span></a></li>
+                            <li><a href="qa.aspx" target="_blank"><span class="txtRsc" data-id="mb010">常見問題</span> </a></li>
+                            <li><a href="#" target="_blank"><span class="txtRsc" data-id="foot019">人才招募</span> </a></li>
+                        </ul>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td style="padding-top: 5px; padding-right: 5px;">
+                                        <a href="http://www.facebook.com/hawooohawooo" target="_blank">
+                                            <img src="images/footer/0930_website-footer-6.png">
+                                        </a>
+                                    </td>
+                                    <td style="padding-top: 5px;">
+                                        <a href="http://myhawooo.blogspot.tw" target="_blank">
+                                            <img src="images/footer/0930_website-footer-7.png">
+                                        </a>
+                                    </td>
+                                    <td rowspan="2">
+                                        <img src="../images/icon/best_taiwan_mb.png" style="padding-left: 5px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="http://www.google.com/+hawooomy" target="_blank">
+                                            <img src="images/footer/0930_website-footer-8.png">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://instagram.com/hawooo_shopping/" target="_blank">
+                                            <img src="images/footer/0930_website-footer-9.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <div class="am-u-sm-3" id="mfooter">
+                        <div style="padding-top: 10px" class="finfo_title">MY&nbsp;&nbsp;&nbsp;ORDER</div>
+                        <ul class="finfo_ul">
+                            <asp:Literal ID="lit_footer_order" runat="server"></asp:Literal>
+
+                        </ul>
+                    </div>
+                    <div class="am-u-sm-3" style="padding-left: 0px; padding-right: 0px">
+                        <div style="padding-top: 10px;" class="finfo_title">
+                            ABOUT&nbsp;&nbsp;&nbsp;HAWOOO
+                        </div>
+                        <br />
+                        <table class="table-style">
+                            <tr>
+                                <td>
+                                    <asp:Panel ID="pZhDes" runat="server">
+                                        HaWooo.com是專門為馬來西亞女孩打造的夢幻平價時尚網站，我們追蹤台灣最實用的美妝、保養、穿搭以及生活資訊，與妳分享如何用最簡單、平價的方式，一起品味時尚生活。
+                                    </asp:Panel>
+
+                                </td>
+
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="am-u-sm-12 am-text-center" style="background-color: #000; width: 100%">
+                <ul class="am-avg-sm-5 finfo_menu">
+                    <li><a href="qa34.aspx">
+                        <span class="txtRsc" data-id="foot010">隱私權條款</span>
+                    </a></li>
+                    <%--  <li><a href="qa32.aspx">
+                        <span class="txtRsc" data-id="foot011">貨運條款</span></a></li>--%>
+                    <li><a href="qa17.aspx">
+                        <span class="txtRsc" data-id="foot012">退貨條款</span></a></li>
+                    <li><a href="qa31.aspx">
+                        <span class="txtRsc" data-id="foot013">服務條款</span></a></li>
+                    <li><i class="am-icon-mobile" style="font-size: 20px; width: 20px;"></i>
+                        <a href="../mobile/index.aspx">
+                            <span class="txtRsc" data-id="foot014">手機版</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="am-u-sm-12 am-text-center finfo_cr">
+                Copyright © since 2015 hawooo.com All Rights Reserved
+            </div>
+        </footer>
+
+
+        <script>
+            function SetHeaderMenuActive(id) {
+                $(".header-menuitem").removeClass("active");
+                $("#" + id).addClass("active");
+            }
+
+        </script>
+    </form>
+    <script src="assets/js/index.js"></script>
+    <%--<script src="js/fbscript.js?v=20180414"></script>--%>
+    <asp:Literal ID="lit_fb_vc" runat="server"></asp:Literal>
+    <asp:Literal ID="lit_fbq" runat="server"></asp:Literal>
+    <style type="text/css">
+        .loginTable {
+            margin: 0px 10px 10px 30px;
+            width: 400px;
+        }
+
+
+            .loginTable td {
+                vertical-align: top;
+            }
+    </style>
+
+
+    <script>
+        $(function () {
+            sideArrowShow();
+            sideArrowHide();
+            sideGoTop();
+        });
+        $('img').error(function () {
+            $(this).hide();
+        });
+    </script>
+</body>
+</html>

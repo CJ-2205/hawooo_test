@@ -1,0 +1,131 @@
+﻿$main_color: #FF0036;
+$pink-color: #FFEDED;
+$dark_gray: #707070;
+$color_white: #fff;
+$sold-bg-color: #ff5e83;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+img {
+    width: 100%;
+}
+
+.am-container {
+    max-width: 650px;
+}
+
+.product-item-box {
+
+    li {
+        width: calc(50% - 10px);
+        margin: 0px 5px 5px 5px;
+        background-color: $color_white;
+        position: relative;
+
+        .product-img {
+            position: relative;
+            overflow: hidden;
+
+            .already-sold-p {
+                @include font_style(11px,900,$color_white);
+                position: absolute;
+                bottom: 0;
+                background-color: $sold-bg-color;
+                padding: 0 11px;
+                border-top-right-radius: 5px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .product-text-box {
+        overflow: hidden;
+
+        .product-item-block {
+            display: inline-block;
+            position: relative;
+            width: 100%;
+            margin-top: 0;
+            padding: 0 5px;
+
+            .product-name {
+                @include font_style(14px,600,black);
+                margin: 0;
+            }
+        }
+    }
+}
+
+.product-price {
+    @include font_style(16px,800, $main_color);
+}
+
+.sele-off {
+    @include font_style(12px,800,$main_color);
+    padding: 5px 4px;
+}
+
+.original-price {
+    @include font_style(12px,700, $dark_gray);
+    text-decoration: line-through;
+    margin: -4px 0 3px 0;
+}
+
+
+.product-coupon {
+    position: relative;
+    background: $pink-color;
+    border: 1px solid $main_color;
+    border-style: dotted;
+    border-radius: 3px;
+    line-height: 40px;
+    vertical-align: middle;
+    width: 55%;
+    @include font_style(12px,600, $main_color);
+
+    .coupon {
+        width: 30px;
+        border-right: 1px dotted $main_color;
+        height: 40px;
+        display: block;
+        vertical-align: middle;
+
+        span {
+            position: relative;
+            display: inline-block;
+            width: 28px;
+            line-height: 10px;
+            word-wrap: break-word;
+            padding-top: 9px;
+        }
+    }
+
+    .discount {
+        width: calc(100% - 30px);
+        margin: 0px;
+        display: block;
+        line-height: 40px;
+    }
+}
+
+.product-buy-btn {
+    background: $main_color;
+    line-height: 40px;
+    border-radius: 3px;
+
+    a {
+        @include font_style(12px,600,$color_white);
+        vertical-align: middle;
+    }
+}

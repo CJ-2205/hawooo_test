@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /*大片背景*/
 /*分隔線*/
 /*draktext*/
@@ -48,7 +48,7 @@
   font-size: 19px;
   line-height: 60px;
   font-weight: bold;
-  color:#2d2d2d;	
+  color:#2d2d2d;
 }
 
 .qa-content {

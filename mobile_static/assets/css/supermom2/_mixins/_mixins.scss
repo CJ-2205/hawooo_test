@@ -1,0 +1,11 @@
+﻿@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}

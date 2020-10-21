@@ -1,0 +1,138 @@
+.product-item-box li {
+  width: calc(50% - 10px);
+  margin: 0px 5px 5px 5px;
+  background-color: #fff;
+  position: relative;
+}
+
+.product-item-box li .product-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-item-box li .product-img .already-sold-p {
+  font-size: 11px;
+  font-weight: 900;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  background-color: #ff5e83;
+  padding: 0 11px;
+  border-top-right-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.product-item-box .product-text-box {
+  /*height: 120px;*/
+  overflow: hidden;
+}
+
+.product-item-box .product-text-box .product-item-block {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+  padding: 0 5px;
+}
+
+.product-item-box .product-text-box .product-item-block .product-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: 800;
+  color: #FF0036;
+}
+
+.sele-off {
+  font-size: 12px;
+  font-weight: 800;
+  color: #FF0036;
+  padding: 5px 4px;
+}
+
+.original-price {
+  font-size: 12px;
+  font-weight: 700;
+  color: #707070;
+  text-decoration: line-through;
+  margin: -4px 0 3px 0;
+}
+
+.product-coupon-box {
+  /*padding: 3px 0;*/
+}
+
+.product-coupon-box .product-coupon {
+  position: relative;
+  background: #FFEDED;
+  /*padding: 5px 8px;*/
+  border: 1px solid #FF0036;
+  border-style: dotted;
+  border-radius: 3px;
+  line-height: 40px;
+  vertical-align: middle;
+  width: 55%;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FF0036;
+  /*a {
+            @include font_style(8px,600, $main_color);
+
+            .coupon-dotted {
+                @include abpos(32px,2px);
+                border-right: dotted 1.5px $main_color;
+                height: 31px;
+            }
+
+            .coupon-p-rm {
+                @include font_style(13px,600, $main_color);
+            }
+        }*/
+}
+
+.product-coupon-box .product-coupon .coupon {
+  width: 30px;
+  text-align: center;
+  border-right: 1px dotted #FF0036;
+  height: 40px;
+  display: block;
+  vertical-align: middle;
+}
+
+.product-coupon-box .product-coupon .coupon span {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  line-height: 10px;
+  word-wrap: break-word;
+  padding-top: 9px;
+}
+
+.product-coupon-box .product-coupon .discount {
+  text-align: center;
+  width: calc(100% - 30px);
+  margin: 0px;
+  display: block;
+  line-height: 40px;
+}
+
+.product-buy-btn {
+  background: #FF0036;
+  line-height: 39.7px;
+  /*padding: 6px 8px;*/
+  border-radius: 3px;
+}
+
+.product-buy-btn a {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  vertical-align: middle;
+  padding-right: 3px;
+}
+/*# sourceMappingURL=product_template.css.map */

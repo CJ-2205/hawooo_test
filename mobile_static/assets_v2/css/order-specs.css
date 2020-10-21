@@ -1,0 +1,617 @@
+﻿@charset "UTF-8";
+/*$font-family-sans-serif: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;
+$font-family-base: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;*/
+/* === COLORS ===*/
+/*新品tag*/
+/* === FONT ===*/
+/* === SIZES ===*/
+/* === BORDERS ===*/
+/*.brand-body{
+	padding:0 1em;
+}*/
+.brand-catalog-title-w {
+  position: relative; }
+
+.brand-catalog-title {
+  margin: 0;
+  padding: 5px 0;
+  background: #eaeaea;
+  font-size: 1.2em;
+  font-weight: 400;
+  border-bottom: 1px solid #eaeaea; }
+
+.b-collapse-title {
+  display: inline-block;
+  padding: 0 10px;
+  width: 100%;
+  border: 0;
+  background: #eaeaea;
+  color: #565656; }
+
+.b-collapse-title:hover {
+  background: #eaeaea;
+  color: #565656; }
+
+.b-collapse-title:focus {
+  background: #eaeaea;
+  color: #565656;
+  outline: none; }
+
+.b-collapse-title:active {
+  box-shadow: none;
+  background: #eaeaea;
+  color: #565656;
+  outline: none; }
+
+.b-collapse-title:active:focus {
+  outline: none; }
+
+.b-collapse-title h3 {
+  display: inline;
+  margin: 0;
+  font-weight: 500; }
+
+.brand-catalog-nav {
+  position: absolute;
+  top: 32px;
+  z-index: 50;
+  width: 100%;
+  background: white; }
+
+.brand-catalog-nav.brand-inside-nav {
+  top: 5px; }
+
+.brand-catalog-nav li {
+  margin: 0 !important;
+  border-bottom: 1px solid #eaeaea; }
+
+.brand-catalog-nav li.am-active {
+  margin: 0;
+  background: #f9f9f9; }
+
+.brand-catalog-nav li.am-active > a {
+  color: #565656;
+  background: none; }
+
+.brand-catalog-nav a {
+  padding: 1em 1em !important;
+  font-size: .9em;
+  color: #565656; }
+
+.brand-catalog-nav a:hover {
+  background: #f9f9f9; }
+
+.brand-catalog-nav a:focus {
+  background: #f9f9f9; }
+
+/*品牌館*/
+.brands-catalog-wrapper {
+  margin: .5em 0 1em 0;
+  padding: 1em 0;
+  background: white;
+  overflow: auto;
+  -ms-overflow-style: none; }
+
+.brands-catalog-wrapper::-webkit-scrollbar {
+  display: none; }
+
+.brands-catalog-wrapper div {
+  display: block;
+  padding: 0 5px;
+  /*height: 100%;*/ }
+
+.brands-catalog-wrapper ul {
+  margin: 0;
+  padding: 0; }
+
+.brands-catalog-wrapper li {
+  margin: 0 5px 0 5px;
+  width: 120px;
+  height: 70px;
+  border: 1px solid #eaeaea; }
+
+.brands-catalog-wrapper img {
+  width: 100%; }
+
+/*品牌館slider*/
+.brands-catalog-wrapper .am-control-nav {
+  display: none; }
+
+/*品牌館單個品牌*/
+.brand-body ul {
+  margin: 0;
+  padding: 0; }
+
+.brand-single {
+  padding: 10px;
+  background: white; }
+
+@media screen and (max-width: 640px) {
+  .brand-single {
+    margin-bottom: 20px; } }
+
+@media screen and (min-width: 640px) {
+  .brand-single {
+    margin-bottom: 10px;
+    width: calc(50% - 5px);
+    float: left; }
+  .brand-single:nth-child(2n-1) {
+    margin: 0 10px 20px 0; } }
+
+.brand-img {
+  position: relative; }
+
+.brand-img img {
+  width: 100%; }
+
+.brand-img p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 5px;
+  width: 100%;
+  font-size: 14px;
+  color: #565656;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden; }
+
+.brand-products-list {
+  color: #565656; }
+
+.brand-products-list li {
+  display: table;
+  background: white;
+  border-bottom: 1px solid #eaeaea; }
+
+.brand-products-list a:last-child li {
+  border: 0; }
+
+/*商品照片*/
+.brand-product-title {
+  display: table-cell;
+  position: relative;
+  padding: 10px 10px 10px 0;
+  width: 40%; }
+
+.brand-product-title img {
+  width: 100%; }
+
+.brand-product-title span {
+  top: 10px;
+  right: 10px; }
+
+.brand-product-content {
+  display: table-cell;
+  position: relative;
+  padding: 10px 10px 10px 0;
+  width: 60%;
+  max-width: 0;
+  height: 100%;
+  vertical-align: top; }
+
+.brand-product-content p {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  color: #f1b13b;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.brand-product-content h5 {
+  display: inline-block;
+  margin: 5px 0 0 0;
+  height: 43px;
+  color: #565656;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: normal;
+  overflow: hidden; }
+
+/*商品價格*/
+.brand-content-price {
+  display: table-cell;
+  position: absolute;
+  bottom: 5px;
+  width: calc(100% - 10px);
+  height: 30px; }
+
+.brand-content-price h5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  height: auto;
+  color: #FB5450;
+  font-size: 1.1em;
+  line-height: 25px;
+  font-weight: bold; }
+
+.brand-content-price p {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: .8em;
+  color: #999999; }
+
+/*=========品牌館內頁  brand inside start=========*/
+.brand-inside-title {
+  margin-top: -45px;
+  position: relative; }
+
+.brand-inside-nav {
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  z-index: 50; }
+
+.brand-inside-nav li {
+  padding: 0 10px; }
+
+.brand-inside-nav li.active a {
+  color: #FB5450; }
+
+.brand-inside-nav li a {
+  font-size: .9em;
+  color: #565656; }
+
+.admin-sidebar-list {
+  display: none; }
+
+.brand-inside-btn {
+  margin: 0;
+  width: 50%;
+  font-size: .85em;
+  font-weight: 400;
+  line-height: 30px;
+  float: right;
+  text-align: right; }
+
+.brand-inside-back {
+  display: inline-block;
+  padding: 0 10px;
+  width: 50%;
+  color: #565656; }
+
+.brand-inside-back p {
+  display: inline-block;
+  margin: 0 0 0 5px;
+  font-size: .85em;
+  font-weight: 400; }
+
+/*品牌館內banner 3 banners~*/
+.brand-inside-banner {
+  margin: 1em 0 0 0; }
+
+.brand-inside-banner div {
+  background: white;
+  overflow: auto;
+  -ms-overflow-style: none; }
+
+.brand-inside-banner div::-webkit-scrollbar {
+  display: none; }
+
+.brand-inside-banner ul {
+  margin: 0;
+  padding: 0; }
+
+.brand-inside-banner li {
+  width: 300px;
+  background: white; }
+
+.brand-inside-banner img {
+  padding: 10px;
+  width: 100%; }
+
+/*=========品牌館內頁  brand inside end=========*/
+.order-specs {
+  margin: -40px 0 0 0; }
+
+.order-specs-panel {
+  border: none;
+  margin: 0; }
+
+.order-specs-panel .panel-hd-main {
+  border: none;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #565656;
+  font-size: 1.8rem;
+  border-bottom: 1px solid #eaeaea; }
+
+.order-specs-panel .panel-hd-secondary {
+  border: none;
+  background-color: #f9f9f9;
+  color: #737373;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-top: 2rem; }
+
+.order-specs-panel .am-panel-bd {
+  border: none;
+  border-bottom: 1px solid #eaeaea; }
+
+.order-specs-data-list {
+  margin: 0;
+  padding: 0;
+  color: #9d9597;
+  font-size: 1.3rem; }
+
+.order-specs-product-list li {
+  padding: 1rem 0 1rem 0;
+  border-bottom: 1px solid #f5f5f5; }
+
+.order-specs-product-list li:last-of-type {
+  border-bottom: none; }
+
+.order-specs-product-list li .m-write-review {
+  margin-top: 10px;
+  float: right;
+  color: #7be5d7;
+  border: 1px solid #7be5d7;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 1px 3px; }
+
+.order-specs-row-notes {
+  padding-top: 1rem; }
+
+.order-specs-row-payment {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f5f5f5; }
+
+.order-specs-col-status {
+  text-align: center;
+  color: #FB5450;
+  font-weight: bold;
+  font-size: 1rem; }
+
+.order-specs-col-icon {
+  min-height: 25px;
+  position: relative; }
+
+.order-specs-col-icon img {
+  width: 100%;
+  max-width: 2.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.order-specs-col-user {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #eaeaea; }
+
+.order-specs-col-user ul {
+  padding: 0; }
+
+.order-specs-col-user ul li {
+  line-height: 1.8rem;
+  color: #9d9597; }
+
+.order-specs-col-user ul li:first-of-type {
+  margin-bottom: 1rem; }
+
+.order-specs-col-user ul strong {
+  color: #565656; }
+
+.order-specs-col-user span {
+  line-height: 1rem; }
+
+.order-specs-col-user_pending {
+  font-size: 1.4rem; }
+
+.order-specs-col-user_pending ul {
+  padding: 0;
+  margin: 0; }
+
+.order-specs-col-user_pending ul li {
+  line-height: 1.8rem;
+  color: #9d9597; }
+
+.order-specs-col-user_pending ul li:first-of-type {
+  margin-bottom: 1rem; }
+
+.order-specs-col-user_pending ul strong {
+  color: #565656; }
+
+.order-specs-col-user_pending span {
+  line-height: 1rem; }
+
+.order-specs-col-notes {
+  font-size: 1.4rem; }
+
+.order-specs-col-notes span {
+  color: #9d9597; }
+
+.order-specs-col-product-img {
+  /*min-height: 7.5rem;*/
+  position: relative; }
+
+.order-specs-col-product-img img {
+  width: 100%;
+  max-width: 7.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+.order-specs-col-product-data .order-specs-product-title {
+  padding-right: 0;
+  line-height: 1.5rem;
+  font-size: 1.5rem;
+  color: #565656;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.order-specs-col-product-data .order-specs-product-type {
+  padding-right: 0;
+  font-size: 1.3rem;
+  color: #737373; }
+
+.order-specs-col-product-data .order-specs-habi {
+  font-size: 1.3rem;
+  color: #FB5450; }
+
+.order-specs-col-product-data .order-specs-habi img {
+  margin: 0 5px 2px 0;
+  width: 15px; }
+
+.order-specs-col-product-data .order-specs-product-price {
+  padding-right: 0;
+  font-size: 1.3rem;
+  color: #737373; }
+
+.order-specs-col-product-data .order-specs-product-price-total {
+  text-align: right;
+  color: #565656; }
+
+.order-specs-col-product-data .order-specs-delivery-fee {
+  color: #737373;
+  font-size: 1.4rem; }
+
+.order-specs-col-payment {
+  font-size: 1.4rem; }
+
+.order-specs-col-payment ul {
+  margin: 0;
+  padding: 0; }
+
+.order-specs-col-payment strong {
+  color: #565656; }
+
+.order-specs-col-payment span {
+  color: #737373; }
+
+.order-specs-col-payment-R {
+  text-align: right;
+  line-height: 1.8rem; }
+
+.order-specs-col-payment-L {
+  line-height: 2.2rem; }
+
+.order-specs-col-payment .order-specs-payment-total {
+  color: #f54954; }
+
+.order-specs-habi-get {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  font-size: .9em;
+  line-height: 2em;
+  color: #565656; }
+
+.order-specs-habi-get img {
+  margin: 0 5px 3px 0;
+  width: 30px; }
+
+.order-specs-habi-get p {
+  margin: 0;
+  float: right;
+  font-size: 1.5em;
+  color: #FB5450; }
+
+.order-specs-btn-section {
+  margin-top: 2rem;
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea; }
+
+.order-specs-btn-section .order-specs-btn-col {
+  padding: 1rem 1.5rem; }
+
+.order-specs-btn-section .order-specs-btn {
+  width: 100%;
+  border: 1px solid #EE5984;
+  background-color: #fff;
+  color: #ff0068;
+  height: 4.5rem; }
+
+.order-specs-btn-section .order-specs-btn-img {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.order-specs-btn-section .order-specs-btn-img.order-atm-img {
+  width: 2rem; }
+
+.order-specs-btn-section .order-specs-btn-img-pending {
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.order-specs-btn-section .order-specs-btn-text {
+  display: inline-block;
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.order-specs-btn-section .order-specs-btn:nth-of-type(n+2) {
+  margin-top: 1rem; }
+
+.order-specs-bottom-btn-section {
+  margin-top: .5rem; }
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn-col {
+  padding: 1rem 1.5rem; }
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn {
+  width: 100%;
+  border: 1px solid #ff0068;
+  background-color: #ff0068;
+  color: #fff;
+  height: 4.5rem; }
+
+.order-specs-bottom-btn-section .order-specs-bottom-btn-text {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.order-specs-expiry-date {
+  color: #7be5d7;
+  font-weight: bold; }
+
+.order-specs-active-img {
+  width: 2rem;
+  margin-left: .5rem; }
+
+.line-through {
+  text-decoration: line-through; }
+
+/*ＡＴＭ未付款盒子*/
+.m-atm-info {
+  padding: 0; }
+
+.m-atm-info .m-bank-info {
+  padding: .5rem;
+  border: 1px solid #EE5984; }
+
+.m-atm-info .m-bank-info:first-child {
+  border-top: 0;
+  border-bottom: 0; }
+
+.m-atm-info .m-bank-info .m-bank-img {
+  padding: 0;
+  margin-top: 12px; }
+
+.m-atm-info .m-bank-info img {
+  width: 100%; }
+
+.m-atm-info .m-bank-info p {
+  color: #565656;
+  margin: 0;
+  margin-top: 1rem; }

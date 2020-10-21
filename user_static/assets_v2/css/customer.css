@@ -1,0 +1,1357 @@
+﻿@charset "UTF-8";
+/*$font-family-sans-serif: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;
+$font-family-base: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;*/
+/* line 3, ../../sass/member.scss */
+.member-wrapper {
+  padding: 0;
+  margin-bottom: 20px; }
+
+/* line 8, ../../sass/member.scss */
+.member-sidemenu {
+  width: 22%; }
+
+/* line 10, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  background: white; }
+
+/* line 15, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab li {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid #d9dad9; }
+
+/* line 21, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab li img {
+  width: 30px;
+  margin: 0 5px 4px 5px; }
+
+/* line 26, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab a {
+  color: #595959; }
+
+/* line 29, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab a:hover li {
+  color: #ff7c81; }
+
+/* line 34, ../../sass/member.scss */
+.member-sidemenu .memeber-sidetab a:last-child li {
+  border: 0; }
+
+/* line 40, ../../sass/member.scss */
+.member-sidemenu .member-sidepic {
+  width: 100%;
+  margin: 0 0 10px 0;
+  background: white; }
+
+/* line 44, ../../sass/member.scss */
+.member-sidemenu .member-sidepic img {
+  width: 100%;
+  padding: 5px; }
+
+/*設定訂單tab樣式*/
+/* line 53, ../../sass/member.scss */
+.member-rightmenu {
+  width: calc(78% - 20px);
+  margin-left: 20px;
+  background: #f0f0f0; }
+
+/* line 57, ../../sass/member.scss */
+.member-rightmenu ul {
+  height: 100%;
+  border: 0; }
+
+/* line 60, ../../sass/member.scss */
+.member-rightmenu ul li {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+  background: white; }
+
+/* line 66, ../../sass/member.scss */
+.member-rightmenu ul li.am-active {
+  border-bottom: 3px solid #FB5450; }
+
+/* line 68, ../../sass/member.scss */
+.member-rightmenu ul li.am-active a {
+  border: none;
+  color: #FB5450; }
+
+/* line 72, ../../sass/member.scss */
+.member-rightmenu ul li.am-active a:focus {
+  background: white;
+  border: none;
+  color: #FB5450; }
+
+/* line 77, ../../sass/member.scss */
+.member-rightmenu ul li.am-active a:hover {
+  border: none;
+  color: #FB5450;
+  background: white !important; }
+
+/* line 83, ../../sass/member.scss */
+.member-rightmenu ul li a {
+  line-height: 50px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  color: #595959;
+  border: none; }
+
+/* line 91, ../../sass/member.scss */
+.member-rightmenu ul li a:hover {
+  border: none;
+  color: #FB5450;
+  background: white !important; }
+
+/* line 99, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd {
+  /*margin-top: 20px;*/
+  border: 0; }
+
+/* line 102, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel {
+  padding: 0; }
+
+/* line 104, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 107, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  margin-bottom: 20px; }
+
+/* line 112, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li:last-child {
+  margin-bottom: 0; }
+
+/* line 115, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li table {
+  width: 100%; }
+
+/* line 119, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th {
+  color: #595959; }
+
+/* line 121, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th p {
+  display: inline-block;
+  margin-right: 10px; }
+
+/* line 125, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th i {
+  margin-right: 5px; }
+
+/* line 129, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead .invoice-status {
+  text-align: center;
+  color: #FB5450;
+  font-size: 18px; }
+
+/* line 133, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead .invoice-status.complete {
+  color: #808080; }
+
+/* line 139, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li tbody tr {
+  border-top: 1px solid #d9dad9;
+  border-bottom: 1px solid #d9dad9; }
+
+/* line 144, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li tbody td img {
+  width: 100%;
+  padding: 10px 10px 10px 0; }
+
+/* line 153, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination {
+  margin: 20px 0 0 0;
+  background: white; }
+
+/* line 156, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination li {
+  width: 5%;
+  height: initial; }
+
+/* line 159, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination li a {
+  background: white;
+  line-height: 25px; }
+
+/* line 163, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination li.am-active {
+  border: 0; }
+
+/* line 165, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination li.am-active a {
+  background: #FB5450;
+  color: white; }
+
+/* line 168, ../../sass/member.scss */
+.member-rightmenu .am-tabs-bd .am-pagination li.am-active a:hover {
+  background: #FB5450 !important; }
+
+/* line 179, ../../sass/member.scss */
+.invoice-table #m-invoice-pic {
+  width: 10%; }
+
+/* line 182, ../../sass/member.scss */
+.invoice-table #m-invoice-text {
+  width: 75%;
+  text-align: left;
+  color: #595959;
+  position: relative;
+  vertical-align: top;
+  padding-top: 10px;
+  overflow: hidden; }
+
+/* line 190, ../../sass/member.scss */
+.invoice-table #m-invoice-text a {
+  line-height: inherit; }
+
+/* line 193, ../../sass/member.scss */
+.invoice-table #m-invoice-text h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block; }
+
+/* line 199, ../../sass/member.scss */
+.invoice-table #m-invoice-text h5 {
+  font-size: 12px;
+  font-weight: normal;
+  color: #808080;
+  margin: 0;
+  display: inline-block; }
+
+/* line 206, ../../sass/member.scss */
+.invoice-table #m-invoice-text .m-write-review {
+  border: 1px solid #95D7DA;
+  color: #95D7DA;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 1px 3px; }
+
+/* line 215, ../../sass/member.scss */
+.invoice-table #m-invoice-qty {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 12px;
+  color: #808080; }
+
+/* line 222, ../../sass/member.scss */
+.invoice-table #m-invoice-price {
+  width: 15%;
+  color: #595959;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #d9dad9; }
+
+/* line 229, ../../sass/member.scss */
+.invoice-table #m-invoice-total {
+  text-align: right;
+  color: #595959;
+  font-size: 15px;
+  border: none; }
+
+/* line 234, ../../sass/member.scss */
+.invoice-table #m-invoice-total p {
+  color: #FB5450;
+  font-size: 23px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0; }
+
+/* line 242, ../../sass/member.scss */
+.invoice-table #m-invoice-btn {
+  border: none;
+  text-align: right; }
+
+/* line 245, ../../sass/member.scss */
+.invoice-table #m-invoice-btn button {
+  font-size: 12px;
+  height: 40px;
+  padding: 0 20px;
+  border: 1px solid #ff0068;
+  background: white;
+  color: #ff0068; }
+
+/* line 252, ../../sass/member.scss */
+.invoice-table #m-invoice-btn button:active {
+  box-shadow: none; }
+
+/* line 255, ../../sass/member.scss */
+.invoice-table #m-invoice-btn button:focus {
+  outline: none; }
+
+/* line 258, ../../sass/member.scss */
+.invoice-table #m-invoice-btn button:hover {
+  background: rgba(255, 0, 95, 0.1); }
+
+/* line 261, ../../sass/member.scss */
+.invoice-table #m-invoice-btn button img {
+  width: 25px;
+  padding: 0;
+  margin-right: 5px; }
+
+/* line 267, ../../sass/member.scss */
+.invoice-table #m-invoice-btn .m-atm-info {
+  margin-top: 10px;
+  color: #595959;
+  display: block; }
+
+/* line 271, ../../sass/member.scss */
+.invoice-table #m-invoice-btn .m-atm-info .m-bank-info {
+  padding: 10px;
+  border: 1px solid #d9dad9; }
+
+/* line 274, ../../sass/member.scss */
+.invoice-table #m-invoice-btn .m-atm-info .m-bank-info:nth-child(1) {
+  border-right: 0; }
+
+/* line 278, ../../sass/member.scss */
+.invoice-table #m-invoice-btn .m-atm-info img {
+  margin-top: 5px;
+  padding: 0;
+  width: 100px; }
+
+/* line 283, ../../sass/member.scss */
+.invoice-table #m-invoice-btn .m-atm-info p {
+  margin: 0;
+  text-align: left; }
+
+/* line 292, ../../sass/member.scss */
+.guess-you-like-wrapper {
+  padding: 0px 0 15px 0;
+  margin-bottom: 20px;
+  border-top: 2px dotted #d9dad9;
+  /*guess what you like title (猜你喜歡標題)*/
+  /*guess what you like content (猜你喜歡內容Ｘ10)*/ }
+
+/* line 297, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-title {
+  height: 70px;
+  background: #eee;
+  line-height: 60px;
+  text-align: center;
+  padding: 10px 0 0 0; }
+
+/* line 303, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-title i {
+  color: #f7588c;
+  padding-right: 5px; }
+
+/* line 307, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-title h3 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: normal;
+  position: relative; }
+
+/* line 314, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-title h3:before {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #d9dad9;
+  position: absolute;
+  top: 50%;
+  left: -60%; }
+
+/* line 323, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-title h3:after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background: #d9dad9;
+  position: absolute;
+  top: 50%;
+  right: -60%; }
+
+/* line 335, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content {
+  height: 310px;
+  background: white; }
+
+/* line 338, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider {
+  height: calc(310px - 30px);
+  box-shadow: none; }
+
+/* line 341, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport {
+  height: 100%; }
+
+/* line 343, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page {
+  height: 100%; }
+
+/* line 345, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li {
+  width: calc(20% - 2px);
+  height: calc(100% - 2px);
+  padding: 7.5px 15px; }
+
+/* line 349, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li:hover {
+  border: 1px solid #ff7c81;
+  padding: 6.5px 14px; }
+
+/* line 353, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-pic {
+  padding: 0; }
+
+/* line 356, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text {
+  padding: 0; }
+
+/* line 358, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text h4 {
+  font-size: 13px;
+  font-weight: normal;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  margin: 5px 0;
+  color: #595959; }
+
+/* line 368, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount {
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  width: 100%; }
+
+/* line 373, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount h5 {
+  height: 25px;
+  font-size: 17px;
+  color: #FB5450;
+  padding: 0;
+  margin: 0; }
+
+/* line 379, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount h5 span.price-end {
+  font-size: 12px;
+  color: #808080;
+  font-weight: normal;
+  padding-left: 5px; }
+
+/* line 385, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount h5 p {
+  padding: 0;
+  margin: 0;
+  color: #FB5450; }
+
+/* line 391, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount p.discount-range {
+  display: inline-block;
+  color: #595959;
+  margin: 0 0 0 15px;
+  line-height: 28px;
+  font-size: 12px; }
+
+/* line 397, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount p.discount-range span {
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #FB5450; }
+
+/* line 404, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content .am-slider .am-viewport .more-products-slider-page li .more-products-slider-text .price-discount span#tag-chinese {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 8px; }
+
+/* line 416, ../../sass/member.scss */
+.guess-you-like-wrapper .guess-you-like-content ul {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+/*原Member2*/
+.member-wrapper {
+  padding: 0;
+  margin-bottom: 20px; }
+
+.member-sidemenu {
+  width: 22%; }
+
+.member-sidemenu .memeber-sidetab {
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding: 0 10px;
+  background: white; }
+
+.member-sidemenu .memeber-sidetab li {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid #d9dad9; }
+
+.member-sidemenu .memeber-sidetab li img {
+  width: 30px;
+  margin: 0 5px 4px 5px; }
+
+.member-sidemenu .memeber-sidetab a {
+  color: #595959; }
+
+.member-sidemenu .memeber-sidetab a:hover li {
+  color: #ff7c81; }
+
+.member-sidemenu .memeber-sidetab a:last-child li {
+  border: 0; }
+
+.member-sidemenu .member-sidepic {
+  width: 100%;
+  margin: 0 0 10px 0;
+  background: white; }
+
+.member-sidemenu .member-sidepic img {
+  width: 100%;
+  padding: 5px; }
+
+/*=========評論============*/
+.m-write-review {
+  border: 1px solid #95D7DA;
+  color: #95D7DA;
+  cursor: pointer;
+  font-size: 12px;
+  margin-left: 5px;
+  padding: 1px 3px; }
+
+/*=========評論============*/
+/*剩下的哈幣*/
+.member-bonus-left {
+  margin: 0 0 0 5px;
+  color: #a8a8a8; }
+
+/*設定訂單tab樣式*/
+.member-rightmenu .am-tabs-nav li {
+  background: white;
+  text-align: center;
+  border-bottom: 3px solid #d9dad9; }
+
+.member-rightmenu .am-tabs-nav li.am-active {
+  border-bottom: 3px solid #FB5450; }
+
+.member-rightmenu .am-tabs-nav li.am-active a {
+  border: 0;
+  color: #FB5450; }
+
+.member-rightmenu .am-tabs-nav li.am-active a:focus {
+  background: white;
+  border: none;
+  color: #FB5450; }
+
+.member-rightmenu .am-tabs-nav li.am-active a:hover {
+  border: none;
+  color: #FB5450;
+  background: white !important; }
+
+.member-rightmenu .am-tabs-nav li a {
+  line-height: 50px;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+  color: #595959;
+  border: none; }
+
+.member-rightmenu .am-tabs-nav li a:hover {
+  border: none;
+  color: #FB5450;
+  background: white !important; }
+
+.member-rightmenu {
+  width: calc(78% - 20px);
+  margin-left: 20px;
+  background: #f0f0f0; }
+
+.member-rightmenu ul {
+  height: 100%;
+  border: 0; }
+
+.member-rightmenu .am-tabs-bd {
+  /*margin-top: 20px;*/
+  border: 0; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel {
+  padding: 0; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul {
+  margin: 0;
+  padding: 0; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li {
+  width: 100%;
+  padding: 20px;
+  background: white;
+  margin-bottom: 20px; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li:last-child {
+  margin-bottom: 0; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li table {
+  width: 100%; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th {
+  color: #595959; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th p {
+  display: inline-block;
+  margin-right: 10px; }
+
+.member-rightmenu .am-tabs-bd .am-tab-panel ul.invoice-ul li thead th i {
+  margin-right: 5px; }
+
+.title-table th {
+  border-bottom: 0; }
+
+.title-table p {
+  font-size: 15px; }
+
+.o-table-title {
+  width: 15%;
+  color: #808080; }
+
+.o-table-title.border-left {
+  border-left: 1px solid #f3f3f3; }
+
+.o-table-title.border-right {
+  border-right: 1px solid #f3f3f3; }
+
+.delivery-text {
+  width: 35%; }
+
+.delivery-table th, .payment-table th {
+  border-bottom: 1px solid #f3f3f3; }
+
+.delivery-table td, .payment-table td {
+  border-top: 1px solid #f3f3f3;
+  padding: 10px 5px; }
+
+.invoice-subtitle {
+  padding: 0 10px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: right; }
+
+.invoice-status, .payment-status {
+  text-align: right;
+  padding: 0 10px 0 0 !important;
+  color: #FB5450 !important;
+  font-size: 16px; }
+
+.invoice-status.complete, .complete.payment-status {
+  color: #808080 !important; }
+
+.invoice-maintitle {
+  font-size: 18px;
+  color: #595959; }
+
+.invoice-title th {
+  text-align: center;
+  font-weight: normal;
+  border-top: 1px solid #eee; }
+
+.invoice-table {
+  width: 100%; }
+
+.invoice-table .m-invoice-pic {
+  width: 10%; }
+
+.invoice-table .m-invoice-pic img {
+  max-width: 100px;
+  padding: 10px 10px 10px 0; }
+
+.invoice-table th {
+  padding: 10px 0; }
+
+.invoice-table th p {
+  margin: 0 10px 0 0;
+  display: inline-block; }
+
+.invoice-table th i {
+  margin: 0 5px 0 0; }
+
+.invoice-table .m-invoice-text {
+  width: 50%;
+  text-align: left;
+  color: #595959;
+  position: relative;
+  vertical-align: top;
+  padding-top: 10px;
+  overflow: hidden; }
+
+.invoice-table .m-invoice-text a {
+  line-height: inherit; }
+
+.invoice-table .m-invoice-text h4 {
+  margin: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #595959; }
+
+.invoice-table .m-invoice-text h5 {
+  font-size: 13px;
+  font-weight: normal;
+  color: #808080;
+  margin: 0;
+  display: inline-block; }
+
+.invoice-table .m-invoice-unit {
+  color: #808080; }
+
+.invoice-table .m-invoice-qty {
+  text-align: center;
+  width: 10%;
+  font-size: 12px;
+  color: #808080; }
+
+.invoice-table .m-invoice-price {
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400; }
+
+.invoice-table .m-invoice-total {
+  text-align: right;
+  color: #595959;
+  font-size: 15px;
+  border: none !important; }
+
+.invoice-table .m-invoice-total p {
+  color: #EE5984;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10px 0; }
+
+.invoice-table .m-td {
+  width: 12.5%;
+  text-align: center;
+  /*border:1px solid #eee;*/ }
+
+.invoice-table .m-invoice-btn {
+  border: none !important;
+  text-align: right; }
+
+.invoice-table .m-invoice-btn .fuchsia-o-btn {
+  line-height: 40px; }
+
+.invoice-table .m-invoice-btn .fuchsia-o-btn img {
+  width: 25px !important;
+  padding: 0 !important;
+  margin-right: 5px !important; }
+
+.invoice-table .m-invoice-btn .m-atm-info {
+  display: block;
+  margin-top: 10px;
+  color: #595959;
+  user-select: auto !important; }
+
+.invoice-table .m-invoice-btn .m-atm-info .m-bank-info {
+  padding: 10px;
+  border: 1px solid #d9dad9; }
+
+.invoice-table .m-invoice-btn .m-atm-info .m-bank-info:nth-child(1) {
+  border-right: 0; }
+
+.invoice-table .m-invoice-btn .m-atm-info img {
+  margin-top: 5px;
+  padding: 0;
+  width: 100px; }
+
+.invoice-table .m-invoice-btn .m-atm-info p {
+  margin: 0;
+  text-align: left; }
+
+.invoice-habi {
+  margin: 5px 0;
+  color: #FB5450;
+  font-size: 13px; }
+
+.invoice-habi img {
+  margin: 0 3px 5px 0;
+  width: 20px; }
+
+/*轉帳*/
+.money-transfer {
+  display: block; }
+
+.money-transfer h4 {
+  margin: 10px 0;
+  padding: 0 0 10px 0;
+  font-size: 18px;
+  color: #595959;
+  border-bottom: 1px solid #d9dad9; }
+
+.money-transfer h5 {
+  font-weight: normal; }
+
+.money-transfer li {
+  padding: 0 0 0 5px;
+  color: #595959; }
+
+.money-transfer input {
+  width: 100%;
+  border: 1px solid #d9dad9;
+  padding: 5px 0; }
+
+.money-transfer input:focus {
+  border: 1px solid #FB5450;
+  outline: 0; }
+
+.money-transfer-btn {
+  margin: 20px 0px 0 0;
+  padding: 0 30px; }
+
+/*＝＝＝＝＝會員資料 member info start＝＝＝＝＝＝*/
+.member-info {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background: white; }
+
+.member-info ul {
+  margin: 0;
+  padding: 0;
+  background: white; }
+
+.member-info .am-form {
+  padding: 10px 0 0 0; }
+
+.member-info .am-form-group {
+  padding: 0 30px 0 25px;
+  margin: 15px 0; }
+
+.member-info h5 {
+  margin: 0 0 5px 0; }
+
+.member-info .m-btn-wrapper {
+  width: calc(100% - 50px);
+  border-top: 1px solid #d9dad9;
+  margin: 10px 25px;
+  padding: 20px 0; }
+
+.member-info .m-btn-wrapper button {
+  width: 150px; }
+
+.member-info .am-form-group input {
+  height: 35px;
+  font-size: 14px; }
+
+.member-info .am-form-group input:focus {
+  border: 1px solid #FB5450;
+  box-shadow: none; }
+
+.member-info .am-form-group input[type="radio"] {
+  height: initial;
+  margin: 0 5px 0 0; }
+
+.member-info label {
+  font-weight: normal; }
+
+.order-empty {
+  min-height: 400px;
+  line-height: 400px;
+  font-size: 15px;
+  text-align: center; }
+
+.order-empty a {
+  color: dodgerblue;
+  text-decoration: underline; }
+
+/*是否有認證email*/
+.member-email {
+  /*點我認證*/
+  /*已認證*/ }
+
+.member-email input {
+  width: 80% !important;
+  display: inline-block !important; }
+
+.member-email i {
+  margin: 0 5px 0 0; }
+
+.member-email .am-btn {
+  display: inline-block;
+  width: 71px;
+  height: 35px;
+  font-size: 12px;
+  padding: 0; }
+
+.member-email span {
+  color: #95D7DA;
+  margin: 0 0 0 5px; }
+
+/*＝＝＝＝＝會員資料 member info end＝＝＝＝＝＝*/
+.member-no-tab {
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #595959;
+  background: white;
+  border-bottom: 3px solid #FB5450; }
+
+.member-rightmenu .am-pagination {
+  display: inline-block;
+  width: 100%;
+  background: white; }
+
+.member-rightmenu .am-pagination li {
+  width: 5%;
+  height: initial; }
+
+.member-rightmenu .am-pagination li a {
+  padding: 0;
+  margin: 0;
+  color: #595959;
+  background: white;
+  line-height: 35px;
+  border: none; }
+
+.member-rightmenu .am-pagination li.am-active {
+  border: 0; }
+
+.member-rightmenu .am-pagination li.am-active a {
+  background: #FB5450;
+  color: white; }
+
+.member-rightmenu .am-pagination li.am-active a:hover {
+  background: #FB5450 !important; }
+
+/*＝＝＝＝＝哈幣 habistart＝＝＝＝＝＝*/
+.member-left-title {
+  background: white;
+  margin-bottom: 20px; }
+
+.member-left-title ul {
+  margin: 0;
+  padding: 0; }
+
+.habi-left-img {
+  height: 100px;
+  width: 10%;
+  line-height: 100px;
+  text-align: center; }
+
+.habi-left-img img {
+  width: 60px; }
+
+.habi-left-text {
+  height: 100px;
+  width: 90%;
+  text-align: left; }
+
+.habi-left-text li {
+  height: 50%; }
+
+.habi-left-text li:first-child {
+  line-height: 80px; }
+
+.habi-left-text li:last-child {
+  line-height: 30px; }
+
+.habi-left-text span {
+  font-size: 30px;
+  font-weight: bold;
+  color: #FB5450; }
+
+.habi-left-text h4 {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+  font-weight: normal; }
+
+.habi-left-text h4 span {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #cccccc; }
+
+.habi-left-text p {
+  display: inline-block;
+  margin: 0;
+  color: #FB5450;
+  font-size: 14px; }
+
+.member-table {
+  width: 100%; }
+
+.habi-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #d9dad9; }
+
+.habi-table tr:last-child td {
+  border: 0; }
+
+.habiget-pic {
+  width: 15%;
+  text-align: center; }
+
+.habiget-pic img {
+  width: 85px; }
+
+.habiget-content {
+  max-width: 600px;
+  vertical-align: top; }
+
+.habiget-content h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #595959;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.habiget-content h5 {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #808080; }
+
+.habiget-content p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: normal;
+  color: #808080; }
+
+.habiget-price, .voucher-price {
+  width: 15%;
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+  color: #FB5450; }
+
+/*＝＝＝＝＝哈幣 habi end＝＝＝＝＝＝*/
+/*＝＝＝＝＝購物金 voucher start＝＝＝＝＝＝*/
+.voucher-left-title {
+  padding: 10px 20px;
+  color: #FB5450; }
+
+.voucher-left-title span {
+  margin: 0 5px 0 0;
+  font-size: 30px;
+  font-weight: bold; }
+
+.voucher-left-title h4 {
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #595959; }
+
+.voucher-table tr:last-child td {
+  border: none; }
+
+.voucher-table td {
+  padding: 15px 0;
+  border-bottom: 1px solid #d9dad9; }
+
+.voucher-content h4 {
+  margin: 0;
+  font-size: 14px;
+  color: #595959; }
+
+.voucher-content p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #808080; }
+
+/*＝＝＝＝＝購物金 voucher end＝＝＝＝＝＝*/
+/*＝＝＝＝＝折購券 coupon start＝＝＝＝＝＝*/
+.entercoupon {
+  margin-bottom: 10px;
+  padding: 20px;
+  text-align: center;
+  background: white; }
+
+.entercoupon p {
+  display: block;
+  margin: 0 10px 0 0;
+  font-size: 15px;
+  color: #595959; }
+
+.entercoupon .am-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0 50px;
+  height: 35px; }
+
+.entercoupon input {
+  margin: 10px 0;
+  height: 35px;
+  width: 230px;
+  border: 1px solid #d9dad9; }
+
+.entercoupon input:focus {
+  border: 1px solid #FB5450;
+  outline: 0; }
+
+.entercoupon i {
+  margin: 0 5px;
+  color: #808080; }
+
+.coupon-list {
+  padding: 10px 20px;
+  background: white; }
+
+.coupon-list table {
+  width: 100%; }
+
+.coupon-list h4 {
+  margin: 0;
+  color: #595959; }
+
+.coupon-list p {
+  margin: 5px 0;
+  color: #808080; }
+
+.coupon-list tr:last-child td {
+  border: none; }
+
+.coupon-list td {
+  padding: 10px;
+  border-bottom: 1px solid #d9dad9; }
+
+.coupon-price {
+  width: 17%;
+  color: #FB5450;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center; }
+
+/*＝＝＝＝＝折購券 coupon end＝＝＝＝＝＝*/
+/*＝＝＝＝＝你的最愛 following item start＝＝＝＝＝＝*/
+.like-left-title {
+  padding: 15px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #595959; }
+
+.love-i {
+  margin: 0 5px 0 0;
+  color: #ff0068; }
+
+.m-like .p-style {
+  margin: 5px;
+  width: calc(20% - 14px); }
+
+.p-style {
+  display: inline-block;
+  background: white;
+  border: 1px solid #d9dad9;
+  transition: .3s; }
+
+.p-style:hover {
+  box-shadow: 0px 0px 10px 0px #ccc;
+  transition: .3s; }
+
+/**/
+.p-style-pic {
+  position: relative;
+  width: 100%; }
+
+.p-style-pic img {
+  width: 100%;
+  height: auto; }
+
+/*猜你喜歡按鈕*/
+.p-style .guess-you-like-button {
+  display: inline;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(220, 220, 220, 0.5);
+  text-align: center;
+  line-height: 50px;
+  transition: .3s;
+  cursor: pointer; }
+
+.p-style .guess-you-like-button:hover span.pink-o {
+  opacity: 1;
+  transition: .3s; }
+
+.p-style .guess-you-like-button span.white-o {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  line-height: 50px;
+  opacity: 1;
+  color: white;
+  transition: .3s; }
+
+.p-style .guess-you-like-button span.pink-o {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  line-height: 50px;
+  opacity: 0;
+  color: #FF7C81;
+  transition: .3s; }
+
+.p-style .guess-you-like-button span.pink-o.show {
+  opacity: 1;
+  transition: .3s; }
+
+/*tag*/
+.p-style .tag-chinese {
+  padding: 0em 0.3em;
+  display: inline-block;
+  position: absolute;
+  font-size: .9em;
+  top: 5px;
+  right: 5px;
+  border: 1px solid #f1b13b;
+  color: #f1b13b;
+  background: rgba(255, 255, 255, 0.9); }
+
+/*分隔線*/
+.p-style-line {
+  display: block;
+  margin: 0 10px;
+  width: calc(100% - 20px);
+  height: 1px;
+  background: #d9dad9; }
+
+/*標題*/
+.p-style-text h4 {
+  overflow: hidden;
+  margin: 10px 10px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  height: 37px;
+  color: #595959; }
+
+.p-style .price-discount {
+  display: inline-block;
+  position: relative;
+  margin: 10px 10px 0 10px;
+  width: calc(100% - 20px);
+  height: 28px;
+  line-height: 28px; }
+
+.p-style .price-discount h5 {
+  height: 28px;
+  color: #FB5450;
+  padding: 0;
+  margin: 0; }
+
+.p-style .price-discount p {
+  display: inline-block;
+  float: right;
+  color: #595959;
+  margin: 0 0 0 10px;
+  font-size: 12px; }
+
+/*價錢*/
+.p-style .price-discount h5 p {
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  color: #FB5450;
+  font-size: 17px; }
+
+/*省ＯＯ的錢*/
+.p-style .discount-range span {
+  display: inline-block;
+  height: 28px;
+  font-size: 14px;
+  color: #FB5450; }
+
+/*＝＝＝＝＝你的最愛 following item end＝＝＝＝＝＝*/
+.order-item {
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3; }
+
+.order-cost-title {
+  text-align: right;
+  color: #808080;
+  border-bottom: 1px solid #f3f3f3; }
+
+.order-cost-title td {
+  padding: 10px; }
+
+.order-cost-title .m-invoice-price {
+  padding: 0 0 0 25px;
+  border-left: 1px solid #f3f3f3;
+  text-align: left; }
+
+/*交易資訊*/
+.invoice-back {
+  background: white;
+  margin-top: 10px; }
+
+.order-habi-wrapper {
+  padding: 10px;
+  background: white; }
+
+.order-habi-wrapper img {
+  width: 50px; }
+
+.order-habi-text {
+  margin: 0 20px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #595959; }
+
+.order-habi {
+  margin: 0 5px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fba850; }
+
+.order-get-habi {
+  margin-top: 15px;
+  height: 60px;
+  color: #595959;
+  font-size: 15px;
+  line-height: 60px;
+  background: white; }
+
+.order-get-habi img {
+  margin: 0 10px 0 0;
+  width: 40px; }
+
+.order-get-habi .habi-total {
+  margin: 0;
+  font-weight: 400;
+  font-size: 23px;
+  color: #FB5450; }
+
+#ContentPlaceHolder1_UpdatePanel3 {
+  display: inline; }
+
+#ContentPlaceHolder1_btnSend {
+  display: inline-block !important;
+  width: 71px !important;
+  height: 35px !important;
+  font-size: 12px !important;
+  padding: 0 !important; }

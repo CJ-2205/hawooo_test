@@ -500,8 +500,7 @@
                     height: 32px;
                     padding: 5px 10px;
                     border: 1px solid #d9dad9;
-                    /*margin: 5px 5px;*/
-                    margin: 5px 5px 0px 0px;
+                    margin: 5px 5px;
                     cursor: pointer;
                 }
                     /* line 404, ../../sass/product_details.scss */
@@ -568,8 +567,7 @@
             /* line 460, ../../sass/product_details.scss */
             .product-details-wrapper .product-details-content section.product-price-section .product-price-content {
                 display: inline-block;
-                /*width: 700px;*/
-                width: 450px;
+                width: 700px;
                 height: 80px;
                 padding-left: 25px;
                 line-height: 80px;

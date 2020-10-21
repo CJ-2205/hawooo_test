@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 /* compileCompressed: ../css/$1.css*/
 /* === COLORS ===*/
 /*新品tag*/
@@ -23,15 +23,17 @@
 
 /*下方區標題*/
 /* line 26, ../scss/gruop_buying_category.scss */
-.index-section-title {
+/*.index-section-title {
   height: 50px;
   line-height: 50px;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-weight: bold;
-  text-align: center;
   color: #737373;
   border-bottom: 2px dotted #eaeaea;
-}
+}*/
+
+
+
 /* line 34, ../scss/gruop_buying_category.scss */
 .index-section-title i {
   margin-right: 5px;

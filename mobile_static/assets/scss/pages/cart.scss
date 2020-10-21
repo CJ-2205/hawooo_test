@@ -1143,6 +1143,8 @@ li.cart-step-active {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    width: 100%;
+    max-width: 15rem;
 }
 
 .payment-methods-affin-bank {

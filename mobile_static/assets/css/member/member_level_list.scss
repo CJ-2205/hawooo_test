@@ -3,7 +3,7 @@ $second_color: #BBBCBC;
 $dark_gray: #707070;
 $light_gray: #E1E1E1;
 $color_white: #fff;
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Luckiest+Guy&display=swap');
 @mixin size($w,$h: $w,$brs: 0) {
     width: $w;
     height: $h;
@@ -21,33 +21,29 @@ $color_white: #fff;
     font-weight: $fw;
     color: $fc
 }
-
 /*粉色重點文字*/
 @mixin pink-important-text {
     font-size: 16px;
     font-weight: 800;
     color: $hawooo_pink;
 }
-
 /*深灰重要文字*/
 @mixin dark-gray-important-text {
     font-size: 14px;
     font-weight: 400;
     color: $dark_gray;
 }
-
 /*深灰icon及表格等文字*/
 @mixin dark-gray-text-m {
     font-size: 12px;
     font-weight: 500;
     color: $dark_gray;
 }
-
 /*淺灰內文*/
 @mixin light-gray-text-m {
     font-size: 14px;
-    font-weight: 200;
-    color: #bebec1;
+    font-weight: 500;
+    color: $dark_gray;
 }
 
 img {
@@ -75,20 +71,16 @@ h5 {
 
 .vip-condition-word {
     padding-left: 2%;
-    display: flex;
-    position: relative;
     @include font_style(14px,400,$dark_gray);
 }
 
 .progress-bar-wrap {
-    z-index: 3;
-    position: relative;
-    left: 0px;
-    /*@include abpos(0,5px);*/
-    /*display: inline;
+    /*z-index: 3;
+    @include abpos(0,5px);
+    display: inline;
     margin: 0 auto;
-    overflow: hidden;*/
-    /*border: 3px solid $color_white;*/
+    overflow: hidden;
+    border: 3px solid $color_white;*/
     img {
         width: 100%;
         z-index: 5;
@@ -96,18 +88,16 @@ h5 {
     }
 
     .gray-bar {
-        @include abpos(0,1px);
+        @include abpos(0,0);
         z-index: 1;
         background: $light_gray;
-        height: 90%;
     }
 
     .pink-bar {
-        height: 90%;
         background: #ee5984;
-        /*padding: 3%;*/
+        padding: 3%;
         z-index: 2;
-        @include abpos(0,1px);
+        @include abpos(2px,-1%);
     }
 
     .white-border {
@@ -120,17 +110,14 @@ h5 {
 .progres-color-p {
     @include light-gray-text-m;
     margin: 0 auto;
-    padding-top: 20%;
-    /*padding-right: 8%;*/
+    padding-right: 8%;
 }
 
 .level-card-p {
     @include dark-gray-text-m;
     padding-top: 3% 0;
 }
-
 /*========================表格開始================*/
-
 .level-table {
     background: $color_white;
 
@@ -146,7 +133,6 @@ h5 {
     }
 }
 /*------------------------------------------表格end---------------------------------*/
-
 .vip-info-wrapper {
     padding-top: 3%;
 
@@ -167,7 +153,7 @@ h5 {
 
         a {
             @include font_style(14px,200,$dark_gray);
-            border-bottom: 0.5px solid #bebec1;
+            border-bottom: 0.5px solid $light_gray;
         }
     }
 }
@@ -177,8 +163,8 @@ h5 {
     @include dark-gray-important-text;
 
     a {
-        @include font_style(13px,300,$dark_gray);
-        border-bottom: 0.5px solid $dark_gray;
+        @include font_style(14px,300,$dark_gray);
+        border-bottom: 1px solid $light_gray;
     }
 
     .rm-ten {
@@ -202,4 +188,36 @@ h5 {
     .qr-code-news {
         white-space: initial;
     }
+}
+
+.code-btn {
+    /*border: 1px solid $hawooo_pink;*/
+    background: $light_gray;
+    padding: 8px;
+    line-height: 25px;
+    border-radius: 3px;
+    /*border: 1px groove #e3eae9;*/
+    @include font_style(18px,200,#FF0068);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Luckiest Guy', cursive;
+    font-family: 'Archivo Black', sans-serif;
+
+    &:hover, focus {
+        color: $hawooo_pink;
+        border: 1px solid $hawooo_pink;
+    }
+}
+hr{
+    margin:0;
+}
+.to-account-btn {
+    border: 1px solid $hawooo_pink;
+    background: $hawooo_pink;
+    padding: 8px;
+    border-radius: 3px;
+    @include font_style(16px,600,$color_white);
+    letter-spacing: 8px;
+    margin-bottom: 10px;
 }

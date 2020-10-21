@@ -1,4 +1,11 @@
-﻿@import "../utils/utils";
+﻿@import "../utils/variables";
+@import "../vendors/bootstrap/functions";
+@import "../vendors/theme/functions";
+@import "../vendors/theme/variables";
+@import "../vendors/bootstrap/variables";
+@import "../vendors/bootstrap/mixins";
+@import "../vendors/bootstrap/utilities";
+@import "../utils/utils";
 /*@import "../components/components";*/
 @import "sopping_cart1.scss";
 

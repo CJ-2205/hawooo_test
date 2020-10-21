@@ -1,0 +1,89 @@
+﻿am-container {
+    max-width:1920px;
+}
+
+.womens-favourite-items {
+    padding: 0 2px 0 2px;
+}
+.product-item ul{
+    padding-left:0;
+    margin:0 15px;
+}
+.product-item ul li {
+    width: calc(25% -10px);
+    margin: 8px 5px 0 5px;
+    position: relative;
+    background: white;
+}
+
+.product_item_pic {
+    position: relative;
+    padding: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.product_item_text {
+    background: white;
+    padding: 0 17px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 3px;
+
+    h3 {
+        margin: 0;
+        height: 40px;
+        overflow: hidden;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 15px;
+        color: #565656;
+    }
+
+    h4 {
+        margin: 0;
+        display: inline-block;
+        color: #FB5450;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    p {
+        margin: 0;
+        display: inline-block;
+        font-size: 14px;
+        color: #999999;
+        font-weight: 800;
+    }
+}
+
+.product_item_block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.product_item_dis {
+    margin: 0px;
+    display: inline-block;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #999999;
+    float: right;
+    padding-top: 3px;
+}
+
+.product-items-tag {
+    padding: 3px 5px;
+    color: #689b94;
+    background: #e3eae9;
+    vertical-align:top;
+    border-radius: 12px;
+}
+
+.moms-beauty-secrets {
+    margin-bottom: 30px;
+}

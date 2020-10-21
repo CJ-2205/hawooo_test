@@ -1,0 +1,196 @@
+﻿@charset "UTF-8";
+.banner-box {
+  display: block;
+  position: relative;
+  padding: 0; }
+
+.new-arrival {
+  display: block;
+  padding: 20px 0; }
+  .new-arrival li {
+    width: calc(50% - 16px);
+    margin: 8px;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+    .new-arrival li .product-left-box {
+      position: relative;
+      background-size: 100%;
+      overflow: hidden;
+      height: 300px;
+      padding: 0; }
+      .new-arrival li .product-left-box img {
+        object-fit: cover; }
+      .new-arrival li .product-left-box .new-arrival-tag {
+        position: absolute;
+        top: 0;
+        left: 20px;
+        text-align: center;
+        /*padding: 11px 5px 5px 5px;*/
+        padding-top: 10px;
+        background-color: #ff0000;
+        width: 60px;
+        height: 60px;
+        border-radius: 0;
+        font-size: 16px;
+        font-weight: 800;
+        color: #fff;
+        word-wrap: break-word;
+        line-height: 20px; }
+        .new-arrival li .product-left-box .new-arrival-tag .arrival-p {
+          font-size: 12px;
+          font-weight: 800;
+          color: #fff;
+          -webkit-transform: scale(0.9);
+          display: inline-block;
+          margin-left: -1px; }
+
+/*-------------------左邊圖片盒子end-------------------*/
+.product-right-box {
+  position: relative;
+  display: block;
+  word-wrap: break-word;
+  padding: 8px 10px;
+  height: 300px;
+  overflow: hidden; }
+  .product-right-box .product-news {
+    padding: 1px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff006e;
+    letter-spacing: 0.5px;
+    border: 1px solid #ff006e;
+    position: relative;
+    background: #fd3289;
+    color: transparent;
+    background-size: 200% 100%;
+    margin: 3px 0 3px 0;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.15s ease-in;
+    animation: move 1s infinite linear;
+    background-image: -webkit-linear-gradient(45deg, #ff8e8e 0%, #ff006e 10%, #fd3289 20%, #fd3289 30%, #ff006e 40%, #fd3289 50%, #ff006e 60%, #fd3289 80%, #ff006e 90%, #ff5e83 100%);
+    -webkit-background-clip: text; }
+
+@keyframes move {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -100% 0; } }
+
+.product-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #292929;
+  line-height: 27px;
+  margin-bottom: 10px;
+  text-align: justify;
+  height: 58px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.info-list {
+  letter-spacing: -1px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #707070;
+  height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px; }
+
+.price-box {
+  display: block; }
+
+.product-price {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff0000;
+  margin-bottom: 10px; }
+
+.original-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #707070;
+  text-decoration: line-through;
+  margin-bottom: 15px;
+  margin-right: 50px;
+  margin-top: 10px; }
+
+.sele-off {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ff006e; }
+
+.buy-now-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  padding: 5px;
+  transition: 1s; }
+  .buy-now-btn a {
+    text-align: center;
+    line-height: 35px;
+    display: block;
+    width: 100%;
+    background-color: #ff006e;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff; }
+    .buy-now-btn a:hover {
+      background-color: #ff338b;
+      color: #fff; }
+
+/*-----------------------------new-arrival-box大盒子end------------*/
+.new-arrival-smbox {
+  padding-bottom: 40px; }
+  .new-arrival-smbox li {
+    width: calc(25% - 16px);
+    margin: 8px;
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); }
+    .new-arrival-smbox li .product-img {
+      position: relative;
+      overflow: hidden; }
+      .new-arrival-smbox li .product-img img {
+        width: 100%; }
+  .new-arrival-smbox .product-text-box {
+    overflow: hidden;
+    padding: 0 17px; }
+    .new-arrival-smbox .product-text-box .product-item-block {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      margin-top: 0; }
+      .new-arrival-smbox .product-text-box .product-item-block .smbox-product-name {
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+        line-height: 22px;
+        text-align: justify;
+        height: 45px;
+        overflow: hidden; }
+
+.smbox-product-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ff0000;
+  margin-top: 16px; }
+
+.smbox-original-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #707070;
+  text-decoration: line-through;
+  margin: -14px 0 14px 0; }
+
+.smbox-sele-off {
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  padding: 1px 4px;
+  background-color: #ff006e;
+  margin-top: 21px; }

@@ -1,7 +1,7 @@
 ﻿
 ///该文件定义了一些jQuery扩展
 /// Created By  xmx
-/// <reference path="jquery-1.3.2-vsdoc.js" />
+////* <reference path="jquery-1.3.2-vsdoc.js" />*/
 
 ///	<summary>
 ///    jQuery原型扩展，重新封装Ajax请求WebServeice

@@ -1,9 +1,9 @@
 $(document).ready(function () {
+    scrollSummary();
     paymentToggle();
     paymentOption();
     onlinebankCheck();
     unchecked();
-
 });
 
 // 選擇線上付款或是線下付款
@@ -29,7 +29,6 @@ function paymentToggle() {
 function paymentOption() {
     $(".payment-option").on("click", function () {
         var optionInput = $(this).find("input.optioninput");
-
         $(this).siblings().find("input").prop("checked", false);
         $(this).parents(".payment-wrapper").siblings().find("input").prop("checked", false);
         optionInput.prop("checked", true);
@@ -66,6 +65,36 @@ function unchecked() {
     })
 }
 
+//固定Summary滑動範圍
+function scrollSummary() {
+    var objHeight = $('#order-summary');
+    var summaryTop = $('#order-summary').offset().top; //指定物件與document的距離
+    var orderSummaryHeight = $('#order-summary').height();
+    var navTopHeight = $('.header-wrapper').height();  //NavTop高度
 
+    $(window).scroll(function () { // scroll event
+        var pushUp = $('#footer').offset().top - orderSummaryHeight;
+        var windowTop = $(window).scrollTop(); // returns number
 
+        if (summaryTop < windowTop) {
+            objHeight.css({
+                position: 'fixed',
+                top: navTopHeight,
+                margin: '10px 0',
+            });
+        } else {
+            objHeight.css({
+                position: 'static',
+                margin: '0',
+            });
+        }
 
+        if (pushUp - navTopHeight < windowTop) {
+            var distance = pushUp - windowTop;
+            objHeight.css({
+                margin: '-32px 0 0 0',
+                top: distance,
+            });
+        }
+    });
+};

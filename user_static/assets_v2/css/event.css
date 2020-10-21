@@ -1,0 +1,11 @@
+﻿/*$font-family-sans-serif: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;
+$font-family-base: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif !default;*/
+.presale-wrapper .goods-neme {
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-weight: 400;
+  min-height: 42px; }

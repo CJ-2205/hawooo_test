@@ -1,0 +1,235 @@
+﻿
+.womens-favourite-items {
+    padding: 0 5px;
+    background-color: #4F373C;
+    ul{
+        padding:0;
+    }
+}
+/*================商品方塊===============*/
+
+.product-item ul {
+    padding-left: 0;
+    margin: 0 15px;
+}
+
+.product-item ul li {
+    width: calc(25% -10px);
+    margin: 8px 5px 0 5px;
+    position: relative;
+    background: white;
+}
+
+.product_item_pic {
+    position: relative;
+    padding: 10px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.product_item_text {
+    background: white;
+    padding: 0 17px;
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 3px;
+
+    h3 {
+        margin: 0;
+        height: 40px;
+        overflow: hidden;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 15px;
+        color: #565656;
+    }
+
+    h4 {
+        margin: 0;
+        display: inline-block;
+        color: #FB5450;
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    p {
+        margin: 0;
+        display: inline-block;
+        font-size: 14px;
+        color: #999999;
+        font-weight: 800;
+    }
+}
+
+.product_item_block {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.product_item_dis {
+    margin: 0px;
+    display: inline-block;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #999999;
+    float: right;
+    padding-top: 3px;
+}
+
+.product-items-tag {
+    padding: 3px 5px;
+    color: #689b94;
+    background: #e3eae9;
+    vertical-align: top;
+    border-radius: 12px;
+}
+
+/*================商品方塊end===============*/
+
+/*================商品腰帶方塊===============*/
+.shop-now-block {
+    background-color: #F1DFDF;
+    position: relative;
+    padding: 20px 0;
+}
+
+.am-slider-default .am-control-nav li a.am-active {
+    background-color: #000;
+    background-color:  #F1DFDF;
+    cursor: default;
+}
+.slider-block {
+    padding: 8px;
+    background-color: #4F373C;
+}
+
+.product-slider-pic {
+    position: relative;
+    padding: 15px;
+
+    img {
+        width: 100%;
+    }
+}
+
+.product-slider-text {
+    background: white;
+    padding: 0 20px;
+    height: 100px;
+    overflow: hidden;
+
+    h3 {
+        margin: 0;
+        height: 40px;
+        overflow: hidden;
+        font-weight: 700;
+        line-height: 20px;
+        font-size: 15px;
+        color: #565656;
+    }
+
+    h4 {
+        margin: 0;
+        display: inline-block;
+        color: #FB5450;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+
+    p {
+        margin: 0;
+        display: inline-block;
+        font-size: 14px;
+        color: #999999;
+        font-weight: 800;
+    }
+}
+
+.product-slider-item-block {
+    display: inline-block;
+    width: 100%;
+}
+
+.product-slider-dis {
+    margin: 0px;
+    display: inline-block;
+    bottom: 0px;
+    font-weight: 700;
+    font-size: 15px;
+    color: #999999;
+    float: right;
+    padding-top: 3px;
+}
+
+.product-slider-items-tag {
+    -webkit-text-size-adjust: none;
+    -webkit-transform: scale(1);
+    color: #689b94;
+    background: #e3eae9;
+    border-radius: 12px;
+    display: -webkit-inline-box;
+    padding: 2px 8px 4px 0;
+    margin-top:-5px;
+}
+
+.slider-block ul li {
+    background: white;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+/*================品牌區塊===============*/
+.max-half-discount {
+    padding: 15px 0;
+}
+
+.brand-block {
+    ul {
+        margin:0  -8px;
+
+        li {
+            width: calc(50% - 16px);
+            margin: 10px 8px 0 8px;
+
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/*================市集廣告區塊===============*/
+.market-block {
+    padding: 15px 5px 30px 5px;
+}
+
+.market {
+    padding: 0;
+    width: calc(33.3% - 8px);
+    margin: 10px 4px 0 4px;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/*================footer===============*/
+.activity-method {
+    background-color: #4F373C;
+
+    .activity-method-p {
+        padding: 30px 20px;
+        font-size: 16px;
+        word-break: break-word;
+        color: #F1DFDF;
+        line-height: 2;
+    }
+}

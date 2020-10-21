@@ -669,19 +669,19 @@ tfoot tr.space {
     transition: .3s;
     cursor: pointer;
     position: relative;
-    background-size: 60%;
+    background-size: 90%;
     background-repeat: no-repeat;
     background-position: center center;
     /*背景*/
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:hover, .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:hover {
-    border: 1px solid #FB5450;
+    border: 1px solid $primary;
     transition: .3s;
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv.active, .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv.active {
-    border: 1px solid #FB5450;
+    border: 1px solid $primary;
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv input, .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv input {
@@ -696,7 +696,7 @@ tfoot tr.space {
     top: 5px;
     right: 5px;
     font-size: 20px;
-    color: #FB5450;
+    color: $primary;
     display: none;
 }
 
@@ -705,40 +705,75 @@ tfoot tr.space {
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(1), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(1) {
-    background-image: url(../../images/pay/bank-logo1.gif);
+    background-image: url(../../images/pay/am_online.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(2), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(2) {
-    background-image: url(../../images/pay/bank-logo2.gif);
+    background-image: url(../../images/pay/cimb_clicks.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(3), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(3) {
-    background-image: url(../../images/pay/bank-logo3.gif);
+    background-image: url(../../images/pay/affin_bank.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(4), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(4) {
-    background-image: url(../../images/pay/bank-logo4.gif);
+    background-image: url(../../images/pay/fpx.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(5), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(5) {
-    background-image: url(../../images/pay/bank-logo5.gif);
+    background-image: url(../../images/pay/hong_leong_bank.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(6), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(6) {
-    background-image: url(../../images/pay/bank-logo6.gif);
+    background-image: url(../../images/pay/maybank2u.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(7), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(7) {
-    background-image: url(../../images/pay/bank-logo7.gif);
+    background-image: url(../../images/pay/rhb_bank.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(8), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(8) {
-    background-image: url(../../images/pay/bank-logo8.gif);
+    background-image: url(../../images/pay/standard_chartered_bank.png);
 }
 
 .payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(9), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(9) {
-    background-size: 40%;
-    background-image: url(../../images/pay/bank-logo9.gif);
+    background-image: url(../../images/pay/united_oversea_bank.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(10), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(10) {
+    background-image: url(../../images/pay/alliance_bank_malaysia_berhad.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(11), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(11) {
+    background-image: url(../../images/pay/public_bank.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(12), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(12) {
+    background-image: url(../../images/pay/ocbc_bank.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.onlineBankingDiv:nth-child(13), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.onlineBankingDiv:nth-child(13) {
+    background-image: url(../../images/pay/fpx_hsbc.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.e-wallet-pay:nth-child(1), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.e-wallet-pay:nth-child(1) {
+    background-image: url(../../images/pay/boost.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.e-wallet-pay:nth-child(2), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.e-wallet-pay:nth-child(2) {
+    background-image: url(../../images/pay/grab_pay.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.e-wallet-pay:nth-child(3), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.e-wallet-pay:nth-child(3) {
+    background-image: url(../../images/pay/maybank_qrpay.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.e-wallet-pay:nth-child(4), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.e-wallet-pay:nth-child(4) {
+    background-image: url(../../images/pay/razer_pay.png);
+}
+
+.payment-select .payment-methods .payment-wrapper .payment-content .online-option .payLogo li.e-wallet-pay:nth-child(5), .payment-select .payment-methods .payment-wrapper .payment-content .offline-option .payLogo li.e-wallet-pay:nth-child(5) {
+    background-image: url(../../images/pay/touchn_go_ewallet.png);
 }
 
 /*購物車按鈕外層 強行寫入width按鈕大小*/

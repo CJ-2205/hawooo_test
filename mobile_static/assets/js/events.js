@@ -4,8 +4,8 @@ function goto(id, speed, type) {
     { scrollTop: $("#" + id + "").offset().top - 130 },
     speed,
     type
-  );
-}
+  )
+};
 
 /*複製商品塊*/
 function duplicate(id) {

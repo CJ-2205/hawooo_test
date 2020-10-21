@@ -1,0 +1,158 @@
+﻿$hawooo_pink: #EE5984;
+$dark_gray: #707070;
+$light_gray: #E1E1E1;
+$color_white: #fff;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+.member-sidemenu {
+     @include size(22%,600px);
+    background-color: $color_white;
+}
+
+.news {
+    position: fixed;
+    @include size(180px,300px,10px);
+    background-color: $light_gray;
+    right:30px;
+    top:170px;
+    color:$dark_gray;
+    z-index:10;
+}
+
+.member-card {
+    display: block;
+    width: calc(78% - 20px);
+    margin-left: 20px;
+    background-color: $color_white;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+.member-Info-text {
+    line-height: 25px;
+    margin-top: 50px;
+    @include font_style(17px,800,$dark_gray);
+
+    .leve-now-p {
+     @include font_style(17px,800,#9b9a9a);
+    }
+
+    .grand-total-p {
+        @include font_style(17px,800,$hawooo_pink);
+    }
+}
+
+.member-progress {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        z-index: 3;
+        display: inline;
+        width: 100%;
+        position: relative;
+    }
+
+    .gray-bar {
+        background: $light_gray;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+    }
+
+    .pink-bar {
+        background: $hawooo_pink;
+        z-index: 2;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 60px;
+        margin-left:1px;
+    }
+}
+
+.progres-percent-p {
+    @include font_style(14px,500,$dark_gray);
+    display: flex;
+    justify-content: space-between;
+    padding-left:0;
+    margin-top:0;
+}
+
+.member-card-level {
+    display: inline-block;
+
+    .card-level-icon {
+        @include size(27px,27px);
+        display: inline-block;
+        margin:0  5px;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.card-level-title {
+    @include font_style(16px,700,$dark_gray);
+}
+
+    .vip-card {
+        width: 300px;
+        height: auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+.about-member-level {
+    @include font_style(16px,700,$dark_gray);
+    border-bottom:1px solid;
+    line-height:25px;
+}
+
+.vip-card-benefits {
+    padding-left: 0;
+
+    li {
+        display: block;
+        @include font_style(14px,700,$dark_gray);
+        margin-top: 15px;
+
+        .pink-circle {
+            display: inline-block;
+            @include size(12px,12px,50%);
+            border: 2px solid $hawooo_pink;
+        }
+    }
+}
+.to-account {
+    margin-bottom: 10px;
+    @include font_style(14px,700,$dark_gray);
+
+    .about-to-account {
+        border-bottom: 1px solid
+    }
+}
+    .to-account-btn {
+        border: 1px solid $hawooo_pink;
+        background: $hawooo_pink;
+        padding: 8px 40px;
+        border-radius: 5px;
+        @include font_style(16px,600,$color_white);
+        letter-spacing: 8px;
+    }

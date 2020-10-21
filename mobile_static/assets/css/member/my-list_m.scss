@@ -1,0 +1,43 @@
+﻿$hawooo_pink: #EE5984;
+$second_color: #BBBCBC;
+$dark_gray: #6C6C6C;
+$light_gray: #efefef;
+$color_white: #fff;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin abpos($l,$t) {
+    position: absolute;
+    left: $l;
+    top: $t;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+
+img {
+    width: 100%;
+}
+
+.member-container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.my-like-list{
+    width:90%;
+   padding: 3% ;
+}
+
+.product-title {
+    @include font_style(16px,500,$dark_gray);
+    text-align:start
+}

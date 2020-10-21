@@ -1,32 +1,22 @@
-﻿@import "helpers/variables";
-@import "mixins/mixins";
-@import "mixins/resize";
-@import url('https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Luckiest+Guy&display=swap');
-
-/*深灰重要文字*/
-@mixin dark-gray-important-text {
-    font-size: 14px;
-    font-weight: 400;
-    color: $dark-gray;
-}
-
-/*深灰icon及內文文字*/
-@mixin dark-gray-text-m {
-    font-size: 12px;
-    font-weight: 500;
-    color: $dark-gray;
-}
+﻿@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Anton|Archivo+Black|Luckiest+Guy&display=swap");
 
 .description-text {
-    @include font_style(14px,500,$dark-gray);
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
 }
 
 .dark-gray-title {
-    @include font_style(16px,bold,$dark-gray);
+    font-size: 16px;
+    font-weight: bold;
+    color: #707070;
 }
 
 .pink-title-text {
-    @include font_style(16px,bold, $hawooo-pink);
+    font-size: 16px;
+    font-weight: bold;
+    color: #ee5984;
 }
 
 img {
@@ -39,34 +29,40 @@ img {
 }
 
 .vip-rule-box, .vip-card-wrapper {
-    background-color: $color-white;
+    background-color: #fff;
     padding: 20px 3%;
 }
 
 .vip-card-icon-box {
     display: inline-block;
+}
 
-    .vip-card-icon {
-        @include size(27px,27px);
-        margin-right: 7px;
-    }
+.vip-card-icon-box .vip-card-icon {
+    width: 27px;
+    height: 27px;
+    border-radius: 0;
+    margin-right: 7px;
+}
 
-    .card-level-title {
-        margin: 0;
-        @include font_style(16px,700,$dark-gray);
-    }
+.vip-card-icon-box .card-level-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #707070;
 }
 
 .about-level-btn {
-    background-color: $hawooo-pink;
+    background-color: #ee5984;
     padding: 3px 5px;
     border-radius: 2px;
-    @include font_style(14px,200,$color-white);
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+}
 
-    &.about-level-btn:active {
-        border: 0.5px solid $hawooo-pink;
-        color: $color-white;
-    }
+.about-level-btn.about-level-btn:active {
+    border: .5px solid #ee5984;
+    color: #fff;
 }
 
 .vip-card {
@@ -74,127 +70,135 @@ img {
     margin-top: 3%;
 }
 
-.vip-card-benefits {
-    li {
-        display: inline-block;
-        padding-right: 5px;
-        font-size: 12px;
-        /*@include dark-gray-text-m;*/
-        .pink-circle {
-            display: inline-block;
-            @include size(12px,12px,50%);
-            border: 2px solid $hawooo-pink;
-            margin: 0 1px -1px 0;
-        }
-    }
+.vip-card-benefits li {
+    display: inline-block;
+    padding-right: 5px;
+    font-size: 12px;
+}
+
+.vip-card-benefits li .pink-circle {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #ee5984;
+    margin: 0 1px -1px 0;
 }
 
 .code-btn {
-    background: $light-gray;
+    background: #e1e1e1;
     padding: 8px;
     line-height: 25px;
     border-radius: 3px;
-    @include font_style(18px,200,$strong-fuchsia);
+    font-size: 18px;
+    font-weight: 200;
+    color: #ff0068;
     letter-spacing: 3px;
     margin-bottom: 10px;
-    font-family: 'Anton', sans-serif;
-    font-family: 'Luckiest Guy', cursive;
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Anton',sans-serif;
+    font-family: 'Luckiest Guy',cursive;
+    font-family: 'Archivo Black',sans-serif;
+}
 
-    &:hover, focus {
-        color: $hawooo-pink;
-        border: 1px solid $hawooo-pink;
-    }
+.code-btn:hover, .code-btn focus {
+    color: #ee5984;
+    border: 1px solid #ee5984;
 }
 
 .upgrade-vip-card-p {
-    @include dark-gray-important-text;
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
 }
 
 .progress-bar-wrap {
     z-index: 3;
-    /*@include absolute(0,0);*/
     display: inline;
     margin: 0 auto;
     overflow: hidden;
-    /*border: 3px solid $color-white;*/
-    img {
-        width: 100%;
-        z-index: 5;
-        position: relative;
-        display: block;
-    }
+}
 
-    .gray-bar {
-        @include absolute(0,0);
-        z-index: 1;
-        border: 1px solid white;
-        background: $light-gray;
-    }
+.progress-bar-wrap img {
+    width: 100%;
+    z-index: 5;
+    position: relative;
+    display: block;
+}
 
-    .pink-bar {
-        background: #ee5984;
-        z-index: 2;
-        border: 1px solid white;
-        @include absolute(0,auto,0,0);
-    }
+.progress-bar-wrap .gray-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    z-index: 1;
+    border: 1px solid #fff;
+    background: #e1e1e1;
+}
+
+.progress-bar-wrap .pink-bar {
+    background: #ee5984;
+    z-index: 2;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: 0;
+    left: 0;
 }
 
 .progres-percent-p {
-    @include font_style(12px,500,$dark-gray);
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
     margin: 0 auto;
     padding-top: 5px;
-    /*li {
-        padding-right: 7%;
-    }*/
 }
 
 .member-icon-box {
-    background-color: $color-white;
+    background-color: #fff;
+}
 
-    .member-icon-block {
-        margin: 0 3%;
+.member-icon-box .member-icon-block {
+    margin: 0 3%;
+}
 
-        li {
-            padding: 5px;
-            clear: none;
+.member-icon-box .member-icon-block li {
+    padding: 5px;
+    clear: none;
+}
 
+.member-icon-box .member-icon-block li a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    position: relative;
+}
 
-            a {
-                @include dark-gray-text-m;
-                position: relative;
+.member-icon-box .member-icon-block li a img {
+    width: 25px;
+    height: auto;
+    border-radius: 0;
+    margin-top: 7px;
+}
 
-                img {
-                    @include size(25px,auto);
-                    margin-top: 7px;
-                }
-
-                span {
-                    display: block;
-                    /*padding-top: 5px;*/
-                }
-            }
-        }
-        /*.btn-img {
-            height: 25px;
-            width: 25px;
-        }*/
-    }
+.member-icon-box .member-icon-block li a span {
+    display: block;
 }
 
 .friend-qrcode {
     width: 160px;
-
-    img {
-        border: 2px solid #e3eae9;
-    }
 }
 
-.qr-code-news {
-    a {
-        @include dark-gray-important-text;
-        border-bottom: 1px solid $light-gray;
-    }
+.friend-qrcode img {
+    border: 2px solid #e3eae9;
+}
+
+.qr-code-news a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .order-status-title {
@@ -203,97 +207,121 @@ img {
 
 .order-status {
     position: relative;
-    @include size(40px,40px,50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     background-color: #e3eae9;
     margin: 0 auto;
 }
 
 .ctag {
-    @include absolute(0,$left:70%);
-    @include size(16px,16px,50%);
-    background-color: #FF0068;
-    color: white;
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 70%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ff0068;
+    color: #fff;
     font-size: 10px;
     padding-left: 2px;
 }
 
 .go-back-btn a {
-    @include font_style(18px,800,$dark-gray);
+    font-size: 18px;
+    font-weight: 800;
+    color: #707070;
 }
 
 .progres-color-p {
-    @include font_style(14px,500,$dark-gray);
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
     margin: 0 auto;
     padding-right: 8%;
 }
 
 .level-card-p {
-    @include dark-gray-text-m;
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
     padding-top: 3% 0;
 }
-/*========================表格開始================*/
+
 .level-table {
-    background: $color-white;
-
-    .table-title {
-        background: $light-gray;
-    }
-
-    td {
-        @include dark-gray-text-m;
-        padding: 18% 2% 0 2%;
-        height: 45px;
-        vertical-align: middle !important;
-    }
+    background: #fff;
 }
-/*------------------------------------------表格end---------------------------------*/
+
+.level-table .table-title {
+    background: #e1e1e1;
+}
+
+.level-table td {
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    padding: 18% 2% 0 2%;
+    height: 45px;
+    vertical-align: middle !important;
+}
+
 .vip-info-wrapper {
     padding-top: 3%;
+}
 
-    .vip-info-title {
-        @include dark-gray-important-text;
+.vip-info-wrapper .vip-info-title {
+    font-size: 14px;
+    font-weight: 400;
+    color: #707070;
+}
 
-        .question-mark {
-            margin-right: 5px;
-            margin-top: -1px;
-            @include size(14px,14px);
-        }
-    }
+.vip-info-wrapper .vip-info-title .question-mark {
+    margin-right: 5px;
+    margin-top: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 0;
+}
 
-    .vip-info-p {
-        margin: 10px 0;
-        @include dark-gray-text-m;
-        letter-spacing: 1px;
+.vip-info-wrapper .vip-info-p {
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    letter-spacing: 1px;
+}
 
-        a {
-            @include dark-gray-text-m;
-            border-bottom: 0.5px solid $light-gray;
-        }
-    }
+.vip-info-wrapper .vip-info-p a {
+    font-size: 12px;
+    font-weight: 500;
+    color: #707070;
+    border-bottom: .5px solid #e1e1e1;
 }
 
 .to-account-btn {
-    border: 1px solid $hawooo-pink;
-    background: $hawooo-pink;
+    border: 1px solid #ee5984;
+    background: #ee5984;
     border-radius: 3px;
     padding: 8px;
-    @include font_style(16px,600,$color-white);
-    letter-spacing: 8px;
-    /*margin-bottom: 10px;*/
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    /*letter-spacing: 8px;*/
 }
 
 .close-btn {
-    border: 1px solid $hawooo-pink;
-    background: $color-white;
+    border: 1px solid #ee5984;
+    background: #fff;
     border-radius: 3px;
     padding: 8px;
     margin: 15px auto;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width:320px) {
     .to-account-btn {
         padding: 5px !important;
-        font-size: 14px !important;
     }
 
     .go-back-btn a {
@@ -301,34 +329,44 @@ img {
     }
 
     .description-text {
-        @include font_style(12px,500,$dark-gray);
+        font-size: 12px;
+        font-weight: 500;
+        color: #707070;
     }
 
     .dark-gray-title {
-        @include font_style(14px,bold,$dark-gray);
+        font-size: 14px;
+        font-weight: bold;
+        color: #707070;
     }
 
     .pink-title-text {
-        @include font_style(14px,bold, $hawooo-pink);
+        font-size: 14px;
+        font-weight: bold;
+        color: #ee5984;
     }
 
     .card-level-title {
         font-size: 12px;
     }
 
-    .vip-card-benefits {
-        li {
-            padding-right: 5px;
-            @include dark-gray-text-m;
+    .vip-card-benefits li {
+        padding-right: 5px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #707070;
+    }
 
-            .pink-circle {
-                @include size(10px,10px,50%);
-            }
-        }
+    .vip-card-benefits li .pink-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
     }
 
     .vip-card-icon {
-        @include size(20px,20px);
+        width: 20px;
+        height: 20px;
+        border-radius: 0;
         margin-right: 5px;
         margin-top: -5px;
     }
@@ -346,4 +384,32 @@ img {
     .code-btn {
         line-height: 18px;
     }
+}
+//會員黑卡體驗通知
+.card-notice {
+    p {
+        background: #f1f1f1;
+        color: #000;
+        font-size: 14px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 12px;
+        }
+    }
+
+    b {
+        color: #000;
+    }
+}
+
+.text-primary {
+    color: #EE5984;
+}
+
+.text-black {
+    color: #000;
+}
+
+.card-countdown {
+    color: #707070;
 }

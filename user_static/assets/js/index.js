@@ -6,9 +6,10 @@ $(document).ready(function () {
     guessClick();
     //hoverNavColor();
 
-    $(window).on("scroll", function () {
-        sideNavActive();
-    })
+    $(window).on("scroll",
+        function () {
+            sideNavActive();
+        });
 
 });
 
@@ -38,13 +39,15 @@ function videoSlider() {
             VscrollRight = setInterval(function () {
                 if (
                     // true
-                    parseInt(moreVideoSlide.css("left")) + 1 > (parseInt(moreVideoSlide.css("width")) * (-1)) + sliderWidth
+                    parseInt(moreVideoSlide.css("left")) + 1 >
+                    (parseInt(moreVideoSlide.css("width")) * (-1)) + sliderWidth
                 ) {
                     moreVideoSlide.css({
                         left: currentleft--
-                    })
+                    });
                 }
-            }, 10)
+            },
+                10);
         } else if (
             $(this).hasClass("more-video-left")
         ) {
@@ -54,9 +57,10 @@ function videoSlider() {
                 ) {
                     moreVideoSlide.css({
                         left: currentleft++
-                    })
+                    });
                 }
-            }, 10)
+            },
+                10);
         }
     });
 
@@ -96,10 +100,10 @@ function sideNavigator() {
             $("body,html").animate({ scrollTop: 0 }, 500)
         } else {
             var getTab = $(this).index();
-            var getSection = $(".section-1").eq(getTab).offset().top
-            $("body,html").animate({ scrollTop: getSection - 120 }, 500)
+            var getSection = $(".section-1").eq(getTab).offset().top;
+            $("body,html").animate({ scrollTop: getSection - 120 }, 500);
         }
-    })
+    });
 }
 
 // 偵測相對的sidenav 有顏色變化
@@ -119,26 +123,26 @@ function sideNavActive() {
             $(".side-nav-out .side-nav-wrapper li").css({
                 background: "#f0f0f0",
                 color: "#595959"
-            })
+            });
             var navIndex = $(this).index() - 4
             $(".side-nav-out .side-nav-wrapper li").eq(navIndex).css({
                 background: colorbody,
                 color: "white"
-            })
+            });
         } else if (
             scrollPos < $(".fashion-makeup").offset().top
         ) {
             $(".side-nav-out .side-nav-wrapper li").css({
                 background: "#f0f0f0",
                 color: "#595959"
-            })
+            });
         } else if (
             scrollPos > $(".mom-baby").offset().top
         ) {
             $(".side-nav-out .side-nav-wrapper li").css({
                 background: "#f0f0f0",
                 color: "#595959"
-            })
+            });
         }
     });
 

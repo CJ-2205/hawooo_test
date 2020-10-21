@@ -1,0 +1,110 @@
+﻿$hawooo_pink: #EE5984;
+$second_color: #BBBCBC;
+$dark_gray: #707070;
+$light_gray: #E1E1E1;
+$color_white: #fff;
+
+@mixin size($w,$h: $w,$brs: 0) {
+    width: $w;
+    height: $h;
+    border-radius: $brs;
+}
+
+@mixin abpos($l,$t) {
+    position: absolute;
+    left: $l;
+    top: $t;
+}
+
+@mixin font_style($fs,$fw,$fc) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $fc
+}
+
+/*粉色重點文字*/
+@mixin pink-important-text {
+    font-size: 16px;
+    font-weight: 800;
+    color: $hawooo_pink;
+}
+
+/*深灰重要文字*/
+@mixin dark-gray-important-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark_gray;
+}
+
+/*深灰icon及表格等文字*/
+@mixin dark-gray-text-m {
+    font-size: 12px;
+    font-weight: 500;
+    color: $dark_gray;
+}
+
+.banner, .bannerTwo {
+    margin-top: 55px;
+}
+
+.am-slider-default .am-direction-nav {
+    opacity: 0;
+}
+.sale-mt {
+    overflow: hidden;
+    background: #ffd800;
+    margin-top: 10px;
+}
+
+.sale-mt i {
+    float: left;
+    display: block;
+    width: 60px;
+    height: 46px;
+    background: url(../images/sale-t_clock.jpg);
+    background-size: 100%
+}
+
+.sale-mt .sale-title {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 46px;
+    color: #885621;
+    margin-left: 10px;
+}
+
+.sale-mt .s-time {
+    float: right;
+    width: 112px;
+    height: 27px;
+    position: relative;
+    background: url(../images/icon-sale.png);
+    background-size: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.sale-mt .s-time span {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    font-size: 18px;
+    color: #ffeee0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.s-time .mm {
+    left: 43px;
+}
+
+.s-time .ss {
+    left: 85px;
+}
+
+.s-buy {
+    display: none;
+}
